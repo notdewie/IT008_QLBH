@@ -1,0 +1,53 @@
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.csprojAssemblyReference.cache
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.frmAccount.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.frmKhachhang.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.Login.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.Properties.Resources.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.GenerateResource.cache
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CoreCompileInputs.cache
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.frmNhanvien.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.frmSanpham.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.frmTaiKhoan.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.SalesManage.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\bin\Debug\SaleManages.exe.config
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\bin\Debug\SaleManages.exe
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\bin\Debug\SaleManages.pdb
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.exe
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\obj\Debug\SaleManages.pdb
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe.config
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.pdb
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csprojAssemblyReference.cache
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmKhachhang.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmNhanvien.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmSanpham.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Login.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Properties.Resources.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.SalesManage.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.GenerateResource.cache
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.exe
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.pdb
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmCreateAcc.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmForgetPass.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmInfoAcc.resources
+C:\Users\ACER\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmUseTerm.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe.config
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.pdb
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csprojAssemblyReference.cache
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmCreateAcc.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmForgetPass.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmInfoAcc.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmKhachhang.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmNhanvien.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmSanpham.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Login.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmUseTerm.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Properties.Resources.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.SalesManage.resources
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.GenerateResource.cache
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CoreCompileInputs.cache
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.exe
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.pdb
+C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI.frmDanhMuc.resources
