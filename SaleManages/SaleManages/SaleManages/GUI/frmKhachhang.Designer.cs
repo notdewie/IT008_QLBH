@@ -97,10 +97,10 @@
             this.groupbox_InfoKH.Controls.Add(this.lbCodeKh);
             this.groupbox_InfoKH.Controls.Add(this.lbNameKh);
             this.groupbox_InfoKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupbox_InfoKH.Location = new System.Drawing.Point(9, 22);
-            this.groupbox_InfoKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupbox_InfoKH.Location = new System.Drawing.Point(9, 23);
+            this.groupbox_InfoKH.Margin = new System.Windows.Forms.Padding(2);
             this.groupbox_InfoKH.Name = "groupbox_InfoKH";
-            this.groupbox_InfoKH.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupbox_InfoKH.Padding = new System.Windows.Forms.Padding(2);
             this.groupbox_InfoKH.Size = new System.Drawing.Size(908, 261);
             this.groupbox_InfoKH.TabIndex = 4;
             this.groupbox_InfoKH.TabStop = false;
@@ -111,7 +111,7 @@
             // 
             this.rbMuc3.AutoSize = true;
             this.rbMuc3.Location = new System.Drawing.Point(628, 118);
-            this.rbMuc3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbMuc3.Margin = new System.Windows.Forms.Padding(2);
             this.rbMuc3.Name = "rbMuc3";
             this.rbMuc3.Size = new System.Drawing.Size(64, 21);
             this.rbMuc3.TabIndex = 26;
@@ -123,7 +123,7 @@
             // 
             this.rbMuc2.AutoSize = true;
             this.rbMuc2.Location = new System.Drawing.Point(562, 117);
-            this.rbMuc2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbMuc2.Margin = new System.Windows.Forms.Padding(2);
             this.rbMuc2.Name = "rbMuc2";
             this.rbMuc2.Size = new System.Drawing.Size(64, 21);
             this.rbMuc2.TabIndex = 25;
@@ -135,7 +135,7 @@
             // 
             this.rbMuc1.AutoSize = true;
             this.rbMuc1.Location = new System.Drawing.Point(487, 118);
-            this.rbMuc1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbMuc1.Margin = new System.Windows.Forms.Padding(2);
             this.rbMuc1.Name = "rbMuc1";
             this.rbMuc1.Size = new System.Drawing.Size(64, 21);
             this.rbMuc1.TabIndex = 24;
@@ -156,7 +156,7 @@
             // bttFixKh
             // 
             this.bttFixKh.Location = new System.Drawing.Point(787, 223);
-            this.bttFixKh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttFixKh.Margin = new System.Windows.Forms.Padding(2);
             this.bttFixKh.Name = "bttFixKh";
             this.bttFixKh.Size = new System.Drawing.Size(91, 30);
             this.bttFixKh.TabIndex = 22;
@@ -166,7 +166,7 @@
             // bttEraKh
             // 
             this.bttEraKh.Location = new System.Drawing.Point(692, 223);
-            this.bttEraKh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttEraKh.Margin = new System.Windows.Forms.Padding(2);
             this.bttEraKh.Name = "bttEraKh";
             this.bttEraKh.Size = new System.Drawing.Size(82, 31);
             this.bttEraKh.TabIndex = 21;
@@ -176,7 +176,7 @@
             // bttAddKh
             // 
             this.bttAddKh.Location = new System.Drawing.Point(590, 223);
-            this.bttAddKh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bttAddKh.Margin = new System.Windows.Forms.Padding(2);
             this.bttAddKh.Name = "bttAddKh";
             this.bttAddKh.Size = new System.Drawing.Size(88, 31);
             this.bttAddKh.TabIndex = 20;
@@ -186,7 +186,7 @@
             // tbEmailKh
             // 
             this.tbEmailKh.Location = new System.Drawing.Point(475, 75);
-            this.tbEmailKh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbEmailKh.Margin = new System.Windows.Forms.Padding(2);
             this.tbEmailKh.Name = "tbEmailKh";
             this.tbEmailKh.Size = new System.Drawing.Size(204, 23);
             this.tbEmailKh.TabIndex = 19;
@@ -206,7 +206,7 @@
             this.listboxPhone.FormattingEnabled = true;
             this.listboxPhone.ItemHeight = 16;
             this.listboxPhone.Location = new System.Drawing.Point(126, 210);
-            this.listboxPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listboxPhone.Margin = new System.Windows.Forms.Padding(2);
             this.listboxPhone.Name = "listboxPhone";
             this.listboxPhone.Size = new System.Drawing.Size(43, 20);
             this.listboxPhone.TabIndex = 17;
@@ -215,7 +215,7 @@
             // 
             this.rbElse.AutoSize = true;
             this.rbElse.Location = new System.Drawing.Point(628, 32);
-            this.rbElse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbElse.Margin = new System.Windows.Forms.Padding(2);
             this.rbElse.Name = "rbElse";
             this.rbElse.Size = new System.Drawing.Size(58, 21);
             this.rbElse.TabIndex = 16;
@@ -227,7 +227,7 @@
             // 
             this.rbNu.AutoSize = true;
             this.rbNu.Location = new System.Drawing.Point(562, 32);
-            this.rbNu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbNu.Margin = new System.Windows.Forms.Padding(2);
             this.rbNu.Name = "rbNu";
             this.rbNu.Size = new System.Drawing.Size(44, 21);
             this.rbNu.TabIndex = 15;
@@ -239,7 +239,7 @@
             // 
             this.rbNam.AutoSize = true;
             this.rbNam.Location = new System.Drawing.Point(478, 32);
-            this.rbNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbNam.Margin = new System.Windows.Forms.Padding(2);
             this.rbNam.Name = "rbNam";
             this.rbNam.Size = new System.Drawing.Size(55, 21);
             this.rbNam.TabIndex = 14;
@@ -260,7 +260,7 @@
             // tbPhone
             // 
             this.tbPhone.Location = new System.Drawing.Point(176, 207);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(2);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(103, 23);
             this.tbPhone.TabIndex = 9;
@@ -268,7 +268,7 @@
             // tbAddKh
             // 
             this.tbAddKh.Location = new System.Drawing.Point(128, 161);
-            this.tbAddKh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAddKh.Margin = new System.Windows.Forms.Padding(2);
             this.tbAddKh.Name = "tbAddKh";
             this.tbAddKh.Size = new System.Drawing.Size(150, 23);
             this.tbAddKh.TabIndex = 8;
@@ -276,7 +276,7 @@
             // dateKH
             // 
             this.dateKH.Location = new System.Drawing.Point(128, 119);
-            this.dateKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateKH.Margin = new System.Windows.Forms.Padding(2);
             this.dateKH.Name = "dateKH";
             this.dateKH.Size = new System.Drawing.Size(151, 23);
             this.dateKH.TabIndex = 7;
@@ -284,7 +284,7 @@
             // tbCodeKh
             // 
             this.tbCodeKh.Location = new System.Drawing.Point(128, 76);
-            this.tbCodeKh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbCodeKh.Margin = new System.Windows.Forms.Padding(2);
             this.tbCodeKh.Name = "tbCodeKh";
             this.tbCodeKh.Size = new System.Drawing.Size(150, 23);
             this.tbCodeKh.TabIndex = 6;
@@ -292,7 +292,7 @@
             // tbNameKh
             // 
             this.tbNameKh.Location = new System.Drawing.Point(128, 33);
-            this.tbNameKh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNameKh.Margin = new System.Windows.Forms.Padding(2);
             this.tbNameKh.Name = "tbNameKh";
             this.tbNameKh.Size = new System.Drawing.Size(151, 23);
             this.tbNameKh.TabIndex = 5;
@@ -352,7 +352,7 @@
             // 
             this.dtgvKhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvKhachhang.Location = new System.Drawing.Point(9, 288);
-            this.dtgvKhachhang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtgvKhachhang.Margin = new System.Windows.Forms.Padding(2);
             this.dtgvKhachhang.Name = "dtgvKhachhang";
             this.dtgvKhachhang.RowTemplate.Height = 24;
             this.dtgvKhachhang.Size = new System.Drawing.Size(908, 280);
@@ -450,7 +450,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dtgvKhachhang);
             this.Controls.Add(this.groupbox_InfoKH);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmKhachhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khách hàng";

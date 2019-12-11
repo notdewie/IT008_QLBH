@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SaleManages.DAO;
+using SaleManages.GUI;
 
 namespace SaleManages
 {
@@ -28,7 +29,7 @@ namespace SaleManages
         {
             string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
-            if (LoginCheck(userName,passWord))
+            /*if (LoginCheck(userName,passWord))
             {
                 SalesManage f = new SalesManage();
                 this.Hide();
@@ -38,7 +39,11 @@ namespace SaleManages
             else
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
-            }
+            }*/
+            SalesManage f = new SalesManage();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
         bool LoginCheck(string userName,string passWord)
         {

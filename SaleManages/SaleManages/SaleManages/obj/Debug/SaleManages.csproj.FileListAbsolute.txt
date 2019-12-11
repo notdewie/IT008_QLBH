@@ -51,3 +51,23 @@ C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\Sal
 C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.exe
 C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.pdb
 C:\Users\THAM MINH DUC\Desktop\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI.frmDanhMuc.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe.config
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.pdb
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csprojAssemblyReference.cache
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI.Form1.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmCreateAcc.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI.frmDanhMuc.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmForgetPass.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmInfoAcc.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmKhachhang.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmNhanvien.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmSanpham.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Login.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmUseTerm.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Properties.Resources.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.SalesManage.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.GenerateResource.cache
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CoreCompileInputs.cache
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.exe
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.pdb

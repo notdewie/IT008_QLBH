@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SaleManages.GUI;
 
 namespace SaleManages
 {
@@ -72,6 +73,13 @@ namespace SaleManages
         private void NhanvienToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmNhanvien f = new frmNhanvien();
+            this.Hide();
+            f.ShowDialog();
+        }
+
+        private void danhMụcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
             this.Hide();
             f.ShowDialog();
         }
