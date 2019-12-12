@@ -31,6 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.dtgvKhachhang = new System.Windows.Forms.DataGridView();
+            this.tbEmailKh = new System.Windows.Forms.TextBox();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rbElse = new System.Windows.Forms.RadioButton();
+            this.rbNu = new System.Windows.Forms.RadioButton();
+            this.rbNam = new System.Windows.Forms.RadioButton();
             this.lbMucdo = new System.Windows.Forms.Label();
             this.lbEmailKh = new System.Windows.Forms.Label();
             this.lbSex = new System.Windows.Forms.Label();
@@ -46,21 +54,9 @@
             this.lbCodeKh = new System.Windows.Forms.Label();
             this.lbNameKh = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
-            this.bunifuTileButton5 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton4 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton2 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
-            this.rbNam = new System.Windows.Forms.RadioButton();
-            this.rbNu = new System.Windows.Forms.RadioButton();
-            this.rbElse = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.tbEmailKh = new System.Windows.Forms.TextBox();
-            this.dtgvKhachhang = new System.Windows.Forms.DataGridView();
+            this.dtgvNhanvien = new System.Windows.Forms.DataGridView();
+            this.dateBegin = new System.Windows.Forms.DateTimePicker();
+            this.lbBeginday = new System.Windows.Forms.Label();
             this.tbEmailNv = new System.Windows.Forms.TextBox();
             this.rbMuc3Nv = new System.Windows.Forms.RadioButton();
             this.rbMuc2Nv = new System.Windows.Forms.RadioButton();
@@ -82,46 +78,50 @@
             this.lbBirthNv = new System.Windows.Forms.Label();
             this.lbCodeNh = new System.Windows.Forms.Label();
             this.lbNameNh = new System.Windows.Forms.Label();
-            this.lbBeginday = new System.Windows.Forms.Label();
-            this.dateBegin = new System.Windows.Forms.DateTimePicker();
-            this.dtgvNhanvien = new System.Windows.Forms.DataGridView();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
+            this.dtgvSanpham = new System.Windows.Forms.DataGridView();
+            this.tbCTKM = new System.Windows.Forms.TextBox();
+            this.tbDonvi = new System.Windows.Forms.TextBox();
+            this.tbPrice = new System.Windows.Forms.TextBox();
+            this.tbNcc = new System.Windows.Forms.TextBox();
+            this.tbHsd = new System.Windows.Forms.DateTimePicker();
+            this.tbDateSp = new System.Windows.Forms.DateTimePicker();
+            this.tbCodeSp = new System.Windows.Forms.TextBox();
+            this.tbNameSp = new System.Windows.Forms.TextBox();
+            this.lbSaleoff = new System.Windows.Forms.Label();
+            this.lbDonvi = new System.Windows.Forms.Label();
+            this.lbPrice = new System.Windows.Forms.Label();
             this.lbHsdSp = new System.Windows.Forms.Label();
             this.lbNcc = new System.Windows.Forms.Label();
             this.lbDateSp = new System.Windows.Forms.Label();
             this.lbCodeSp = new System.Windows.Forms.Label();
             this.lbNameSp = new System.Windows.Forms.Label();
-            this.lbSaleoff = new System.Windows.Forms.Label();
-            this.lbDonvi = new System.Windows.Forms.Label();
-            this.lbPrice = new System.Windows.Forms.Label();
-            this.tbNameSp = new System.Windows.Forms.TextBox();
-            this.tbCodeSp = new System.Windows.Forms.TextBox();
-            this.tbDateSp = new System.Windows.Forms.DateTimePicker();
-            this.tbHsd = new System.Windows.Forms.DateTimePicker();
-            this.tbPrice = new System.Windows.Forms.TextBox();
-            this.tbNcc = new System.Windows.Forms.TextBox();
-            this.tbCTKM = new System.Windows.Forms.TextBox();
-            this.tbDonvi = new System.Windows.Forms.TextBox();
-            this.dtgvSanpham = new System.Windows.Forms.DataGridView();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.btnView = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnFind = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnEra = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnFix = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAdd = new Bunifu.Framework.UI.BunifuTileButton();
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xuấtHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tùyChọnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.điềuKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ngônNgữToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiếngViệtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiếngAnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.điềuKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinỨngDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xuấtHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.metroTabPage2.SuspendLayout();
-            this.metroTabPage3.SuspendLayout();
-            this.metroPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachhang)).BeginInit();
+            this.metroTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanvien)).BeginInit();
+            this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).BeginInit();
+            this.metroPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +134,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage2);
             this.metroTabControl1.Controls.Add(this.metroTabPage3);
             this.metroTabControl1.Location = new System.Drawing.Point(148, 43);
-            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabControl1.Multiline = true;
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 2;
@@ -168,16 +168,114 @@
             this.metroTabPage1.Controls.Add(this.lbNameKh);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 10;
+            this.metroTabPage1.HorizontalScrollbarSize = 7;
             this.metroTabPage1.Location = new System.Drawing.Point(8, 41);
-            this.metroTabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(1190, 687);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Khách Hàng";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 14;
+            this.metroTabPage1.VerticalScrollbarSize = 12;
+            // 
+            // dtgvKhachhang
+            // 
+            this.dtgvKhachhang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvKhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvKhachhang.Location = new System.Drawing.Point(45, 320);
+            this.dtgvKhachhang.Name = "dtgvKhachhang";
+            this.dtgvKhachhang.RowTemplate.Height = 33;
+            this.dtgvKhachhang.Size = new System.Drawing.Size(1050, 343);
+            this.dtgvKhachhang.TabIndex = 61;
+            // 
+            // tbEmailKh
+            // 
+            this.tbEmailKh.Location = new System.Drawing.Point(675, 62);
+            this.tbEmailKh.Margin = new System.Windows.Forms.Padding(4);
+            this.tbEmailKh.Name = "tbEmailKh";
+            this.tbEmailKh.Size = new System.Drawing.Size(253, 43);
+            this.tbEmailKh.TabIndex = 59;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.BackColor = System.Drawing.Color.White;
+            this.radioButton6.Location = new System.Drawing.Point(930, 247);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(62, 41);
+            this.radioButton6.TabIndex = 58;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "3";
+            this.radioButton6.UseVisualStyleBackColor = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.BackColor = System.Drawing.Color.White;
+            this.radioButton5.Location = new System.Drawing.Point(803, 247);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(62, 41);
+            this.radioButton5.TabIndex = 57;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "2";
+            this.radioButton5.UseVisualStyleBackColor = false;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.Color.White;
+            this.radioButton4.Location = new System.Drawing.Point(675, 247);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(58, 41);
+            this.radioButton4.TabIndex = 56;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "1";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            // 
+            // rbElse
+            // 
+            this.rbElse.AutoSize = true;
+            this.rbElse.BackColor = System.Drawing.Color.White;
+            this.rbElse.Location = new System.Drawing.Point(930, 185);
+            this.rbElse.Margin = new System.Windows.Forms.Padding(4);
+            this.rbElse.Name = "rbElse";
+            this.rbElse.Size = new System.Drawing.Size(101, 41);
+            this.rbElse.TabIndex = 55;
+            this.rbElse.TabStop = true;
+            this.rbElse.Text = "Khác";
+            this.rbElse.UseVisualStyleBackColor = false;
+            // 
+            // rbNu
+            // 
+            this.rbNu.AutoSize = true;
+            this.rbNu.BackColor = System.Drawing.Color.White;
+            this.rbNu.Location = new System.Drawing.Point(803, 185);
+            this.rbNu.Margin = new System.Windows.Forms.Padding(4);
+            this.rbNu.Name = "rbNu";
+            this.rbNu.Size = new System.Drawing.Size(82, 41);
+            this.rbNu.TabIndex = 54;
+            this.rbNu.TabStop = true;
+            this.rbNu.Text = "Nữ";
+            this.rbNu.UseVisualStyleBackColor = false;
+            // 
+            // rbNam
+            // 
+            this.rbNam.AutoSize = true;
+            this.rbNam.BackColor = System.Drawing.Color.White;
+            this.rbNam.Location = new System.Drawing.Point(675, 185);
+            this.rbNam.Margin = new System.Windows.Forms.Padding(4);
+            this.rbNam.Name = "rbNam";
+            this.rbNam.Size = new System.Drawing.Size(102, 41);
+            this.rbNam.TabIndex = 53;
+            this.rbNam.TabStop = true;
+            this.rbNam.Text = "Nam";
+            this.rbNam.UseVisualStyleBackColor = false;
             // 
             // lbMucdo
             // 
@@ -219,7 +317,7 @@
             // 
             this.listboxPhone.FormattingEnabled = true;
             this.listboxPhone.Location = new System.Drawing.Point(675, 123);
-            this.listboxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listboxPhone.Margin = new System.Windows.Forms.Padding(4);
             this.listboxPhone.Name = "listboxPhone";
             this.listboxPhone.Size = new System.Drawing.Size(70, 45);
             this.listboxPhone.TabIndex = 49;
@@ -227,7 +325,7 @@
             // dateKh
             // 
             this.dateKh.Location = new System.Drawing.Point(153, 185);
-            this.dateKh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateKh.Margin = new System.Windows.Forms.Padding(4);
             this.dateKh.Name = "dateKh";
             this.dateKh.Size = new System.Drawing.Size(253, 43);
             this.dateKh.TabIndex = 48;
@@ -235,7 +333,7 @@
             // tbPhone
             // 
             this.tbPhone.Location = new System.Drawing.Point(754, 123);
-            this.tbPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPhone.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(175, 43);
             this.tbPhone.TabIndex = 47;
@@ -243,7 +341,7 @@
             // tbAddKh
             // 
             this.tbAddKh.Location = new System.Drawing.Point(153, 249);
-            this.tbAddKh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbAddKh.Margin = new System.Windows.Forms.Padding(4);
             this.tbAddKh.Name = "tbAddKh";
             this.tbAddKh.Size = new System.Drawing.Size(253, 43);
             this.tbAddKh.TabIndex = 46;
@@ -251,7 +349,7 @@
             // tbCodeKh
             // 
             this.tbCodeKh.Location = new System.Drawing.Point(153, 120);
-            this.tbCodeKh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCodeKh.Margin = new System.Windows.Forms.Padding(4);
             this.tbCodeKh.Name = "tbCodeKh";
             this.tbCodeKh.Size = new System.Drawing.Size(253, 43);
             this.tbCodeKh.TabIndex = 45;
@@ -259,7 +357,7 @@
             // tbNameKh
             // 
             this.tbNameKh.Location = new System.Drawing.Point(153, 62);
-            this.tbNameKh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNameKh.Margin = new System.Windows.Forms.Padding(4);
             this.tbNameKh.Name = "tbNameKh";
             this.tbNameKh.Size = new System.Drawing.Size(253, 43);
             this.tbNameKh.TabIndex = 44;
@@ -352,262 +450,45 @@
             this.metroTabPage2.Controls.Add(this.lbNameNh);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
+            this.metroTabPage2.HorizontalScrollbarSize = 7;
             this.metroTabPage2.Location = new System.Drawing.Point(8, 41);
-            this.metroTabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(1190, 687);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Nhân Viên";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 14;
+            this.metroTabPage2.VerticalScrollbarSize = 12;
             // 
-            // metroTabPage3
+            // dtgvNhanvien
             // 
-            this.metroTabPage3.Controls.Add(this.dtgvSanpham);
-            this.metroTabPage3.Controls.Add(this.tbCTKM);
-            this.metroTabPage3.Controls.Add(this.tbDonvi);
-            this.metroTabPage3.Controls.Add(this.tbPrice);
-            this.metroTabPage3.Controls.Add(this.tbNcc);
-            this.metroTabPage3.Controls.Add(this.tbHsd);
-            this.metroTabPage3.Controls.Add(this.tbDateSp);
-            this.metroTabPage3.Controls.Add(this.tbCodeSp);
-            this.metroTabPage3.Controls.Add(this.tbNameSp);
-            this.metroTabPage3.Controls.Add(this.lbSaleoff);
-            this.metroTabPage3.Controls.Add(this.lbDonvi);
-            this.metroTabPage3.Controls.Add(this.lbPrice);
-            this.metroTabPage3.Controls.Add(this.lbHsdSp);
-            this.metroTabPage3.Controls.Add(this.lbNcc);
-            this.metroTabPage3.Controls.Add(this.lbDateSp);
-            this.metroTabPage3.Controls.Add(this.lbCodeSp);
-            this.metroTabPage3.Controls.Add(this.lbNameSp);
-            this.metroTabPage3.HorizontalScrollbarBarColor = true;
-            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 10;
-            this.metroTabPage3.Location = new System.Drawing.Point(8, 41);
-            this.metroTabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1190, 687);
-            this.metroTabPage3.TabIndex = 2;
-            this.metroTabPage3.Text = "Sản Phẩm";
-            this.metroTabPage3.VerticalScrollbarBarColor = true;
-            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 14;
+            this.dtgvNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvNhanvien.Location = new System.Drawing.Point(45, 383);
+            this.dtgvNhanvien.Name = "dtgvNhanvien";
+            this.dtgvNhanvien.RowTemplate.Height = 33;
+            this.dtgvNhanvien.Size = new System.Drawing.Size(1050, 280);
+            this.dtgvNhanvien.TabIndex = 83;
             // 
-            // metroPanel1
+            // dateBegin
             // 
-            this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.metroPanel1.Controls.Add(this.bunifuTileButton5);
-            this.metroPanel1.Controls.Add(this.bunifuTileButton4);
-            this.metroPanel1.Controls.Add(this.bunifuTileButton3);
-            this.metroPanel1.Controls.Add(this.bunifuTileButton2);
-            this.metroPanel1.Controls.Add(this.bunifuTileButton1);
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 12;
-            this.metroPanel1.Location = new System.Drawing.Point(0, 43);
-            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(140, 736);
-            this.metroPanel1.TabIndex = 3;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 13;
+            this.dateBegin.Location = new System.Drawing.Point(153, 250);
+            this.dateBegin.Margin = new System.Windows.Forms.Padding(4);
+            this.dateBegin.Name = "dateBegin";
+            this.dateBegin.Size = new System.Drawing.Size(253, 43);
+            this.dateBegin.TabIndex = 82;
             // 
-            // bunifuTileButton5
+            // lbBeginday
             // 
-            this.bunifuTileButton5.BackColor = System.Drawing.Color.White;
-            this.bunifuTileButton5.color = System.Drawing.Color.White;
-            this.bunifuTileButton5.colorActive = System.Drawing.Color.LightSkyBlue;
-            this.bunifuTileButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton5.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton5.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTileButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton5.Image")));
-            this.bunifuTileButton5.ImagePosition = 12;
-            this.bunifuTileButton5.ImageZoom = 35;
-            this.bunifuTileButton5.LabelPosition = 25;
-            this.bunifuTileButton5.LabelText = "Xem";
-            this.bunifuTileButton5.Location = new System.Drawing.Point(20, 545);
-            this.bunifuTileButton5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.bunifuTileButton5.Name = "bunifuTileButton5";
-            this.bunifuTileButton5.Size = new System.Drawing.Size(100, 100);
-            this.bunifuTileButton5.TabIndex = 35;
-            // 
-            // bunifuTileButton4
-            // 
-            this.bunifuTileButton4.BackColor = System.Drawing.Color.White;
-            this.bunifuTileButton4.color = System.Drawing.Color.White;
-            this.bunifuTileButton4.colorActive = System.Drawing.Color.LightSkyBlue;
-            this.bunifuTileButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton4.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTileButton4.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton4.Image")));
-            this.bunifuTileButton4.ImagePosition = 12;
-            this.bunifuTileButton4.ImageZoom = 35;
-            this.bunifuTileButton4.LabelPosition = 25;
-            this.bunifuTileButton4.LabelText = "Tìm";
-            this.bunifuTileButton4.Location = new System.Drawing.Point(20, 410);
-            this.bunifuTileButton4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.bunifuTileButton4.Name = "bunifuTileButton4";
-            this.bunifuTileButton4.Size = new System.Drawing.Size(100, 100);
-            this.bunifuTileButton4.TabIndex = 34;
-            // 
-            // bunifuTileButton3
-            // 
-            this.bunifuTileButton3.BackColor = System.Drawing.Color.White;
-            this.bunifuTileButton3.color = System.Drawing.Color.White;
-            this.bunifuTileButton3.colorActive = System.Drawing.Color.LightSkyBlue;
-            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton3.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton3.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTileButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton3.Image")));
-            this.bunifuTileButton3.ImagePosition = 12;
-            this.bunifuTileButton3.ImageZoom = 35;
-            this.bunifuTileButton3.LabelPosition = 25;
-            this.bunifuTileButton3.LabelText = "Xóa";
-            this.bunifuTileButton3.Location = new System.Drawing.Point(20, 275);
-            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.bunifuTileButton3.Name = "bunifuTileButton3";
-            this.bunifuTileButton3.Size = new System.Drawing.Size(100, 100);
-            this.bunifuTileButton3.TabIndex = 33;
-            // 
-            // bunifuTileButton2
-            // 
-            this.bunifuTileButton2.BackColor = System.Drawing.Color.White;
-            this.bunifuTileButton2.color = System.Drawing.Color.White;
-            this.bunifuTileButton2.colorActive = System.Drawing.Color.LightSkyBlue;
-            this.bunifuTileButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton2.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton2.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTileButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton2.Image")));
-            this.bunifuTileButton2.ImagePosition = 12;
-            this.bunifuTileButton2.ImageZoom = 35;
-            this.bunifuTileButton2.LabelPosition = 25;
-            this.bunifuTileButton2.LabelText = "Sửa";
-            this.bunifuTileButton2.Location = new System.Drawing.Point(20, 140);
-            this.bunifuTileButton2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.bunifuTileButton2.Name = "bunifuTileButton2";
-            this.bunifuTileButton2.Size = new System.Drawing.Size(100, 100);
-            this.bunifuTileButton2.TabIndex = 32;
-            // 
-            // bunifuTileButton1
-            // 
-            this.bunifuTileButton1.BackColor = System.Drawing.Color.White;
-            this.bunifuTileButton1.color = System.Drawing.Color.White;
-            this.bunifuTileButton1.colorActive = System.Drawing.Color.LightSkyBlue;
-            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton1.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTileButton1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
-            this.bunifuTileButton1.ImagePosition = 12;
-            this.bunifuTileButton1.ImageZoom = 35;
-            this.bunifuTileButton1.LabelPosition = 25;
-            this.bunifuTileButton1.LabelText = "Thêm";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(20, 5);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(100, 100);
-            this.bunifuTileButton1.TabIndex = 31;
-            // 
-            // rbNam
-            // 
-            this.rbNam.AutoSize = true;
-            this.rbNam.BackColor = System.Drawing.Color.White;
-            this.rbNam.Location = new System.Drawing.Point(675, 185);
-            this.rbNam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(102, 41);
-            this.rbNam.TabIndex = 53;
-            this.rbNam.TabStop = true;
-            this.rbNam.Text = "Nam";
-            this.rbNam.UseVisualStyleBackColor = false;
-            // 
-            // rbNu
-            // 
-            this.rbNu.AutoSize = true;
-            this.rbNu.BackColor = System.Drawing.Color.White;
-            this.rbNu.Location = new System.Drawing.Point(803, 185);
-            this.rbNu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rbNu.Name = "rbNu";
-            this.rbNu.Size = new System.Drawing.Size(82, 41);
-            this.rbNu.TabIndex = 54;
-            this.rbNu.TabStop = true;
-            this.rbNu.Text = "Nữ";
-            this.rbNu.UseVisualStyleBackColor = false;
-            // 
-            // rbElse
-            // 
-            this.rbElse.AutoSize = true;
-            this.rbElse.BackColor = System.Drawing.Color.White;
-            this.rbElse.Location = new System.Drawing.Point(930, 185);
-            this.rbElse.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rbElse.Name = "rbElse";
-            this.rbElse.Size = new System.Drawing.Size(101, 41);
-            this.rbElse.TabIndex = 55;
-            this.rbElse.TabStop = true;
-            this.rbElse.Text = "Khác";
-            this.rbElse.UseVisualStyleBackColor = false;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(675, 247);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 41);
-            this.radioButton4.TabIndex = 56;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "1";
-            this.radioButton4.UseVisualStyleBackColor = false;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackColor = System.Drawing.Color.White;
-            this.radioButton5.Location = new System.Drawing.Point(803, 247);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(62, 41);
-            this.radioButton5.TabIndex = 57;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "2";
-            this.radioButton5.UseVisualStyleBackColor = false;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.BackColor = System.Drawing.Color.White;
-            this.radioButton6.Location = new System.Drawing.Point(930, 247);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(62, 41);
-            this.radioButton6.TabIndex = 58;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "3";
-            this.radioButton6.UseVisualStyleBackColor = false;
-            // 
-            // tbEmailKh
-            // 
-            this.tbEmailKh.Location = new System.Drawing.Point(675, 62);
-            this.tbEmailKh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbEmailKh.Name = "tbEmailKh";
-            this.tbEmailKh.Size = new System.Drawing.Size(253, 43);
-            this.tbEmailKh.TabIndex = 59;
-            // 
-            // dtgvKhachhang
-            // 
-            this.dtgvKhachhang.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgvKhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvKhachhang.Location = new System.Drawing.Point(45, 320);
-            this.dtgvKhachhang.Name = "dtgvKhachhang";
-            this.dtgvKhachhang.RowTemplate.Height = 33;
-            this.dtgvKhachhang.Size = new System.Drawing.Size(1050, 343);
-            this.dtgvKhachhang.TabIndex = 61;
+            this.lbBeginday.AutoSize = true;
+            this.lbBeginday.BackColor = System.Drawing.Color.White;
+            this.lbBeginday.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBeginday.Location = new System.Drawing.Point(38, 252);
+            this.lbBeginday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbBeginday.Name = "lbBeginday";
+            this.lbBeginday.Size = new System.Drawing.Size(187, 37);
+            this.lbBeginday.TabIndex = 81;
+            this.lbBeginday.Text = "Ngày Vào Làm:";
             // 
             // tbEmailNv
             // 
@@ -840,34 +721,135 @@
             this.lbNameNh.TabIndex = 60;
             this.lbNameNh.Text = "Họ Tên:";
             // 
-            // lbBeginday
+            // metroTabPage3
             // 
-            this.lbBeginday.AutoSize = true;
-            this.lbBeginday.BackColor = System.Drawing.Color.White;
-            this.lbBeginday.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBeginday.Location = new System.Drawing.Point(38, 252);
-            this.lbBeginday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbBeginday.Name = "lbBeginday";
-            this.lbBeginday.Size = new System.Drawing.Size(187, 37);
-            this.lbBeginday.TabIndex = 81;
-            this.lbBeginday.Text = "Ngày Vào Làm:";
+            this.metroTabPage3.Controls.Add(this.dtgvSanpham);
+            this.metroTabPage3.Controls.Add(this.tbCTKM);
+            this.metroTabPage3.Controls.Add(this.tbDonvi);
+            this.metroTabPage3.Controls.Add(this.tbPrice);
+            this.metroTabPage3.Controls.Add(this.tbNcc);
+            this.metroTabPage3.Controls.Add(this.tbHsd);
+            this.metroTabPage3.Controls.Add(this.tbDateSp);
+            this.metroTabPage3.Controls.Add(this.tbCodeSp);
+            this.metroTabPage3.Controls.Add(this.tbNameSp);
+            this.metroTabPage3.Controls.Add(this.lbSaleoff);
+            this.metroTabPage3.Controls.Add(this.lbDonvi);
+            this.metroTabPage3.Controls.Add(this.lbPrice);
+            this.metroTabPage3.Controls.Add(this.lbHsdSp);
+            this.metroTabPage3.Controls.Add(this.lbNcc);
+            this.metroTabPage3.Controls.Add(this.lbDateSp);
+            this.metroTabPage3.Controls.Add(this.lbCodeSp);
+            this.metroTabPage3.Controls.Add(this.lbNameSp);
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 7;
+            this.metroTabPage3.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "Sản Phẩm";
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 12;
             // 
-            // dateBegin
+            // dtgvSanpham
             // 
-            this.dateBegin.Location = new System.Drawing.Point(153, 250);
-            this.dateBegin.Margin = new System.Windows.Forms.Padding(4);
-            this.dateBegin.Name = "dateBegin";
-            this.dateBegin.Size = new System.Drawing.Size(253, 43);
-            this.dateBegin.TabIndex = 82;
+            this.dtgvSanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvSanpham.Location = new System.Drawing.Point(45, 324);
+            this.dtgvSanpham.Name = "dtgvSanpham";
+            this.dtgvSanpham.RowTemplate.Height = 33;
+            this.dtgvSanpham.Size = new System.Drawing.Size(1050, 280);
+            this.dtgvSanpham.TabIndex = 46;
             // 
-            // dtgvNhanvien
+            // tbCTKM
             // 
-            this.dtgvNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvNhanvien.Location = new System.Drawing.Point(45, 383);
-            this.dtgvNhanvien.Name = "dtgvNhanvien";
-            this.dtgvNhanvien.RowTemplate.Height = 33;
-            this.dtgvNhanvien.Size = new System.Drawing.Size(1050, 280);
-            this.dtgvNhanvien.TabIndex = 83;
+            this.tbCTKM.Location = new System.Drawing.Point(675, 245);
+            this.tbCTKM.Name = "tbCTKM";
+            this.tbCTKM.Size = new System.Drawing.Size(253, 43);
+            this.tbCTKM.TabIndex = 45;
+            // 
+            // tbDonvi
+            // 
+            this.tbDonvi.Location = new System.Drawing.Point(675, 184);
+            this.tbDonvi.Name = "tbDonvi";
+            this.tbDonvi.Size = new System.Drawing.Size(253, 43);
+            this.tbDonvi.TabIndex = 44;
+            // 
+            // tbPrice
+            // 
+            this.tbPrice.Location = new System.Drawing.Point(675, 123);
+            this.tbPrice.Name = "tbPrice";
+            this.tbPrice.Size = new System.Drawing.Size(253, 43);
+            this.tbPrice.TabIndex = 43;
+            // 
+            // tbNcc
+            // 
+            this.tbNcc.Location = new System.Drawing.Point(675, 62);
+            this.tbNcc.Name = "tbNcc";
+            this.tbNcc.Size = new System.Drawing.Size(253, 43);
+            this.tbNcc.TabIndex = 42;
+            // 
+            // tbHsd
+            // 
+            this.tbHsd.Location = new System.Drawing.Point(153, 245);
+            this.tbHsd.Name = "tbHsd";
+            this.tbHsd.Size = new System.Drawing.Size(253, 43);
+            this.tbHsd.TabIndex = 41;
+            // 
+            // tbDateSp
+            // 
+            this.tbDateSp.Location = new System.Drawing.Point(153, 184);
+            this.tbDateSp.Name = "tbDateSp";
+            this.tbDateSp.Size = new System.Drawing.Size(253, 43);
+            this.tbDateSp.TabIndex = 40;
+            // 
+            // tbCodeSp
+            // 
+            this.tbCodeSp.Location = new System.Drawing.Point(153, 123);
+            this.tbCodeSp.Name = "tbCodeSp";
+            this.tbCodeSp.Size = new System.Drawing.Size(253, 43);
+            this.tbCodeSp.TabIndex = 39;
+            // 
+            // tbNameSp
+            // 
+            this.tbNameSp.Location = new System.Drawing.Point(153, 62);
+            this.tbNameSp.Name = "tbNameSp";
+            this.tbNameSp.Size = new System.Drawing.Size(253, 43);
+            this.tbNameSp.TabIndex = 38;
+            // 
+            // lbSaleoff
+            // 
+            this.lbSaleoff.AutoSize = true;
+            this.lbSaleoff.BackColor = System.Drawing.Color.White;
+            this.lbSaleoff.Location = new System.Drawing.Point(573, 245);
+            this.lbSaleoff.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSaleoff.Name = "lbSaleoff";
+            this.lbSaleoff.Size = new System.Drawing.Size(90, 37);
+            this.lbSaleoff.TabIndex = 37;
+            this.lbSaleoff.Text = "CTKM:";
+            // 
+            // lbDonvi
+            // 
+            this.lbDonvi.AutoSize = true;
+            this.lbDonvi.BackColor = System.Drawing.Color.White;
+            this.lbDonvi.Location = new System.Drawing.Point(573, 184);
+            this.lbDonvi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDonvi.Name = "lbDonvi";
+            this.lbDonvi.Size = new System.Drawing.Size(95, 37);
+            this.lbDonvi.TabIndex = 36;
+            this.lbDonvi.Text = "Đơn vị:";
+            // 
+            // lbPrice
+            // 
+            this.lbPrice.AutoSize = true;
+            this.lbPrice.BackColor = System.Drawing.Color.White;
+            this.lbPrice.Location = new System.Drawing.Point(573, 123);
+            this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPrice.Name = "lbPrice";
+            this.lbPrice.Size = new System.Drawing.Size(130, 37);
+            this.lbPrice.TabIndex = 35;
+            this.lbPrice.Text = "Giá thành:";
             // 
             // lbHsdSp
             // 
@@ -924,103 +906,121 @@
             this.lbNameSp.TabIndex = 30;
             this.lbNameSp.Text = "Tên sản phẩm:";
             // 
-            // lbSaleoff
+            // metroPanel1
             // 
-            this.lbSaleoff.AutoSize = true;
-            this.lbSaleoff.BackColor = System.Drawing.Color.White;
-            this.lbSaleoff.Location = new System.Drawing.Point(573, 245);
-            this.lbSaleoff.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbSaleoff.Name = "lbSaleoff";
-            this.lbSaleoff.Size = new System.Drawing.Size(90, 37);
-            this.lbSaleoff.TabIndex = 37;
-            this.lbSaleoff.Text = "CTKM:";
+            this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.metroPanel1.Controls.Add(this.btnView);
+            this.metroPanel1.Controls.Add(this.btnFind);
+            this.metroPanel1.Controls.Add(this.btnEra);
+            this.metroPanel1.Controls.Add(this.btnFix);
+            this.metroPanel1.Controls.Add(this.btnAdd);
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 12;
+            this.metroPanel1.Location = new System.Drawing.Point(0, 43);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(140, 736);
+            this.metroPanel1.TabIndex = 3;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 13;
             // 
-            // lbDonvi
+            // btnView
             // 
-            this.lbDonvi.AutoSize = true;
-            this.lbDonvi.BackColor = System.Drawing.Color.White;
-            this.lbDonvi.Location = new System.Drawing.Point(573, 184);
-            this.lbDonvi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbDonvi.Name = "lbDonvi";
-            this.lbDonvi.Size = new System.Drawing.Size(95, 37);
-            this.lbDonvi.TabIndex = 36;
-            this.lbDonvi.Text = "Đơn vị:";
+            this.btnView.BackColor = System.Drawing.Color.White;
+            this.btnView.color = System.Drawing.Color.White;
+            this.btnView.colorActive = System.Drawing.Color.LightSkyBlue;
+            this.btnView.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnView.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.Black;
+            this.btnView.Image = ((System.Drawing.Image)(resources.GetObject("btnView.Image")));
+            this.btnView.ImagePosition = 12;
+            this.btnView.ImageZoom = 35;
+            this.btnView.LabelPosition = 25;
+            this.btnView.LabelText = "Xem";
+            this.btnView.Location = new System.Drawing.Point(20, 545);
+            this.btnView.Margin = new System.Windows.Forms.Padding(6);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(100, 100);
+            this.btnView.TabIndex = 35;
             // 
-            // lbPrice
+            // btnFind
             // 
-            this.lbPrice.AutoSize = true;
-            this.lbPrice.BackColor = System.Drawing.Color.White;
-            this.lbPrice.Location = new System.Drawing.Point(573, 123);
-            this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(130, 37);
-            this.lbPrice.TabIndex = 35;
-            this.lbPrice.Text = "Giá thành:";
+            this.btnFind.BackColor = System.Drawing.Color.White;
+            this.btnFind.color = System.Drawing.Color.White;
+            this.btnFind.colorActive = System.Drawing.Color.LightSkyBlue;
+            this.btnFind.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFind.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFind.ForeColor = System.Drawing.Color.Black;
+            this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
+            this.btnFind.ImagePosition = 12;
+            this.btnFind.ImageZoom = 35;
+            this.btnFind.LabelPosition = 25;
+            this.btnFind.LabelText = "Tìm";
+            this.btnFind.Location = new System.Drawing.Point(20, 410);
+            this.btnFind.Margin = new System.Windows.Forms.Padding(6);
+            this.btnFind.Name = "btnFind";
+            this.btnFind.Size = new System.Drawing.Size(100, 100);
+            this.btnFind.TabIndex = 34;
             // 
-            // tbNameSp
+            // btnEra
             // 
-            this.tbNameSp.Location = new System.Drawing.Point(153, 62);
-            this.tbNameSp.Name = "tbNameSp";
-            this.tbNameSp.Size = new System.Drawing.Size(253, 43);
-            this.tbNameSp.TabIndex = 38;
+            this.btnEra.BackColor = System.Drawing.Color.White;
+            this.btnEra.color = System.Drawing.Color.White;
+            this.btnEra.colorActive = System.Drawing.Color.LightSkyBlue;
+            this.btnEra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEra.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEra.ForeColor = System.Drawing.Color.Black;
+            this.btnEra.Image = ((System.Drawing.Image)(resources.GetObject("btnEra.Image")));
+            this.btnEra.ImagePosition = 12;
+            this.btnEra.ImageZoom = 35;
+            this.btnEra.LabelPosition = 25;
+            this.btnEra.LabelText = "Xóa";
+            this.btnEra.Location = new System.Drawing.Point(20, 275);
+            this.btnEra.Margin = new System.Windows.Forms.Padding(6);
+            this.btnEra.Name = "btnEra";
+            this.btnEra.Size = new System.Drawing.Size(100, 100);
+            this.btnEra.TabIndex = 33;
             // 
-            // tbCodeSp
+            // btnFix
             // 
-            this.tbCodeSp.Location = new System.Drawing.Point(153, 123);
-            this.tbCodeSp.Name = "tbCodeSp";
-            this.tbCodeSp.Size = new System.Drawing.Size(253, 43);
-            this.tbCodeSp.TabIndex = 39;
+            this.btnFix.BackColor = System.Drawing.Color.White;
+            this.btnFix.color = System.Drawing.Color.White;
+            this.btnFix.colorActive = System.Drawing.Color.LightSkyBlue;
+            this.btnFix.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFix.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFix.ForeColor = System.Drawing.Color.Black;
+            this.btnFix.Image = ((System.Drawing.Image)(resources.GetObject("btnFix.Image")));
+            this.btnFix.ImagePosition = 12;
+            this.btnFix.ImageZoom = 35;
+            this.btnFix.LabelPosition = 25;
+            this.btnFix.LabelText = "Sửa";
+            this.btnFix.Location = new System.Drawing.Point(20, 140);
+            this.btnFix.Margin = new System.Windows.Forms.Padding(6);
+            this.btnFix.Name = "btnFix";
+            this.btnFix.Size = new System.Drawing.Size(100, 100);
+            this.btnFix.TabIndex = 32;
             // 
-            // tbDateSp
+            // btnAdd
             // 
-            this.tbDateSp.Location = new System.Drawing.Point(153, 184);
-            this.tbDateSp.Name = "tbDateSp";
-            this.tbDateSp.Size = new System.Drawing.Size(253, 43);
-            this.tbDateSp.TabIndex = 40;
-            // 
-            // tbHsd
-            // 
-            this.tbHsd.Location = new System.Drawing.Point(153, 245);
-            this.tbHsd.Name = "tbHsd";
-            this.tbHsd.Size = new System.Drawing.Size(253, 43);
-            this.tbHsd.TabIndex = 41;
-            // 
-            // tbPrice
-            // 
-            this.tbPrice.Location = new System.Drawing.Point(675, 123);
-            this.tbPrice.Name = "tbPrice";
-            this.tbPrice.Size = new System.Drawing.Size(253, 43);
-            this.tbPrice.TabIndex = 43;
-            // 
-            // tbNcc
-            // 
-            this.tbNcc.Location = new System.Drawing.Point(675, 62);
-            this.tbNcc.Name = "tbNcc";
-            this.tbNcc.Size = new System.Drawing.Size(253, 43);
-            this.tbNcc.TabIndex = 42;
-            // 
-            // tbCTKM
-            // 
-            this.tbCTKM.Location = new System.Drawing.Point(675, 245);
-            this.tbCTKM.Name = "tbCTKM";
-            this.tbCTKM.Size = new System.Drawing.Size(253, 43);
-            this.tbCTKM.TabIndex = 45;
-            // 
-            // tbDonvi
-            // 
-            this.tbDonvi.Location = new System.Drawing.Point(675, 184);
-            this.tbDonvi.Name = "tbDonvi";
-            this.tbDonvi.Size = new System.Drawing.Size(253, 43);
-            this.tbDonvi.TabIndex = 44;
-            // 
-            // dtgvSanpham
-            // 
-            this.dtgvSanpham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvSanpham.Location = new System.Drawing.Point(45, 324);
-            this.dtgvSanpham.Name = "dtgvSanpham";
-            this.dtgvSanpham.RowTemplate.Height = 33;
-            this.dtgvSanpham.Size = new System.Drawing.Size(1050, 280);
-            this.dtgvSanpham.TabIndex = 46;
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.color = System.Drawing.Color.White;
+            this.btnAdd.colorActive = System.Drawing.Color.LightSkyBlue;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.Black;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
+            this.btnAdd.ImagePosition = 12;
+            this.btnAdd.ImageZoom = 35;
+            this.btnAdd.LabelPosition = 25;
+            this.btnAdd.LabelText = "Thêm";
+            this.btnAdd.Location = new System.Drawing.Point(20, 5);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 100);
+            this.btnAdd.TabIndex = 31;
             // 
             // backToolStripMenuItem
             // 
@@ -1030,6 +1030,20 @@
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
             this.backToolStripMenuItem.Size = new System.Drawing.Size(126, 36);
             this.backToolStripMenuItem.Text = "Hệ Thống";
+            // 
+            // xuấtHóaĐơnToolStripMenuItem
+            // 
+            this.xuấtHóaĐơnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inToolStripMenuItem});
+            this.xuấtHóaĐơnToolStripMenuItem.Name = "xuấtHóaĐơnToolStripMenuItem";
+            this.xuấtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(204, 38);
+            this.xuấtHóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
+            // 
+            // inToolStripMenuItem
+            // 
+            this.inToolStripMenuItem.Name = "inToolStripMenuItem";
+            this.inToolStripMenuItem.Size = new System.Drawing.Size(132, 38);
+            this.inToolStripMenuItem.Text = "In";
             // 
             // tàiKhoảnToolStripMenuItem
             // 
@@ -1047,6 +1061,27 @@
             this.tùyChọnToolStripMenuItem.Size = new System.Drawing.Size(121, 36);
             this.tùyChọnToolStripMenuItem.Text = "Tùy Chọn";
             // 
+            // ngônNgữToolStripMenuItem
+            // 
+            this.ngônNgữToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tiếngViệtToolStripMenuItem,
+            this.tiếngAnhToolStripMenuItem});
+            this.ngônNgữToolStripMenuItem.Name = "ngônNgữToolStripMenuItem";
+            this.ngônNgữToolStripMenuItem.Size = new System.Drawing.Size(220, 38);
+            this.ngônNgữToolStripMenuItem.Text = "Ngôn Ngữ";
+            // 
+            // tiếngViệtToolStripMenuItem
+            // 
+            this.tiếngViệtToolStripMenuItem.Name = "tiếngViệtToolStripMenuItem";
+            this.tiếngViệtToolStripMenuItem.Size = new System.Drawing.Size(217, 38);
+            this.tiếngViệtToolStripMenuItem.Text = "Tiếng Việt";
+            // 
+            // tiếngAnhToolStripMenuItem
+            // 
+            this.tiếngAnhToolStripMenuItem.Name = "tiếngAnhToolStripMenuItem";
+            this.tiếngAnhToolStripMenuItem.Size = new System.Drawing.Size(217, 38);
+            this.tiếngAnhToolStripMenuItem.Text = "Tiếng Anh";
+            // 
             // windowToolStripMenuItem
             // 
             this.windowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1056,6 +1091,18 @@
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
             this.windowToolStripMenuItem.Size = new System.Drawing.Size(128, 36);
             this.windowToolStripMenuItem.Text = "Thông Tin";
+            // 
+            // điềuKhoảnToolStripMenuItem
+            // 
+            this.điềuKhoảnToolStripMenuItem.Name = "điềuKhoảnToolStripMenuItem";
+            this.điềuKhoảnToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
+            this.điềuKhoảnToolStripMenuItem.Text = "Điều Khoản";
+            // 
+            // thôngTinỨngDụngToolStripMenuItem
+            // 
+            this.thôngTinỨngDụngToolStripMenuItem.Name = "thôngTinỨngDụngToolStripMenuItem";
+            this.thôngTinỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
+            this.thôngTinỨngDụngToolStripMenuItem.Text = "Thông Tin Ứng Dụng";
             // 
             // menuStrip1
             // 
@@ -1072,53 +1119,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(1354, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // điềuKhoảnToolStripMenuItem
-            // 
-            this.điềuKhoảnToolStripMenuItem.Name = "điềuKhoảnToolStripMenuItem";
-            this.điềuKhoảnToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
-            this.điềuKhoảnToolStripMenuItem.Text = "Điều Khoản";
-            // 
-            // ngônNgữToolStripMenuItem
-            // 
-            this.ngônNgữToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tiếngViệtToolStripMenuItem,
-            this.tiếngAnhToolStripMenuItem});
-            this.ngônNgữToolStripMenuItem.Name = "ngônNgữToolStripMenuItem";
-            this.ngônNgữToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
-            this.ngônNgữToolStripMenuItem.Text = "Ngôn Ngữ";
-            // 
-            // tiếngViệtToolStripMenuItem
-            // 
-            this.tiếngViệtToolStripMenuItem.Name = "tiếngViệtToolStripMenuItem";
-            this.tiếngViệtToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
-            this.tiếngViệtToolStripMenuItem.Text = "Tiếng Việt";
-            // 
-            // tiếngAnhToolStripMenuItem
-            // 
-            this.tiếngAnhToolStripMenuItem.Name = "tiếngAnhToolStripMenuItem";
-            this.tiếngAnhToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
-            this.tiếngAnhToolStripMenuItem.Text = "Tiếng Anh";
-            // 
-            // thôngTinỨngDụngToolStripMenuItem
-            // 
-            this.thôngTinỨngDụngToolStripMenuItem.Name = "thôngTinỨngDụngToolStripMenuItem";
-            this.thôngTinỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
-            this.thôngTinỨngDụngToolStripMenuItem.Text = "Thông Tin Ứng Dụng";
-            // 
-            // xuấtHóaĐơnToolStripMenuItem
-            // 
-            this.xuấtHóaĐơnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inToolStripMenuItem});
-            this.xuấtHóaĐơnToolStripMenuItem.Name = "xuấtHóaĐơnToolStripMenuItem";
-            this.xuấtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
-            this.xuấtHóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
-            // 
-            // inToolStripMenuItem
-            // 
-            this.inToolStripMenuItem.Name = "inToolStripMenuItem";
-            this.inToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
-            this.inToolStripMenuItem.Text = "In";
             // 
             // Form3
             // 
@@ -1139,14 +1139,14 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachhang)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanvien)).EndInit();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
-            this.metroPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachhang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanvien)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).EndInit();
+            this.metroPanel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -1160,11 +1160,11 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage2;
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
         private MetroFramework.Controls.MetroPanel metroPanel1;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton5;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton4;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton2;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        private Bunifu.Framework.UI.BunifuTileButton btnView;
+        private Bunifu.Framework.UI.BunifuTileButton btnFind;
+        private Bunifu.Framework.UI.BunifuTileButton btnEra;
+        private Bunifu.Framework.UI.BunifuTileButton btnFix;
+        private Bunifu.Framework.UI.BunifuTileButton btnAdd;
         private System.Windows.Forms.ComboBox listboxPhone;
         private System.Windows.Forms.DateTimePicker dateKh;
         private System.Windows.Forms.TextBox tbPhone;

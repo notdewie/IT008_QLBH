@@ -18,8 +18,8 @@ namespace SaleManages
         {
             InitializeComponent();
             this.MouseDown += Login_MouseDown;
-            Form3 form2;
-            form2 = new Form3();
+            _frmLogin form2;
+            form2 = new _frmLogin();
             form2.Show();
         }
 

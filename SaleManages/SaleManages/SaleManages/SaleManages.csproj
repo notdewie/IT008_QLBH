@@ -61,17 +61,20 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DTO\PlaceHolder.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="GUI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Form3.cs">
+    <Compile Include="GUI\_frm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="GUI\_frm.Designer.cs">
+      <DependentUpon>_frm.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmCreateAcc.cs">
       <SubType>Form</SubType>
@@ -127,6 +130,36 @@
     <Compile Include="GUI\frmUseTerm.Designer.cs">
       <DependentUpon>frmUseTerm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\_frmChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmChangePass.Designer.cs">
+      <DependentUpon>_frmChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\_frmCreateAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmCreateAcc.Designer.cs">
+      <DependentUpon>_frmCreateAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\_frmInfoAcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmInfoAcc.Designer.cs">
+      <DependentUpon>_frmInfoAcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\_frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmLogin.Designer.cs">
+      <DependentUpon>_frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\_frmUseTerm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmUseTerm.Designer.cs">
+      <DependentUpon>_frmUseTerm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GUI\frmSalesManage.cs">
@@ -138,8 +171,8 @@
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\_frm.resx">
+      <DependentUpon>_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmCreateAcc.resx">
       <DependentUpon>frmCreateAcc.cs</DependentUpon>
@@ -167,6 +200,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmUseTerm.resx">
       <DependentUpon>frmUseTerm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmChangePass.resx">
+      <DependentUpon>_frmChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmCreateAcc.resx">
+      <DependentUpon>_frmCreateAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmInfoAcc.resx">
+      <DependentUpon>_frmInfoAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmLogin.resx">
+      <DependentUpon>_frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmUseTerm.resx">
+      <DependentUpon>_frmUseTerm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -201,8 +249,6 @@
   <ItemGroup>
     <None Include="Resources\Account.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
