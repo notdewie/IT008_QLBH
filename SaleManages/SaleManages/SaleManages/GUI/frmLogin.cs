@@ -43,10 +43,7 @@ namespace SaleManages
             {
                 MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
             }*/
-            SalesManage f = new SalesManage();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+           
         }
         bool LoginCheck(string userName,string passWord)
         {
@@ -96,10 +93,10 @@ namespace SaleManages
 
         private void lbReg_Click(object sender, EventArgs e)
         {
-            frmCreateAcc f = new frmCreateAcc();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            //frmCreateAcc f = new frmCreateAcc();
+            //this.Hide();
+           // f.ShowDialog();
+            //this.Show();
         }
     }
 }

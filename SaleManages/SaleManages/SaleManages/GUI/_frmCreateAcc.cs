@@ -29,6 +29,13 @@ namespace SaleManages.GUI
 
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Đăng ký thành công , chờ quản lý duyệt để đăng nhập .", "Thông báo ", MessageBoxButtons.OK);
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
            
         }
     }
