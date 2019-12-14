@@ -63,11 +63,13 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\ObjEmployeesDAO.cs" />
     <Compile Include="DAO\ObjCustomerDAO.cs" />
+    <Compile Include="DAO\ObjProductDAO.cs" />
     <Compile Include="DTO\ObjEmployees.cs" />
     <Compile Include="DTO\ObjCustomer.cs" />
     <Compile Include="DTO\PlaceHolder.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="DTO\ObjProduct.cs" />
     <Compile Include="GUI\_frmSaleManages.cs">
       <SubType>Form</SubType>
     </Compile>

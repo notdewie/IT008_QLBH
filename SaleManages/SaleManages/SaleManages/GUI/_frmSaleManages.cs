@@ -33,7 +33,7 @@ namespace SaleManages.GUI
             }
             else
             {
-                MessageBox.Show("tabpage 3");
+                ObjProductDAO.Instance.Add();
             }
         }
         int CheckTabPage()
@@ -71,10 +71,9 @@ namespace SaleManages.GUI
             }
             else 
             {
-                string query = "SELECT MASP AS N'Mã Sản Phẩm',TENSP AS N'Tên Sản Phẩm'," +
-                    "DVT AS N'Đơn Vị Tính',NSX AS N'Nước Sản Xuất',NCC AS N'Nhà Cung Cấp'," +
-                    "GIA AS N'Giá',CTKM AS N'Khuyến Mãi' FROM SANPHAM";
-                dtgvSanpham.DataSource = DataProvider.Instance.ExecuteQuery(query);
+                dtgvSanpham.DataSource = ObjProductDAO.Instance.LoadProductData();
+                ObjProductDAO.Instance.Bindings();
+                
             }
         }
 
@@ -96,7 +95,7 @@ namespace SaleManages.GUI
             }
             else
             {
-                
+                ObjProductDAO.Instance.Delete();
             }
         }
 
@@ -113,7 +112,7 @@ namespace SaleManages.GUI
             }
             else
             {
-
+                ObjProductDAO.Instance.Update();
             }
         }
 
@@ -130,6 +129,11 @@ namespace SaleManages.GUI
         private void dtgvNhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             ObjEmployeesDAO.Instance.Bindings();
+        }
+
+        private void _frmSalesManage_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
