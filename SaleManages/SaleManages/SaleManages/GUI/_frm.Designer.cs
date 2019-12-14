@@ -1,6 +1,6 @@
 ﻿namespace SaleManages.GUI
 {
-    partial class _frm
+    partial class Form3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_frm));
-            this.tabPage = new MetroFramework.Controls.MetroTabControl();
-            this.tabKh = new MetroFramework.Controls.MetroTabPage();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.dtgvKhachhang = new System.Windows.Forms.DataGridView();
             this.tbEmailKh = new System.Windows.Forms.TextBox();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
@@ -53,7 +53,7 @@
             this.lbBirth = new System.Windows.Forms.Label();
             this.lbCodeKh = new System.Windows.Forms.Label();
             this.lbNameKh = new System.Windows.Forms.Label();
-            this.tabNv = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.dtgvNhanvien = new System.Windows.Forms.DataGridView();
             this.dateBegin = new System.Windows.Forms.DateTimePicker();
             this.lbBeginday = new System.Windows.Forms.Label();
@@ -78,7 +78,7 @@
             this.lbBirthNv = new System.Windows.Forms.Label();
             this.lbCodeNh = new System.Windows.Forms.Label();
             this.lbNameNh = new System.Windows.Forms.Label();
-            this.tabSp = new MetroFramework.Controls.MetroTabPage();
+            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.dtgvSanpham = new System.Windows.Forms.DataGridView();
             this.tbCTKM = new System.Windows.Forms.TextBox();
             this.tbDonvi = new System.Windows.Forms.TextBox();
@@ -102,84 +102,82 @@
             this.btnEra = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnFix = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnAdd = new Bunifu.Framework.UI.BunifuTileButton();
-            this.iSystem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iBill = new System.Windows.Forms.ToolStripMenuItem();
-            this.iPrint = new System.Windows.Forms.ToolStripMenuItem();
-            this.iAccount = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnLogout = new System.Windows.Forms.ToolStripMenuItem();
-            this.iSelection = new System.Windows.Forms.ToolStripMenuItem();
-            this.iLanguage = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnVi = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnEn = new System.Windows.Forms.ToolStripMenuItem();
-            this.iInfomation = new System.Windows.Forms.ToolStripMenuItem();
-            this.iTerm = new System.Windows.Forms.ToolStripMenuItem();
-            this.iInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xuấtHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tùyChọnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ngônNgữToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiếngViệtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiếngAnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.điềuKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinỨngDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btnInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage.SuspendLayout();
-            this.tabKh.SuspendLayout();
+            this.metroTabControl1.SuspendLayout();
+            this.metroTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachhang)).BeginInit();
-            this.tabNv.SuspendLayout();
+            this.metroTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanvien)).BeginInit();
-            this.tabSp.SuspendLayout();
+            this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage
+            // metroTabControl1
             // 
-            this.tabPage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.metroTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabPage.Controls.Add(this.tabKh);
-            this.tabPage.Controls.Add(this.tabNv);
-            this.tabPage.Controls.Add(this.tabSp);
-            this.tabPage.Location = new System.Drawing.Point(148, 43);
-            this.tabPage.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage.Multiline = true;
-            this.tabPage.Name = "tabPage";
-            this.tabPage.SelectedIndex = 0;
-            this.tabPage.Size = new System.Drawing.Size(1206, 736);
-            this.tabPage.TabIndex = 2;
-            this.tabPage.UseSelectable = true;
+            this.metroTabControl1.Controls.Add(this.metroTabPage1);
+            this.metroTabControl1.Controls.Add(this.metroTabPage2);
+            this.metroTabControl1.Controls.Add(this.metroTabPage3);
+            this.metroTabControl1.Location = new System.Drawing.Point(148, 43);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTabControl1.Multiline = true;
+            this.metroTabControl1.Name = "metroTabControl1";
+            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.Size = new System.Drawing.Size(1206, 736);
+            this.metroTabControl1.TabIndex = 2;
+            this.metroTabControl1.UseSelectable = true;
             // 
-            // tabKh
+            // metroTabPage1
             // 
-            this.tabKh.Controls.Add(this.dtgvKhachhang);
-            this.tabKh.Controls.Add(this.tbEmailKh);
-            this.tabKh.Controls.Add(this.radioButton6);
-            this.tabKh.Controls.Add(this.radioButton5);
-            this.tabKh.Controls.Add(this.radioButton4);
-            this.tabKh.Controls.Add(this.rbElse);
-            this.tabKh.Controls.Add(this.rbNu);
-            this.tabKh.Controls.Add(this.rbNam);
-            this.tabKh.Controls.Add(this.lbMucdo);
-            this.tabKh.Controls.Add(this.lbEmailKh);
-            this.tabKh.Controls.Add(this.lbSex);
-            this.tabKh.Controls.Add(this.listboxPhone);
-            this.tabKh.Controls.Add(this.dateKh);
-            this.tabKh.Controls.Add(this.tbPhone);
-            this.tabKh.Controls.Add(this.tbAddKh);
-            this.tabKh.Controls.Add(this.tbCodeKh);
-            this.tabKh.Controls.Add(this.tbNameKh);
-            this.tabKh.Controls.Add(this.lbPhone);
-            this.tabKh.Controls.Add(this.lbAddKh);
-            this.tabKh.Controls.Add(this.lbBirth);
-            this.tabKh.Controls.Add(this.lbCodeKh);
-            this.tabKh.Controls.Add(this.lbNameKh);
-            this.tabKh.HorizontalScrollbarBarColor = true;
-            this.tabKh.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabKh.HorizontalScrollbarSize = 1;
-            this.tabKh.Location = new System.Drawing.Point(8, 41);
-            this.tabKh.Margin = new System.Windows.Forms.Padding(4);
-            this.tabKh.Name = "tabKh";
-            this.tabKh.Size = new System.Drawing.Size(1190, 687);
-            this.tabKh.TabIndex = 0;
-            this.tabKh.Text = "Khách Hàng";
-            this.tabKh.VerticalScrollbarBarColor = true;
-            this.tabKh.VerticalScrollbarHighlightOnWheel = false;
-            this.tabKh.VerticalScrollbarSize = 6;
+            this.metroTabPage1.Controls.Add(this.dtgvKhachhang);
+            this.metroTabPage1.Controls.Add(this.tbEmailKh);
+            this.metroTabPage1.Controls.Add(this.radioButton6);
+            this.metroTabPage1.Controls.Add(this.radioButton5);
+            this.metroTabPage1.Controls.Add(this.radioButton4);
+            this.metroTabPage1.Controls.Add(this.rbElse);
+            this.metroTabPage1.Controls.Add(this.rbNu);
+            this.metroTabPage1.Controls.Add(this.rbNam);
+            this.metroTabPage1.Controls.Add(this.lbMucdo);
+            this.metroTabPage1.Controls.Add(this.lbEmailKh);
+            this.metroTabPage1.Controls.Add(this.lbSex);
+            this.metroTabPage1.Controls.Add(this.listboxPhone);
+            this.metroTabPage1.Controls.Add(this.dateKh);
+            this.metroTabPage1.Controls.Add(this.tbPhone);
+            this.metroTabPage1.Controls.Add(this.tbAddKh);
+            this.metroTabPage1.Controls.Add(this.tbCodeKh);
+            this.metroTabPage1.Controls.Add(this.tbNameKh);
+            this.metroTabPage1.Controls.Add(this.lbPhone);
+            this.metroTabPage1.Controls.Add(this.lbAddKh);
+            this.metroTabPage1.Controls.Add(this.lbBirth);
+            this.metroTabPage1.Controls.Add(this.lbCodeKh);
+            this.metroTabPage1.Controls.Add(this.lbNameKh);
+            this.metroTabPage1.HorizontalScrollbarBarColor = true;
+            this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.HorizontalScrollbarSize = 7;
+            this.metroTabPage1.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTabPage1.Name = "metroTabPage1";
+            this.metroTabPage1.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage1.TabIndex = 0;
+            this.metroTabPage1.Text = "Khách Hàng";
+            this.metroTabPage1.VerticalScrollbarBarColor = true;
+            this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage1.VerticalScrollbarSize = 12;
             // 
             // dtgvKhachhang
             // 
@@ -369,7 +367,7 @@
             this.lbPhone.AutoSize = true;
             this.lbPhone.BackColor = System.Drawing.Color.White;
             this.lbPhone.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPhone.Location = new System.Drawing.Point(573, 120);
+            this.lbPhone.Location = new System.Drawing.Point(573, 123);
             this.lbPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhone.Name = "lbPhone";
             this.lbPhone.Size = new System.Drawing.Size(68, 37);
@@ -424,44 +422,44 @@
             this.lbNameKh.TabIndex = 39;
             this.lbNameKh.Text = "Họ Tên:";
             // 
-            // tabNv
+            // metroTabPage2
             // 
-            this.tabNv.Controls.Add(this.dtgvNhanvien);
-            this.tabNv.Controls.Add(this.dateBegin);
-            this.tabNv.Controls.Add(this.lbBeginday);
-            this.tabNv.Controls.Add(this.tbEmailNv);
-            this.tabNv.Controls.Add(this.rbMuc3Nv);
-            this.tabNv.Controls.Add(this.rbMuc2Nv);
-            this.tabNv.Controls.Add(this.rbMuc1Nv);
-            this.tabNv.Controls.Add(this.rbElseNv);
-            this.tabNv.Controls.Add(this.rbNuNv);
-            this.tabNv.Controls.Add(this.rbNamNv);
-            this.tabNv.Controls.Add(this.lbMucdoNv);
-            this.tabNv.Controls.Add(this.lbEmailNv);
-            this.tabNv.Controls.Add(this.lbSexNv);
-            this.tabNv.Controls.Add(this.listboxPhoneNv);
-            this.tabNv.Controls.Add(this.dateNv);
-            this.tabNv.Controls.Add(this.tbPhoneNv);
-            this.tabNv.Controls.Add(this.tbAddNv);
-            this.tabNv.Controls.Add(this.tbCodeNv);
-            this.tabNv.Controls.Add(this.tbNameNv);
-            this.tabNv.Controls.Add(this.lbPhoneNv);
-            this.tabNv.Controls.Add(this.lbAddNv);
-            this.tabNv.Controls.Add(this.lbBirthNv);
-            this.tabNv.Controls.Add(this.lbCodeNh);
-            this.tabNv.Controls.Add(this.lbNameNh);
-            this.tabNv.HorizontalScrollbarBarColor = true;
-            this.tabNv.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabNv.HorizontalScrollbarSize = 1;
-            this.tabNv.Location = new System.Drawing.Point(8, 41);
-            this.tabNv.Margin = new System.Windows.Forms.Padding(4);
-            this.tabNv.Name = "tabNv";
-            this.tabNv.Size = new System.Drawing.Size(1190, 687);
-            this.tabNv.TabIndex = 1;
-            this.tabNv.Text = "Nhân Viên";
-            this.tabNv.VerticalScrollbarBarColor = true;
-            this.tabNv.VerticalScrollbarHighlightOnWheel = false;
-            this.tabNv.VerticalScrollbarSize = 6;
+            this.metroTabPage2.Controls.Add(this.dtgvNhanvien);
+            this.metroTabPage2.Controls.Add(this.dateBegin);
+            this.metroTabPage2.Controls.Add(this.lbBeginday);
+            this.metroTabPage2.Controls.Add(this.tbEmailNv);
+            this.metroTabPage2.Controls.Add(this.rbMuc3Nv);
+            this.metroTabPage2.Controls.Add(this.rbMuc2Nv);
+            this.metroTabPage2.Controls.Add(this.rbMuc1Nv);
+            this.metroTabPage2.Controls.Add(this.rbElseNv);
+            this.metroTabPage2.Controls.Add(this.rbNuNv);
+            this.metroTabPage2.Controls.Add(this.rbNamNv);
+            this.metroTabPage2.Controls.Add(this.lbMucdoNv);
+            this.metroTabPage2.Controls.Add(this.lbEmailNv);
+            this.metroTabPage2.Controls.Add(this.lbSexNv);
+            this.metroTabPage2.Controls.Add(this.listboxPhoneNv);
+            this.metroTabPage2.Controls.Add(this.dateNv);
+            this.metroTabPage2.Controls.Add(this.tbPhoneNv);
+            this.metroTabPage2.Controls.Add(this.tbAddNv);
+            this.metroTabPage2.Controls.Add(this.tbCodeNv);
+            this.metroTabPage2.Controls.Add(this.tbNameNv);
+            this.metroTabPage2.Controls.Add(this.lbPhoneNv);
+            this.metroTabPage2.Controls.Add(this.lbAddNv);
+            this.metroTabPage2.Controls.Add(this.lbBirthNv);
+            this.metroTabPage2.Controls.Add(this.lbCodeNh);
+            this.metroTabPage2.Controls.Add(this.lbNameNh);
+            this.metroTabPage2.HorizontalScrollbarBarColor = true;
+            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.HorizontalScrollbarSize = 7;
+            this.metroTabPage2.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTabPage2.Name = "metroTabPage2";
+            this.metroTabPage2.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage2.TabIndex = 1;
+            this.metroTabPage2.Text = "Nhân Viên";
+            this.metroTabPage2.VerticalScrollbarBarColor = true;
+            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage2.VerticalScrollbarSize = 12;
             // 
             // dtgvNhanvien
             // 
@@ -723,37 +721,37 @@
             this.lbNameNh.TabIndex = 60;
             this.lbNameNh.Text = "Họ Tên:";
             // 
-            // tabSp
+            // metroTabPage3
             // 
-            this.tabSp.Controls.Add(this.dtgvSanpham);
-            this.tabSp.Controls.Add(this.tbCTKM);
-            this.tabSp.Controls.Add(this.tbDonvi);
-            this.tabSp.Controls.Add(this.tbPrice);
-            this.tabSp.Controls.Add(this.tbNcc);
-            this.tabSp.Controls.Add(this.tbHsd);
-            this.tabSp.Controls.Add(this.tbDateSp);
-            this.tabSp.Controls.Add(this.tbCodeSp);
-            this.tabSp.Controls.Add(this.tbNameSp);
-            this.tabSp.Controls.Add(this.lbSaleoff);
-            this.tabSp.Controls.Add(this.lbDonvi);
-            this.tabSp.Controls.Add(this.lbPrice);
-            this.tabSp.Controls.Add(this.lbHsdSp);
-            this.tabSp.Controls.Add(this.lbNcc);
-            this.tabSp.Controls.Add(this.lbDateSp);
-            this.tabSp.Controls.Add(this.lbCodeSp);
-            this.tabSp.Controls.Add(this.lbNameSp);
-            this.tabSp.HorizontalScrollbarBarColor = true;
-            this.tabSp.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabSp.HorizontalScrollbarSize = 1;
-            this.tabSp.Location = new System.Drawing.Point(8, 41);
-            this.tabSp.Margin = new System.Windows.Forms.Padding(4);
-            this.tabSp.Name = "tabSp";
-            this.tabSp.Size = new System.Drawing.Size(1190, 687);
-            this.tabSp.TabIndex = 2;
-            this.tabSp.Text = "Sản Phẩm";
-            this.tabSp.VerticalScrollbarBarColor = true;
-            this.tabSp.VerticalScrollbarHighlightOnWheel = false;
-            this.tabSp.VerticalScrollbarSize = 6;
+            this.metroTabPage3.Controls.Add(this.dtgvSanpham);
+            this.metroTabPage3.Controls.Add(this.tbCTKM);
+            this.metroTabPage3.Controls.Add(this.tbDonvi);
+            this.metroTabPage3.Controls.Add(this.tbPrice);
+            this.metroTabPage3.Controls.Add(this.tbNcc);
+            this.metroTabPage3.Controls.Add(this.tbHsd);
+            this.metroTabPage3.Controls.Add(this.tbDateSp);
+            this.metroTabPage3.Controls.Add(this.tbCodeSp);
+            this.metroTabPage3.Controls.Add(this.tbNameSp);
+            this.metroTabPage3.Controls.Add(this.lbSaleoff);
+            this.metroTabPage3.Controls.Add(this.lbDonvi);
+            this.metroTabPage3.Controls.Add(this.lbPrice);
+            this.metroTabPage3.Controls.Add(this.lbHsdSp);
+            this.metroTabPage3.Controls.Add(this.lbNcc);
+            this.metroTabPage3.Controls.Add(this.lbDateSp);
+            this.metroTabPage3.Controls.Add(this.lbCodeSp);
+            this.metroTabPage3.Controls.Add(this.lbNameSp);
+            this.metroTabPage3.HorizontalScrollbarBarColor = true;
+            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.HorizontalScrollbarSize = 7;
+            this.metroTabPage3.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.metroTabPage3.Name = "metroTabPage3";
+            this.metroTabPage3.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage3.TabIndex = 2;
+            this.metroTabPage3.Text = "Sản Phẩm";
+            this.metroTabPage3.VerticalScrollbarBarColor = true;
+            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
+            this.metroTabPage3.VerticalScrollbarSize = 12;
             // 
             // dtgvSanpham
             // 
@@ -838,9 +836,9 @@
             this.lbDonvi.Location = new System.Drawing.Point(573, 184);
             this.lbDonvi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDonvi.Name = "lbDonvi";
-            this.lbDonvi.Size = new System.Drawing.Size(99, 37);
+            this.lbDonvi.Size = new System.Drawing.Size(95, 37);
             this.lbDonvi.TabIndex = 36;
-            this.lbDonvi.Text = "Đơn Vị:";
+            this.lbDonvi.Text = "Đơn vị:";
             // 
             // lbPrice
             // 
@@ -849,9 +847,9 @@
             this.lbPrice.Location = new System.Drawing.Point(573, 123);
             this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(136, 37);
+            this.lbPrice.Size = new System.Drawing.Size(130, 37);
             this.lbPrice.TabIndex = 35;
-            this.lbPrice.Text = "Giá Thành:";
+            this.lbPrice.Text = "Giá thành:";
             // 
             // lbHsdSp
             // 
@@ -893,9 +891,9 @@
             this.lbCodeSp.Location = new System.Drawing.Point(38, 123);
             this.lbCodeSp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCodeSp.Name = "lbCodeSp";
-            this.lbCodeSp.Size = new System.Drawing.Size(176, 37);
+            this.lbCodeSp.Size = new System.Drawing.Size(173, 37);
             this.lbCodeSp.TabIndex = 31;
-            this.lbCodeSp.Text = "Mã Sản Phẩm:";
+            this.lbCodeSp.Text = "Mã sản phẩm:";
             // 
             // lbNameSp
             // 
@@ -904,9 +902,9 @@
             this.lbNameSp.Location = new System.Drawing.Point(38, 62);
             this.lbNameSp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNameSp.Name = "lbNameSp";
-            this.lbNameSp.Size = new System.Drawing.Size(179, 37);
+            this.lbNameSp.Size = new System.Drawing.Size(176, 37);
             this.lbNameSp.TabIndex = 30;
-            this.lbNameSp.Text = "Tên Sản Phẩm:";
+            this.lbNameSp.Text = "Tên sản phẩm:";
             // 
             // metroPanel1
             // 
@@ -1024,149 +1022,129 @@
             this.btnAdd.Size = new System.Drawing.Size(100, 100);
             this.btnAdd.TabIndex = 31;
             // 
-            // iSystem
+            // backToolStripMenuItem
             // 
-            this.iSystem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iBill});
-            this.iSystem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iSystem.Name = "iSystem";
-            this.iSystem.Size = new System.Drawing.Size(126, 38);
-            this.iSystem.Text = "Hệ Thống";
+            this.backToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.xuấtHóaĐơnToolStripMenuItem});
+            this.backToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backToolStripMenuItem.Name = "backToolStripMenuItem";
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(126, 36);
+            this.backToolStripMenuItem.Text = "Hệ Thống";
             // 
-            // iBill
+            // xuấtHóaĐơnToolStripMenuItem
             // 
-            this.iBill.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iPrint});
-            this.iBill.Name = "iBill";
-            this.iBill.Size = new System.Drawing.Size(204, 38);
-            this.iBill.Text = "Hóa Đơn";
+            this.xuấtHóaĐơnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inToolStripMenuItem});
+            this.xuấtHóaĐơnToolStripMenuItem.Name = "xuấtHóaĐơnToolStripMenuItem";
+            this.xuấtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(204, 38);
+            this.xuấtHóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
             // 
-            // iPrint
+            // inToolStripMenuItem
             // 
-            this.iPrint.Name = "iPrint";
-            this.iPrint.Size = new System.Drawing.Size(132, 38);
-            this.iPrint.Text = "In";
+            this.inToolStripMenuItem.Name = "inToolStripMenuItem";
+            this.inToolStripMenuItem.Size = new System.Drawing.Size(132, 38);
+            this.inToolStripMenuItem.Text = "In";
             // 
-            // iAccount
+            // tàiKhoảnToolStripMenuItem
             // 
-            this.iAccount.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnInfo,
-            this.btnLogout});
-            this.iAccount.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iAccount.Name = "iAccount";
-            this.iAccount.Size = new System.Drawing.Size(123, 38);
-            this.iAccount.Text = "Tài Khoản";
+            this.tàiKhoảnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(123, 36);
+            this.tàiKhoảnToolStripMenuItem.Text = "Tài Khoản";
             // 
-            // btnLogout
+            // tùyChọnToolStripMenuItem
             // 
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(324, 38);
-            this.btnLogout.Text = "Đăng Xuất";
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.tùyChọnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ngônNgữToolStripMenuItem});
+            this.tùyChọnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tùyChọnToolStripMenuItem.Name = "tùyChọnToolStripMenuItem";
+            this.tùyChọnToolStripMenuItem.Size = new System.Drawing.Size(121, 36);
+            this.tùyChọnToolStripMenuItem.Text = "Tùy Chọn";
             // 
-            // iSelection
+            // ngônNgữToolStripMenuItem
             // 
-            this.iSelection.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iLanguage});
-            this.iSelection.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iSelection.Name = "iSelection";
-            this.iSelection.Size = new System.Drawing.Size(121, 38);
-            this.iSelection.Text = "Tùy Chọn";
+            this.ngônNgữToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tiếngViệtToolStripMenuItem,
+            this.tiếngAnhToolStripMenuItem});
+            this.ngônNgữToolStripMenuItem.Name = "ngônNgữToolStripMenuItem";
+            this.ngônNgữToolStripMenuItem.Size = new System.Drawing.Size(220, 38);
+            this.ngônNgữToolStripMenuItem.Text = "Ngôn Ngữ";
             // 
-            // iLanguage
+            // tiếngViệtToolStripMenuItem
             // 
-            this.iLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnVi,
-            this.btnEn});
-            this.iLanguage.Name = "iLanguage";
-            this.iLanguage.Size = new System.Drawing.Size(220, 38);
-            this.iLanguage.Text = "Ngôn Ngữ";
+            this.tiếngViệtToolStripMenuItem.Name = "tiếngViệtToolStripMenuItem";
+            this.tiếngViệtToolStripMenuItem.Size = new System.Drawing.Size(217, 38);
+            this.tiếngViệtToolStripMenuItem.Text = "Tiếng Việt";
             // 
-            // btnVi
+            // tiếngAnhToolStripMenuItem
             // 
-            this.btnVi.Name = "btnVi";
-            this.btnVi.Size = new System.Drawing.Size(217, 38);
-            this.btnVi.Text = "Tiếng Việt";
-            this.btnVi.Click += new System.EventHandler(this.btnVi_Click);
+            this.tiếngAnhToolStripMenuItem.Name = "tiếngAnhToolStripMenuItem";
+            this.tiếngAnhToolStripMenuItem.Size = new System.Drawing.Size(217, 38);
+            this.tiếngAnhToolStripMenuItem.Text = "Tiếng Anh";
             // 
-            // btnEn
+            // windowToolStripMenuItem
             // 
-            this.btnEn.Name = "btnEn";
-            this.btnEn.Size = new System.Drawing.Size(217, 38);
-            this.btnEn.Text = "Tiếng Anh";
-            this.btnEn.Click += new System.EventHandler(this.btnEn_Click);
+            this.windowToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.điềuKhoảnToolStripMenuItem,
+            this.thôngTinỨngDụngToolStripMenuItem});
+            this.windowToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
+            this.windowToolStripMenuItem.Size = new System.Drawing.Size(128, 36);
+            this.windowToolStripMenuItem.Text = "Thông Tin";
             // 
-            // iInfomation
+            // điềuKhoảnToolStripMenuItem
             // 
-            this.iInfomation.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iTerm,
-            this.iInfo});
-            this.iInfomation.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iInfomation.Name = "iInfomation";
-            this.iInfomation.Size = new System.Drawing.Size(128, 38);
-            this.iInfomation.Text = "Thông Tin";
+            this.điềuKhoảnToolStripMenuItem.Name = "điềuKhoảnToolStripMenuItem";
+            this.điềuKhoảnToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
+            this.điềuKhoảnToolStripMenuItem.Text = "Điều Khoản";
             // 
-            // iTerm
+            // thôngTinỨngDụngToolStripMenuItem
             // 
-            this.iTerm.Name = "iTerm";
-            this.iTerm.Size = new System.Drawing.Size(326, 38);
-            this.iTerm.Text = "Điều Khoản";
-            this.iTerm.Click += new System.EventHandler(this.iTerm_Click);
-            // 
-            // iInfo
-            // 
-            this.iInfo.Name = "iInfo";
-            this.iInfo.Size = new System.Drawing.Size(326, 38);
-            this.iInfo.Text = "Thông Tin Ứng Dụng";
+            this.thôngTinỨngDụngToolStripMenuItem.Name = "thôngTinỨngDụngToolStripMenuItem";
+            this.thôngTinỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
+            this.thôngTinỨngDụngToolStripMenuItem.Text = "Thông Tin Ứng Dụng";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iSystem,
-            this.iAccount,
-            this.iSelection,
-            this.iInfomation});
+            this.backToolStripMenuItem,
+            this.tàiKhoảnToolStripMenuItem,
+            this.tùyChọnToolStripMenuItem,
+            this.windowToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1354, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1354, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnInfo
-            // 
-            this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(324, 38);
-            this.btnInfo.Text = "Thông Tin";
-            this.btnInfo.Click += new System.EventHandler(this.btnInfo_Click);
-            // 
-            // _frm
+            // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1354, 792);
             this.Controls.Add(this.metroPanel1);
-            this.Controls.Add(this.tabPage);
+            this.Controls.Add(this.metroTabControl1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "_frm";
+            this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
-            this.tabPage.ResumeLayout(false);
-            this.tabKh.ResumeLayout(false);
-            this.tabKh.PerformLayout();
+            this.metroTabControl1.ResumeLayout(false);
+            this.metroTabPage1.ResumeLayout(false);
+            this.metroTabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachhang)).EndInit();
-            this.tabNv.ResumeLayout(false);
-            this.tabNv.PerformLayout();
+            this.metroTabPage2.ResumeLayout(false);
+            this.metroTabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanvien)).EndInit();
-            this.tabSp.ResumeLayout(false);
-            this.tabSp.PerformLayout();
+            this.metroTabPage3.ResumeLayout(false);
+            this.metroTabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -1177,10 +1155,10 @@
         }
 
         #endregion
-        private MetroFramework.Controls.MetroTabControl tabPage;
-        private MetroFramework.Controls.MetroTabPage tabKh;
-        private MetroFramework.Controls.MetroTabPage tabNv;
-        private MetroFramework.Controls.MetroTabPage tabSp;
+        private MetroFramework.Controls.MetroTabControl metroTabControl1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        private MetroFramework.Controls.MetroTabPage metroTabPage2;
+        private MetroFramework.Controls.MetroTabPage metroTabPage3;
         private MetroFramework.Controls.MetroPanel metroPanel1;
         private Bunifu.Framework.UI.BunifuTileButton btnView;
         private Bunifu.Framework.UI.BunifuTileButton btnFind;
@@ -1197,6 +1175,7 @@
         private System.Windows.Forms.Label lbAddKh;
         private System.Windows.Forms.Label lbBirth;
         private System.Windows.Forms.Label lbCodeKh;
+        private System.Windows.Forms.Label lbNameKh;
         private System.Windows.Forms.Label lbMucdo;
         private System.Windows.Forms.Label lbEmailKh;
         private System.Windows.Forms.Label lbSex;
@@ -1249,20 +1228,17 @@
         private System.Windows.Forms.DateTimePicker tbHsd;
         private System.Windows.Forms.DateTimePicker tbDateSp;
         private System.Windows.Forms.DataGridView dtgvSanpham;
-        private System.Windows.Forms.ToolStripMenuItem iSystem;
-        private System.Windows.Forms.ToolStripMenuItem iAccount;
-        private System.Windows.Forms.ToolStripMenuItem iSelection;
-        private System.Windows.Forms.ToolStripMenuItem iLanguage;
-        private System.Windows.Forms.ToolStripMenuItem btnVi;
-        private System.Windows.Forms.ToolStripMenuItem btnEn;
-        private System.Windows.Forms.ToolStripMenuItem iInfomation;
-        private System.Windows.Forms.ToolStripMenuItem iTerm;
+        private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tàiKhoảnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tùyChọnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ngônNgữToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiếngViệtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tiếngAnhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem windowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem điềuKhoảnToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem iBill;
-        private System.Windows.Forms.ToolStripMenuItem iPrint;
-        private System.Windows.Forms.ToolStripMenuItem iInfo;
-        private System.Windows.Forms.ToolStripMenuItem btnLogout;
-        public System.Windows.Forms.Label lbNameKh;
-        private System.Windows.Forms.ToolStripMenuItem btnInfo;
+        private System.Windows.Forms.ToolStripMenuItem xuấtHóaĐơnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem thôngTinỨngDụngToolStripMenuItem;
     }
 }

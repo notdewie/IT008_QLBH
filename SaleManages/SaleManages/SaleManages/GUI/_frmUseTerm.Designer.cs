@@ -30,7 +30,7 @@
         {
             this.rtbUseTerm = new System.Windows.Forms.RichTextBox();
             this.lbUseTerm = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbUseTerm
@@ -55,16 +55,16 @@
             this.lbUseTerm.TabIndex = 1;
             this.lbUseTerm.Text = "Điều khoản sử dụng";
             // 
-            // btnClose
+            // button1
             // 
-            this.btnClose.BackColor = System.Drawing.SystemColors.Control;
-            this.btnClose.Location = new System.Drawing.Point(752, 685);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(6);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(150, 44);
-            this.btnClose.TabIndex = 2;
-            this.btnClose.Text = "Đóng";
-            this.btnClose.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(752, 685);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 44);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Đóng";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // _frmUseTerm
             // 
@@ -72,7 +72,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(968, 752);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lbUseTerm);
             this.Controls.Add(this.rtbUseTerm);
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -87,6 +87,6 @@
 
         private System.Windows.Forms.RichTextBox rtbUseTerm;
         private System.Windows.Forms.Label lbUseTerm;
-        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button button1;
     }
 }

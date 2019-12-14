@@ -1,4 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using SaleManages.DAO;
 using SaleManages.GUI;
@@ -7,13 +14,12 @@ namespace SaleManages
 {
     public partial class Login : Form
     {
-         
         public Login()
         {
             InitializeComponent();
             this.MouseDown += Login_MouseDown;
-            _frm form2;
-            form2 = new _frm();
+            _frmLogin form2;
+            form2 = new _frmLogin();
             form2.Show();
         }
 
