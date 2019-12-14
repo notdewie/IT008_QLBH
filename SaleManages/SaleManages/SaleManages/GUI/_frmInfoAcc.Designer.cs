@@ -74,7 +74,7 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.LightSteelBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Indigo;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(600, 865);
@@ -93,6 +93,7 @@
             this.lbChangePass.TabIndex = 15;
             this.lbChangePass.TabStop = true;
             this.lbChangePass.Text = "Đổi mật khẩu";
+            this.lbChangePass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbChangePass_LinkClicked);
             // 
             // btnAccept
             // 
@@ -119,7 +120,7 @@
             this.btnAccept.IconZoom = 90D;
             this.btnAccept.IsTab = false;
             this.btnAccept.Location = new System.Drawing.Point(168, 713);
-            this.btnAccept.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(12);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAccept.OnHovercolor = System.Drawing.Color.Transparent;
@@ -315,7 +316,7 @@
             this.bunifuTileButton1.LabelPosition = 0;
             this.bunifuTileButton1.LabelText = "";
             this.bunifuTileButton1.Location = new System.Drawing.Point(168, 19);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(12);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
             this.bunifuTileButton1.Size = new System.Drawing.Size(256, 248);
             this.bunifuTileButton1.TabIndex = 0;
@@ -328,7 +329,7 @@
             this.ClientSize = new System.Drawing.Size(600, 865);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "_frmInfoAcc";
             this.Text = "_frmInfoAcc";
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -342,7 +343,6 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
         private System.Windows.Forms.Label lbNameS;
-        private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbSex;
         private System.Windows.Forms.Label lbBirthS;
@@ -356,5 +356,6 @@
         private System.Windows.Forms.Label lbAddress;
         private Bunifu.Framework.UI.BunifuFlatButton btnAccept;
         private System.Windows.Forms.LinkLabel lbChangePass;
+        public System.Windows.Forms.Label lbName;
     }
 }

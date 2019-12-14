@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_frmLogin));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnEn = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnVi = new Bunifu.Framework.UI.BunifuTileButton();
             this.lbReg = new System.Windows.Forms.LinkLabel();
             this.btnExit = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
@@ -39,8 +41,6 @@
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
-            this.btnVi = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnEn = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
@@ -71,11 +71,51 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(600, 900);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
+            // btnEn
+            // 
+            this.btnEn.BackColor = System.Drawing.Color.Transparent;
+            this.btnEn.color = System.Drawing.Color.Transparent;
+            this.btnEn.colorActive = System.Drawing.Color.Transparent;
+            this.btnEn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnEn.ForeColor = System.Drawing.Color.White;
+            this.btnEn.Image = ((System.Drawing.Image)(resources.GetObject("btnEn.Image")));
+            this.btnEn.ImagePosition = 1;
+            this.btnEn.ImageZoom = 80;
+            this.btnEn.LabelPosition = 0;
+            this.btnEn.LabelText = "";
+            this.btnEn.Location = new System.Drawing.Point(524, 6);
+            this.btnEn.Margin = new System.Windows.Forms.Padding(6);
+            this.btnEn.Name = "btnEn";
+            this.btnEn.Size = new System.Drawing.Size(70, 70);
+            this.btnEn.TabIndex = 11;
+            this.btnEn.Click += new System.EventHandler(this.btnEn_Click);
+            // 
+            // btnVi
+            // 
+            this.btnVi.BackColor = System.Drawing.Color.Transparent;
+            this.btnVi.color = System.Drawing.Color.Transparent;
+            this.btnVi.colorActive = System.Drawing.Color.Transparent;
+            this.btnVi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVi.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnVi.ForeColor = System.Drawing.Color.White;
+            this.btnVi.Image = ((System.Drawing.Image)(resources.GetObject("btnVi.Image")));
+            this.btnVi.ImagePosition = 1;
+            this.btnVi.ImageZoom = 100;
+            this.btnVi.LabelPosition = 0;
+            this.btnVi.LabelText = "";
+            this.btnVi.Location = new System.Drawing.Point(452, 0);
+            this.btnVi.Margin = new System.Windows.Forms.Padding(6);
+            this.btnVi.Name = "btnVi";
+            this.btnVi.Size = new System.Drawing.Size(70, 70);
+            this.btnVi.TabIndex = 10;
+            this.btnVi.Click += new System.EventHandler(this.btnVi_Click);
+            // 
             // lbReg
             // 
             this.lbReg.AutoSize = true;
             this.lbReg.BackColor = System.Drawing.Color.Transparent;
-            this.lbReg.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbReg.Font = new System.Drawing.Font("Segoe UI", 10.125F);
             this.lbReg.LinkColor = System.Drawing.Color.White;
             this.lbReg.Location = new System.Drawing.Point(360, 654);
             this.lbReg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -84,6 +124,7 @@
             this.lbReg.TabIndex = 9;
             this.lbReg.TabStop = true;
             this.lbReg.Text = "Đăng ký";
+            this.lbReg.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbReg_LinkClicked);
             // 
             // btnExit
             // 
@@ -103,6 +144,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(120, 73);
             this.btnExit.TabIndex = 8;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // bunifuImageButton1
             // 
@@ -130,7 +172,7 @@
             this.btnLogin.ButtonText = "Đăng Nhập";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold);
             this.btnLogin.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLogin.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogin.Iconimage")));
             this.btnLogin.Iconimage_right = null;
@@ -150,7 +192,7 @@
             this.btnLogin.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.Red;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(228, 73);
+            this.btnLogin.Size = new System.Drawing.Size(262, 73);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Đăng Nhập";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -163,7 +205,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F);
             this.tbPass.Location = new System.Drawing.Point(118, 460);
             this.tbPass.Margin = new System.Windows.Forms.Padding(4);
             this.tbPass.Name = "tbPass";
@@ -177,7 +219,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbPass.AutoSize = true;
             this.lbPass.BackColor = System.Drawing.Color.Transparent;
-            this.lbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F);
             this.lbPass.ForeColor = System.Drawing.Color.White;
             this.lbPass.Location = new System.Drawing.Point(112, 419);
             this.lbPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -192,7 +234,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F);
             this.tbUsername.Location = new System.Drawing.Point(118, 342);
             this.tbUsername.Margin = new System.Windows.Forms.Padding(4);
             this.tbUsername.Name = "tbUsername";
@@ -206,7 +248,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbUsername.AutoSize = true;
             this.lbUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F);
             this.lbUsername.ForeColor = System.Drawing.Color.White;
             this.lbUsername.Location = new System.Drawing.Point(112, 302);
             this.lbUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -222,7 +264,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTitle.AutoSize = true;
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 19.875F);
             this.lbTitle.ForeColor = System.Drawing.Color.White;
             this.lbTitle.Location = new System.Drawing.Point(142, 192);
             this.lbTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -230,44 +272,7 @@
             this.lbTitle.Size = new System.Drawing.Size(298, 71);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Đăng Nhập";
-            // 
-            // btnVi
-            // 
-            this.btnVi.BackColor = System.Drawing.Color.Transparent;
-            this.btnVi.color = System.Drawing.Color.Transparent;
-            this.btnVi.colorActive = System.Drawing.Color.Transparent;
-            this.btnVi.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVi.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnVi.ForeColor = System.Drawing.Color.White;
-            this.btnVi.Image = ((System.Drawing.Image)(resources.GetObject("btnVi.Image")));
-            this.btnVi.ImagePosition = 1;
-            this.btnVi.ImageZoom = 100;
-            this.btnVi.LabelPosition = 0;
-            this.btnVi.LabelText = "";
-            this.btnVi.Location = new System.Drawing.Point(452, 0);
-            this.btnVi.Margin = new System.Windows.Forms.Padding(6);
-            this.btnVi.Name = "btnVi";
-            this.btnVi.Size = new System.Drawing.Size(70, 70);
-            this.btnVi.TabIndex = 10;
-            // 
-            // btnEn
-            // 
-            this.btnEn.BackColor = System.Drawing.Color.Transparent;
-            this.btnEn.color = System.Drawing.Color.Transparent;
-            this.btnEn.colorActive = System.Drawing.Color.Transparent;
-            this.btnEn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEn.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnEn.ForeColor = System.Drawing.Color.White;
-            this.btnEn.Image = ((System.Drawing.Image)(resources.GetObject("btnEn.Image")));
-            this.btnEn.ImagePosition = 1;
-            this.btnEn.ImageZoom = 80;
-            this.btnEn.LabelPosition = 0;
-            this.btnEn.LabelText = "";
-            this.btnEn.Location = new System.Drawing.Point(524, 6);
-            this.btnEn.Margin = new System.Windows.Forms.Padding(6);
-            this.btnEn.Name = "btnEn";
-            this.btnEn.Size = new System.Drawing.Size(70, 70);
-            this.btnEn.TabIndex = 11;
+            this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // _frmLogin
             // 
@@ -289,7 +294,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
-        private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbUsername;
         private Bunifu.Framework.UI.BunifuFlatButton btnLogin;
         private System.Windows.Forms.TextBox tbPass;
@@ -300,5 +304,6 @@
         private Bunifu.Framework.UI.BunifuTileButton btnExit;
         private Bunifu.Framework.UI.BunifuTileButton btnEn;
         private Bunifu.Framework.UI.BunifuTileButton btnVi;
+        public System.Windows.Forms.Label lbTitle;
     }
 }

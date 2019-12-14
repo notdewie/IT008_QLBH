@@ -725,4 +725,7 @@
         Vu+NkQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuGradientPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 54</value>
+  </data>
 </root>

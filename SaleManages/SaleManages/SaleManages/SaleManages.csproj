@@ -168,9 +168,15 @@
     <Compile Include="GUI\frmSalesManage.Designer.cs">
       <DependentUpon>frmSalesManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resources\MyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyResource.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GUI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MyResource.en-US.resx" />
     <EmbeddedResource Include="GUI\_frm.resx">
       <DependentUpon>_frm.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +216,9 @@
     <EmbeddedResource Include="GUI\_frmInfoAcc.resx">
       <DependentUpon>_frmInfoAcc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmLogin.en.resx">
+      <DependentUpon>_frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\_frmLogin.resx">
       <DependentUpon>_frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +238,12 @@
     <EmbeddedResource Include="GUI\frmSalesManage.resx">
       <DependentUpon>frmSalesManage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MyResource.en-US.resx" />
+    <EmbeddedResource Include="Resources\MyResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MyResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MyResource.vi-VN.resx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

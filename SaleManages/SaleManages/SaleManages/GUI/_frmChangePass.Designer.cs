@@ -65,7 +65,7 @@
             // 
             // btnAccept
             // 
-            this.btnAccept.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnAccept.Activecolor = System.Drawing.Color.Transparent;
             this.btnAccept.BackColor = System.Drawing.Color.Transparent;
             this.btnAccept.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAccept.BorderRadius = 0;
@@ -168,11 +168,11 @@
             this.btTitle.BackColor = System.Drawing.Color.Transparent;
             this.btTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTitle.ForeColor = System.Drawing.Color.White;
-            this.btTitle.Location = new System.Drawing.Point(107, 199);
+            this.btTitle.Location = new System.Drawing.Point(80, 199);
             this.btTitle.Name = "btTitle";
-            this.btTitle.Size = new System.Drawing.Size(367, 72);
+            this.btTitle.Size = new System.Drawing.Size(397, 72);
             this.btTitle.TabIndex = 0;
-            this.btTitle.Text = "Đổi Mật Khẩu";
+            this.btTitle.Text = "  Đổi Mật Khẩu";
             // 
             // _frmChangePass
             // 
