@@ -101,3 +101,22 @@ D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\De
 D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmUseTerm.resources
 D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CopyComplete
 D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmSalesManage.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe.config
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.exe
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\SaleManages.pdb
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\MetroFramework.Design.dll
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\MetroFramework.dll
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csprojAssemblyReference.cache
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmSalesManage.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmChangePass.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmCreateAcc.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmInfoAcc.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmLogin.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmUseTerm.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Properties.Resources.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.GenerateResource.cache
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CopyComplete
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.exe
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.pdb

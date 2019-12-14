@@ -37,23 +37,28 @@ namespace SaleManages.GUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string userName = tbUsername.Text;
-            string passWord = tbPass.Text;
-            /*if (LoginCheck(userName,passWord))
-            {
-                SalesManage f = new SalesManage();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
-            }*/
-            _frmSalesManage f = new _frmSalesManage();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
+            ValidateChildren(ValidationConstraints.Enabled);
+            if (!string.IsNullOrEmpty(tbUsername.Text))
+                if (!string.IsNullOrEmpty(tbPass.Text))
+                {
+                    string userName = tbUsername.Text;
+                    string passWord = tbPass.Text;
+                    /*if (LoginCheck(userName,passWord))
+                    {
+                        SalesManage f = new SalesManage();
+                        this.Hide();
+                        f.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
+                    }*/
+                    _frmSalesManage f = new _frmSalesManage();
+                    this.Hide();
+                    f.ShowDialog();
+                    this.Show();
+                }
         }
         bool LoginCheck(string userName, string passWord)
         {
@@ -87,6 +92,34 @@ namespace SaleManages.GUI
             this.Show();
         }
 
-        
+        private void tbUsername_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbUsername.Text))
+            {
+                e.Cancel = true;
+                tbUsername.Focus();
+                epUser.SetError(tbUsername, "Vui lòng điền tên đăng nhập!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epUser.SetError(tbUsername, null);
+            }
+        }
+
+        private void tbPass_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbPass.Text))
+            {
+                e.Cancel = true;
+                tbPass.Focus();
+                epPass.SetError(tbPass, "Vui lòng điền mật khẩu!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epPass.SetError(tbPass, null);
+            }
+        }
     }
 }

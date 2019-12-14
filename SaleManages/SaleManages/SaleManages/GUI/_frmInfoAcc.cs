@@ -16,5 +16,19 @@ namespace SaleManages.GUI
         {
             InitializeComponent();
         }
+
+        private void btnAccept_Click(object sender, EventArgs e)
+        {
+            _frmSalesManage f = new _frmSalesManage();
+            this.Hide();
+            f.ShowDialog();
+        }
+
+        private void lbChangePass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            _frmChangePass f = new _frmChangePass();
+            this.Hide();
+            f.ShowDialog();
+        }
     }
 }
