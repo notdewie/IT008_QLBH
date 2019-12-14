@@ -33,6 +33,11 @@ namespace SaleManages.GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_frmSalesManage));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbMucdo = new System.Windows.Forms.Label();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbSex = new System.Windows.Forms.Label();
             this.rbNam = new System.Windows.Forms.RadioButton();
@@ -40,10 +45,6 @@ namespace SaleManages.GUI
             this.rbElse = new System.Windows.Forms.RadioButton();
             this.dtgvKhachhang = new System.Windows.Forms.DataGridView();
             this.tbEmailKh = new System.Windows.Forms.TextBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.lbMucdo = new System.Windows.Forms.Label();
             this.lbEmailKh = new System.Windows.Forms.Label();
             this.dateKh = new System.Windows.Forms.DateTimePicker();
             this.tbPhone = new System.Windows.Forms.TextBox();
@@ -56,20 +57,21 @@ namespace SaleManages.GUI
             this.lbCodeKh = new System.Windows.Forms.Label();
             this.lbNameKh = new System.Windows.Forms.Label();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rbMuc1 = new System.Windows.Forms.RadioButton();
+            this.rbMuc2 = new System.Windows.Forms.RadioButton();
+            this.rbMuc3 = new System.Windows.Forms.RadioButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.rbNamNV = new System.Windows.Forms.RadioButton();
+            this.rbNuNV = new System.Windows.Forms.RadioButton();
+            this.rbKhacNV = new System.Windows.Forms.RadioButton();
             this.dtgvNhanvien = new System.Windows.Forms.DataGridView();
             this.dateBegin = new System.Windows.Forms.DateTimePicker();
             this.lbBeginday = new System.Windows.Forms.Label();
             this.tbEmailNv = new System.Windows.Forms.TextBox();
-            this.rbMuc3Nv = new System.Windows.Forms.RadioButton();
-            this.rbMuc2Nv = new System.Windows.Forms.RadioButton();
-            this.rbMuc1Nv = new System.Windows.Forms.RadioButton();
-            this.rbElseNv = new System.Windows.Forms.RadioButton();
-            this.rbNuNv = new System.Windows.Forms.RadioButton();
-            this.rbNamNv = new System.Windows.Forms.RadioButton();
-            this.lbMucdoNv = new System.Windows.Forms.Label();
             this.lbEmailNv = new System.Windows.Forms.Label();
-            this.lbSexNv = new System.Windows.Forms.Label();
-            this.listboxPhoneNv = new System.Windows.Forms.ComboBox();
             this.dateNv = new System.Windows.Forms.DateTimePicker();
             this.tbPhoneNv = new System.Windows.Forms.TextBox();
             this.tbAddNv = new System.Windows.Forms.TextBox();
@@ -116,18 +118,19 @@ namespace SaleManages.GUI
             this.điềuKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thôngTinỨngDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachhang)).BeginInit();
             this.metroTabPage2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanvien)).BeginInit();
             this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -142,7 +145,7 @@ namespace SaleManages.GUI
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabControl1.Multiline = true;
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(1206, 736);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
@@ -176,6 +179,70 @@ namespace SaleManages.GUI
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.lbMucdo);
+            this.panel2.Controls.Add(this.radioButton4);
+            this.panel2.Controls.Add(this.radioButton5);
+            this.panel2.Controls.Add(this.radioButton6);
+            this.panel2.Location = new System.Drawing.Point(557, 249);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(407, 41);
+            this.panel2.TabIndex = 63;
+            // 
+            // lbMucdo
+            // 
+            this.lbMucdo.AutoSize = true;
+            this.lbMucdo.BackColor = System.Drawing.Color.White;
+            this.lbMucdo.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMucdo.Location = new System.Drawing.Point(16, 5);
+            this.lbMucdo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMucdo.Name = "lbMucdo";
+            this.lbMucdo.Size = new System.Drawing.Size(59, 19);
+            this.lbMucdo.TabIndex = 52;
+            this.lbMucdo.Text = "Mức Độ:";
+            this.lbMucdo.Click += new System.EventHandler(this.lbMucdo_Click);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.BackColor = System.Drawing.Color.White;
+            this.radioButton4.Location = new System.Drawing.Point(130, 5);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(32, 23);
+            this.radioButton4.TabIndex = 56;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "1";
+            this.radioButton4.UseVisualStyleBackColor = false;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.BackColor = System.Drawing.Color.White;
+            this.radioButton5.Location = new System.Drawing.Point(257, 4);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(34, 23);
+            this.radioButton5.TabIndex = 57;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "2";
+            this.radioButton5.UseVisualStyleBackColor = false;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.BackColor = System.Drawing.Color.White;
+            this.radioButton6.Location = new System.Drawing.Point(333, 4);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(34, 23);
+            this.radioButton6.TabIndex = 58;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "3";
+            this.radioButton6.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -261,58 +328,6 @@ namespace SaleManages.GUI
             this.tbEmailKh.Name = "tbEmailKh";
             this.tbEmailKh.Size = new System.Drawing.Size(253, 25);
             this.tbEmailKh.TabIndex = 59;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.BackColor = System.Drawing.Color.White;
-            this.radioButton6.Location = new System.Drawing.Point(333, 4);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(34, 23);
-            this.radioButton6.TabIndex = 58;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "3";
-            this.radioButton6.UseVisualStyleBackColor = false;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackColor = System.Drawing.Color.White;
-            this.radioButton5.Location = new System.Drawing.Point(257, 4);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(34, 23);
-            this.radioButton5.TabIndex = 57;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "2";
-            this.radioButton5.UseVisualStyleBackColor = false;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(130, 5);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(32, 23);
-            this.radioButton4.TabIndex = 56;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "1";
-            this.radioButton4.UseVisualStyleBackColor = false;
-            // 
-            // lbMucdo
-            // 
-            this.lbMucdo.AutoSize = true;
-            this.lbMucdo.BackColor = System.Drawing.Color.White;
-            this.lbMucdo.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMucdo.Location = new System.Drawing.Point(16, 5);
-            this.lbMucdo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbMucdo.Name = "lbMucdo";
-            this.lbMucdo.Size = new System.Drawing.Size(59, 19);
-            this.lbMucdo.TabIndex = 52;
-            this.lbMucdo.Text = "Mức Độ:";
-            this.lbMucdo.Click += new System.EventHandler(this.lbMucdo_Click);
             // 
             // lbEmailKh
             // 
@@ -428,20 +443,13 @@ namespace SaleManages.GUI
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.Controls.Add(this.panel4);
+            this.metroTabPage2.Controls.Add(this.panel3);
             this.metroTabPage2.Controls.Add(this.dtgvNhanvien);
             this.metroTabPage2.Controls.Add(this.dateBegin);
             this.metroTabPage2.Controls.Add(this.lbBeginday);
             this.metroTabPage2.Controls.Add(this.tbEmailNv);
-            this.metroTabPage2.Controls.Add(this.rbMuc3Nv);
-            this.metroTabPage2.Controls.Add(this.rbMuc2Nv);
-            this.metroTabPage2.Controls.Add(this.rbMuc1Nv);
-            this.metroTabPage2.Controls.Add(this.rbElseNv);
-            this.metroTabPage2.Controls.Add(this.rbNuNv);
-            this.metroTabPage2.Controls.Add(this.rbNamNv);
-            this.metroTabPage2.Controls.Add(this.lbMucdoNv);
             this.metroTabPage2.Controls.Add(this.lbEmailNv);
-            this.metroTabPage2.Controls.Add(this.lbSexNv);
-            this.metroTabPage2.Controls.Add(this.listboxPhoneNv);
             this.metroTabPage2.Controls.Add(this.dateNv);
             this.metroTabPage2.Controls.Add(this.tbPhoneNv);
             this.metroTabPage2.Controls.Add(this.tbAddNv);
@@ -465,6 +473,132 @@ namespace SaleManages.GUI
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 2;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.rbMuc1);
+            this.panel4.Controls.Add(this.rbMuc2);
+            this.panel4.Controls.Add(this.rbMuc3);
+            this.panel4.Location = new System.Drawing.Point(577, 237);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(407, 41);
+            this.panel4.TabIndex = 85;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 5);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 19);
+            this.label2.TabIndex = 52;
+            this.label2.Text = "Mức Độ:";
+            // 
+            // rbMuc1
+            // 
+            this.rbMuc1.AutoSize = true;
+            this.rbMuc1.BackColor = System.Drawing.Color.White;
+            this.rbMuc1.Location = new System.Drawing.Point(130, 5);
+            this.rbMuc1.Margin = new System.Windows.Forms.Padding(4);
+            this.rbMuc1.Name = "rbMuc1";
+            this.rbMuc1.Size = new System.Drawing.Size(32, 23);
+            this.rbMuc1.TabIndex = 56;
+            this.rbMuc1.TabStop = true;
+            this.rbMuc1.Text = "1";
+            this.rbMuc1.UseVisualStyleBackColor = false;
+            // 
+            // rbMuc2
+            // 
+            this.rbMuc2.AutoSize = true;
+            this.rbMuc2.BackColor = System.Drawing.Color.White;
+            this.rbMuc2.Location = new System.Drawing.Point(257, 4);
+            this.rbMuc2.Margin = new System.Windows.Forms.Padding(4);
+            this.rbMuc2.Name = "rbMuc2";
+            this.rbMuc2.Size = new System.Drawing.Size(34, 23);
+            this.rbMuc2.TabIndex = 57;
+            this.rbMuc2.TabStop = true;
+            this.rbMuc2.Text = "2";
+            this.rbMuc2.UseVisualStyleBackColor = false;
+            // 
+            // rbMuc3
+            // 
+            this.rbMuc3.AutoSize = true;
+            this.rbMuc3.BackColor = System.Drawing.Color.White;
+            this.rbMuc3.Location = new System.Drawing.Point(333, 4);
+            this.rbMuc3.Margin = new System.Windows.Forms.Padding(4);
+            this.rbMuc3.Name = "rbMuc3";
+            this.rbMuc3.Size = new System.Drawing.Size(34, 23);
+            this.rbMuc3.TabIndex = 58;
+            this.rbMuc3.TabStop = true;
+            this.rbMuc3.Text = "3";
+            this.rbMuc3.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.rbNamNV);
+            this.panel3.Controls.Add(this.rbNuNV);
+            this.panel3.Controls.Add(this.rbKhacNV);
+            this.panel3.Location = new System.Drawing.Point(577, 185);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(407, 35);
+            this.panel3.TabIndex = 84;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 19);
+            this.label1.TabIndex = 50;
+            this.label1.Text = "Giới Tính:";
+            // 
+            // rbNamNV
+            // 
+            this.rbNamNV.AutoSize = true;
+            this.rbNamNV.BackColor = System.Drawing.Color.White;
+            this.rbNamNV.Location = new System.Drawing.Point(130, 4);
+            this.rbNamNV.Margin = new System.Windows.Forms.Padding(4);
+            this.rbNamNV.Name = "rbNamNV";
+            this.rbNamNV.Size = new System.Drawing.Size(56, 23);
+            this.rbNamNV.TabIndex = 53;
+            this.rbNamNV.TabStop = true;
+            this.rbNamNV.Text = "Nam";
+            this.rbNamNV.UseVisualStyleBackColor = false;
+            // 
+            // rbNuNV
+            // 
+            this.rbNuNV.AutoSize = true;
+            this.rbNuNV.BackColor = System.Drawing.Color.White;
+            this.rbNuNV.Location = new System.Drawing.Point(257, 4);
+            this.rbNuNV.Margin = new System.Windows.Forms.Padding(4);
+            this.rbNuNV.Name = "rbNuNV";
+            this.rbNuNV.Size = new System.Drawing.Size(45, 23);
+            this.rbNuNV.TabIndex = 54;
+            this.rbNuNV.TabStop = true;
+            this.rbNuNV.Text = "Nữ";
+            this.rbNuNV.UseVisualStyleBackColor = false;
+            // 
+            // rbKhacNV
+            // 
+            this.rbKhacNV.AutoSize = true;
+            this.rbKhacNV.BackColor = System.Drawing.Color.White;
+            this.rbKhacNV.Location = new System.Drawing.Point(333, 7);
+            this.rbKhacNV.Margin = new System.Windows.Forms.Padding(4);
+            this.rbKhacNV.Name = "rbKhacNV";
+            this.rbKhacNV.Size = new System.Drawing.Size(54, 23);
+            this.rbKhacNV.TabIndex = 55;
+            this.rbKhacNV.TabStop = true;
+            this.rbKhacNV.Text = "Khác";
+            this.rbKhacNV.UseVisualStyleBackColor = false;
+            // 
             // dtgvNhanvien
             // 
             this.dtgvNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -473,6 +607,7 @@ namespace SaleManages.GUI
             this.dtgvNhanvien.RowTemplate.Height = 33;
             this.dtgvNhanvien.Size = new System.Drawing.Size(1050, 280);
             this.dtgvNhanvien.TabIndex = 83;
+            this.dtgvNhanvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvNhanvien_CellContentClick);
             // 
             // dateBegin
             // 
@@ -502,96 +637,6 @@ namespace SaleManages.GUI
             this.tbEmailNv.Size = new System.Drawing.Size(253, 25);
             this.tbEmailNv.TabIndex = 80;
             // 
-            // rbMuc3Nv
-            // 
-            this.rbMuc3Nv.AutoSize = true;
-            this.rbMuc3Nv.BackColor = System.Drawing.Color.White;
-            this.rbMuc3Nv.Location = new System.Drawing.Point(930, 247);
-            this.rbMuc3Nv.Margin = new System.Windows.Forms.Padding(4);
-            this.rbMuc3Nv.Name = "rbMuc3Nv";
-            this.rbMuc3Nv.Size = new System.Drawing.Size(34, 23);
-            this.rbMuc3Nv.TabIndex = 79;
-            this.rbMuc3Nv.TabStop = true;
-            this.rbMuc3Nv.Text = "3";
-            this.rbMuc3Nv.UseVisualStyleBackColor = false;
-            // 
-            // rbMuc2Nv
-            // 
-            this.rbMuc2Nv.AutoSize = true;
-            this.rbMuc2Nv.BackColor = System.Drawing.Color.White;
-            this.rbMuc2Nv.Location = new System.Drawing.Point(803, 247);
-            this.rbMuc2Nv.Margin = new System.Windows.Forms.Padding(4);
-            this.rbMuc2Nv.Name = "rbMuc2Nv";
-            this.rbMuc2Nv.Size = new System.Drawing.Size(34, 23);
-            this.rbMuc2Nv.TabIndex = 78;
-            this.rbMuc2Nv.TabStop = true;
-            this.rbMuc2Nv.Text = "2";
-            this.rbMuc2Nv.UseVisualStyleBackColor = false;
-            // 
-            // rbMuc1Nv
-            // 
-            this.rbMuc1Nv.AutoSize = true;
-            this.rbMuc1Nv.BackColor = System.Drawing.Color.White;
-            this.rbMuc1Nv.Location = new System.Drawing.Point(675, 247);
-            this.rbMuc1Nv.Margin = new System.Windows.Forms.Padding(4);
-            this.rbMuc1Nv.Name = "rbMuc1Nv";
-            this.rbMuc1Nv.Size = new System.Drawing.Size(32, 23);
-            this.rbMuc1Nv.TabIndex = 77;
-            this.rbMuc1Nv.TabStop = true;
-            this.rbMuc1Nv.Text = "1";
-            this.rbMuc1Nv.UseVisualStyleBackColor = false;
-            // 
-            // rbElseNv
-            // 
-            this.rbElseNv.AutoSize = true;
-            this.rbElseNv.BackColor = System.Drawing.Color.White;
-            this.rbElseNv.Location = new System.Drawing.Point(930, 185);
-            this.rbElseNv.Margin = new System.Windows.Forms.Padding(4);
-            this.rbElseNv.Name = "rbElseNv";
-            this.rbElseNv.Size = new System.Drawing.Size(54, 23);
-            this.rbElseNv.TabIndex = 76;
-            this.rbElseNv.TabStop = true;
-            this.rbElseNv.Text = "Khác";
-            this.rbElseNv.UseVisualStyleBackColor = false;
-            // 
-            // rbNuNv
-            // 
-            this.rbNuNv.AutoSize = true;
-            this.rbNuNv.BackColor = System.Drawing.Color.White;
-            this.rbNuNv.Location = new System.Drawing.Point(803, 185);
-            this.rbNuNv.Margin = new System.Windows.Forms.Padding(4);
-            this.rbNuNv.Name = "rbNuNv";
-            this.rbNuNv.Size = new System.Drawing.Size(45, 23);
-            this.rbNuNv.TabIndex = 75;
-            this.rbNuNv.TabStop = true;
-            this.rbNuNv.Text = "Nữ";
-            this.rbNuNv.UseVisualStyleBackColor = false;
-            // 
-            // rbNamNv
-            // 
-            this.rbNamNv.AutoSize = true;
-            this.rbNamNv.BackColor = System.Drawing.Color.White;
-            this.rbNamNv.Location = new System.Drawing.Point(675, 185);
-            this.rbNamNv.Margin = new System.Windows.Forms.Padding(4);
-            this.rbNamNv.Name = "rbNamNv";
-            this.rbNamNv.Size = new System.Drawing.Size(56, 23);
-            this.rbNamNv.TabIndex = 74;
-            this.rbNamNv.TabStop = true;
-            this.rbNamNv.Text = "Nam";
-            this.rbNamNv.UseVisualStyleBackColor = false;
-            // 
-            // lbMucdoNv
-            // 
-            this.lbMucdoNv.AutoSize = true;
-            this.lbMucdoNv.BackColor = System.Drawing.Color.White;
-            this.lbMucdoNv.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMucdoNv.Location = new System.Drawing.Point(573, 247);
-            this.lbMucdoNv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbMucdoNv.Name = "lbMucdoNv";
-            this.lbMucdoNv.Size = new System.Drawing.Size(59, 19);
-            this.lbMucdoNv.TabIndex = 73;
-            this.lbMucdoNv.Text = "Mức Độ:";
-            // 
             // lbEmailNv
             // 
             this.lbEmailNv.AutoSize = true;
@@ -604,27 +649,6 @@ namespace SaleManages.GUI
             this.lbEmailNv.TabIndex = 72;
             this.lbEmailNv.Text = "Email:";
             // 
-            // lbSexNv
-            // 
-            this.lbSexNv.AutoSize = true;
-            this.lbSexNv.BackColor = System.Drawing.Color.White;
-            this.lbSexNv.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSexNv.Location = new System.Drawing.Point(573, 185);
-            this.lbSexNv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbSexNv.Name = "lbSexNv";
-            this.lbSexNv.Size = new System.Drawing.Size(63, 19);
-            this.lbSexNv.TabIndex = 71;
-            this.lbSexNv.Text = "Giới Tính:";
-            // 
-            // listboxPhoneNv
-            // 
-            this.listboxPhoneNv.FormattingEnabled = true;
-            this.listboxPhoneNv.Location = new System.Drawing.Point(675, 123);
-            this.listboxPhoneNv.Margin = new System.Windows.Forms.Padding(4);
-            this.listboxPhoneNv.Name = "listboxPhoneNv";
-            this.listboxPhoneNv.Size = new System.Drawing.Size(70, 25);
-            this.listboxPhoneNv.TabIndex = 70;
-            // 
             // dateNv
             // 
             this.dateNv.Location = new System.Drawing.Point(153, 185);
@@ -635,10 +659,10 @@ namespace SaleManages.GUI
             // 
             // tbPhoneNv
             // 
-            this.tbPhoneNv.Location = new System.Drawing.Point(753, 123);
+            this.tbPhoneNv.Location = new System.Drawing.Point(675, 123);
             this.tbPhoneNv.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhoneNv.Name = "tbPhoneNv";
-            this.tbPhoneNv.Size = new System.Drawing.Size(175, 25);
+            this.tbPhoneNv.Size = new System.Drawing.Size(253, 25);
             this.tbPhoneNv.TabIndex = 68;
             // 
             // tbAddNv
@@ -1128,18 +1152,6 @@ namespace SaleManages.GUI
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.lbMucdo);
-            this.panel2.Controls.Add(this.radioButton4);
-            this.panel2.Controls.Add(this.radioButton5);
-            this.panel2.Controls.Add(this.radioButton6);
-            this.panel2.Location = new System.Drawing.Point(557, 249);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(407, 41);
-            this.panel2.TabIndex = 63;
-            // 
             // _frmSalesManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -1159,11 +1171,17 @@ namespace SaleManages.GUI
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvKhachhang)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNhanvien)).EndInit();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
@@ -1171,8 +1189,6 @@ namespace SaleManages.GUI
             this.metroPanel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1209,30 +1225,21 @@ namespace SaleManages.GUI
         public System.Windows.Forms.RadioButton radioButton5;
         public System.Windows.Forms.RadioButton radioButton4;
         public System.Windows.Forms.DataGridView dtgvKhachhang;
-        private System.Windows.Forms.TextBox tbEmailNv;
-        private System.Windows.Forms.RadioButton rbMuc3Nv;
-        private System.Windows.Forms.RadioButton rbMuc2Nv;
-        private System.Windows.Forms.RadioButton rbMuc1Nv;
-        private System.Windows.Forms.RadioButton rbElseNv;
-        private System.Windows.Forms.RadioButton rbNuNv;
-        private System.Windows.Forms.RadioButton rbNamNv;
-        private System.Windows.Forms.Label lbMucdoNv;
+        public System.Windows.Forms.TextBox tbEmailNv;
         private System.Windows.Forms.Label lbEmailNv;
-        private System.Windows.Forms.Label lbSexNv;
-        private System.Windows.Forms.ComboBox listboxPhoneNv;
-        private System.Windows.Forms.DateTimePicker dateNv;
-        private System.Windows.Forms.TextBox tbPhoneNv;
-        private System.Windows.Forms.TextBox tbAddNv;
-        private System.Windows.Forms.TextBox tbCodeNv;
-        private System.Windows.Forms.TextBox tbNameNv;
+        public System.Windows.Forms.DateTimePicker dateNv;
+        public System.Windows.Forms.TextBox tbPhoneNv;
+        public System.Windows.Forms.TextBox tbAddNv;
+        public System.Windows.Forms.TextBox tbCodeNv;
+        public System.Windows.Forms.TextBox tbNameNv;
         private System.Windows.Forms.Label lbPhoneNv;
         private System.Windows.Forms.Label lbAddNv;
         private System.Windows.Forms.Label lbBirthNv;
         private System.Windows.Forms.Label lbCodeNh;
         private System.Windows.Forms.Label lbNameNh;
-        private System.Windows.Forms.DateTimePicker dateBegin;
+        public System.Windows.Forms.DateTimePicker dateBegin;
         private System.Windows.Forms.Label lbBeginday;
-        private System.Windows.Forms.DataGridView dtgvNhanvien;
+        public System.Windows.Forms.DataGridView dtgvNhanvien;
         private System.Windows.Forms.Label lbHsdSp;
         private System.Windows.Forms.Label lbNcc;
         private System.Windows.Forms.Label lbDateSp;
@@ -1265,6 +1272,16 @@ namespace SaleManages.GUI
         private Panel panel1;
         private Label lbMucdo;
         private Panel panel2;
+        private Panel panel4;
+        private Label label2;
+        public RadioButton rbMuc1;
+        public RadioButton rbMuc2;
+        public RadioButton rbMuc3;
+        private Panel panel3;
+        private Label label1;
+        public RadioButton rbNamNV;
+        public RadioButton rbNuNV;
+        public RadioButton rbKhacNV;
 
         public TextBox TbNameKh { get => tbNameKh; set => tbNameKh = value; }
         public TextBox TbNameKh1 { get => tbNameKh; set => tbNameKh = value; }

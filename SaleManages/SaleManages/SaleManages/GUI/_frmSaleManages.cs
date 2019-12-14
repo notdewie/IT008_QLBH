@@ -29,7 +29,7 @@ namespace SaleManages.GUI
             }
             else if(rs == 1)
             {
-                MessageBox.Show("tabpage 2");
+                ObjEmployeesDAO.Instance.Add();
             }
             else
             {
@@ -65,10 +65,9 @@ namespace SaleManages.GUI
             }
             else if (check == 1)
             {
-                string query = "SELECT MANV AS N'Mã Nhân Viên',HOTEN AS N'Họ Tên'," +
-                    "DCHI AS N'Địa Chỉ',NGSINH AS N'Ngày Sinh', NGVL AS N'Ngày Vào Làm'," +
-                    "GT AS N'Giới Tính',Email ,MucDO AS N'Mức độ' FROM NHANVIEN";
-                dtgvNhanvien.DataSource = DataProvider.Instance.ExecuteQuery(query);
+
+                dtgvNhanvien.DataSource = ObjEmployeesDAO.Instance.LoadEmployeesData();
+                ObjEmployeesDAO.Instance.Bindings();
             }
             else 
             {
@@ -93,7 +92,7 @@ namespace SaleManages.GUI
             }
             else if (check == 1)
             {
-               
+                ObjEmployeesDAO.Instance.Delete();
             }
             else
             {
@@ -110,7 +109,7 @@ namespace SaleManages.GUI
             }
             else if (check == 1)
             {
-
+                ObjEmployeesDAO.Instance.Update();
             }
             else
             {
@@ -126,6 +125,11 @@ namespace SaleManages.GUI
         private void lbMucdo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dtgvNhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ObjEmployeesDAO.Instance.Bindings();
         }
     }
 }
