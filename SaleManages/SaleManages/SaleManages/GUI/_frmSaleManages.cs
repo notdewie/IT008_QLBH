@@ -10,14 +10,81 @@ using System.Windows.Forms;
 using SaleManages.DAO;
 using SaleManages.GUI;
 using SaleManages.DTO;
+using System.Resources;
+using System.Globalization;
 
 namespace SaleManages.GUI
 {
     public partial class _frmSalesManage : Form
     {
+        string checklang;
+        CultureInfo culture;
         public _frmSalesManage()
         {
             InitializeComponent();
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
+            checklang = ((_frmLogin)f).lbTitle.Text;
+            culture = CultureInfo.CurrentCulture;
+            if (checklang == "Đăng Nhập") SetLanguage("vi-VN");
+            else SetLanguage("en-US");
+        }
+
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("SaleManages.Resources.MyResource", typeof(_frmLogin).Assembly);
+            btnAdd.LabelText = rm.GetString("them", culture);
+            btnEra.LabelText = rm.GetString("xoa", culture);
+            btnFix.LabelText = rm.GetString("sua", culture);
+            btnView.LabelText = rm.GetString("xem", culture);
+            btnFind.LabelText = rm.GetString("tim", culture);
+            metroTabPage1.Text = rm.GetString("khachhang", culture);
+            metroTabPage2.Text = rm.GetString("nhanvien", culture);
+            metroTabPage3.Text = rm.GetString("sanpham", culture);
+            lbNameKh.Text = rm.GetString("hoten", culture);
+            lbNameNh.Text = rm.GetString("hoten", culture);
+            lbCodeKh.Text = rm.GetString("maso", culture);
+            lbCodeNh.Text = rm.GetString("maso", culture);
+            lbBirth.Text = rm.GetString("ngaysinh", culture);
+            lbBirthNv.Text = rm.GetString("ngaysinh", culture);
+            lbAddKh.Text = rm.GetString("diachi", culture);
+            lbAddNv.Text = rm.GetString("diachi", culture);
+            lbPhone.Text = rm.GetString("sdt", culture);
+            lbPhoneNv.Text = rm.GetString("sdt", culture);
+            lbBeginday.Text = rm.GetString("ngayvaolam", culture);
+            lbSex.Text = rm.GetString("gioitinh", culture);
+            label1.Text = rm.GetString("gioitinh", culture);
+            rbNam.Text = rm.GetString("nam", culture);
+            rbNu.Text = rm.GetString("nu", culture);
+            rbElse.Text = rm.GetString("khac", culture);
+            rbNamNV.Text = rm.GetString("nam", culture);
+            rbNuNV.Text = rm.GetString("nu", culture);
+            rbKhacNV.Text = rm.GetString("khac", culture);
+            lbMucdo.Text = rm.GetString("mucdo", culture);
+            label2.Text = rm.GetString("mucdo", culture);
+            backToolStripMenuItem.Text = rm.GetString("hethong", culture);
+            windowToolStripMenuItem.Text = rm.GetString("thongtin", culture);
+            tàiKhoảnToolStripMenuItem.Text = rm.GetString("taikhoan", culture);
+            tùyChọnToolStripMenuItem.Text = rm.GetString("tuychon", culture);
+            ngônNgữToolStripMenuItem.Text = rm.GetString("ngonngu", culture);
+            tiếngViệtToolStripMenuItem.Text = rm.GetString("tiengviet", culture);
+            tiếngAnhToolStripMenuItem.Text = rm.GetString("tienganh", culture);
+            thôngTinỨngDụngToolStripMenuItem.Text = rm.GetString("thongtinungdung", culture);
+            lbNameSp.Text = rm.GetString("tensp", culture);
+            lbCodeSp.Text = rm.GetString("masp", culture);
+            lbDateSp.Text = rm.GetString("nsx", culture);
+            lbHsdSp.Text = rm.GetString("hsd", culture);
+            lbNcc.Text = rm.GetString("ncc", culture);
+            lbPrice.Text = rm.GetString("giathanh", culture);
+            lbDonvi.Text = rm.GetString("donvi", culture);
+            lbSaleoff.Text = rm.GetString("ctkm", culture);
+            xuấtHóaĐơnToolStripMenuItem.Text = rm.GetString("hoadon", culture);
+            inToolStripMenuItem.Text = rm.GetString("in", culture);
+            điềuKhoảnToolStripMenuItem.Text = rm.GetString("dieukhoan", culture);
+            đăngXuấtToolStripMenuItem.Text = rm.GetString("btnLogout", culture);
+            thôngTinToolStripMenuItem.Text = rm.GetString("btnInfo", culture);
+            đổiMậtKhẩuToolStripMenuItem.Text = rm.GetString("idoimatkhau", culture);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -246,6 +313,25 @@ namespace SaleManages.GUI
 
         }
 
+        private void tiếngViệtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetLanguage("vi-VN");
+        }
 
+        private void tiếngAnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetLanguage("en-US");
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            _frmLogin frmLogin = new _frmLogin();
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
+            if (lbNameKh.Text == "Họ Tên:")
+                ((_frmLogin)f).lbTitle.Text = "Đăng Nhập";
+            else ((_frmLogin)f).lbTitle.Text = "Login";
+            frmLogin.Show();
+        }
     }
 }

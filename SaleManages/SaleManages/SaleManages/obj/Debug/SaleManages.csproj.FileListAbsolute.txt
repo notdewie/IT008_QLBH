@@ -67,25 +67,13 @@ C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleMa
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\MetroFramework.dll
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csprojAssemblyReference.cache
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI.Form1.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmCreateAcc.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI.frmDanhMuc.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmForgetPass.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmInfoAcc.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmKhachhang.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmNhanvien.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmSanpham.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Login.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.frmUseTerm.resources
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Properties.Resources.resources
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.SalesManage.resources
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.GenerateResource.cache
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CoreCompileInputs.cache
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CopyComplete
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.exe
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.pdb
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\Bunifu_UI_v1.52.dll
-C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI.Form3.resources
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmCreateAcc.resources
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmLogin.resources
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmInfoAcc.resources
@@ -120,3 +108,11 @@ C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Deb
 C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.csproj.CopyComplete
 C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.exe
 C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.pdb
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmSalesManage.resources
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\en-US\SaleManages.resources.dll
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\vi-VN\SaleManages.resources.dll
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.resources
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.en-US.resources
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.vi-VN.resources
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\en-US\SaleManages.resources.dll
+C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\vi-VN\SaleManages.resources.dll
