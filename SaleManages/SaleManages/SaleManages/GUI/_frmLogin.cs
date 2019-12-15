@@ -63,9 +63,9 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
                 {
                     string userName = tbUsername.Text;
                     string passWord = tbPass.Text;
-                    /*if (LoginCheck(userName,passWord))
+                    if (LoginCheck())
                     {
-                        SalesManage f = new SalesManage();
+                        _frmSalesManage f = new _frmSalesManage();
                         this.Hide();
                         f.ShowDialog();
                         this.Show();
@@ -75,16 +75,16 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
                         if (lbUsername.Text == "Tên đăng nhập:")
                         MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
                         else MessageBox.Show("Wrong account or password !", "Alert!", MessageBoxButtons.OK);
-                    }*/
-                    _frmSalesManage f = new _frmSalesManage();
+                    }
+                    /*_frmSalesManage f = new _frmSalesManage();
                     this.Hide();
                     f.ShowDialog();
-                    this.Show();
+                    this.Show();*/
                 }
         }
-        bool LoginCheck(string userName, string passWord)
+        bool LoginCheck()
         {
-            return AccountDAO.Instance.LoginCheck(userName, passWord);
+            return AccountDAO.Instance.LoginCheck();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

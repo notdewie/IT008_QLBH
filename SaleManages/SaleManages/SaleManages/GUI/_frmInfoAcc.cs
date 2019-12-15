@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 using System.Globalization;
+using SaleManages.DAO;
 
 namespace SaleManages.GUI
 {
@@ -43,16 +44,18 @@ namespace SaleManages.GUI
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            _frmSalesManage f = new _frmSalesManage();
-            this.Hide();
-            f.ShowDialog();
+            this.Close();
         }
 
         private void lbChangePass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             _frmChangePass f = new _frmChangePass();
-            this.Hide();
             f.ShowDialog();
+        }
+
+        private void _frmInfoAcc_Load(object sender, EventArgs e)
+        {
+            AccountDAO.Instance.LoadInfoAcc();
         }
     }
 }

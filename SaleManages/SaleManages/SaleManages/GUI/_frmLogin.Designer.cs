@@ -317,9 +317,9 @@
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label lbUsername;
         private Bunifu.Framework.UI.BunifuFlatButton btnLogin;
-        private System.Windows.Forms.TextBox tbPass;
+        public System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Label lbPass;
-        private System.Windows.Forms.TextBox tbUsername;
+        public System.Windows.Forms.TextBox tbUsername;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.LinkLabel lbReg;
         private Bunifu.Framework.UI.BunifuTileButton btnExit;

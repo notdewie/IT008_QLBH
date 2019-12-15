@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 using System.Globalization;
+using SaleManages.DAO;
 
 
 namespace SaleManages.GUI
@@ -95,7 +96,14 @@ namespace SaleManages.GUI
                 if (!string.IsNullOrEmpty(tbNewPass.Text))
                     if (!string.IsNullOrEmpty(tbCheckPass.Text))
                     {
-                        MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK);
+                        int rs = AccountDAO.Instance.ChangePass();
+                        if(rs >0)
+                        {
+                            MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK);
+                            this.Close();
+                            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
+                            f.Close();
+                        }
                     }
                        
         }

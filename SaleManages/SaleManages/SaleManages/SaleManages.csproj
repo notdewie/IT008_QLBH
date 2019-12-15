@@ -64,6 +64,7 @@
     <Compile Include="DAO\ObjEmployeesDAO.cs" />
     <Compile Include="DAO\ObjCustomerDAO.cs" />
     <Compile Include="DAO\ObjProductDAO.cs" />
+    <Compile Include="DTO\Account.cs" />
     <Compile Include="DTO\ObjEmployees.cs" />
     <Compile Include="DTO\ObjCustomer.cs" />
     <Compile Include="DTO\PlaceHolder.cs">

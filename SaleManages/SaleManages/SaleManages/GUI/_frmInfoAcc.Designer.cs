@@ -73,11 +73,10 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.LightSteelBlue;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.LightSteelBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Indigo;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, -1);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(400, 554);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(300, 451);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // lbChangePass
@@ -86,10 +85,9 @@
             this.lbChangePass.BackColor = System.Drawing.Color.Transparent;
             this.lbChangePass.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbChangePass.LinkColor = System.Drawing.Color.White;
-            this.lbChangePass.Location = new System.Drawing.Point(80, 415);
-            this.lbChangePass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbChangePass.Location = new System.Drawing.Point(60, 337);
             this.lbChangePass.Name = "lbChangePass";
-            this.lbChangePass.Size = new System.Drawing.Size(98, 20);
+            this.lbChangePass.Size = new System.Drawing.Size(78, 15);
             this.lbChangePass.TabIndex = 15;
             this.lbChangePass.TabStop = true;
             this.lbChangePass.Text = "Đổi mật khẩu";
@@ -119,14 +117,14 @@
             this.btnAccept.IconVisible = true;
             this.btnAccept.IconZoom = 90D;
             this.btnAccept.IsTab = false;
-            this.btnAccept.Location = new System.Drawing.Point(125, 456);
-            this.btnAccept.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.btnAccept.Location = new System.Drawing.Point(94, 370);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAccept.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnAccept.OnHoverTextColor = System.Drawing.Color.Red;
             this.btnAccept.selected = false;
-            this.btnAccept.Size = new System.Drawing.Size(155, 59);
+            this.btnAccept.Size = new System.Drawing.Size(116, 49);
             this.btnAccept.TabIndex = 14;
             this.btnAccept.Text = "Xác Nhận";
             this.btnAccept.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -140,10 +138,9 @@
             this.lbAddressS.BackColor = System.Drawing.Color.Transparent;
             this.lbAddressS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAddressS.ForeColor = System.Drawing.Color.White;
-            this.lbAddressS.Location = new System.Drawing.Point(180, 332);
-            this.lbAddressS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbAddressS.Location = new System.Drawing.Point(135, 270);
             this.lbAddressS.Name = "lbAddressS";
-            this.lbAddressS.Size = new System.Drawing.Size(84, 23);
+            this.lbAddressS.Size = new System.Drawing.Size(65, 17);
             this.lbAddressS.TabIndex = 13;
             this.lbAddressS.Text = "NONAME";
             // 
@@ -153,10 +150,9 @@
             this.lbAddress.BackColor = System.Drawing.Color.Transparent;
             this.lbAddress.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAddress.ForeColor = System.Drawing.Color.White;
-            this.lbAddress.Location = new System.Drawing.Point(80, 332);
-            this.lbAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbAddress.Location = new System.Drawing.Point(60, 270);
             this.lbAddress.Name = "lbAddress";
-            this.lbAddress.Size = new System.Drawing.Size(66, 23);
+            this.lbAddress.Size = new System.Drawing.Size(50, 17);
             this.lbAddress.TabIndex = 12;
             this.lbAddress.Text = "Địa chỉ:";
             // 
@@ -166,10 +162,9 @@
             this.lbPhoneS.BackColor = System.Drawing.Color.Transparent;
             this.lbPhoneS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPhoneS.ForeColor = System.Drawing.Color.White;
-            this.lbPhoneS.Location = new System.Drawing.Point(133, 381);
-            this.lbPhoneS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPhoneS.Location = new System.Drawing.Point(100, 310);
             this.lbPhoneS.Name = "lbPhoneS";
-            this.lbPhoneS.Size = new System.Drawing.Size(84, 23);
+            this.lbPhoneS.Size = new System.Drawing.Size(65, 17);
             this.lbPhoneS.TabIndex = 11;
             this.lbPhoneS.Text = "NONAME";
             // 
@@ -179,10 +174,9 @@
             this.lbEmailS.BackColor = System.Drawing.Color.Transparent;
             this.lbEmailS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmailS.ForeColor = System.Drawing.Color.White;
-            this.lbEmailS.Location = new System.Drawing.Point(160, 353);
-            this.lbEmailS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbEmailS.Location = new System.Drawing.Point(120, 287);
             this.lbEmailS.Name = "lbEmailS";
-            this.lbEmailS.Size = new System.Drawing.Size(84, 23);
+            this.lbEmailS.Size = new System.Drawing.Size(65, 17);
             this.lbEmailS.TabIndex = 10;
             this.lbEmailS.Text = "NONAME";
             // 
@@ -192,10 +186,9 @@
             this.lbPhone.BackColor = System.Drawing.Color.Transparent;
             this.lbPhone.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPhone.ForeColor = System.Drawing.Color.White;
-            this.lbPhone.Location = new System.Drawing.Point(80, 381);
-            this.lbPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPhone.Location = new System.Drawing.Point(60, 310);
             this.lbPhone.Name = "lbPhone";
-            this.lbPhone.Size = new System.Drawing.Size(44, 23);
+            this.lbPhone.Size = new System.Drawing.Size(34, 17);
             this.lbPhone.TabIndex = 9;
             this.lbPhone.Text = "SĐT:";
             // 
@@ -205,10 +198,9 @@
             this.lbEmail.BackColor = System.Drawing.Color.Transparent;
             this.lbEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmail.ForeColor = System.Drawing.Color.White;
-            this.lbEmail.Location = new System.Drawing.Point(80, 357);
-            this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbEmail.Location = new System.Drawing.Point(60, 290);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(55, 23);
+            this.lbEmail.Size = new System.Drawing.Size(42, 17);
             this.lbEmail.TabIndex = 8;
             this.lbEmail.Text = "Email:";
             // 
@@ -218,10 +210,9 @@
             this.lbBirthS.BackColor = System.Drawing.Color.Transparent;
             this.lbBirthS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBirthS.ForeColor = System.Drawing.Color.White;
-            this.lbBirthS.Location = new System.Drawing.Point(196, 308);
-            this.lbBirthS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbBirthS.Location = new System.Drawing.Point(147, 250);
             this.lbBirthS.Name = "lbBirthS";
-            this.lbBirthS.Size = new System.Drawing.Size(84, 23);
+            this.lbBirthS.Size = new System.Drawing.Size(65, 17);
             this.lbBirthS.TabIndex = 7;
             this.lbBirthS.Text = "NONAME";
             // 
@@ -231,10 +222,9 @@
             this.lbSexS.BackColor = System.Drawing.Color.Transparent;
             this.lbSexS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSexS.ForeColor = System.Drawing.Color.White;
-            this.lbSexS.Location = new System.Drawing.Point(180, 283);
-            this.lbSexS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSexS.Location = new System.Drawing.Point(135, 230);
             this.lbSexS.Name = "lbSexS";
-            this.lbSexS.Size = new System.Drawing.Size(84, 23);
+            this.lbSexS.Size = new System.Drawing.Size(65, 17);
             this.lbSexS.TabIndex = 6;
             this.lbSexS.Text = "NONAME";
             // 
@@ -244,10 +234,9 @@
             this.lbBirth.BackColor = System.Drawing.Color.Transparent;
             this.lbBirth.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBirth.ForeColor = System.Drawing.Color.White;
-            this.lbBirth.Location = new System.Drawing.Point(80, 308);
-            this.lbBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbBirth.Location = new System.Drawing.Point(60, 250);
             this.lbBirth.Name = "lbBirth";
-            this.lbBirth.Size = new System.Drawing.Size(90, 23);
+            this.lbBirth.Size = new System.Drawing.Size(69, 17);
             this.lbBirth.TabIndex = 5;
             this.lbBirth.Text = "Ngày sinh:";
             // 
@@ -257,10 +246,9 @@
             this.lbSex.BackColor = System.Drawing.Color.Transparent;
             this.lbSex.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSex.ForeColor = System.Drawing.Color.White;
-            this.lbSex.Location = new System.Drawing.Point(80, 283);
-            this.lbSex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSex.Location = new System.Drawing.Point(60, 230);
             this.lbSex.Name = "lbSex";
-            this.lbSex.Size = new System.Drawing.Size(79, 23);
+            this.lbSex.Size = new System.Drawing.Size(59, 17);
             this.lbSex.TabIndex = 4;
             this.lbSex.Text = "Giới tính:";
             // 
@@ -270,10 +258,9 @@
             this.lbNameS.BackColor = System.Drawing.Color.Transparent;
             this.lbNameS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameS.ForeColor = System.Drawing.Color.White;
-            this.lbNameS.Location = new System.Drawing.Point(160, 259);
-            this.lbNameS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNameS.Location = new System.Drawing.Point(120, 210);
             this.lbNameS.Name = "lbNameS";
-            this.lbNameS.Size = new System.Drawing.Size(84, 23);
+            this.lbNameS.Size = new System.Drawing.Size(65, 17);
             this.lbNameS.TabIndex = 3;
             this.lbNameS.Text = "NONAME";
             // 
@@ -283,10 +270,9 @@
             this.lbName.BackColor = System.Drawing.Color.Transparent;
             this.lbName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbName.ForeColor = System.Drawing.Color.White;
-            this.lbName.Location = new System.Drawing.Point(80, 259);
-            this.lbName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbName.Location = new System.Drawing.Point(60, 210);
             this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(40, 23);
+            this.lbName.Size = new System.Drawing.Size(31, 17);
             this.lbName.TabIndex = 2;
             this.lbName.Text = "Tên:";
             // 
@@ -296,10 +282,9 @@
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(55, 179);
-            this.lbTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTitle.Location = new System.Drawing.Point(41, 145);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(260, 37);
+            this.lbTitle.Size = new System.Drawing.Size(210, 30);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Thông Tin Cá Nhân";
             // 
@@ -316,24 +301,24 @@
             this.bunifuTileButton1.ImageZoom = 70;
             this.bunifuTileButton1.LabelPosition = 0;
             this.bunifuTileButton1.LabelText = "";
-            this.bunifuTileButton1.Location = new System.Drawing.Point(112, 12);
-            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.bunifuTileButton1.Location = new System.Drawing.Point(84, 10);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bunifuTileButton1.Name = "bunifuTileButton1";
-            this.bunifuTileButton1.Size = new System.Drawing.Size(171, 159);
+            this.bunifuTileButton1.Size = new System.Drawing.Size(128, 129);
             this.bunifuTileButton1.TabIndex = 0;
             // 
             // _frmInfoAcc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(399, 553);
+            this.ClientSize = new System.Drawing.Size(299, 449);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "_frmInfoAcc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_frmInfoAcc";
+            this.Load += new System.EventHandler(this._frmInfoAcc_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -344,18 +329,18 @@
 
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
-        private System.Windows.Forms.Label lbNameS;
+        public System.Windows.Forms.Label lbNameS;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.Label lbSex;
-        private System.Windows.Forms.Label lbBirthS;
-        private System.Windows.Forms.Label lbSexS;
+        public System.Windows.Forms.Label lbBirthS;
+        public System.Windows.Forms.Label lbSexS;
         private System.Windows.Forms.Label lbBirth;
-        private System.Windows.Forms.Label lbPhoneS;
-        private System.Windows.Forms.Label lbEmailS;
+        public System.Windows.Forms.Label lbPhoneS;
+        public System.Windows.Forms.Label lbEmailS;
         private System.Windows.Forms.Label lbPhone;
         private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.Label lbAddressS;
+        public System.Windows.Forms.Label lbAddressS;
         private System.Windows.Forms.Label lbAddress;
         private Bunifu.Framework.UI.BunifuFlatButton btnAccept;
         private System.Windows.Forms.LinkLabel lbChangePass;

@@ -116,3 +116,10 @@ C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleMa
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.vi-VN.resources
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\en-US\SaleManages.resources.dll
 C:\Users\Duy Sieu Dep Trai\Desktop\git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\vi-VN\SaleManages.resources.dll
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\en-US\SaleManages.resources.dll
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\vi-VN\SaleManages.resources.dll
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.en-US.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.vi-VN.resources
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\en-US\SaleManages.resources.dll
+D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\vi-VN\SaleManages.resources.dll

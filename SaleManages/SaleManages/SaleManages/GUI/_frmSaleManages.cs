@@ -207,7 +207,9 @@ namespace SaleManages.GUI
         private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _frmInfoAcc f = new _frmInfoAcc();
+            
             f.ShowDialog();
+           
         }
 
         private void điềuKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
