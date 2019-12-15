@@ -106,6 +106,17 @@ namespace SaleManages.DAO
                 MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
             }
         }
+        public DataTable FindProductData()
+        {
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmFindProductData"];
+            string nameProduct = ((_frmFindProductData)f).tbFindproData.Text;
+            string FindQuery = "SELECT MASP AS N'Mã Sản Phẩm',TENSP AS N'Tên Sản Phẩm'," +
+                    "DVT AS N'Đơn Vị Tính',NSX AS N'Ngày Sản Xuất',HSD AS N'Hạn Sử Dụng',NCC AS N'Nhà Cung Cấp'," +
+                    "GIA AS N'Giá',CTKM AS N'Khuyến Mãi' FROM SANPHAM " +
+                   "WHERE TENSP = '" + nameProduct + "' ";
+            DataTable data = DataProvider.Instance.ExecuteQuery(FindQuery);
+            return data;
+        }
         public void Bindings()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];

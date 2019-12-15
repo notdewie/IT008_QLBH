@@ -71,6 +71,24 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DTO\ObjProduct.cs" />
+    <Compile Include="GUI\_frmFindCustomerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmFindCustomerData.Designer.cs">
+      <DependentUpon>_frmFindCustomerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\_frmFindEmployeesData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmFindEmployeesData.Designer.cs">
+      <DependentUpon>_frmFindEmployeesData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\_frmFindProductData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmFindProductData.Designer.cs">
+      <DependentUpon>_frmFindProductData.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\_frmSaleManages.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +132,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MyResource.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\_frmFindCustomerData.resx">
+      <DependentUpon>_frmFindCustomerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmFindEmployeesData.resx">
+      <DependentUpon>_frmFindEmployeesData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmFindProductData.resx">
+      <DependentUpon>_frmFindProductData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\_frmSaleManages.resx">
       <DependentUpon>_frmSaleManages.cs</DependentUpon>
     </EmbeddedResource>

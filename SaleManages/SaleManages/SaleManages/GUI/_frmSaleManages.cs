@@ -335,5 +335,25 @@ namespace SaleManages.GUI
             else ((_frmLogin)f).lbTitle.Text = "Login";
             frmLogin.Show();
         }
+
+        private void btnFind_Click(object sender, EventArgs e)
+        {
+            int check = CheckTabPage();
+            if (check == 0)
+            {
+                _frmFindCustomerData f = new _frmFindCustomerData();
+                f.ShowDialog();
+            }
+            else if (check == 1)
+            {
+                _frmFindEmployeesData f = new _frmFindEmployeesData();
+                f.ShowDialog();
+            }
+            else
+            {
+                _frmFindProductData f = new _frmFindProductData();
+                f.ShowDialog();
+            }
+        }
     }
 }

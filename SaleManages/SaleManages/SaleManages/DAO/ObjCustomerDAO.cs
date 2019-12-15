@@ -155,7 +155,18 @@ namespace SaleManages.DAO
             }
            
         }
-        
+        public DataTable FindCusomerData()
+        {
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmFindCustomerData"];
+            string nameCustomer = ((_frmFindCustomerData)f).tbFindemData.Text;
+            string FindQuery = "SELECT MAKH AS N'Mã Khách Hàng', HOTEN AS N'Họ Và Tên' ," +
+                   "DCHI AS N'Địa Chỉ',SODT AS N'Số Điện Thoại' ,NGSINH AS N'Ngày Sinh'," +
+                   "NGDK AS N'Ngày Đăng Ký',GT AS N'Giới Tính',Email AS 'Email'," +
+                   "MucDo AS N'Mức Độ' FROM KHACHHANG " +
+                   "WHERE HOTEN = '"+nameCustomer+"' ";
+            DataTable data = DataProvider.Instance.ExecuteQuery(FindQuery);
+            return data;
+        }
         public void Bindings()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];

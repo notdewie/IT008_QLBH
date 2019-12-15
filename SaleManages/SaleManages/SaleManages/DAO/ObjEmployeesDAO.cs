@@ -156,6 +156,17 @@ namespace SaleManages.DAO
             }
 
         }
+        public DataTable FindEmployeesData()
+        {
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmFindEmployeesData"];
+            string nameEmployees = ((_frmFindEmployeesData)f).tbFindemData.Text;
+            string FindQuery = "SELECT MANV AS N'Mã Nhân Viên',HOTEN AS N'Họ Tên',SODT AS N'Số Điện Thoại'," +
+                    "DCHI AS N'Địa Chỉ',NGSINH AS N'Ngày Sinh', NGVL AS N'Ngày Vào Làm'," +
+                    "GT AS N'Giới Tính',Email ,MucDO AS N'Mức độ' FROM NHANVIEN " +
+                   "WHERE HOTEN = '" + nameEmployees + "' ";
+            DataTable data = DataProvider.Instance.ExecuteQuery(FindQuery);
+            return data;
+        }
         public void Bindings()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
