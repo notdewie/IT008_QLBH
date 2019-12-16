@@ -12,7 +12,7 @@ namespace SaleManages.DTO
         public string PassWord { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public string RegDate { get; set; }
+        public string Birth { get; set; }
         public bool status { get; set; }
         public Account() { }
     }

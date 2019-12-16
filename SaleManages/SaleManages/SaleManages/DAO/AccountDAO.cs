@@ -51,8 +51,11 @@ namespace SaleManages.DAO
             DataRow dr = result.Rows[0];
             System.Windows.Forms.Form f1 = System.Windows.Forms.Application.OpenForms["_frmInfoAcc"];
             ((_frmInfoAcc)f1).lbNameS.Text = dr.ItemArray[1].ToString();
-            ((_frmInfoAcc)f1).lbBirthS.Text = dr.ItemArray[4].ToString();
-            ((_frmInfoAcc)f1).lbEmailS.Text = dr.ItemArray[2].ToString();
+            ((_frmInfoAcc)f1).lbSexS.Text = dr.ItemArray[2].ToString();
+            ((_frmInfoAcc)f1).lbBirthS.Text = dr.ItemArray[5].ToString();
+            ((_frmInfoAcc)f1).lbEmailS.Text = dr.ItemArray[3].ToString();
+            ((_frmInfoAcc)f1).lbAddressS.Text = dr.ItemArray[6].ToString();
+            ((_frmInfoAcc)f1).lbPhoneS.Text = dr.ItemArray[7].ToString();
         }
         public int ChangePass()
         {
@@ -89,7 +92,7 @@ namespace SaleManages.DAO
             account.PassWord = ((_frmCreateAcc)f).tbPass.Text;
             account.Name = ((_frmCreateAcc)f).tbName.Text;
             account.Email = ((_frmCreateAcc)f).tbEmail.Text;
-            account.RegDate = ((_frmCreateAcc)f).dateBirth.Value.ToString();
+            account.Birth = ((_frmCreateAcc)f).dateBirth.Value.ToString();
             account.status = false;
             string CheckQuery = "SELECT TAIKHOAN FROM TAIKHOAN WHERE TAIKHOAN = '" + account.UserName + "' ";
             DataTable result = DataProvider.Instance.ExecuteQuery(CheckQuery);
@@ -100,8 +103,8 @@ namespace SaleManages.DAO
             else
             {
 
-                string CreateAccQuery = "INSERT INTO TAIKHOAN(TAIKHOAN,HOTEN,Email,MATKHAU,NGDK,TRANGTHAI) " +
-                "VALUES('" + account.UserName + "','" + account.Name + "','" + account.Email + "','" + account.PassWord + "','" + account.RegDate + "','" + account.status + "' ";
+                string CreateAccQuery = "INSERT INTO TAIKHOAN(TAIKHOAN,HOTEN,Email,MATKHAU,NGSINH,TRANGTHAI) " +
+                "VALUES('" + account.UserName + "','" + account.Name + "','" + account.Email + "','" + account.PassWord + "','" + account.Birth + "','" + account.status + "' ";
                 int rs = DataProvider.Instance.ExecuteNonQuery(CreateAccQuery);
                 if (rs > 0)
                 {
@@ -109,6 +112,20 @@ namespace SaleManages.DAO
 
                 }
             }
+        }
+        public void UpdateAcc()
+        {
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmUpdateInfo"];
+            string Name = ((_frmUpdateInfo)f).tbName.Text;
+            string Sex = ((_frmUpdateInfo)f).tbSex.Text;
+            string Birth = ((_frmUpdateInfo)f).dateBirth.Value.ToString();
+            string Address = ((_frmUpdateInfo)f).tbName.Text;
+            string Email = ((_frmUpdateInfo)f).tbName.Text;
+            string SDT = ((_frmUpdateInfo)f).tbName.Text;
+            string UpdateQuery = "UPDATE TAIKHOAN " +
+                "SET HOTEN = '"+Name+"' , Email = '"+Email+"', GT = '"+Sex+"', NGSINH = '"+Birth+"',DCHI = '"+Address+"',SDT = '"+SDT+"' ";
+            int rs = DataProvider.Instance.ExecuteNonQuery(UpdateQuery);
+            if (rs > 0) MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK);
         }
     }
 }

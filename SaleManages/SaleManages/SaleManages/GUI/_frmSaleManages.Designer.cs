@@ -103,20 +103,17 @@ namespace SaleManages.GUI
             this.lbCodeSp = new System.Windows.Forms.Label();
             this.lbNameSp = new System.Windows.Forms.Label();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.dtgvHoadon = new System.Windows.Forms.DataGridView();
+            this.tbTriGia = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbCodeNV_HD = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbCodeKH_HD = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateHD = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCodeHD = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.btnView = new Bunifu.Framework.UI.BunifuTileButton();
@@ -146,7 +143,6 @@ namespace SaleManages.GUI
             this.epPrice = new System.Windows.Forms.ErrorProvider(this.components);
             this.epDonVi = new System.Windows.Forms.ErrorProvider(this.components);
             this.epCTKM = new System.Windows.Forms.ErrorProvider(this.components);
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -159,7 +155,7 @@ namespace SaleManages.GUI
             this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).BeginInit();
             this.metroTabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoadon)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epTenSanPham)).BeginInit();
@@ -210,15 +206,15 @@ namespace SaleManages.GUI
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 0;
-            this.metroTabPage1.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage1.Name = "metroTabPage1";
-            this.metroTabPage1.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage1.Size = new System.Drawing.Size(1198, 694);
             this.metroTabPage1.TabIndex = 0;
             this.metroTabPage1.Text = "Khách Hàng";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 3;
+            this.metroTabPage1.VerticalScrollbarSize = 0;
             // 
             // btnViewBill
             // 
@@ -260,7 +256,7 @@ namespace SaleManages.GUI
             this.lbMucdo.Location = new System.Drawing.Point(16, 5);
             this.lbMucdo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMucdo.Name = "lbMucdo";
-            this.lbMucdo.Size = new System.Drawing.Size(112, 37);
+            this.lbMucdo.Size = new System.Drawing.Size(59, 19);
             this.lbMucdo.TabIndex = 52;
             this.lbMucdo.Text = "Mức Độ:";
             this.lbMucdo.Click += new System.EventHandler(this.lbMucdo_Click);
@@ -272,7 +268,7 @@ namespace SaleManages.GUI
             this.radioButton4.Location = new System.Drawing.Point(130, 5);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 41);
+            this.radioButton4.Size = new System.Drawing.Size(32, 23);
             this.radioButton4.TabIndex = 56;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "1";
@@ -285,7 +281,7 @@ namespace SaleManages.GUI
             this.radioButton5.Location = new System.Drawing.Point(257, 4);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(62, 41);
+            this.radioButton5.Size = new System.Drawing.Size(34, 23);
             this.radioButton5.TabIndex = 57;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "2";
@@ -298,7 +294,7 @@ namespace SaleManages.GUI
             this.radioButton6.Location = new System.Drawing.Point(333, 4);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(62, 41);
+            this.radioButton6.Size = new System.Drawing.Size(34, 23);
             this.radioButton6.TabIndex = 58;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "3";
@@ -324,7 +320,7 @@ namespace SaleManages.GUI
             this.lbSex.Location = new System.Drawing.Point(16, 7);
             this.lbSex.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSex.Name = "lbSex";
-            this.lbSex.Size = new System.Drawing.Size(123, 37);
+            this.lbSex.Size = new System.Drawing.Size(63, 19);
             this.lbSex.TabIndex = 50;
             this.lbSex.Text = "Giới Tính:";
             this.lbSex.Click += new System.EventHandler(this.lbSex_Click);
@@ -336,7 +332,7 @@ namespace SaleManages.GUI
             this.rbNam.Location = new System.Drawing.Point(130, 4);
             this.rbNam.Margin = new System.Windows.Forms.Padding(4);
             this.rbNam.Name = "rbNam";
-            this.rbNam.Size = new System.Drawing.Size(102, 41);
+            this.rbNam.Size = new System.Drawing.Size(56, 23);
             this.rbNam.TabIndex = 53;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
@@ -349,7 +345,7 @@ namespace SaleManages.GUI
             this.rbNu.Location = new System.Drawing.Point(257, 4);
             this.rbNu.Margin = new System.Windows.Forms.Padding(4);
             this.rbNu.Name = "rbNu";
-            this.rbNu.Size = new System.Drawing.Size(82, 41);
+            this.rbNu.Size = new System.Drawing.Size(45, 23);
             this.rbNu.TabIndex = 54;
             this.rbNu.TabStop = true;
             this.rbNu.Text = "Nữ";
@@ -362,7 +358,7 @@ namespace SaleManages.GUI
             this.rbElse.Location = new System.Drawing.Point(333, 7);
             this.rbElse.Margin = new System.Windows.Forms.Padding(4);
             this.rbElse.Name = "rbElse";
-            this.rbElse.Size = new System.Drawing.Size(101, 41);
+            this.rbElse.Size = new System.Drawing.Size(54, 23);
             this.rbElse.TabIndex = 55;
             this.rbElse.TabStop = true;
             this.rbElse.Text = "Khác";
@@ -387,7 +383,7 @@ namespace SaleManages.GUI
             this.tbEmailKh.Location = new System.Drawing.Point(675, 62);
             this.tbEmailKh.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmailKh.Name = "tbEmailKh";
-            this.tbEmailKh.Size = new System.Drawing.Size(253, 43);
+            this.tbEmailKh.Size = new System.Drawing.Size(253, 25);
             this.tbEmailKh.TabIndex = 59;
             // 
             // lbEmailKh
@@ -398,7 +394,7 @@ namespace SaleManages.GUI
             this.lbEmailKh.Location = new System.Drawing.Point(573, 62);
             this.lbEmailKh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmailKh.Name = "lbEmailKh";
-            this.lbEmailKh.Size = new System.Drawing.Size(84, 37);
+            this.lbEmailKh.Size = new System.Drawing.Size(44, 19);
             this.lbEmailKh.TabIndex = 51;
             this.lbEmailKh.Text = "Email:";
             // 
@@ -408,7 +404,7 @@ namespace SaleManages.GUI
             this.dateKh.Location = new System.Drawing.Point(153, 185);
             this.dateKh.Margin = new System.Windows.Forms.Padding(4);
             this.dateKh.Name = "dateKh";
-            this.dateKh.Size = new System.Drawing.Size(253, 43);
+            this.dateKh.Size = new System.Drawing.Size(253, 25);
             this.dateKh.TabIndex = 48;
             // 
             // tbPhone
@@ -416,7 +412,7 @@ namespace SaleManages.GUI
             this.tbPhone.Location = new System.Drawing.Point(675, 123);
             this.tbPhone.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhone.Name = "tbPhone";
-            this.tbPhone.Size = new System.Drawing.Size(254, 43);
+            this.tbPhone.Size = new System.Drawing.Size(254, 25);
             this.tbPhone.TabIndex = 47;
             // 
             // tbAddKh
@@ -424,7 +420,7 @@ namespace SaleManages.GUI
             this.tbAddKh.Location = new System.Drawing.Point(153, 249);
             this.tbAddKh.Margin = new System.Windows.Forms.Padding(4);
             this.tbAddKh.Name = "tbAddKh";
-            this.tbAddKh.Size = new System.Drawing.Size(253, 43);
+            this.tbAddKh.Size = new System.Drawing.Size(253, 25);
             this.tbAddKh.TabIndex = 46;
             // 
             // tbCodeKh
@@ -432,7 +428,7 @@ namespace SaleManages.GUI
             this.tbCodeKh.Location = new System.Drawing.Point(153, 120);
             this.tbCodeKh.Margin = new System.Windows.Forms.Padding(4);
             this.tbCodeKh.Name = "tbCodeKh";
-            this.tbCodeKh.Size = new System.Drawing.Size(253, 43);
+            this.tbCodeKh.Size = new System.Drawing.Size(253, 25);
             this.tbCodeKh.TabIndex = 45;
             // 
             // tbNameKh
@@ -440,7 +436,7 @@ namespace SaleManages.GUI
             this.tbNameKh.Location = new System.Drawing.Point(153, 62);
             this.tbNameKh.Margin = new System.Windows.Forms.Padding(4);
             this.tbNameKh.Name = "tbNameKh";
-            this.tbNameKh.Size = new System.Drawing.Size(253, 43);
+            this.tbNameKh.Size = new System.Drawing.Size(253, 25);
             this.tbNameKh.TabIndex = 44;
             // 
             // lbPhone
@@ -451,7 +447,7 @@ namespace SaleManages.GUI
             this.lbPhone.Location = new System.Drawing.Point(573, 123);
             this.lbPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhone.Name = "lbPhone";
-            this.lbPhone.Size = new System.Drawing.Size(68, 37);
+            this.lbPhone.Size = new System.Drawing.Size(35, 19);
             this.lbPhone.TabIndex = 43;
             this.lbPhone.Text = "SĐT:";
             // 
@@ -463,7 +459,7 @@ namespace SaleManages.GUI
             this.lbAddKh.Location = new System.Drawing.Point(38, 249);
             this.lbAddKh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAddKh.Name = "lbAddKh";
-            this.lbAddKh.Size = new System.Drawing.Size(104, 37);
+            this.lbAddKh.Size = new System.Drawing.Size(54, 19);
             this.lbAddKh.TabIndex = 42;
             this.lbAddKh.Text = "Địa Chỉ:";
             // 
@@ -475,7 +471,7 @@ namespace SaleManages.GUI
             this.lbBirth.Location = new System.Drawing.Point(38, 185);
             this.lbBirth.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbBirth.Name = "lbBirth";
-            this.lbBirth.Size = new System.Drawing.Size(136, 37);
+            this.lbBirth.Size = new System.Drawing.Size(71, 19);
             this.lbBirth.TabIndex = 41;
             this.lbBirth.Text = "Ngày Sinh:";
             // 
@@ -487,7 +483,7 @@ namespace SaleManages.GUI
             this.lbCodeKh.Location = new System.Drawing.Point(38, 123);
             this.lbCodeKh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCodeKh.Name = "lbCodeKh";
-            this.lbCodeKh.Size = new System.Drawing.Size(93, 37);
+            this.lbCodeKh.Size = new System.Drawing.Size(50, 19);
             this.lbCodeKh.TabIndex = 40;
             this.lbCodeKh.Text = "Mã Số:";
             // 
@@ -499,7 +495,7 @@ namespace SaleManages.GUI
             this.lbNameKh.Location = new System.Drawing.Point(38, 62);
             this.lbNameKh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNameKh.Name = "lbNameKh";
-            this.lbNameKh.Size = new System.Drawing.Size(101, 37);
+            this.lbNameKh.Size = new System.Drawing.Size(52, 19);
             this.lbNameKh.TabIndex = 39;
             this.lbNameKh.Text = "Họ Tên:";
             // 
@@ -525,15 +521,15 @@ namespace SaleManages.GUI
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.HorizontalScrollbarSize = 0;
-            this.metroTabPage2.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage2.Size = new System.Drawing.Size(1198, 694);
             this.metroTabPage2.TabIndex = 1;
             this.metroTabPage2.Text = "Nhân Viên";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 3;
+            this.metroTabPage2.VerticalScrollbarSize = 0;
             // 
             // panel4
             // 
@@ -555,7 +551,7 @@ namespace SaleManages.GUI
             this.label2.Location = new System.Drawing.Point(16, 5);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 37);
+            this.label2.Size = new System.Drawing.Size(59, 19);
             this.label2.TabIndex = 52;
             this.label2.Text = "Mức Độ:";
             // 
@@ -566,7 +562,7 @@ namespace SaleManages.GUI
             this.rbMuc1.Location = new System.Drawing.Point(130, 5);
             this.rbMuc1.Margin = new System.Windows.Forms.Padding(4);
             this.rbMuc1.Name = "rbMuc1";
-            this.rbMuc1.Size = new System.Drawing.Size(58, 41);
+            this.rbMuc1.Size = new System.Drawing.Size(32, 23);
             this.rbMuc1.TabIndex = 56;
             this.rbMuc1.TabStop = true;
             this.rbMuc1.Text = "1";
@@ -579,7 +575,7 @@ namespace SaleManages.GUI
             this.rbMuc2.Location = new System.Drawing.Point(257, 4);
             this.rbMuc2.Margin = new System.Windows.Forms.Padding(4);
             this.rbMuc2.Name = "rbMuc2";
-            this.rbMuc2.Size = new System.Drawing.Size(62, 41);
+            this.rbMuc2.Size = new System.Drawing.Size(34, 23);
             this.rbMuc2.TabIndex = 57;
             this.rbMuc2.TabStop = true;
             this.rbMuc2.Text = "2";
@@ -592,7 +588,7 @@ namespace SaleManages.GUI
             this.rbMuc3.Location = new System.Drawing.Point(333, 4);
             this.rbMuc3.Margin = new System.Windows.Forms.Padding(4);
             this.rbMuc3.Name = "rbMuc3";
-            this.rbMuc3.Size = new System.Drawing.Size(62, 41);
+            this.rbMuc3.Size = new System.Drawing.Size(34, 23);
             this.rbMuc3.TabIndex = 58;
             this.rbMuc3.TabStop = true;
             this.rbMuc3.Text = "3";
@@ -618,7 +614,7 @@ namespace SaleManages.GUI
             this.label1.Location = new System.Drawing.Point(16, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 37);
+            this.label1.Size = new System.Drawing.Size(63, 19);
             this.label1.TabIndex = 50;
             this.label1.Text = "Giới Tính:";
             // 
@@ -629,7 +625,7 @@ namespace SaleManages.GUI
             this.rbNamNV.Location = new System.Drawing.Point(130, 4);
             this.rbNamNV.Margin = new System.Windows.Forms.Padding(4);
             this.rbNamNV.Name = "rbNamNV";
-            this.rbNamNV.Size = new System.Drawing.Size(102, 41);
+            this.rbNamNV.Size = new System.Drawing.Size(56, 23);
             this.rbNamNV.TabIndex = 53;
             this.rbNamNV.TabStop = true;
             this.rbNamNV.Text = "Nam";
@@ -642,7 +638,7 @@ namespace SaleManages.GUI
             this.rbNuNV.Location = new System.Drawing.Point(257, 4);
             this.rbNuNV.Margin = new System.Windows.Forms.Padding(4);
             this.rbNuNV.Name = "rbNuNV";
-            this.rbNuNV.Size = new System.Drawing.Size(82, 41);
+            this.rbNuNV.Size = new System.Drawing.Size(45, 23);
             this.rbNuNV.TabIndex = 54;
             this.rbNuNV.TabStop = true;
             this.rbNuNV.Text = "Nữ";
@@ -655,7 +651,7 @@ namespace SaleManages.GUI
             this.rbKhacNV.Location = new System.Drawing.Point(333, 7);
             this.rbKhacNV.Margin = new System.Windows.Forms.Padding(4);
             this.rbKhacNV.Name = "rbKhacNV";
-            this.rbKhacNV.Size = new System.Drawing.Size(101, 41);
+            this.rbKhacNV.Size = new System.Drawing.Size(54, 23);
             this.rbKhacNV.TabIndex = 55;
             this.rbKhacNV.TabStop = true;
             this.rbKhacNV.Text = "Khác";
@@ -678,7 +674,7 @@ namespace SaleManages.GUI
             this.dateBegin.Location = new System.Drawing.Point(153, 250);
             this.dateBegin.Margin = new System.Windows.Forms.Padding(4);
             this.dateBegin.Name = "dateBegin";
-            this.dateBegin.Size = new System.Drawing.Size(253, 43);
+            this.dateBegin.Size = new System.Drawing.Size(253, 25);
             this.dateBegin.TabIndex = 82;
             // 
             // lbBeginday
@@ -689,7 +685,7 @@ namespace SaleManages.GUI
             this.lbBeginday.Location = new System.Drawing.Point(38, 252);
             this.lbBeginday.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbBeginday.Name = "lbBeginday";
-            this.lbBeginday.Size = new System.Drawing.Size(187, 37);
+            this.lbBeginday.Size = new System.Drawing.Size(99, 19);
             this.lbBeginday.TabIndex = 81;
             this.lbBeginday.Text = "Ngày Vào Làm:";
             // 
@@ -698,7 +694,7 @@ namespace SaleManages.GUI
             this.tbEmailNv.Location = new System.Drawing.Point(675, 62);
             this.tbEmailNv.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmailNv.Name = "tbEmailNv";
-            this.tbEmailNv.Size = new System.Drawing.Size(253, 43);
+            this.tbEmailNv.Size = new System.Drawing.Size(253, 25);
             this.tbEmailNv.TabIndex = 80;
             // 
             // lbEmailNv
@@ -709,7 +705,7 @@ namespace SaleManages.GUI
             this.lbEmailNv.Location = new System.Drawing.Point(573, 62);
             this.lbEmailNv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmailNv.Name = "lbEmailNv";
-            this.lbEmailNv.Size = new System.Drawing.Size(84, 37);
+            this.lbEmailNv.Size = new System.Drawing.Size(44, 19);
             this.lbEmailNv.TabIndex = 72;
             this.lbEmailNv.Text = "Email:";
             // 
@@ -719,7 +715,7 @@ namespace SaleManages.GUI
             this.dateNv.Location = new System.Drawing.Point(153, 185);
             this.dateNv.Margin = new System.Windows.Forms.Padding(4);
             this.dateNv.Name = "dateNv";
-            this.dateNv.Size = new System.Drawing.Size(253, 43);
+            this.dateNv.Size = new System.Drawing.Size(253, 25);
             this.dateNv.TabIndex = 69;
             // 
             // tbPhoneNv
@@ -727,7 +723,7 @@ namespace SaleManages.GUI
             this.tbPhoneNv.Location = new System.Drawing.Point(675, 123);
             this.tbPhoneNv.Margin = new System.Windows.Forms.Padding(4);
             this.tbPhoneNv.Name = "tbPhoneNv";
-            this.tbPhoneNv.Size = new System.Drawing.Size(253, 43);
+            this.tbPhoneNv.Size = new System.Drawing.Size(253, 25);
             this.tbPhoneNv.TabIndex = 68;
             // 
             // tbAddNv
@@ -735,7 +731,7 @@ namespace SaleManages.GUI
             this.tbAddNv.Location = new System.Drawing.Point(153, 315);
             this.tbAddNv.Margin = new System.Windows.Forms.Padding(4);
             this.tbAddNv.Name = "tbAddNv";
-            this.tbAddNv.Size = new System.Drawing.Size(253, 43);
+            this.tbAddNv.Size = new System.Drawing.Size(253, 25);
             this.tbAddNv.TabIndex = 67;
             // 
             // tbCodeNv
@@ -743,7 +739,7 @@ namespace SaleManages.GUI
             this.tbCodeNv.Location = new System.Drawing.Point(153, 120);
             this.tbCodeNv.Margin = new System.Windows.Forms.Padding(4);
             this.tbCodeNv.Name = "tbCodeNv";
-            this.tbCodeNv.Size = new System.Drawing.Size(253, 43);
+            this.tbCodeNv.Size = new System.Drawing.Size(253, 25);
             this.tbCodeNv.TabIndex = 66;
             // 
             // tbNameNv
@@ -751,7 +747,7 @@ namespace SaleManages.GUI
             this.tbNameNv.Location = new System.Drawing.Point(153, 62);
             this.tbNameNv.Margin = new System.Windows.Forms.Padding(4);
             this.tbNameNv.Name = "tbNameNv";
-            this.tbNameNv.Size = new System.Drawing.Size(253, 43);
+            this.tbNameNv.Size = new System.Drawing.Size(253, 25);
             this.tbNameNv.TabIndex = 65;
             // 
             // lbPhoneNv
@@ -762,7 +758,7 @@ namespace SaleManages.GUI
             this.lbPhoneNv.Location = new System.Drawing.Point(573, 123);
             this.lbPhoneNv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhoneNv.Name = "lbPhoneNv";
-            this.lbPhoneNv.Size = new System.Drawing.Size(68, 37);
+            this.lbPhoneNv.Size = new System.Drawing.Size(35, 19);
             this.lbPhoneNv.TabIndex = 64;
             this.lbPhoneNv.Text = "SĐT:";
             // 
@@ -774,7 +770,7 @@ namespace SaleManages.GUI
             this.lbAddNv.Location = new System.Drawing.Point(38, 318);
             this.lbAddNv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAddNv.Name = "lbAddNv";
-            this.lbAddNv.Size = new System.Drawing.Size(104, 37);
+            this.lbAddNv.Size = new System.Drawing.Size(54, 19);
             this.lbAddNv.TabIndex = 63;
             this.lbAddNv.Text = "Địa Chỉ:";
             // 
@@ -786,7 +782,7 @@ namespace SaleManages.GUI
             this.lbBirthNv.Location = new System.Drawing.Point(38, 185);
             this.lbBirthNv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbBirthNv.Name = "lbBirthNv";
-            this.lbBirthNv.Size = new System.Drawing.Size(136, 37);
+            this.lbBirthNv.Size = new System.Drawing.Size(71, 19);
             this.lbBirthNv.TabIndex = 62;
             this.lbBirthNv.Text = "Ngày Sinh:";
             // 
@@ -798,7 +794,7 @@ namespace SaleManages.GUI
             this.lbCodeNh.Location = new System.Drawing.Point(38, 123);
             this.lbCodeNh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCodeNh.Name = "lbCodeNh";
-            this.lbCodeNh.Size = new System.Drawing.Size(93, 37);
+            this.lbCodeNh.Size = new System.Drawing.Size(50, 19);
             this.lbCodeNh.TabIndex = 61;
             this.lbCodeNh.Text = "Mã Số:";
             // 
@@ -810,7 +806,7 @@ namespace SaleManages.GUI
             this.lbNameNh.Location = new System.Drawing.Point(38, 62);
             this.lbNameNh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNameNh.Name = "lbNameNh";
-            this.lbNameNh.Size = new System.Drawing.Size(101, 37);
+            this.lbNameNh.Size = new System.Drawing.Size(52, 19);
             this.lbNameNh.TabIndex = 60;
             this.lbNameNh.Text = "Họ Tên:";
             // 
@@ -836,15 +832,15 @@ namespace SaleManages.GUI
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.HorizontalScrollbarSize = 0;
-            this.metroTabPage3.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage3.Size = new System.Drawing.Size(1198, 694);
             this.metroTabPage3.TabIndex = 2;
             this.metroTabPage3.Text = "Sản Phẩm";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 3;
+            this.metroTabPage3.VerticalScrollbarSize = 0;
             // 
             // dtgvSanpham
             // 
@@ -860,14 +856,14 @@ namespace SaleManages.GUI
             // 
             this.tbCTKM.Location = new System.Drawing.Point(675, 245);
             this.tbCTKM.Name = "tbCTKM";
-            this.tbCTKM.Size = new System.Drawing.Size(253, 43);
+            this.tbCTKM.Size = new System.Drawing.Size(253, 25);
             this.tbCTKM.TabIndex = 45;
             // 
             // tbDonvi
             // 
             this.tbDonvi.Location = new System.Drawing.Point(675, 184);
             this.tbDonvi.Name = "tbDonvi";
-            this.tbDonvi.Size = new System.Drawing.Size(253, 43);
+            this.tbDonvi.Size = new System.Drawing.Size(253, 25);
             this.tbDonvi.TabIndex = 44;
             this.tbDonvi.Validating += new System.ComponentModel.CancelEventHandler(this.tbDonvi_Validating);
             // 
@@ -875,7 +871,7 @@ namespace SaleManages.GUI
             // 
             this.tbPrice.Location = new System.Drawing.Point(675, 123);
             this.tbPrice.Name = "tbPrice";
-            this.tbPrice.Size = new System.Drawing.Size(253, 43);
+            this.tbPrice.Size = new System.Drawing.Size(253, 25);
             this.tbPrice.TabIndex = 43;
             this.tbPrice.Validating += new System.ComponentModel.CancelEventHandler(this.tbPrice_Validating);
             // 
@@ -883,7 +879,7 @@ namespace SaleManages.GUI
             // 
             this.tbNcc.Location = new System.Drawing.Point(675, 62);
             this.tbNcc.Name = "tbNcc";
-            this.tbNcc.Size = new System.Drawing.Size(253, 43);
+            this.tbNcc.Size = new System.Drawing.Size(253, 25);
             this.tbNcc.TabIndex = 42;
             this.tbNcc.Validating += new System.ComponentModel.CancelEventHandler(this.tbNcc_Validating);
             // 
@@ -892,7 +888,7 @@ namespace SaleManages.GUI
             this.tbHsd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.tbHsd.Location = new System.Drawing.Point(153, 245);
             this.tbHsd.Name = "tbHsd";
-            this.tbHsd.Size = new System.Drawing.Size(253, 43);
+            this.tbHsd.Size = new System.Drawing.Size(253, 25);
             this.tbHsd.TabIndex = 41;
             // 
             // tbDateSp
@@ -900,7 +896,7 @@ namespace SaleManages.GUI
             this.tbDateSp.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.tbDateSp.Location = new System.Drawing.Point(153, 184);
             this.tbDateSp.Name = "tbDateSp";
-            this.tbDateSp.Size = new System.Drawing.Size(253, 43);
+            this.tbDateSp.Size = new System.Drawing.Size(253, 25);
             this.tbDateSp.TabIndex = 40;
             this.tbDateSp.Validating += new System.ComponentModel.CancelEventHandler(this.tbDateSp_Validating);
             // 
@@ -908,7 +904,7 @@ namespace SaleManages.GUI
             // 
             this.tbCodeSp.Location = new System.Drawing.Point(153, 123);
             this.tbCodeSp.Name = "tbCodeSp";
-            this.tbCodeSp.Size = new System.Drawing.Size(253, 43);
+            this.tbCodeSp.Size = new System.Drawing.Size(253, 25);
             this.tbCodeSp.TabIndex = 39;
             this.tbCodeSp.Validating += new System.ComponentModel.CancelEventHandler(this.tbCodeSp_Validating);
             // 
@@ -916,7 +912,7 @@ namespace SaleManages.GUI
             // 
             this.tbNameSp.Location = new System.Drawing.Point(153, 62);
             this.tbNameSp.Name = "tbNameSp";
-            this.tbNameSp.Size = new System.Drawing.Size(253, 43);
+            this.tbNameSp.Size = new System.Drawing.Size(253, 25);
             this.tbNameSp.TabIndex = 38;
             this.tbNameSp.Validating += new System.ComponentModel.CancelEventHandler(this.tbNameSp_Validating);
             // 
@@ -927,7 +923,7 @@ namespace SaleManages.GUI
             this.lbSaleoff.Location = new System.Drawing.Point(573, 245);
             this.lbSaleoff.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSaleoff.Name = "lbSaleoff";
-            this.lbSaleoff.Size = new System.Drawing.Size(90, 37);
+            this.lbSaleoff.Size = new System.Drawing.Size(47, 19);
             this.lbSaleoff.TabIndex = 37;
             this.lbSaleoff.Text = "CTKM:";
             // 
@@ -938,7 +934,7 @@ namespace SaleManages.GUI
             this.lbDonvi.Location = new System.Drawing.Point(573, 184);
             this.lbDonvi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDonvi.Name = "lbDonvi";
-            this.lbDonvi.Size = new System.Drawing.Size(95, 37);
+            this.lbDonvi.Size = new System.Drawing.Size(49, 19);
             this.lbDonvi.TabIndex = 36;
             this.lbDonvi.Text = "Đơn vị:";
             // 
@@ -949,7 +945,7 @@ namespace SaleManages.GUI
             this.lbPrice.Location = new System.Drawing.Point(573, 123);
             this.lbPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(130, 37);
+            this.lbPrice.Size = new System.Drawing.Size(67, 19);
             this.lbPrice.TabIndex = 35;
             this.lbPrice.Text = "Giá thành:";
             // 
@@ -960,7 +956,7 @@ namespace SaleManages.GUI
             this.lbHsdSp.Location = new System.Drawing.Point(38, 245);
             this.lbHsdSp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbHsdSp.Name = "lbHsdSp";
-            this.lbHsdSp.Size = new System.Drawing.Size(72, 37);
+            this.lbHsdSp.Size = new System.Drawing.Size(37, 19);
             this.lbHsdSp.TabIndex = 34;
             this.lbHsdSp.Text = "HSD:";
             // 
@@ -971,7 +967,7 @@ namespace SaleManages.GUI
             this.lbNcc.Location = new System.Drawing.Point(573, 62);
             this.lbNcc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNcc.Name = "lbNcc";
-            this.lbNcc.Size = new System.Drawing.Size(75, 37);
+            this.lbNcc.Size = new System.Drawing.Size(39, 19);
             this.lbNcc.TabIndex = 33;
             this.lbNcc.Text = "NCC:";
             // 
@@ -982,7 +978,7 @@ namespace SaleManages.GUI
             this.lbDateSp.Location = new System.Drawing.Point(38, 184);
             this.lbDateSp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDateSp.Name = "lbDateSp";
-            this.lbDateSp.Size = new System.Drawing.Size(70, 37);
+            this.lbDateSp.Size = new System.Drawing.Size(37, 19);
             this.lbDateSp.TabIndex = 32;
             this.lbDateSp.Text = "NSX:";
             // 
@@ -993,7 +989,7 @@ namespace SaleManages.GUI
             this.lbCodeSp.Location = new System.Drawing.Point(38, 123);
             this.lbCodeSp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCodeSp.Name = "lbCodeSp";
-            this.lbCodeSp.Size = new System.Drawing.Size(173, 37);
+            this.lbCodeSp.Size = new System.Drawing.Size(92, 19);
             this.lbCodeSp.TabIndex = 31;
             this.lbCodeSp.Text = "Mã sản phẩm:";
             // 
@@ -1004,137 +1000,130 @@ namespace SaleManages.GUI
             this.lbNameSp.Location = new System.Drawing.Point(38, 62);
             this.lbNameSp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNameSp.Name = "lbNameSp";
-            this.lbNameSp.Size = new System.Drawing.Size(176, 37);
+            this.lbNameSp.Size = new System.Drawing.Size(92, 19);
             this.lbNameSp.TabIndex = 30;
             this.lbNameSp.Text = "Tên sản phẩm:";
             // 
             // metroTabPage4
             // 
             this.metroTabPage4.Controls.Add(this.bunifuFlatButton1);
-            this.metroTabPage4.Controls.Add(this.dataGridView1);
-            this.metroTabPage4.Controls.Add(this.textBox6);
+            this.metroTabPage4.Controls.Add(this.dtgvHoadon);
+            this.metroTabPage4.Controls.Add(this.tbTriGia);
             this.metroTabPage4.Controls.Add(this.label9);
-            this.metroTabPage4.Controls.Add(this.textBox5);
-            this.metroTabPage4.Controls.Add(this.label8);
-            this.metroTabPage4.Controls.Add(this.textBox4);
-            this.metroTabPage4.Controls.Add(this.label7);
-            this.metroTabPage4.Controls.Add(this.textBox3);
+            this.metroTabPage4.Controls.Add(this.tbCodeNV_HD);
             this.metroTabPage4.Controls.Add(this.label6);
-            this.metroTabPage4.Controls.Add(this.textBox2);
+            this.metroTabPage4.Controls.Add(this.tbCodeKH_HD);
             this.metroTabPage4.Controls.Add(this.label5);
-            this.metroTabPage4.Controls.Add(this.dateTimePicker1);
+            this.metroTabPage4.Controls.Add(this.dateHD);
             this.metroTabPage4.Controls.Add(this.label4);
-            this.metroTabPage4.Controls.Add(this.textBox1);
+            this.metroTabPage4.Controls.Add(this.tbCodeHD);
             this.metroTabPage4.Controls.Add(this.label3);
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
             this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 3;
-            this.metroTabPage4.Location = new System.Drawing.Point(8, 41);
+            this.metroTabPage4.HorizontalScrollbarSize = 0;
+            this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
             this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(1190, 687);
+            this.metroTabPage4.Size = new System.Drawing.Size(1198, 694);
             this.metroTabPage4.TabIndex = 3;
             this.metroTabPage4.Text = "Hóa Đơn";
             this.metroTabPage4.VerticalScrollbarBarColor = true;
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 7;
+            this.metroTabPage4.VerticalScrollbarSize = 2;
             // 
-            // dataGridView1
+            // bunifuFlatButton1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 330);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1050, 280);
-            this.dataGridView1.TabIndex = 60;
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "Xem Thêm";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 50D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(675, 214);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Red;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(236, 92);
+            this.bunifuFlatButton1.TabIndex = 61;
+            this.bunifuFlatButton1.Text = "Xem Thêm";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click_1);
             // 
-            // textBox6
+            // dtgvHoadon
             // 
-            this.textBox6.Location = new System.Drawing.Point(675, 182);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(253, 43);
-            this.textBox6.TabIndex = 59;
+            this.dtgvHoadon.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvHoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvHoadon.Location = new System.Drawing.Point(45, 330);
+            this.dtgvHoadon.Name = "dtgvHoadon";
+            this.dtgvHoadon.RowTemplate.Height = 33;
+            this.dtgvHoadon.Size = new System.Drawing.Size(1050, 280);
+            this.dtgvHoadon.TabIndex = 60;
+            // 
+            // tbTriGia
+            // 
+            this.tbTriGia.Location = new System.Drawing.Point(658, 120);
+            this.tbTriGia.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTriGia.Name = "tbTriGia";
+            this.tbTriGia.ReadOnly = true;
+            this.tbTriGia.Size = new System.Drawing.Size(253, 25);
+            this.tbTriGia.TabIndex = 59;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(573, 185);
+            this.label9.Location = new System.Drawing.Point(556, 123);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(92, 37);
+            this.label9.Size = new System.Drawing.Size(48, 19);
             this.label9.TabIndex = 58;
             this.label9.Text = "Trị Giá:";
             // 
-            // textBox5
+            // tbCodeNV_HD
             // 
-            this.textBox5.Location = new System.Drawing.Point(675, 120);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(253, 43);
-            this.textBox5.TabIndex = 57;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(573, 123);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 37);
-            this.label8.TabIndex = 56;
-            this.label8.Text = "Số Lượng:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(675, 62);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(253, 43);
-            this.textBox4.TabIndex = 55;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(573, 62);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 37);
-            this.label7.TabIndex = 54;
-            this.label7.Text = "Mã SP:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(153, 246);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(253, 43);
-            this.textBox3.TabIndex = 53;
+            this.tbCodeNV_HD.Location = new System.Drawing.Point(653, 59);
+            this.tbCodeNV_HD.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCodeNV_HD.Name = "tbCodeNV_HD";
+            this.tbCodeNV_HD.Size = new System.Drawing.Size(253, 25);
+            this.tbCodeNV_HD.TabIndex = 53;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(38, 249);
+            this.label6.Location = new System.Drawing.Point(551, 62);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 37);
+            this.label6.Size = new System.Drawing.Size(53, 19);
             this.label6.TabIndex = 52;
-            this.label6.Text = "Mã KH:";
+            this.label6.Text = "Mã NV:";
             // 
-            // textBox2
+            // tbCodeKH_HD
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 182);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(253, 43);
-            this.textBox2.TabIndex = 51;
+            this.tbCodeKH_HD.Location = new System.Drawing.Point(153, 182);
+            this.tbCodeKH_HD.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCodeKH_HD.Name = "tbCodeKH_HD";
+            this.tbCodeKH_HD.Size = new System.Drawing.Size(253, 25);
+            this.tbCodeKH_HD.TabIndex = 51;
             // 
             // label5
             // 
@@ -1144,18 +1133,18 @@ namespace SaleManages.GUI
             this.label5.Location = new System.Drawing.Point(38, 185);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 37);
+            this.label5.Size = new System.Drawing.Size(51, 19);
             this.label5.TabIndex = 50;
             this.label5.Text = "Mã KH:";
             // 
-            // dateTimePicker1
+            // dateHD
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 118);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(253, 43);
-            this.dateTimePicker1.TabIndex = 49;
+            this.dateHD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateHD.Location = new System.Drawing.Point(153, 118);
+            this.dateHD.Margin = new System.Windows.Forms.Padding(4);
+            this.dateHD.Name = "dateHD";
+            this.dateHD.Size = new System.Drawing.Size(253, 25);
+            this.dateHD.TabIndex = 49;
             // 
             // label4
             // 
@@ -1165,17 +1154,17 @@ namespace SaleManages.GUI
             this.label4.Location = new System.Drawing.Point(38, 123);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(189, 37);
+            this.label4.Size = new System.Drawing.Size(99, 19);
             this.label4.TabIndex = 46;
             this.label4.Text = "Ngày Hóa Đơn:";
             // 
-            // textBox1
+            // tbCodeHD
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 62);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(253, 43);
-            this.textBox1.TabIndex = 45;
+            this.tbCodeHD.Location = new System.Drawing.Point(153, 62);
+            this.tbCodeHD.Margin = new System.Windows.Forms.Padding(4);
+            this.tbCodeHD.Name = "tbCodeHD";
+            this.tbCodeHD.Size = new System.Drawing.Size(253, 25);
+            this.tbCodeHD.TabIndex = 45;
             // 
             // label3
             // 
@@ -1185,7 +1174,7 @@ namespace SaleManages.GUI
             this.label3.Location = new System.Drawing.Point(38, 62);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 37);
+            this.label3.Size = new System.Drawing.Size(83, 19);
             this.label3.TabIndex = 40;
             this.label3.Text = "Số Hóa Đơn:";
             // 
@@ -1316,7 +1305,7 @@ namespace SaleManages.GUI
             this.xuấtHóaĐơnToolStripMenuItem});
             this.backToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(126, 36);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.backToolStripMenuItem.Text = "Hệ Thống";
             // 
             // xuấtHóaĐơnToolStripMenuItem
@@ -1324,13 +1313,13 @@ namespace SaleManages.GUI
             this.xuấtHóaĐơnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inToolStripMenuItem});
             this.xuấtHóaĐơnToolStripMenuItem.Name = "xuấtHóaĐơnToolStripMenuItem";
-            this.xuấtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(204, 38);
+            this.xuấtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.xuấtHóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
             // 
             // inToolStripMenuItem
             // 
             this.inToolStripMenuItem.Name = "inToolStripMenuItem";
-            this.inToolStripMenuItem.Size = new System.Drawing.Size(132, 38);
+            this.inToolStripMenuItem.Size = new System.Drawing.Size(83, 22);
             this.inToolStripMenuItem.Text = "In";
             // 
             // tàiKhoảnToolStripMenuItem
@@ -1341,27 +1330,27 @@ namespace SaleManages.GUI
             this.đăngXuấtToolStripMenuItem});
             this.tàiKhoảnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tàiKhoảnToolStripMenuItem.Name = "tàiKhoảnToolStripMenuItem";
-            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(123, 36);
+            this.tàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.tàiKhoảnToolStripMenuItem.Text = "Tài Khoản";
             // 
             // thôngTinToolStripMenuItem
             // 
             this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
-            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(250, 38);
+            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.thôngTinToolStripMenuItem.Text = "Thông tin";
             this.thôngTinToolStripMenuItem.Click += new System.EventHandler(this.thôngTinToolStripMenuItem_Click);
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(250, 38);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(250, 38);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
@@ -1371,7 +1360,7 @@ namespace SaleManages.GUI
             this.ngônNgữToolStripMenuItem});
             this.tùyChọnToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tùyChọnToolStripMenuItem.Name = "tùyChọnToolStripMenuItem";
-            this.tùyChọnToolStripMenuItem.Size = new System.Drawing.Size(121, 36);
+            this.tùyChọnToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.tùyChọnToolStripMenuItem.Text = "Tùy Chọn";
             // 
             // ngônNgữToolStripMenuItem
@@ -1380,20 +1369,20 @@ namespace SaleManages.GUI
             this.tiếngViệtToolStripMenuItem,
             this.tiếngAnhToolStripMenuItem});
             this.ngônNgữToolStripMenuItem.Name = "ngônNgữToolStripMenuItem";
-            this.ngônNgữToolStripMenuItem.Size = new System.Drawing.Size(220, 38);
+            this.ngônNgữToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.ngônNgữToolStripMenuItem.Text = "Ngôn Ngữ";
             // 
             // tiếngViệtToolStripMenuItem
             // 
             this.tiếngViệtToolStripMenuItem.Name = "tiếngViệtToolStripMenuItem";
-            this.tiếngViệtToolStripMenuItem.Size = new System.Drawing.Size(217, 38);
+            this.tiếngViệtToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.tiếngViệtToolStripMenuItem.Text = "Tiếng Việt";
             this.tiếngViệtToolStripMenuItem.Click += new System.EventHandler(this.tiếngViệtToolStripMenuItem_Click);
             // 
             // tiếngAnhToolStripMenuItem
             // 
             this.tiếngAnhToolStripMenuItem.Name = "tiếngAnhToolStripMenuItem";
-            this.tiếngAnhToolStripMenuItem.Size = new System.Drawing.Size(217, 38);
+            this.tiếngAnhToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.tiếngAnhToolStripMenuItem.Text = "Tiếng Anh";
             this.tiếngAnhToolStripMenuItem.Click += new System.EventHandler(this.tiếngAnhToolStripMenuItem_Click);
             // 
@@ -1404,20 +1393,20 @@ namespace SaleManages.GUI
             this.thôngTinỨngDụngToolStripMenuItem});
             this.windowToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
-            this.windowToolStripMenuItem.Size = new System.Drawing.Size(128, 36);
+            this.windowToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.windowToolStripMenuItem.Text = "Thông Tin";
             // 
             // điềuKhoảnToolStripMenuItem
             // 
             this.điềuKhoảnToolStripMenuItem.Name = "điềuKhoảnToolStripMenuItem";
-            this.điềuKhoảnToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
+            this.điềuKhoảnToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.điềuKhoảnToolStripMenuItem.Text = "Điều Khoản";
             this.điềuKhoảnToolStripMenuItem.Click += new System.EventHandler(this.điềuKhoảnToolStripMenuItem_Click);
             // 
             // thôngTinỨngDụngToolStripMenuItem
             // 
             this.thôngTinỨngDụngToolStripMenuItem.Name = "thôngTinỨngDụngToolStripMenuItem";
-            this.thôngTinỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(326, 38);
+            this.thôngTinỨngDụngToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.thôngTinỨngDụngToolStripMenuItem.Text = "Thông Tin Ứng Dụng";
             // 
             // menuStrip1
@@ -1432,7 +1421,7 @@ namespace SaleManages.GUI
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1354, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1354, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1464,45 +1453,9 @@ namespace SaleManages.GUI
             // 
             this.epCTKM.ContainerControl = this;
             // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Xem Thêm";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 50D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(580, 234);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Red;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(236, 92);
-            this.bunifuFlatButton1.TabIndex = 61;
-            this.bunifuFlatButton1.Text = "Xem Thêm";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.Black;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click_1);
-            // 
             // _frmSalesManage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1354, 792);
@@ -1538,7 +1491,7 @@ namespace SaleManages.GUI
             ((System.ComponentModel.ISupportInitialize)(this.dtgvSanpham)).EndInit();
             this.metroTabPage4.ResumeLayout(false);
             this.metroTabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHoadon)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -1654,22 +1607,18 @@ namespace SaleManages.GUI
         public Label lbNameKh;
         private Bunifu.Framework.UI.BunifuTileButton btnViewBill;
         private MetroFramework.Controls.MetroTabPage metroTabPage4;
-        public Label label3;
-        public Label label4;
-        public TextBox textBox1;
-        public Label label5;
-        public DateTimePicker dateTimePicker1;
-        public Label label6;
-        public TextBox textBox2;
-        public TextBox textBox3;
-        public TextBox textBox4;
-        public Label label7;
-        private DataGridView dataGridView1;
-        public TextBox textBox6;
-        public Label label9;
-        public TextBox textBox5;
-        public Label label8;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        public DataGridView dtgvHoadon;
+        public TextBox tbTriGia;
+        public Label label9;
+        public TextBox tbCodeNV_HD;
+        public Label label6;
+        public TextBox tbCodeKH_HD;
+        public Label label5;
+        public DateTimePicker dateHD;
+        public Label label4;
+        public TextBox tbCodeHD;
+        public Label label3;
 
         public TextBox TbNameKh { get => tbNameKh; set => tbNameKh = value; }
         public TextBox TbNameKh1 { get => tbNameKh; set => tbNameKh = value; }

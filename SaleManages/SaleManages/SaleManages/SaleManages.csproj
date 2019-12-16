@@ -61,10 +61,12 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\ObjBillDAO.cs" />
     <Compile Include="DAO\ObjEmployeesDAO.cs" />
     <Compile Include="DAO\ObjCustomerDAO.cs" />
     <Compile Include="DAO\ObjProductDAO.cs" />
     <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\ObjBill.cs" />
     <Compile Include="DTO\ObjEmployees.cs" />
     <Compile Include="DTO\ObjCustomer.cs" />
     <Compile Include="DTO\PlaceHolder.cs">
@@ -76,6 +78,12 @@
     </Compile>
     <Compile Include="GUI\_frmDetail.Designer.cs">
       <DependentUpon>_frmDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\_frmFindBillData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmFindBillData.Designer.cs">
+      <DependentUpon>_frmFindBillData.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\_frmFindCustomerData.cs">
       <SubType>Form</SubType>
@@ -152,6 +160,9 @@
     </Compile>
     <EmbeddedResource Include="GUI\_frmDetail.resx">
       <DependentUpon>_frmDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\_frmFindBillData.resx">
+      <DependentUpon>_frmFindBillData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\_frmFindCustomerData.resx">
       <DependentUpon>_frmFindCustomerData.cs</DependentUpon>

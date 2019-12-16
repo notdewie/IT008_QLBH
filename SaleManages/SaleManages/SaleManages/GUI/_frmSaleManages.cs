@@ -99,9 +99,13 @@ namespace SaleManages.GUI
             {
                 ObjEmployeesDAO.Instance.Add();
             }
-            else
+            else if(rs == 2)
             {
                 ObjProductDAO.Instance.Add();
+            }
+            else
+            {
+                ObjBillDAO.Instance.Add();
             }
         }
         int CheckTabPage()
@@ -137,11 +141,16 @@ namespace SaleManages.GUI
                 dtgvNhanvien.DataSource = ObjEmployeesDAO.Instance.LoadEmployeesData();
                 ObjEmployeesDAO.Instance.Bindings();
             }
-            else 
+            else if(check == 2)
             {
                 dtgvSanpham.DataSource = ObjProductDAO.Instance.LoadProductData();
                 ObjProductDAO.Instance.Bindings();
                 
+            }
+            else
+            {
+                dtgvHoadon.DataSource = ObjBillDAO.Instance.LoadBillData();
+                ObjBillDAO.Instance.Bindings();
             }
         }
 
@@ -161,10 +170,11 @@ namespace SaleManages.GUI
             {
                 ObjEmployeesDAO.Instance.Delete();
             }
-            else
+            else if (check == 2)
             {
                 ObjProductDAO.Instance.Delete();
             }
+            else ObjBillDAO.Instance.Delete();
         }
 
         private void btnFix_Click(object sender, EventArgs e)
@@ -178,9 +188,13 @@ namespace SaleManages.GUI
             {
                 ObjEmployeesDAO.Instance.Update();
             }
-            else
+            else if(check == 2)
             {
                 ObjProductDAO.Instance.Update();
+            }
+            else
+            {
+                ObjBillDAO.Instance.Update();
             }
         }
 
@@ -349,9 +363,14 @@ namespace SaleManages.GUI
                 _frmFindEmployeesData f = new _frmFindEmployeesData();
                 f.ShowDialog();
             }
-            else
+            else if(check == 2)
             {
                 _frmFindProductData f = new _frmFindProductData();
+                f.ShowDialog();
+            }
+            else
+            {
+                _frmFindBillData f = new _frmFindBillData();
                 f.ShowDialog();
             }
         }
