@@ -40,6 +40,14 @@ namespace SaleManages.DAO
             return data;
 
         }
+        bool CheckMaNV(string MaNV)
+        {
+            string query = "SELECT MANV FROM NHANVIEN WHERE MANV = '" + MaNV + "' ";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            if (dt.Rows.Count > 0)
+                return false;
+            else return true;
+        }
         public void Add()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
@@ -81,15 +89,17 @@ namespace SaleManages.DAO
             employees.Email = tbemail;
             employees.Phone = tbsdt;
             employees.DayToDo = tbbegin;
-            
-            string AddQuery = "INSERT INTO NHANVIEN(MANV,HOTEN,DCHI,SODT,NGSINH,NGVL,GT,Email,MucDo)" +
-                "VALUES('" + employees.Code + "', '" + employees.Name + "', '" + employees.Address + "', '" + employees.Phone + "', '" + employees.Birthday + "','" + employees.DayToDo + "', '" + employees.Sex + "', '" + employees.Email + "', '" + employees.Level + "')";
-            int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-            if (result > 0)
+            if (CheckMaNV(employees.Code) == true)
             {
-                MessageBox.Show("Nhân viên đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                string AddQuery = "INSERT INTO NHANVIEN(MANV,HOTEN,DCHI,SODT,NGSINH,NGVL,GT,Email,MucDo)" +
+                    "VALUES('" + employees.Code + "', '" + employees.Name + "', '" + employees.Address + "', '" + employees.Phone + "', '" + employees.Birthday + "','" + employees.DayToDo + "', '" + employees.Sex + "', '" + employees.Email + "', '" + employees.Level + "')";
+                int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                if (result > 0)
+                {
+                    MessageBox.Show("Nhân viên đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                }
             }
-            
+            else MessageBox.Show("Mã nhân viên đã tồn tại", "Thông báp", MessageBoxButtons.OK);
 
         }
         public void Delete()
@@ -187,33 +197,38 @@ namespace SaleManages.DAO
             string MaNv = ((_frmSalesManage)f).tbCodeNv.Text;
             string query1 = "SELECT GT FROM NHANVIEN WHERE MANV = N'" + MaNv + "' ";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query1);
-            DataRow dr = dt.Rows[0];
-            string sex = dr.ItemArray[0].ToString();
+            
             string query2 = "SELECT MucDo FROM NHANVIEN WHERE MANV = N'" + MaNv + "' ";
             DataTable dt1 = DataProvider.Instance.ExecuteQuery(query2);
-            DataRow dr1 = dt1.Rows[0];
-            string MucDo = dr1.ItemArray[0].ToString();
-            int mucdo = Convert.ToInt32(MucDo);
-            if (sex == "NAM")
+            
+            if (dt.Rows.Count > 0 && dt1.Rows.Count > 0)
             {
-                ((_frmSalesManage)f).rbNamNV.Checked = true;
-            }
-            else if (sex == "NU")
-            {
-                ((_frmSalesManage)f).rbNuNV.Checked = true;
-            }
-            else { ((_frmSalesManage)f).rbKhacNV.Checked = true; }
+                DataRow dr1 = dt1.Rows[0];
+                DataRow dr = dt.Rows[0];
+                string sex = dr.ItemArray[0].ToString();
+                string MucDo = dr1.ItemArray[0].ToString();
+                int mucdo = Convert.ToInt32(MucDo);
+                if (sex == "NAM")
+                {
+                    ((_frmSalesManage)f).rbNamNV.Checked = true;
+                }
+                else if (sex == "NU")
+                {
+                    ((_frmSalesManage)f).rbNuNV.Checked = true;
+                }
+                else { ((_frmSalesManage)f).rbKhacNV.Checked = true; }
 
-            if (mucdo == 1)
-            {
-                ((_frmSalesManage)f).rbMuc1.Checked = true;
-            }
-            else if (mucdo == 2)
-            {
-                ((_frmSalesManage)f).rbMuc2.Checked = true;
-            }
-            else { ((_frmSalesManage)f).rbMuc3.Checked = true; }
+                if (mucdo == 1)
+                {
+                    ((_frmSalesManage)f).rbMuc1.Checked = true;
+                }
+                else if (mucdo == 2)
+                {
+                    ((_frmSalesManage)f).rbMuc2.Checked = true;
+                }
+                else { ((_frmSalesManage)f).rbMuc3.Checked = true; }
             ((_frmSalesManage)f).DataBindings.Clear();
+            }
         }
     }
 }

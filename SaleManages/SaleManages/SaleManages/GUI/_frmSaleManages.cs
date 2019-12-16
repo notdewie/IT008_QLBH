@@ -142,7 +142,7 @@ namespace SaleManages.GUI
         }
         int CheckTabPage()
         {
-            int result = 5;
+            int result = 0;
             if (metroTabControl1.SelectedIndex == 0)
             {
                 result = 0;
@@ -154,6 +154,10 @@ namespace SaleManages.GUI
             else if (metroTabControl1.SelectedIndex == 2)
             {
                 result = 2;
+            }
+            else if(metroTabControl1.SelectedIndex == 3)
+            {
+                result = 3;
             }
             return result;
         }
@@ -179,7 +183,7 @@ namespace SaleManages.GUI
                 ObjProductDAO.Instance.Bindings();
 
             }
-            else
+            else if (check == 3)
             {
                 dtgvHoadon.DataSource = ObjBillDAO.Instance.LoadBillData();
                 ObjBillDAO.Instance.Bindings();
@@ -247,7 +251,7 @@ namespace SaleManages.GUI
 
         private void _frmSalesManage_Load(object sender, EventArgs e)
         {
-
+            //metroTabControl1.SelectedIndex = 0;
         }
 
         private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
@@ -277,6 +281,7 @@ namespace SaleManages.GUI
                 e.Cancel = true;
                 tbNameSp.Focus();
                 epTenSanPham.SetError(tbNameSp, "Vui lòng điền tên sản phẩm!");
+                
             }
             else
             {
@@ -633,6 +638,28 @@ namespace SaleManages.GUI
                 e.Cancel = false;
                 epCodeNv_HD.SetError(tbCodeNV_HD, null);
             }
+        }
+
+        private void tbCodeHD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroTabPage4_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void phêDuyệtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
+            string TK = ((_frmLogin)f).tbUsername.Text;
+            if (TK.ToUpper() == "ADMIN")
+            {
+                _frmAdmin f1 = new _frmAdmin();
+                f1.Show();
+            }
+            else MessageBox.Show("Bạn không phải Admin , không thể phê duyệt !", "Thông báo", MessageBoxButtons.OK);
         }
     }
 }

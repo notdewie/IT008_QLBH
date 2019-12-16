@@ -44,6 +44,14 @@ namespace SaleManages.DAO
             return data;
 
         }
+        bool CheckMaKH(string MaKH)
+        {
+            string query = "SELECT MAKH FROM KHACHHANG WHERE MAKH = '" + MaKH + "' ";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            if (dt.Rows.Count > 0)
+                return false;
+            else return true;
+        }
         public void Add()
         {
             
@@ -84,14 +92,17 @@ namespace SaleManages.DAO
             customer.Address = tbdc;
             customer.Email = tbemail;
             customer.Phone = tbsdt;
-            string AddQuery = "INSERT INTO KHACHHANG(MAKH,HOTEN,DCHI,SODT,NGSINH,GT,Email,MucDo)" +
-                "VALUES('"+customer.Code+"', '"+customer.Name+"', '"+customer.Address+"', '"+customer.Phone+"', '"+customer.Birthday+"', '"+customer.Sex+"', '"+customer.Email+"', '"+customer.Level+"')";
-            int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-            if(result >0)
+            if (CheckMaKH(customer.Code) == true)
             {
-                MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                string AddQuery = "INSERT INTO KHACHHANG(MAKH,HOTEN,DCHI,SODT,NGSINH,GT,Email,MucDo)" +
+                    "VALUES('" + customer.Code + "', '" + customer.Name + "', '" + customer.Address + "', '" + customer.Phone + "', '" + customer.Birthday + "', '" + customer.Sex + "', '" + customer.Email + "', '" + customer.Level + "')";
+                int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                if (result > 0)
+                {
+                    MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                }
             }
-            LoadCustomerData();
+            else MessageBox.Show("Mã khách hàng đã tồn tại", "Thông báo", MessageBoxButtons.OK);
 
         }
         public void Delete()
@@ -185,33 +196,37 @@ namespace SaleManages.DAO
             string MaKH = ((_frmSalesManage)f).tbCodeKh.Text;
             string query1 = "SELECT GT FROM KHACHHANG WHERE MAKH = N'" + MaKH + "' ";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query1);
-            DataRow dr = dt.Rows[0];
-            string sex = dr.ItemArray[0].ToString();
             string query2 = "SELECT MucDo FROM KHACHHANG WHERE MAKH = N'" + MaKH + "' ";
             DataTable dt1 = DataProvider.Instance.ExecuteQuery(query2);
-            DataRow dr1 = dt1.Rows[0];
-            string MucDo = dr1.ItemArray[0].ToString();
-            int mucdo = Convert.ToInt32(MucDo);
-            if (sex == "NAM")
+            if (dt.Rows.Count > 0 && dt1.Rows.Count > 0)
             {
-                ((_frmSalesManage)f).rbNam.Checked = true;
-            }
-            else if (sex == "NU")
-            {
-                ((_frmSalesManage)f).rbNu.Checked = true;
-            }
-            else { ((_frmSalesManage)f).rbElse.Checked = true; }
+                DataRow dr = dt.Rows[0];
+                string sex = dr.ItemArray[0].ToString();
 
-            if (mucdo == 1)
-            {
-                ((_frmSalesManage)f).radioButton4.Checked = true;
-            }
-            else if (mucdo == 2)
-            {
-                ((_frmSalesManage)f).radioButton5.Checked = true;
-            }
-            else { ((_frmSalesManage)f).radioButton6.Checked = true; }
+                DataRow dr1 = dt1.Rows[0];
+                string MucDo = dr1.ItemArray[0].ToString();
+                int mucdo = Convert.ToInt32(MucDo);
+                if (sex == "NAM")
+                {
+                    ((_frmSalesManage)f).rbNam.Checked = true;
+                }
+                else if (sex == "NU")
+                {
+                    ((_frmSalesManage)f).rbNu.Checked = true;
+                }
+                else { ((_frmSalesManage)f).rbElse.Checked = true; }
+
+                if (mucdo == 1)
+                {
+                    ((_frmSalesManage)f).radioButton4.Checked = true;
+                }
+                else if (mucdo == 2)
+                {
+                    ((_frmSalesManage)f).radioButton5.Checked = true;
+                }
+                else { ((_frmSalesManage)f).radioButton6.Checked = true; }
             ((_frmSalesManage)f).DataBindings.Clear();
+            }
         }
     }
 }

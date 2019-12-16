@@ -40,6 +40,14 @@ namespace SaleManages.DAO
             return data;
         }
         public ObjProduct product = new ObjProduct();
+        bool CheckMaSP(string MaSP)
+        {
+            string query = "SELECT MASP FROM SANPHAM WHERE MASP = '" + MaSP + "' ";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(query);
+            if (dt.Rows.Count > 0)
+                return false;
+            else return true;
+        }
         public void Add()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
@@ -59,13 +67,17 @@ namespace SaleManages.DAO
             product.Price = tbgia;
             product.Unit = tbdonvi;
             product.CTKM = tbctkm;
-            string AddQuery = "INSERT INTO SANPHAM(MASP,TENSP,DVT,NSX,HSD,NCC,GIA,CTKM) " +
-                "VALUES('" + product.Code + "', '" + product.Name + "', '" + product.Unit + "', '" + product.NSX + "', '" + product.HSD + "','" + product.NCC + "', '" + product.Price + "', '" + product.CTKM + "')";
-            int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-            if (result > 0)
+            if (CheckMaSP(product.Code))
             {
-                MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                string AddQuery = "INSERT INTO SANPHAM(MASP,TENSP,DVT,NSX,HSD,NCC,GIA,CTKM) " +
+                    "VALUES('" + product.Code + "', '" + product.Name + "', '" + product.Unit + "', '" + product.NSX + "', '" + product.HSD + "','" + product.NCC + "', '" + product.Price + "', '" + product.CTKM + "')";
+                int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                if (result > 0)
+                {
+                    MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                }
             }
+            else MessageBox.Show("Mã sản phẩm đã tồn tại", "Thông báo", MessageBoxButtons.OK);
         }
         public void Delete()
         {

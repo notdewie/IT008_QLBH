@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Resources;
 using System.Globalization;
+using SaleManages.DAO;
 
 namespace SaleManages.GUI
 {
@@ -154,7 +155,7 @@ namespace SaleManages.GUI
                                 MessageBox.Show("Vui lòng điền lại mật khẩu", "Thông báo", MessageBoxButtons.OK);
                             else
                             {
-                                MessageBox.Show("Đăng kí thành công, xin chờ quản lí duyệt", "Thông báo", MessageBoxButtons.OK);
+                                AccountDAO.Instance.CreateAcc();
                             }
                         
                     

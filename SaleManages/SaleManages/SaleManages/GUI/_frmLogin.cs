@@ -65,21 +65,12 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
                     string passWord = tbPass.Text;
                     if (LoginCheck())
                     {
-                        _frmSalesManage fi = new _frmSalesManage();
+                        _frmSalesManage f = new _frmSalesManage();
                         this.Hide();
-                        fi.ShowDialog();
+                        f.ShowDialog();
                         this.Show();
                     }
-                    else
-                    {
-                        if (lbUsername.Text == "Tên đăng nhập:")
-                        MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
-                        else MessageBox.Show("Wrong account or password !", "Alert!", MessageBoxButtons.OK);
-                    }
-                    _frmSalesManage f = new _frmSalesManage();
-                    this.Hide();
-                    f.ShowDialog();
-                    this.Show();
+                    
                 }
         }
         bool LoginCheck()

@@ -34,11 +34,28 @@ namespace SaleManages.DAO
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
             string userName = ((_frmLogin)f).tbUsername.Text;
             string passWord = ((_frmLogin)f).tbPass.Text;
-            string query = "SELECT * FROM TAIKHOAN WHERE TAIKHOAN = N'" + userName + "' AND MATKHAU = '" + passWord + "' ";
+            string query = "SELECT TRANGTHAI FROM TAIKHOAN WHERE TAIKHOAN = N'" + userName + "' AND MATKHAU = '" + passWord + "' ";
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
+            if (result.Rows.Count > 0)
+            {
+                DataRow dr = result.Rows[0];
+
+                if (dr.ItemArray[0].ToString() != "1")
+                {
+                    MessageBox.Show("Tài khoản chưa được phê duyệt", "Thông báo", MessageBoxButtons.OK);
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
+                return false;
+            }
             
-            
-            return result.Rows.Count > 0;
         }
 
         public void LoadInfoAcc()
@@ -104,12 +121,11 @@ namespace SaleManages.DAO
             {
 
                 string CreateAccQuery = "INSERT INTO TAIKHOAN(TAIKHOAN,HOTEN,Email,MATKHAU,NGSINH,TRANGTHAI) " +
-                "VALUES('" + account.UserName + "','" + account.Name + "','" + account.Email + "','" + account.PassWord + "','" + account.Birth + "','" + account.status + "' ";
+                "VALUES('" + account.UserName + "','" + account.Name + "','" + account.Email + "','" + account.PassWord + "','" + account.Birth + "','0' )";
                 int rs = DataProvider.Instance.ExecuteNonQuery(CreateAccQuery);
                 if (rs > 0)
                 {
                     MessageBox.Show("Đăng ký thành công , chờ quản lý duyệt để đăng nhập ", "Thông báo", MessageBoxButtons.OK);
-
                 }
             }
         }
@@ -119,13 +135,27 @@ namespace SaleManages.DAO
             string Name = ((_frmUpdateInfo)f).tbName.Text;
             string Sex = ((_frmUpdateInfo)f).tbSex.Text;
             string Birth = ((_frmUpdateInfo)f).dateBirth.Value.ToString();
-            string Address = ((_frmUpdateInfo)f).tbName.Text;
-            string Email = ((_frmUpdateInfo)f).tbName.Text;
-            string SDT = ((_frmUpdateInfo)f).tbName.Text;
+            string Address = ((_frmUpdateInfo)f).tbAddress.Text;
+            string Email = ((_frmUpdateInfo)f).tbEmail.Text;
+            string SDT = ((_frmUpdateInfo)f).tbPhone.Text;
             string UpdateQuery = "UPDATE TAIKHOAN " +
                 "SET HOTEN = '"+Name+"' , Email = '"+Email+"', GT = '"+Sex+"', NGSINH = '"+Birth+"',DCHI = '"+Address+"',SDT = '"+SDT+"' ";
             int rs = DataProvider.Instance.ExecuteNonQuery(UpdateQuery);
             if (rs > 0) MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK);
+        }
+
+        public void Duyet()
+        {
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmAdmin"];
+            string TK = ((_frmAdmin)f).tbAdmin.Text;
+            string query = "UPDATE TAIKHOAN " +
+                "SET TRANGTHAI = 1 " +
+                "WHERE TAIKHOAN = '"+TK+"' ";
+            int rs = DataProvider.Instance.ExecuteNonQuery(query);
+            if(rs>0)
+            {
+                MessageBox.Show("Tài khoản đã được phê duyệt","Thông báo",MessageBoxButtons.OK);
+            }
         }
     }
 }

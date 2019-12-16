@@ -17,7 +17,7 @@ namespace SaleManages.DAO
             private set => instance = value;
         }
         private DataProvider(){}
-        private string connectionSTR = @"Data Source=DESKTOP-TRPV0F7\SQLEXPRESS;Initial Catalog=QLBH2;Integrated Security=True";
+        private string connectionSTR = @"Data Source=.\SQLEXPRESS;Initial Catalog=QLBH2;Integrated Security=True";
 
         
 

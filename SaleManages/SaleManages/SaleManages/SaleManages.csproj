@@ -73,6 +73,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DTO\ObjProduct.cs" />
+    <Compile Include="GUI\_frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\_frmAdmin.Designer.cs">
+      <DependentUpon>_frmAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\_frmDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MyResource.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\_frmAdmin.resx">
+      <DependentUpon>_frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\_frmDetail.resx">
       <DependentUpon>_frmDetail.cs</DependentUpon>
     </EmbeddedResource>
