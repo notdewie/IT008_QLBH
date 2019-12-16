@@ -70,10 +70,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.LightSteelBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Purple;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(365, 512);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(730, 985);
             this.bunifuGradientPanel1.TabIndex = 0;
             this.bunifuGradientPanel1.Click += new System.EventHandler(this.f);
             // 
@@ -90,10 +90,10 @@
             this.btnEn.ImageZoom = 80;
             this.btnEn.LabelPosition = 0;
             this.btnEn.LabelText = "";
-            this.btnEn.Location = new System.Drawing.Point(262, 3);
-            this.btnEn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnEn.Location = new System.Drawing.Point(524, 6);
+            this.btnEn.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnEn.Name = "btnEn";
-            this.btnEn.Size = new System.Drawing.Size(35, 36);
+            this.btnEn.Size = new System.Drawing.Size(70, 69);
             this.btnEn.TabIndex = 11;
             this.btnEn.Click += new System.EventHandler(this.btnEn_Click);
             // 
@@ -110,10 +110,10 @@
             this.btnVi.ImageZoom = 100;
             this.btnVi.LabelPosition = 0;
             this.btnVi.LabelText = "";
-            this.btnVi.Location = new System.Drawing.Point(226, 0);
-            this.btnVi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnVi.Location = new System.Drawing.Point(452, 0);
+            this.btnVi.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnVi.Name = "btnVi";
-            this.btnVi.Size = new System.Drawing.Size(35, 36);
+            this.btnVi.Size = new System.Drawing.Size(70, 69);
             this.btnVi.TabIndex = 10;
             this.btnVi.Click += new System.EventHandler(this.btnVi_Click);
             // 
@@ -123,10 +123,10 @@
             this.lbReg.BackColor = System.Drawing.Color.Transparent;
             this.lbReg.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbReg.LinkColor = System.Drawing.Color.White;
-            this.lbReg.Location = new System.Drawing.Point(222, 340);
-            this.lbReg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbReg.Location = new System.Drawing.Point(444, 654);
+            this.lbReg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbReg.Name = "lbReg";
-            this.lbReg.Size = new System.Drawing.Size(60, 19);
+            this.lbReg.Size = new System.Drawing.Size(114, 37);
             this.lbReg.TabIndex = 9;
             this.lbReg.TabStop = true;
             this.lbReg.Text = "Đăng ký";
@@ -145,10 +145,10 @@
             this.btnExit.ImageZoom = 60;
             this.btnExit.LabelPosition = 0;
             this.btnExit.LabelText = "";
-            this.btnExit.Location = new System.Drawing.Point(49, 287);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnExit.Location = new System.Drawing.Point(98, 552);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(60, 38);
+            this.btnExit.Size = new System.Drawing.Size(120, 73);
             this.btnExit.TabIndex = 8;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -157,8 +157,8 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(130, 359);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(260, 690);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(0, 0);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -191,14 +191,14 @@
             this.btnLogin.IconVisible = true;
             this.btnLogin.IconZoom = 50D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(169, 287);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Location = new System.Drawing.Point(338, 552);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogin.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.Red;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(140, 36);
+            this.btnLogin.Size = new System.Drawing.Size(280, 69);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Đăng Nhập";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,10 +213,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPass.Location = new System.Drawing.Point(59, 239);
-            this.tbPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPass.Location = new System.Drawing.Point(118, 460);
+            this.tbPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPass.Name = "tbPass";
-            this.tbPass.Size = new System.Drawing.Size(244, 18);
+            this.tbPass.Size = new System.Drawing.Size(488, 36);
             this.tbPass.TabIndex = 3;
             this.tbPass.UseSystemPasswordChar = true;
             this.tbPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbPass_Validating);
@@ -230,10 +230,10 @@
             this.lbPass.BackColor = System.Drawing.Color.Transparent;
             this.lbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPass.ForeColor = System.Drawing.Color.White;
-            this.lbPass.Location = new System.Drawing.Point(56, 218);
-            this.lbPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbPass.Location = new System.Drawing.Point(112, 419);
+            this.lbPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(66, 19);
+            this.lbPass.Size = new System.Drawing.Size(126, 37);
             this.lbPass.TabIndex = 3;
             this.lbPass.Text = "Mật khẩu:";
             // 
@@ -244,10 +244,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(59, 178);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUsername.Location = new System.Drawing.Point(118, 342);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(244, 18);
+            this.tbUsername.Size = new System.Drawing.Size(488, 36);
             this.tbUsername.TabIndex = 2;
             this.tbUsername.Validating += new System.ComponentModel.CancelEventHandler(this.tbUsername_Validating);
             // 
@@ -260,10 +260,10 @@
             this.lbUsername.BackColor = System.Drawing.Color.Transparent;
             this.lbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsername.ForeColor = System.Drawing.Color.White;
-            this.lbUsername.Location = new System.Drawing.Point(56, 157);
-            this.lbUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbUsername.Location = new System.Drawing.Point(112, 302);
+            this.lbUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(98, 19);
+            this.lbUsername.Size = new System.Drawing.Size(188, 37);
             this.lbUsername.TabIndex = 1;
             this.lbUsername.Text = "Tên đăng nhập:";
             // 
@@ -276,10 +276,10 @@
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(71, 100);
-            this.lbTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTitle.Location = new System.Drawing.Point(142, 192);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(153, 37);
+            this.lbTitle.Size = new System.Drawing.Size(298, 71);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Đăng Nhập";
             // 
@@ -293,12 +293,12 @@
             // 
             // _frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 512);
+            this.ClientSize = new System.Drawing.Size(728, 985);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "_frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_frmLogin";

@@ -355,5 +355,23 @@ namespace SaleManages.GUI
                 f.ShowDialog();
             }
         }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            _frmDetail frmDetail = new _frmDetail();
+            frmDetail.Show();
+        }
+
+        private void btnViewBill_Click(object sender, EventArgs e)
+        {
+            _frmListBill f = new _frmListBill();
+            f.Show();
+        }
+
+        private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
+        {
+            _frmDetail frmDetail = new _frmDetail();
+            frmDetail.Show();
+        }
     }
 }

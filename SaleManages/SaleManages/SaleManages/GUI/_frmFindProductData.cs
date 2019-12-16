@@ -28,5 +28,6 @@ namespace SaleManages.GUI
             }
             else MessageBox.Show("Nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK);
         }
+        
     }
 }

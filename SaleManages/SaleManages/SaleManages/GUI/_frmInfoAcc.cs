@@ -57,5 +57,11 @@ namespace SaleManages.GUI
         {
             AccountDAO.Instance.LoadInfoAcc();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            _frmUpdateInfo f = new _frmUpdateInfo();
+            f.Show();
+        }
     }
 }
