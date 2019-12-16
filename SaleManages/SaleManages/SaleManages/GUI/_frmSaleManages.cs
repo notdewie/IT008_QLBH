@@ -89,37 +89,69 @@ namespace SaleManages.GUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ValidateChildren(ValidationConstraints.Enabled);
+
             int rs = CheckTabPage();
-            if(rs == 0)
+            if (rs == 0)
             {
-                ObjCustomerDAO.Instance.Add();
+                ValidateChildren(ValidationConstraints.Enabled);
+
+                if (!string.IsNullOrEmpty(tbNameKh.Text))
+                    if (!string.IsNullOrEmpty(tbCodeKh.Text))
+                        if (!string.IsNullOrEmpty(tbAddKh.Text))
+                            if (!string.IsNullOrEmpty(tbEmailKh.Text))
+                                if (!string.IsNullOrEmpty(tbPhone.Text))
+                                    ObjCustomerDAO.Instance.Add();
+
             }
-            else if(rs == 1)
+            else if (rs == 1)
             {
-                ObjEmployeesDAO.Instance.Add();
+                ValidateChildren(ValidationConstraints.Enabled);
+
+                if (!string.IsNullOrEmpty(tbNameNv.Text))
+                    if (!string.IsNullOrEmpty(tbCodeNv.Text))
+                        if (!string.IsNullOrEmpty(dateNv.Text))
+                            if (!string.IsNullOrEmpty(tbEmailNv.Text))
+                                if (!string.IsNullOrEmpty(tbAddNv.Text))
+                                    if (!string.IsNullOrEmpty(tbPhoneNv.Text))
+                                        ObjEmployeesDAO.Instance.Add();
+
             }
-            else if(rs == 2)
+            else if (rs == 2)
             {
-                ObjProductDAO.Instance.Add();
+                ValidateChildren(ValidationConstraints.Enabled);
+
+                if (!string.IsNullOrEmpty(tbNameSp.Text))
+                    if (!string.IsNullOrEmpty(tbCodeSp.Text))
+                        if (!string.IsNullOrEmpty(tbDateSp.Text))
+                            if (!string.IsNullOrEmpty(tbNcc.Text))
+                                if (!string.IsNullOrEmpty(tbPrice.Text))
+                                    if (!string.IsNullOrEmpty(tbDonvi.Text))
+                                        ObjProductDAO.Instance.Add();
+
             }
             else
             {
-                ObjBillDAO.Instance.Add();
+                ValidateChildren(ValidationConstraints.Enabled);
+
+                if (!string.IsNullOrEmpty(tbCodeHD.Text))
+                    if (!string.IsNullOrEmpty(tbCodeKH_HD.Text))
+                        if (!string.IsNullOrEmpty(tbCodeNV_HD.Text))
+                            ObjBillDAO.Instance.Add();
+
             }
         }
         int CheckTabPage()
         {
             int result = 5;
-            if (metroTabControl1.SelectedIndex == 0) 
+            if (metroTabControl1.SelectedIndex == 0)
             {
                 result = 0;
             }
-            else if(metroTabControl1.SelectedIndex ==1)
+            else if (metroTabControl1.SelectedIndex == 1)
             {
                 result = 1;
             }
-            else if(metroTabControl1.SelectedIndex ==2)
+            else if (metroTabControl1.SelectedIndex == 2)
             {
                 result = 2;
             }
@@ -129,9 +161,9 @@ namespace SaleManages.GUI
         private void btnView_Click(object sender, EventArgs e)
         {
             int check = CheckTabPage();
-            if(check == 0)
+            if (check == 0)
             {
-               
+
                 dtgvKhachhang.DataSource = ObjCustomerDAO.Instance.LoadCustomerData();
                 ObjCustomerDAO.Instance.Bindings();
             }
@@ -141,11 +173,11 @@ namespace SaleManages.GUI
                 dtgvNhanvien.DataSource = ObjEmployeesDAO.Instance.LoadEmployeesData();
                 ObjEmployeesDAO.Instance.Bindings();
             }
-            else if(check == 2)
+            else if (check == 2)
             {
                 dtgvSanpham.DataSource = ObjProductDAO.Instance.LoadProductData();
                 ObjProductDAO.Instance.Bindings();
-                
+
             }
             else
             {
@@ -188,7 +220,7 @@ namespace SaleManages.GUI
             {
                 ObjEmployeesDAO.Instance.Update();
             }
-            else if(check == 2)
+            else if (check == 2)
             {
                 ObjProductDAO.Instance.Update();
             }
@@ -221,9 +253,9 @@ namespace SaleManages.GUI
         private void thôngTinToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _frmInfoAcc f = new _frmInfoAcc();
-            
+
             f.ShowDialog();
-           
+
         }
 
         private void điềuKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -363,7 +395,7 @@ namespace SaleManages.GUI
                 _frmFindEmployeesData f = new _frmFindEmployeesData();
                 f.ShowDialog();
             }
-            else if(check == 2)
+            else if (check == 2)
             {
                 _frmFindProductData f = new _frmFindProductData();
                 f.ShowDialog();
@@ -391,6 +423,216 @@ namespace SaleManages.GUI
         {
             _frmDetail frmDetail = new _frmDetail();
             frmDetail.Show();
+        }
+
+        private void tbNameNv_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbNameNv.Text))
+            {
+                e.Cancel = true;
+                tbNameNv.Focus();
+                epNVName.SetError(tbNameNv, "Vui lòng điền họ tên nhân viên!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epNVName.SetError(tbNameNv, null);
+            }
+        }
+
+        private void tbCodeNv_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbCodeNv.Text))
+            {
+                e.Cancel = true;
+                tbCodeNv.Focus();
+                epNVCode.SetError(tbCodeNv, "Vui lòng điền mã số nhân viên!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epNVCode.SetError(tbCodeNv, null);
+            }
+        }
+
+        private void dateNv_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(dateNv.Text))
+            {
+                e.Cancel = true;
+                dateNv.Focus();
+                epNVBirth.SetError(dateNv, "Ngày sinh phải trước ngày vào làm!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epNVBirth.SetError(dateNv, null);
+            }
+        }
+
+        private void tbAddNv_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbAddNv.Text))
+            {
+                e.Cancel = true;
+                tbAddNv.Focus();
+                epNVDiaChi.SetError(tbAddNv, "Vui lòng điền địa chỉ nhân viên!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epNVDiaChi.SetError(tbAddNv, null);
+            }
+        }
+
+        private void tbEmailNv_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbEmailNv.Text))
+            {
+                e.Cancel = true;
+                tbEmailNv.Focus();
+                epNVEmail.SetError(tbEmailNv, "Vui lòng điền email nhân viên!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epNVEmail.SetError(tbEmailNv, null);
+            }
+        }
+
+        private void tbPhoneNv_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbPhoneNv.Text))
+            {
+                e.Cancel = true;
+                tbPhoneNv.Focus();
+                epNVSDT.SetError(tbPhoneNv, "Vui lòng điền sđt nhân viên!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epNVSDT.SetError(tbPhoneNv, null);
+            }
+        }
+
+        private void tbNameKh_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbNameKh.Text))
+            {
+                e.Cancel = true;
+                tbNameKh.Focus();
+                epKHName.SetError(tbNameKh, "Vui lòng điền họ tên khách hàng!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epKHName.SetError(tbNameKh, null);
+            }
+        }
+
+        private void tbCodeKh_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbCodeKh.Text))
+            {
+                e.Cancel = true;
+                tbCodeKh.Focus();
+                epKHCode.SetError(tbCodeKh, "Vui lòng điền mã số khách hàng!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epKHCode.SetError(tbCodeKh, null);
+            }
+        }
+
+        private void tbAddKh_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbAddKh.Text))
+            {
+                e.Cancel = true;
+                tbAddKh.Focus();
+                epKHAdd.SetError(tbAddKh, "Vui lòng điền địa chỉ khách hàng!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epKHAdd.SetError(tbAddKh, null);
+            }
+        }
+
+        private void tbEmailKh_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbEmailKh.Text))
+            {
+                e.Cancel = true;
+                tbEmailKh.Focus();
+                epKHEmail.SetError(tbEmailKh, "Vui lòng điền email khách hàng!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epKHEmail.SetError(tbEmailKh, null);
+            }
+        }
+
+        private void tbPhone_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbPhone.Text))
+            {
+                e.Cancel = true;
+                tbPhone.Focus();
+                epKHSdt.SetError(tbPhone, "Vui lòng điền sđt khách hàng!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epKHSdt.SetError(tbPhone, null);
+            }
+        }
+
+        private void tbCodeHD_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbCodeHD.Text))
+            {
+                e.Cancel = true;
+                tbCodeHD.Focus();
+                epSHD.SetError(tbCodeHD, "Vui lòng điền số hóa đơn!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epSHD.SetError(tbCodeHD, null);
+            }
+        }
+
+        private void tbCodeKH_HD_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbCodeKH_HD.Text))
+            {
+                e.Cancel = true;
+                tbCodeKH_HD.Focus();
+                epCodeKh_HD.SetError(tbCodeKH_HD, "Vui lòng điền mã khách hàng!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epCodeKh_HD.SetError(tbCodeKH_HD, null);
+            }
+        }
+
+        private void tbCodeNV_HD_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbCodeNV_HD.Text))
+            {
+                e.Cancel = true;
+                tbCodeNV_HD.Focus();
+                epCodeNv_HD.SetError(tbCodeNV_HD, "Vui lòng điền mã nhân viên!");
+            }
+            else
+            {
+                e.Cancel = false;
+                epCodeNv_HD.SetError(tbCodeNV_HD, null);
+            }
         }
     }
 }

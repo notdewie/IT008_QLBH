@@ -65,9 +65,9 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
                     string passWord = tbPass.Text;
                     if (LoginCheck())
                     {
-                        _frmSalesManage f = new _frmSalesManage();
+                        _frmSalesManage fi = new _frmSalesManage();
                         this.Hide();
-                        f.ShowDialog();
+                        fi.ShowDialog();
                         this.Show();
                     }
                     else
@@ -76,10 +76,10 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
                         MessageBox.Show("Sai tài khoản hoặc mật khẩu !", "Thông báo!", MessageBoxButtons.OK);
                         else MessageBox.Show("Wrong account or password !", "Alert!", MessageBoxButtons.OK);
                     }
-                    /*_frmSalesManage f = new _frmSalesManage();
+                    _frmSalesManage f = new _frmSalesManage();
                     this.Hide();
                     f.ShowDialog();
-                    this.Show();*/
+                    this.Show();
                 }
         }
         bool LoginCheck()

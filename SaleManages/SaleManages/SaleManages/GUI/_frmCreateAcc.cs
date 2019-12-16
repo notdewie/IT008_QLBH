@@ -162,5 +162,11 @@ namespace SaleManages.GUI
             
              
         }
+
+        private void lbUseTerm_Click(object sender, EventArgs e)
+        {
+            _frmUseTerm f = new _frmUseTerm();
+            f.ShowDialog();
+        }
     }
 }

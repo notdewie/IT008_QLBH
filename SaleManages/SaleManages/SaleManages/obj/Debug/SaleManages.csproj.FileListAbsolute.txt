@@ -136,3 +136,17 @@ D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\De
 D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmListBill.resources
 D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmUpdateInfo.resources
 D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmFindBillData.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\en-US\SaleManages.resources.dll
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\bin\Debug\vi-VN\SaleManages.resources.dll
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmDetail.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmFindBillData.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmFindCustomerData.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmFindEmployeesData.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmFindProductData.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmListBill.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmUpdateInfo.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.en-US.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.Resources.MyResource.vi-VN.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\en-US\SaleManages.resources.dll
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\vi-VN\SaleManages.resources.dll

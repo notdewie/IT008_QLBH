@@ -16,14 +16,20 @@ namespace SaleManages.GUI
     {
         CultureInfo culture;
         string checklang;
+        //string checklangCA;
         public _frmUseTerm()
         {
             InitializeComponent();
-            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
-            checklang = ((_frmSalesManage)f).lbNameKh.Text;
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
+            checklang = ((_frmLogin)f).lbTitle.Text;
             culture = CultureInfo.CurrentCulture;
-            if (checklang == "Họ Tên:") SetLanguage("vi-VN");
+            if (checklang == "Đăng nhập") SetLanguage("vi-VN");
             else SetLanguage("en-US");
+            /*System.Windows.Forms.Form fCA = System.Windows.Forms.Application.OpenForms["_frmCreateAcc"];
+            checklangCA = ((_frmCreateAcc)fCA).rbElse.Text;
+            culture = CultureInfo.CurrentCulture;
+            if (checklangCA == "Khác") SetLanguage("vi-VN");
+            else SetLanguage("en-US");*/
         }
         private void SetLanguage(string cultureName)
         {
