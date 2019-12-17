@@ -84,11 +84,6 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
         }
         
 
-        private void f(object sender, EventArgs e)
-        {
-
-        }
-
         private void _frmLogin_FormClosing_1(object sender, FormClosingEventArgs e)
         {
             if (lbUsername.Text == "Tên đăng nhập:")
@@ -120,10 +115,10 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
             if (string.IsNullOrEmpty(tbUsername.Text))
             {
                 e.Cancel = true;
-                tbUsername.Focus();
                 if (lbUsername.Text == "Tên đăng nhập:")
                     epUser.SetError(tbUsername, "Vui lòng điền tên đăng nhập!");
                 else epUser.SetError(tbUsername, "Please enter your username!");
+                e.Cancel = false;
             }
             else
             {
@@ -137,10 +132,11 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
             if (string.IsNullOrEmpty(tbPass.Text))
             {
                 e.Cancel = true;
-                tbPass.Focus();
+                tbPass.Invalidate();
                 if (lbUsername.Text == "Tên đăng nhập:")
                     epPass.SetError(tbPass, "Vui lòng điền mật khẩu!");
                 else epPass.SetError(tbPass, "Please enter your password!");
+                e.Cancel = false;
             }
             else
             {
@@ -158,5 +154,51 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
         {
             SetLanguage("en-US");
         }
+
+        private void tbUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                ValidateChildren(ValidationConstraints.Enabled);
+                if (!string.IsNullOrEmpty(tbUsername.Text))
+                    if (!string.IsNullOrEmpty(tbPass.Text))
+                    {
+                        string userName = tbUsername.Text;
+                        string passWord = tbPass.Text;
+                        if (LoginCheck())
+                        {
+                            _frmSalesManage f = new _frmSalesManage();
+                            this.Hide();
+                            f.ShowDialog();
+                            this.Show();
+                        }
+
+                    }
+            }
+        }
+
+        private void tbPass_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                ValidateChildren(ValidationConstraints.Enabled);
+                if (!string.IsNullOrEmpty(tbUsername.Text))
+                    if (!string.IsNullOrEmpty(tbPass.Text))
+                    {
+                        string userName = tbUsername.Text;
+                        string passWord = tbPass.Text;
+                        if (LoginCheck())
+                        {
+                            _frmSalesManage f = new _frmSalesManage();
+                            this.Hide();
+                            f.ShowDialog();
+                            this.Show();
+                        }
+
+                    }
+            }
+        }
+
+
     }
 }

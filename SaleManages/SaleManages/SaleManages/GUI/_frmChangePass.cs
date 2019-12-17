@@ -49,8 +49,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbOldPass.Text))
             {
                 e.Cancel = true;
-                tbOldPass.Focus();
                 epOldPass.SetError(tbOldPass, "Vui lòng nhập mật khẩu cũ!");
+                e.Cancel = false;
             }
             else
             {
@@ -64,8 +64,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNewPass.Text))
             {
                 e.Cancel = true;
-                tbNewPass.Focus();
                 epNewPass.SetError(tbNewPass, "Vui lòng điền mật khẩu mới!");
+                e.Cancel = false;
             }
             else
             {
@@ -79,8 +79,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCheckPass.Text))
             {
                 e.Cancel = true;
-                tbCheckPass.Focus();
                 epReNewPass.SetError(tbCheckPass, "Vui lòng nhập lại mật khẩu!");
+                e.Cancel = false;
             }
             else
             {

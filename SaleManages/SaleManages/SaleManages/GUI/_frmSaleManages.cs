@@ -279,9 +279,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNameSp.Text))
             {
                 e.Cancel = true;
-                tbNameSp.Focus();
                 epTenSanPham.SetError(tbNameSp, "Vui lòng điền tên sản phẩm!");
-                
+                e.Cancel = false;
             }
             else
             {
@@ -295,8 +294,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeSp.Text))
             {
                 e.Cancel = true;
-                tbCodeSp.Focus();
                 epMaSanPham.SetError(tbCodeSp, "Vui lòng điền mã sản phẩm!");
+                e.Cancel = false;
             }
             else
             {
@@ -310,8 +309,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbDateSp.Text))
             {
                 e.Cancel = true;
-                tbDateSp.Focus();
                 epNSX.SetError(tbDateSp, "NSX phải nhỏ hơn HSD!");
+                e.Cancel = false;
             }
             else
             {
@@ -325,8 +324,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNcc.Text))
             {
                 e.Cancel = true;
-                tbNcc.Focus();
                 epNCC.SetError(tbNcc, "Vui lòng điền tên NCC!");
+                e.Cancel = false;
             }
             else
             {
@@ -340,8 +339,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPrice.Text))
             {
                 e.Cancel = true;
-                tbPrice.Focus();
                 epPrice.SetError(tbPrice, "Vui lòng điền giá thành!");
+                e.Cancel = false;
             }
             else
             {
@@ -355,8 +354,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbDonvi.Text))
             {
                 e.Cancel = true;
-                tbDonvi.Focus();
                 epDonVi.SetError(tbDonvi, "Vui lòng điền đơn vị!");
+                e.Cancel = false;
             }
             else
             {
@@ -435,8 +434,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNameNv.Text))
             {
                 e.Cancel = true;
-                tbNameNv.Focus();
                 epNVName.SetError(tbNameNv, "Vui lòng điền họ tên nhân viên!");
+                e.Cancel = false;
             }
             else
             {
@@ -450,8 +449,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeNv.Text))
             {
                 e.Cancel = true;
-                tbCodeNv.Focus();
                 epNVCode.SetError(tbCodeNv, "Vui lòng điền mã số nhân viên!");
+                e.Cancel = false;
             }
             else
             {
@@ -465,8 +464,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(dateNv.Text))
             {
                 e.Cancel = true;
-                dateNv.Focus();
                 epNVBirth.SetError(dateNv, "Ngày sinh phải trước ngày vào làm!");
+                e.Cancel = false;
             }
             else
             {
@@ -480,8 +479,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbAddNv.Text))
             {
                 e.Cancel = true;
-                tbAddNv.Focus();
                 epNVDiaChi.SetError(tbAddNv, "Vui lòng điền địa chỉ nhân viên!");
+                e.Cancel = false;
             }
             else
             {
@@ -495,8 +494,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbEmailNv.Text))
             {
                 e.Cancel = true;
-                tbEmailNv.Focus();
                 epNVEmail.SetError(tbEmailNv, "Vui lòng điền email nhân viên!");
+                e.Cancel = false;
             }
             else
             {
@@ -510,8 +509,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPhoneNv.Text))
             {
                 e.Cancel = true;
-                tbPhoneNv.Focus();
                 epNVSDT.SetError(tbPhoneNv, "Vui lòng điền sđt nhân viên!");
+                e.Cancel = false;
             }
             else
             {
@@ -525,8 +524,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNameKh.Text))
             {
                 e.Cancel = true;
-                tbNameKh.Focus();
                 epKHName.SetError(tbNameKh, "Vui lòng điền họ tên khách hàng!");
+                e.Cancel = false;
             }
             else
             {
@@ -540,8 +539,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeKh.Text))
             {
                 e.Cancel = true;
-                tbCodeKh.Focus();
                 epKHCode.SetError(tbCodeKh, "Vui lòng điền mã số khách hàng!");
+                e.Cancel = false;
             }
             else
             {
@@ -555,8 +554,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbAddKh.Text))
             {
                 e.Cancel = true;
-                tbAddKh.Focus();
                 epKHAdd.SetError(tbAddKh, "Vui lòng điền địa chỉ khách hàng!");
+                e.Cancel = false;
             }
             else
             {
@@ -570,14 +569,15 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbEmailKh.Text))
             {
                 e.Cancel = true;
-                tbEmailKh.Focus();
                 epKHEmail.SetError(tbEmailKh, "Vui lòng điền email khách hàng!");
+                e.Cancel = false;
             }
             else
             {
                 e.Cancel = false;
-                epKHEmail.SetError(tbEmailKh, null);
+                epKHEmail.SetError(tbEmailKh, null); 
             }
+            
         }
 
         private void tbPhone_Validating(object sender, CancelEventArgs e)
@@ -585,8 +585,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPhone.Text))
             {
                 e.Cancel = true;
-                tbPhone.Focus();
                 epKHSdt.SetError(tbPhone, "Vui lòng điền sđt khách hàng!");
+                e.Cancel = false;
             }
             else
             {
@@ -600,8 +600,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeHD.Text))
             {
                 e.Cancel = true;
-                tbCodeHD.Focus();
                 epSHD.SetError(tbCodeHD, "Vui lòng điền số hóa đơn!");
+                e.Cancel = false;
             }
             else
             {
@@ -615,8 +615,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeKH_HD.Text))
             {
                 e.Cancel = true;
-                tbCodeKH_HD.Focus();
                 epCodeKh_HD.SetError(tbCodeKH_HD, "Vui lòng điền mã khách hàng!");
+                e.Cancel = false;
             }
             else
             {
@@ -630,8 +630,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeNV_HD.Text))
             {
                 e.Cancel = true;
-                tbCodeNV_HD.Focus();
                 epCodeNv_HD.SetError(tbCodeNV_HD, "Vui lòng điền mã nhân viên!");
+                e.Cancel = false;
             }
             else
             {

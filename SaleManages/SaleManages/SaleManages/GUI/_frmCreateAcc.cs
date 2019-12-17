@@ -67,8 +67,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbUsername.Text))
             {
                 e.Cancel = true;
-                tbUsername.Focus();
                 epUserName.SetError(tbUsername, "Vui lòng điền tên đăng nhập!");
+                e.Cancel = false;
             }
             else
             {
@@ -82,8 +82,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbName.Text))
             {
                 e.Cancel = true;
-                tbName.Focus();
                 epFullName.SetError(tbName, "Vui lòng điền họ tên!");
+                e.Cancel = false;
             }
             else
             {
@@ -97,8 +97,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbEmail.Text))
             {
                 e.Cancel = true;
-                tbEmail.Focus();
                 epEMail.SetError(tbEmail, "Vui lòng điền email!");
+                e.Cancel = false;
             }
             else
             {
@@ -112,8 +112,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPass.Text))
             {
                 e.Cancel = true;
-                tbPass.Focus();
                 epPass.SetError(tbPass, "Vui lòng điền mật khẩu!");
+                e.Cancel = false;
             }
             else
             {
@@ -127,8 +127,8 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCheckPass.Text))
             {
                 e.Cancel = true;
-                tbCheckPass.Focus();
                 epCheckPass.SetError(tbCheckPass, "Vui lòng điền lại mật khẩu!");
+                e.Cancel = false;
             }
             else
             {

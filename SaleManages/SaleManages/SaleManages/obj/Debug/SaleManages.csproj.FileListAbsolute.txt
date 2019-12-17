@@ -151,3 +151,4 @@ C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Deb
 C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\en-US\SaleManages.resources.dll
 C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\vi-VN\SaleManages.resources.dll
 D:\VS Code\Do An IT008\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmAdmin.resources
+C:\Users\ACER\Desktop\Git\IT008_QLBH\SaleManages\SaleManages\SaleManages\obj\Debug\SaleManages.GUI._frmAdmin.resources
