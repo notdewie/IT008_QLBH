@@ -100,7 +100,10 @@ namespace SaleManages.GUI
                         if (!string.IsNullOrEmpty(tbAddKh.Text))
                             if (!string.IsNullOrEmpty(tbEmailKh.Text))
                                 if (!string.IsNullOrEmpty(tbPhone.Text))
+                                {
                                     ObjCustomerDAO.Instance.Add();
+                                    
+                                }
 
             }
             else if (rs == 1)
@@ -113,7 +116,9 @@ namespace SaleManages.GUI
                             if (!string.IsNullOrEmpty(tbEmailNv.Text))
                                 if (!string.IsNullOrEmpty(tbAddNv.Text))
                                     if (!string.IsNullOrEmpty(tbPhoneNv.Text))
-                                        ObjEmployeesDAO.Instance.Add();
+                                    { ObjEmployeesDAO.Instance.Add();
+                                        
+                                    }
 
             }
             else if (rs == 2)
@@ -126,7 +131,10 @@ namespace SaleManages.GUI
                             if (!string.IsNullOrEmpty(tbNcc.Text))
                                 if (!string.IsNullOrEmpty(tbPrice.Text))
                                     if (!string.IsNullOrEmpty(tbDonvi.Text))
+                                    {
                                         ObjProductDAO.Instance.Add();
+                                       
+                                    }
 
             }
             else
@@ -136,7 +144,10 @@ namespace SaleManages.GUI
                 if (!string.IsNullOrEmpty(tbCodeHD.Text))
                     if (!string.IsNullOrEmpty(tbCodeKH_HD.Text))
                         if (!string.IsNullOrEmpty(tbCodeNV_HD.Text))
+                        {
                             ObjBillDAO.Instance.Add();
+                            
+                        }
 
             }
         }

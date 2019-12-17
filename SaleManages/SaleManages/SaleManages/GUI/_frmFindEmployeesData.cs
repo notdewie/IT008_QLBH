@@ -18,7 +18,9 @@ namespace SaleManages.GUI
             InitializeComponent();
         }
 
-        private void btnFindemData_Click(object sender, EventArgs e)
+        
+
+        private void btnFindemData_Click_1(object sender, EventArgs e)
         {
             if (tbFindemData.Text != "")
             {

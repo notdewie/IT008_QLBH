@@ -18,7 +18,9 @@ namespace SaleManages.GUI
             InitializeComponent();
         }
 
-        private void btnFindproData_Click(object sender, EventArgs e)
+        
+
+        private void btnFindproData_Click_1(object sender, EventArgs e)
         {
             if (tbFindproData.Text != "")
             {
@@ -28,6 +30,5 @@ namespace SaleManages.GUI
             }
             else MessageBox.Show("Nhập tên sản phẩm", "Thông báo", MessageBoxButtons.OK);
         }
-        
     }
 }

@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using SaleManages.GUI;
+using System.Text.RegularExpressions;
 namespace SaleManages.DAO
 {
     public class ObjBillDAO
@@ -61,21 +62,23 @@ namespace SaleManages.DAO
             string MaNV = ((_frmSalesManage)f).tbCodeNV_HD.Text;
             string dateHD = ((_frmSalesManage)f).dateHD.Value.ToString();
             string TriGia = ((_frmSalesManage)f).tbTriGia.Text;
-            if (CheckSoHD(SoHD))
-            {
-                if (Check(MaNV, MaKH))
+            if (IsNumber(SoHD)) { 
+                if (CheckSoHD(SoHD))
                 {
-                    string AddQuery = "INSERT INTO HOADON(SOHD,NGHD,MAKH,MANV,TRIGIA) " +
-                        "VALUES('" + SoHD + "', '" + dateHD + "', '" + MaKH + "', '" + MaNV + "', '" + TriGia + "')";
-                    int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-                    if (result > 0)
+                    if (Check(MaNV, MaKH))
                     {
-                        MessageBox.Show("Hoá đơn đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                        string AddQuery = "INSERT INTO HOADON(SOHD,NGHD,MAKH,MANV,TRIGIA) " +
+                            "VALUES('" + SoHD + "', '" + dateHD + "', '" + MaKH + "', '" + MaNV + "', '" + TriGia + "')";
+                        int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                        if (result > 0)
+                        {
+                            MessageBox.Show("Hoá đơn đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                        }
                     }
+                    else MessageBox.Show("Nhập sai mã khách hàng hoặc mã nhân viên", "Thông báo", MessageBoxButtons.OK);
                 }
-                else MessageBox.Show("Nhập sai mã khách hàng hoặc mã nhân viên", "Thông báo", MessageBoxButtons.OK);
+                else MessageBox.Show("Số hoá đơn đã tồn tại hoặc không phải chuỗi số", "Thông báo", MessageBoxButtons.OK);
             }
-            else MessageBox.Show("Số hoá đơn đã tồn tại", "Thông báo", MessageBoxButtons.OK);
         }
 
         public void Update()
@@ -112,12 +115,18 @@ namespace SaleManages.DAO
 
         public DataTable FindBillData()
         {
+            DataTable data = new DataTable();
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmFindBillData"];
             string SoHD = ((_frmFindBillData)f).tbFindbillData.Text;
-            string FindQuery = "SELECT SOHD AS N'Số Hoá Đơn' ,MAKH AS N'Mã Khách Hàng', MANV AS N'Mã Nhân Viên' ," +
-                   "TRIGIA AS N'Trị Giá',NGHD AS N'Ngày Hoá Đơn' FROM KHACHHANG" +
-                   "WHERE SOHD = '" + SoHD + "' ";
-            DataTable data = DataProvider.Instance.ExecuteQuery(FindQuery);
+            if (IsNumber(SoHD) == true)
+            {
+                string FindQuery = "SELECT SOHD AS N'Số Hoá Đơn' ,MAKH AS N'Mã Khách Hàng', MANV AS N'Mã Nhân Viên' ," +
+                       "TRIGIA AS N'Trị Giá',NGHD AS N'Ngày Hoá Đơn' FROM HOADON " +
+                       "WHERE SOHD = '" + SoHD + "' ";
+                data = DataProvider.Instance.ExecuteQuery(FindQuery);
+                return data;
+            }
+            else MessageBox.Show("Số hoá đơn phải là chuỗi sô", "Thông báo", MessageBoxButtons.OK);
             return data;
         }
 
@@ -159,22 +168,29 @@ namespace SaleManages.DAO
         public void BindingsBillDetail()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmDetail"];
-            ((_frmDetail)f).tbMaSP_detail.DataBindings.Clear();
-            ((_frmDetail)f).tbSoLuong_detail.DataBindings.Clear();
-            ((_frmDetail)f).tbSoHD.DataBindings.Clear();
-            ((_frmDetail)f).tbSoHD.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Số Hoá Đơn"));
-            ((_frmDetail)f).tbMaSP_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Mã Sản Phẩm"));
-            ((_frmDetail)f).tbSoLuong_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Số Lượng"));
-            ((_frmDetail)f).DataBindings.Clear();
-        }
-        public bool IsNumber(string pValue)
-        {
-            foreach (Char c in pValue)
+            if (((_frmDetail)f).tbMaSP_detail.Text != "")
             {
-                if (!Char.IsDigit(c))
-                    return false;
+                ((_frmDetail)f).tbMaSP_detail.DataBindings.Clear();
+                ((_frmDetail)f).tbSoLuong_detail.DataBindings.Clear();
+                ((_frmDetail)f).tbSoHD.DataBindings.Clear();
+                ((_frmDetail)f).tbSoHD.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Số Hoá Đơn"));
+                ((_frmDetail)f).tbMaSP_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Mã Sản Phẩm"));
+                ((_frmDetail)f).tbSoLuong_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Số Lượng"));
+                ((_frmDetail)f).DataBindings.Clear();
             }
-            return true;
+            else MessageBox.Show("Số hoá đơn trống", "Thông báo", MessageBoxButtons.OK);
+        }
+        public bool IsNumber(string pText)
+        {
+            Regex regex = null;
+            try
+            {
+                regex = new Regex(@"^[-+]?[0-9]*\.?[0-9]+$"); return regex.IsMatch(pText);
+            }
+            catch (Exception ex)
+            {
+                return regex.IsMatch(pText);
+            }
         }
         bool CheckSoHD(string SOHD)
         {

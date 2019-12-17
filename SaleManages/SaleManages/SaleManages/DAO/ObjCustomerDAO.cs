@@ -92,18 +92,22 @@ namespace SaleManages.DAO
             customer.Address = tbdc;
             customer.Email = tbemail;
             customer.Phone = tbsdt;
-            if (CheckMaKH(customer.Code) == true)
+            int len = customer.Code.Length;
+            if (len < 5 && len >0)
             {
-                string AddQuery = "INSERT INTO KHACHHANG(MAKH,HOTEN,DCHI,SODT,NGSINH,GT,Email,MucDo)" +
-                    "VALUES('" + customer.Code + "', '" + customer.Name + "', '" + customer.Address + "', '" + customer.Phone + "', '" + customer.Birthday + "', '" + customer.Sex + "', '" + customer.Email + "', '" + customer.Level + "')";
-                int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-                if (result > 0)
+                if (CheckMaKH(customer.Code) == true)
                 {
-                    MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                    string AddQuery = "INSERT INTO KHACHHANG(MAKH,HOTEN,DCHI,SODT,NGSINH,GT,Email,MucDo)" +
+                        "VALUES('" + customer.Code + "', '" + customer.Name + "', '" + customer.Address + "', '" + customer.Phone + "', '" + customer.Birthday + "', '" + customer.Sex + "', '" + customer.Email + "', '" + customer.Level + "')";
+                    int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                    }
                 }
+                else MessageBox.Show("Mã khách hàng đã tồn tại", "Thông báo", MessageBoxButtons.OK);
             }
-            else MessageBox.Show("Mã khách hàng đã tồn tại", "Thông báo", MessageBoxButtons.OK);
-
+            else MessageBox.Show("Mã khách hàng phải nhỏ hơn 5 và lớn hơn 0 kí tự ", "Thông báo", MessageBoxButtons.OK);
         }
         public void Delete()
         {

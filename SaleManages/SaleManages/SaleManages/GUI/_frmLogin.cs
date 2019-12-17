@@ -61,8 +61,7 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
             if (!string.IsNullOrEmpty(tbUsername.Text))
                 if (!string.IsNullOrEmpty(tbPass.Text))
                 {
-                    string userName = tbUsername.Text;
-                    string passWord = tbPass.Text;
+                    
                     if (LoginCheck())
                     {
                         _frmSalesManage f = new _frmSalesManage();
@@ -163,8 +162,7 @@ private void _frmLogin_MouseDown(object sender, MouseEventArgs e)
                 if (!string.IsNullOrEmpty(tbUsername.Text))
                     if (!string.IsNullOrEmpty(tbPass.Text))
                     {
-                        string userName = tbUsername.Text;
-                        string passWord = tbPass.Text;
+                       
                         if (LoginCheck())
                         {
                             _frmSalesManage f = new _frmSalesManage();

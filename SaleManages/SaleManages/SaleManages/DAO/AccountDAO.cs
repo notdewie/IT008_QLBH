@@ -63,7 +63,7 @@ namespace SaleManages.DAO
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
             string userName = ((_frmLogin)f).tbUsername.Text;
             string passWord = ((_frmLogin)f).tbPass.Text;
-            string query = "SELECT * FROM TAIKHOAN WHERE TAIKHOAN = N'" + userName + "' AND MATKHAU = '" + passWord + "' ";
+            string query = "SELECT TAIKHOAN,HOTEN,GT,Email,MATKHAU,NGSINH,DCHI,SDT FROM TAIKHOAN WHERE TAIKHOAN = N'" + userName + "' AND MATKHAU = '" + passWord + "' ";
             DataTable result = DataProvider.Instance.ExecuteQuery(query);
             DataRow dr = result.Rows[0];
             System.Windows.Forms.Form f1 = System.Windows.Forms.Application.OpenForms["_frmInfoAcc"];
@@ -111,23 +111,26 @@ namespace SaleManages.DAO
             account.Email = ((_frmCreateAcc)f).tbEmail.Text;
             account.Birth = ((_frmCreateAcc)f).dateBirth.Value.ToString();
             account.status = false;
-            string CheckQuery = "SELECT TAIKHOAN FROM TAIKHOAN WHERE TAIKHOAN = '" + account.UserName + "' ";
-            DataTable result = DataProvider.Instance.ExecuteQuery(CheckQuery);
-            if (result.Rows.Count > 0)
+            if (account.UserName.Length < 41)
             {
-                MessageBox.Show("Tài khoản đã tồn tại ", "Thông báo", MessageBoxButtons.OK);
-            }
-            else
-            {
-
-                string CreateAccQuery = "INSERT INTO TAIKHOAN(TAIKHOAN,HOTEN,Email,MATKHAU,NGSINH,TRANGTHAI) " +
-                "VALUES('" + account.UserName + "','" + account.Name + "','" + account.Email + "','" + account.PassWord + "','" + account.Birth + "','0' )";
-                int rs = DataProvider.Instance.ExecuteNonQuery(CreateAccQuery);
-                if (rs > 0)
+                string CheckQuery = "SELECT TAIKHOAN FROM TAIKHOAN WHERE TAIKHOAN = '" + account.UserName + "' ";
+                DataTable result = DataProvider.Instance.ExecuteQuery(CheckQuery);
+                if (result.Rows.Count > 0)
                 {
-                    MessageBox.Show("Đăng ký thành công , chờ quản lý duyệt để đăng nhập ", "Thông báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Tài khoản đã tồn tại ", "Thông báo", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    string CreateAccQuery = "INSERT INTO TAIKHOAN(TAIKHOAN,HOTEN,Email,MATKHAU,NGSINH,TRANGTHAI) " +
+                    "VALUES('" + account.UserName + "','" + account.Name + "','" + account.Email + "','" + account.PassWord + "','" + account.Birth + "','0' )";
+                    int rs = DataProvider.Instance.ExecuteNonQuery(CreateAccQuery);
+                    if (rs > 0)
+                    {
+                        MessageBox.Show("Đăng ký thành công , chờ quản lý duyệt để đăng nhập ", "Thông báo", MessageBoxButtons.OK);
+                    }
                 }
             }
+            else MessageBox.Show("Tài khoản phải nhỏ hơn hoặc bằng 40 kí tự", "Thông báo", MessageBoxButtons.OK);
         }
         public void UpdateAcc()
         {

@@ -89,18 +89,21 @@ namespace SaleManages.DAO
             employees.Email = tbemail;
             employees.Phone = tbsdt;
             employees.DayToDo = tbbegin;
-            if (CheckMaNV(employees.Code) == true)
+            if (employees.Code.Length < 5)
             {
-                string AddQuery = "INSERT INTO NHANVIEN(MANV,HOTEN,DCHI,SODT,NGSINH,NGVL,GT,Email,MucDo)" +
-                    "VALUES('" + employees.Code + "', '" + employees.Name + "', '" + employees.Address + "', '" + employees.Phone + "', '" + employees.Birthday + "','" + employees.DayToDo + "', '" + employees.Sex + "', '" + employees.Email + "', '" + employees.Level + "')";
-                int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-                if (result > 0)
+                if (CheckMaNV(employees.Code) == true)
                 {
-                    MessageBox.Show("Nhân viên đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                    string AddQuery = "INSERT INTO NHANVIEN(MANV,HOTEN,DCHI,SODT,NGSINH,NGVL,GT,Email,MucDo)" +
+                        "VALUES('" + employees.Code + "', '" + employees.Name + "', '" + employees.Address + "', '" + employees.Phone + "', '" + employees.Birthday + "','" + employees.DayToDo + "', '" + employees.Sex + "', '" + employees.Email + "', '" + employees.Level + "')";
+                    int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Nhân viên đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                    }
                 }
+                else MessageBox.Show("Mã nhân viên đã tồn tại", "Thông báp", MessageBoxButtons.OK);
             }
-            else MessageBox.Show("Mã nhân viên đã tồn tại", "Thông báp", MessageBoxButtons.OK);
-
+            else MessageBox.Show("Mã nhân viên phải nhỏ hơn 5 kí tự", "Thông báo", MessageBoxButtons.OK);
         }
         public void Delete()
         {

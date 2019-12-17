@@ -67,17 +67,21 @@ namespace SaleManages.DAO
             product.Price = tbgia;
             product.Unit = tbdonvi;
             product.CTKM = tbctkm;
-            if (CheckMaSP(product.Code))
+            if (product.Code.Length < 5)
             {
-                string AddQuery = "INSERT INTO SANPHAM(MASP,TENSP,DVT,NSX,HSD,NCC,GIA,CTKM) " +
-                    "VALUES('" + product.Code + "', '" + product.Name + "', '" + product.Unit + "', '" + product.NSX + "', '" + product.HSD + "','" + product.NCC + "', '" + product.Price + "', '" + product.CTKM + "')";
-                int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-                if (result > 0)
+                if (CheckMaSP(product.Code))
                 {
-                    MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                    string AddQuery = "INSERT INTO SANPHAM(MASP,TENSP,DVT,NSX,HSD,NCC,GIA,CTKM) " +
+                        "VALUES('" + product.Code + "', '" + product.Name + "', '" + product.Unit + "', '" + product.NSX + "', '" + product.HSD + "','" + product.NCC + "', '" + product.Price + "', '" + product.CTKM + "')";
+                    int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                    }
                 }
+                else MessageBox.Show("Mã sản phẩm đã tồn tại", "Thông báo", MessageBoxButtons.OK);
             }
-            else MessageBox.Show("Mã sản phẩm đã tồn tại", "Thông báo", MessageBoxButtons.OK);
+            else MessageBox.Show("Mã sản phẩm phải nhỏ hơn 5 kí tự", "Thông báo", MessageBoxButtons.OK);
         }
         public void Delete()
         {

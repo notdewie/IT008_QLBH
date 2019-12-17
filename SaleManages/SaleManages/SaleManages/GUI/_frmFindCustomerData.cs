@@ -28,5 +28,16 @@ namespace SaleManages.GUI
             }
             else MessageBox.Show("Nhập tên khách hàng", "Thông báo", MessageBoxButtons.OK);
         }
+
+        private void btnFindemData_Click(object sender, EventArgs e)
+        {
+            if (tbFindemData.Text != "")
+            {
+                System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
+                ((_frmSalesManage)f).dtgvKhachhang.DataSource = ObjCustomerDAO.Instance.FindCusomerData();
+                this.Close();
+            }
+            else MessageBox.Show("Nhập tên khách hàng", "Thông báo", MessageBoxButtons.OK);
+        }
     }
 }

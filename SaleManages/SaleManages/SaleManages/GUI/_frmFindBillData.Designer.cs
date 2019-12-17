@@ -92,7 +92,8 @@
             this.ClientSize = new System.Drawing.Size(485, 159);
             this.Controls.Add(this.panel1);
             this.Name = "_frmFindBillData";
-            this.Text = "_frmFindBillData";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tìm kiếm hoá đơn";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
