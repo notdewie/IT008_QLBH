@@ -40,6 +40,9 @@
             this.btnEra = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnFix = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnAdd = new Bunifu.Framework.UI.BunifuTileButton();
+            this.SOHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDetail)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +113,10 @@
             // dtgvDetail
             // 
             this.dtgvDetail.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SOHD,
+            this.MASP,
+            this.SL});
             this.dtgvDetail.Location = new System.Drawing.Point(53, 298);
             this.dtgvDetail.Name = "dtgvDetail";
             this.dtgvDetail.RowTemplate.Height = 33;
@@ -176,6 +183,26 @@
             this.btnAdd.TabIndex = 34;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // SOHD
+            // 
+            this.SOHD.DataPropertyName = "SOHD";
+            this.SOHD.HeaderText = "Số Hoá Đơn";
+            this.SOHD.Name = "SOHD";
+            this.SOHD.Width = 120;
+            // 
+            // MASP
+            // 
+            this.MASP.DataPropertyName = "MASP";
+            this.MASP.HeaderText = "Mã Sản Phẩm";
+            this.MASP.Name = "MASP";
+            this.MASP.Width = 110;
+            // 
+            // SL
+            // 
+            this.SL.DataPropertyName = "SL";
+            this.SL.HeaderText = "Số Lượng";
+            this.SL.Name = "SL";
+            // 
             // _frmDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -218,5 +245,8 @@
         private Bunifu.Framework.UI.BunifuTileButton btnEra;
         private Bunifu.Framework.UI.BunifuTileButton btnFix;
         private Bunifu.Framework.UI.BunifuTileButton btnAdd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SOHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MASP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SL;
     }
 }

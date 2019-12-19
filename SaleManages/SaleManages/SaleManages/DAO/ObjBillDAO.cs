@@ -47,8 +47,7 @@ namespace SaleManages.DAO
 
         public DataTable LoadBillData()
         {
-            string LoadQuery = "SELECT SOHD AS N'Số Hoá Đơn' ,MAKH AS N'Mã Khách Hàng', MANV AS N'Mã Nhân Viên' ," +
-                   "TRIGIA AS N'Trị Giá',NGHD AS N'Ngày Hoá Đơn' FROM HOADON";
+            string LoadQuery = "SELECT * FROM HOADON";
             DataTable data = new DataTable();
             data = DataProvider.Instance.ExecuteQuery(LoadQuery);
             return data;
@@ -138,11 +137,11 @@ namespace SaleManages.DAO
             ((_frmSalesManage)f).tbCodeNV_HD.DataBindings.Clear();
             ((_frmSalesManage)f).tbTriGia.DataBindings.Clear();
             ((_frmSalesManage)f).dateHD.DataBindings.Clear();
-            ((_frmSalesManage)f).tbCodeHD.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "Số Hoá Đơn"));
-            ((_frmSalesManage)f).tbCodeKH_HD.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "Mã Khách Hàng"));
-            ((_frmSalesManage)f).tbCodeNV_HD.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "Mã Nhân Viên"));
-            ((_frmSalesManage)f).tbTriGia.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "Trị Giá"));
-            ((_frmSalesManage)f).dateHD.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvHoadon.DataSource, "Ngày Hoá Đơn"));
+            ((_frmSalesManage)f).tbCodeHD.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "SOHD"));
+            ((_frmSalesManage)f).tbCodeKH_HD.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "MAKH"));
+            ((_frmSalesManage)f).tbCodeNV_HD.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "MANV"));
+            ((_frmSalesManage)f).tbTriGia.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvHoadon.DataSource, "TRIGIA"));
+            ((_frmSalesManage)f).dateHD.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvHoadon.DataSource, "NGHD"));
             ((_frmSalesManage)f).DataBindings.Clear();
         }
 
@@ -152,11 +151,11 @@ namespace SaleManages.DAO
             DataTable data = new DataTable();
             System.Windows.Forms.Form f1 = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
             string SoHD = ((_frmSalesManage)f1).tbCodeHD.Text;
-            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmDetail"];
-            if (SoHD !="")
+            
+            if (SoHD.Length > 0)
             {
                 
-                string LoadQuery = "SELECT SOHD AS N'Số Hoá Đơn' , MASP AS N'Mã Sản Phẩm' ,SL AS N'Số Lượng' " +
+                string LoadQuery = "SELECT * " +
                     "FROM CTHD " +
                     "WHERE SOHD = '"+SoHD+"' ";
                 data = DataProvider.Instance.ExecuteQuery(LoadQuery);
@@ -168,17 +167,17 @@ namespace SaleManages.DAO
         public void BindingsBillDetail()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmDetail"];
-            if (((_frmDetail)f).tbMaSP_detail.Text != "")
-            {
-                ((_frmDetail)f).tbMaSP_detail.DataBindings.Clear();
-                ((_frmDetail)f).tbSoLuong_detail.DataBindings.Clear();
-                ((_frmDetail)f).tbSoHD.DataBindings.Clear();
-                ((_frmDetail)f).tbSoHD.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Số Hoá Đơn"));
-                ((_frmDetail)f).tbMaSP_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Mã Sản Phẩm"));
-                ((_frmDetail)f).tbSoLuong_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "Số Lượng"));
-                ((_frmDetail)f).DataBindings.Clear();
-            }
-            else MessageBox.Show("Số hoá đơn trống", "Thông báo", MessageBoxButtons.OK);
+            System.Windows.Forms.Form f1 = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
+            string SoHD = ((_frmSalesManage)f1).tbCodeHD.Text;
+            ((_frmDetail)f).tbMaSP_detail.DataBindings.Clear();
+            ((_frmDetail)f).tbSoLuong_detail.DataBindings.Clear();
+            ((_frmDetail)f).tbSoHD.DataBindings.Clear();
+            ((_frmDetail)f).tbSoHD.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "SOHD"));
+            ((_frmDetail)f).tbMaSP_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "MASP"));
+            ((_frmDetail)f).tbSoLuong_detail.DataBindings.Add(new Binding("Text", ((_frmDetail)f).dtgvDetail.DataSource, "SL"));
+            ((_frmDetail)f).DataBindings.Clear();
+
+
         }
         public bool IsNumber(string pText)
         {

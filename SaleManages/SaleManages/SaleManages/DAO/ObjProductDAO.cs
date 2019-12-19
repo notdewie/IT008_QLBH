@@ -30,9 +30,7 @@ namespace SaleManages.DAO
             set { instance = value; }
         }
         private ObjProductDAO() { }
-        string LoadQuery = "SELECT MASP AS N'Mã Sản Phẩm',TENSP AS N'Tên Sản Phẩm'," +
-                    "DVT AS N'Đơn Vị Tính',NSX AS N'Ngày Sản Xuất',HSD AS N'Hạn Sử Dụng',NCC AS N'Nhà Cung Cấp'," +
-                    "GIA AS N'Giá',CTKM AS N'Khuyến Mãi' FROM SANPHAM";
+        string LoadQuery = "SELECT * FROM SANPHAM";
         public DataTable LoadProductData()
         {
             DataTable data = new DataTable();
@@ -144,14 +142,14 @@ namespace SaleManages.DAO
             ((_frmSalesManage)f).tbPrice.DataBindings.Clear();
             ((_frmSalesManage)f).tbDonvi.DataBindings.Clear();
             ((_frmSalesManage)f).tbCTKM.DataBindings.Clear();
-            ((_frmSalesManage)f).tbNameSp.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Tên Sản Phẩm"));
-            ((_frmSalesManage)f).tbCodeSp.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Mã Sản Phẩm"));
-            ((_frmSalesManage)f).tbDateSp.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Ngày Sản Xuất"));
-            ((_frmSalesManage)f).tbHsd.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Hạn Sử Dụng"));
-            ((_frmSalesManage)f).tbNcc.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Nhà Cung Cấp"));
-            ((_frmSalesManage)f).tbPrice.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Giá"));
-            ((_frmSalesManage)f).tbDonvi.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Đơn Vị Tính"));
-            ((_frmSalesManage)f).tbCTKM.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "Khuyến Mãi"));
+            ((_frmSalesManage)f).tbNameSp.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "TENSP"));
+            ((_frmSalesManage)f).tbCodeSp.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "MASP"));
+            ((_frmSalesManage)f).tbDateSp.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvSanpham.DataSource, "NSX"));
+            ((_frmSalesManage)f).tbHsd.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvSanpham.DataSource, "HSD"));
+            ((_frmSalesManage)f).tbNcc.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "NCC"));
+            ((_frmSalesManage)f).tbPrice.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "GIA"));
+            ((_frmSalesManage)f).tbDonvi.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "DVT"));
+            ((_frmSalesManage)f).tbCTKM.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvSanpham.DataSource, "CTKM"));
             ((_frmSalesManage)f).DataBindings.Clear();
         }
     }

@@ -32,10 +32,7 @@ namespace SaleManages.DAO
         private ObjCustomerDAO() { }
 
         public ObjCustomer customer = new ObjCustomer();
-        string LoadQuery = "SELECT MAKH AS N'Mã Khách Hàng', HOTEN AS N'Họ Và Tên' ," +
-                   "DCHI AS N'Địa Chỉ',SODT AS N'Số Điện Thoại' ,NGSINH AS N'Ngày Sinh'," +
-                   "NGDK AS N'Ngày Đăng Ký',GT AS N'Giới Tính',Email AS 'Email'," +
-                   "MucDo AS N'Mức Độ' FROM KHACHHANG";
+        string LoadQuery = "SELECT * FROM KHACHHANG";
         public DataTable LoadCustomerData()
         {
 
@@ -44,6 +41,7 @@ namespace SaleManages.DAO
             return data;
 
         }
+        
         bool CheckMaKH(string MaKH)
         {
             string query = "SELECT MAKH FROM KHACHHANG WHERE MAKH = '" + MaKH + "' ";
@@ -174,10 +172,7 @@ namespace SaleManages.DAO
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmFindCustomerData"];
             string nameCustomer = ((_frmFindCustomerData)f).tbFindemData.Text;
-            string FindQuery = "SELECT MAKH AS N'Mã Khách Hàng', HOTEN AS N'Họ Và Tên' ," +
-                   "DCHI AS N'Địa Chỉ',SODT AS N'Số Điện Thoại' ,NGSINH AS N'Ngày Sinh'," +
-                   "NGDK AS N'Ngày Đăng Ký',GT AS N'Giới Tính',Email AS 'Email'," +
-                   "MucDo AS N'Mức Độ' FROM KHACHHANG " +
+            string FindQuery = "SELECT * FROM KHACHHANG " +
                    "WHERE HOTEN = '"+nameCustomer+"' ";
             DataTable data = DataProvider.Instance.ExecuteQuery(FindQuery);
             return data;
@@ -191,12 +186,12 @@ namespace SaleManages.DAO
             ((_frmSalesManage)f).tbEmailKh.DataBindings.Clear();
             ((_frmSalesManage)f).tbPhone.DataBindings.Clear();
             ((_frmSalesManage)f).dateKh.DataBindings.Clear();
-            ((_frmSalesManage)f).tbNameKh.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "Họ Và Tên"));
-            ((_frmSalesManage)f).tbCodeKh.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "Mã Khách hàng"));
+            ((_frmSalesManage)f).tbNameKh.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "HOTEN"));
+            ((_frmSalesManage)f).tbCodeKh.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "MAKH"));
             ((_frmSalesManage)f).tbEmailKh.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "Email"));
-            ((_frmSalesManage)f).tbPhone.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "Số Điện Thoại"));
-            ((_frmSalesManage)f).dateKh.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "Ngày Sinh"));
-            ((_frmSalesManage)f).tbAddKh.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "Địa Chỉ"));
+            ((_frmSalesManage)f).tbPhone.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "SODT"));
+            ((_frmSalesManage)f).dateKh.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "NGSINH"));
+            ((_frmSalesManage)f).tbAddKh.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvKhachhang.DataSource, "DCHI"));
             string MaKH = ((_frmSalesManage)f).tbCodeKh.Text;
             string query1 = "SELECT GT FROM KHACHHANG WHERE MAKH = N'" + MaKH + "' ";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query1);

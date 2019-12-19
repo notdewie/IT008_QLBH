@@ -29,9 +29,7 @@ namespace SaleManages.DAO
         }
         private ObjEmployeesDAO() { }
         public ObjEmployees employees = new ObjEmployees();
-        string LoadQuery = "SELECT MANV AS N'Mã Nhân Viên',HOTEN AS N'Họ Tên',SODT AS N'Số Điện Thoại'," +
-                    "DCHI AS N'Địa Chỉ',NGSINH AS N'Ngày Sinh', NGVL AS N'Ngày Vào Làm'," +
-                    "GT AS N'Giới Tính',Email ,MucDO AS N'Mức độ' FROM NHANVIEN";
+        string LoadQuery = "SELECT * FROM NHANVIEN";
         public DataTable LoadEmployeesData()
         {
 
@@ -190,13 +188,13 @@ namespace SaleManages.DAO
             ((_frmSalesManage)f).tbPhoneNv.DataBindings.Clear();
             ((_frmSalesManage)f).dateNv.DataBindings.Clear();
             ((_frmSalesManage)f).dateBegin.DataBindings.Clear();
-            ((_frmSalesManage)f).tbNameNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "Họ Tên"));
-            ((_frmSalesManage)f).tbCodeNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "Mã Nhân Viên"));
+            ((_frmSalesManage)f).tbNameNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "HOTEN"));
+            ((_frmSalesManage)f).tbCodeNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "MANV"));
             ((_frmSalesManage)f).tbEmailNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "Email"));
-            ((_frmSalesManage)f).tbPhoneNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "Số Điện Thoại"));
-            ((_frmSalesManage)f).dateNv.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "Ngày Sinh"));
-            ((_frmSalesManage)f).dateBegin.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "Ngày Vào Làm"));
-            ((_frmSalesManage)f).tbAddNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "Địa Chỉ"));
+            ((_frmSalesManage)f).tbPhoneNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "SODT"));
+            ((_frmSalesManage)f).dateNv.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "NGSINH"));
+            ((_frmSalesManage)f).dateBegin.DataBindings.Add(new Binding("value", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "NGVL"));
+            ((_frmSalesManage)f).tbAddNv.DataBindings.Add(new Binding("Text", ((_frmSalesManage)f).dtgvNhanvien.DataSource, "DCHI"));
             string MaNv = ((_frmSalesManage)f).tbCodeNv.Text;
             string query1 = "SELECT GT FROM NHANVIEN WHERE MANV = N'" + MaNv + "' ";
             DataTable dt = DataProvider.Instance.ExecuteQuery(query1);

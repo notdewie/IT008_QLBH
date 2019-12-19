@@ -46,6 +46,15 @@ namespace SaleManages.GUI
             this.rbNu = new System.Windows.Forms.RadioButton();
             this.rbElse = new System.Windows.Forms.RadioButton();
             this.dtgvKhachhang = new System.Windows.Forms.DataGridView();
+            this.CodeKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MucDo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbEmailKh = new System.Windows.Forms.TextBox();
             this.lbEmailKh = new System.Windows.Forms.Label();
             this.dateKh = new System.Windows.Forms.DateTimePicker();
@@ -70,6 +79,15 @@ namespace SaleManages.GUI
             this.rbNuNV = new System.Windows.Forms.RadioButton();
             this.rbKhacNV = new System.Windows.Forms.RadioButton();
             this.dtgvNhanvien = new System.Windows.Forms.DataGridView();
+            this.CodeNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SODT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DCHINV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGSINHNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGVL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GTNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmailNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MucDoNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateBegin = new System.Windows.Forms.DateTimePicker();
             this.lbBeginday = new System.Windows.Forms.Label();
             this.tbEmailNv = new System.Windows.Forms.TextBox();
@@ -158,6 +176,19 @@ namespace SaleManages.GUI
             this.epSHD = new System.Windows.Forms.ErrorProvider(this.components);
             this.epCodeKh_HD = new System.Windows.Forms.ErrorProvider(this.components);
             this.epCodeNv_HD = new System.Windows.Forms.ErrorProvider(this.components);
+            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CTKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SOHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MAKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TRIGIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -209,7 +240,7 @@ namespace SaleManages.GUI
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabControl1.Multiline = true;
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.SelectedIndex = 3;
             this.metroTabControl1.Size = new System.Drawing.Size(1206, 736);
             this.metroTabControl1.TabIndex = 2;
             this.metroTabControl1.UseSelectable = true;
@@ -400,12 +431,81 @@ namespace SaleManages.GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvKhachhang.BackgroundColor = System.Drawing.Color.White;
             this.dtgvKhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvKhachhang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CodeKH,
+            this.NameKH,
+            this.Address,
+            this.Phone,
+            this.NGSinh,
+            this.NGDK,
+            this.GT,
+            this.Email,
+            this.MucDo});
             this.dtgvKhachhang.Location = new System.Drawing.Point(45, 320);
             this.dtgvKhachhang.Name = "dtgvKhachhang";
             this.dtgvKhachhang.RowTemplate.Height = 33;
             this.dtgvKhachhang.Size = new System.Drawing.Size(1050, 343);
             this.dtgvKhachhang.TabIndex = 61;
             this.dtgvKhachhang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvKhachhang_CellContentClick);
+            // 
+            // CodeKH
+            // 
+            this.CodeKH.DataPropertyName = "MAKH";
+            this.CodeKH.HeaderText = "Mã Khách Hàng";
+            this.CodeKH.Name = "CodeKH";
+            this.CodeKH.Width = 130;
+            // 
+            // NameKH
+            // 
+            this.NameKH.DataPropertyName = "HOTEN";
+            this.NameKH.HeaderText = "Họ Tên";
+            this.NameKH.Name = "NameKH";
+            this.NameKH.Width = 130;
+            // 
+            // Address
+            // 
+            this.Address.DataPropertyName = "DCHI";
+            this.Address.HeaderText = "Địa Chỉ";
+            this.Address.Name = "Address";
+            this.Address.Width = 110;
+            // 
+            // Phone
+            // 
+            this.Phone.DataPropertyName = "SODT";
+            this.Phone.HeaderText = "Số Điện Thoại";
+            this.Phone.Name = "Phone";
+            this.Phone.Width = 120;
+            // 
+            // NGSinh
+            // 
+            this.NGSinh.DataPropertyName = "NGSINH";
+            this.NGSinh.HeaderText = "Ngày Sinh";
+            this.NGSinh.Name = "NGSinh";
+            // 
+            // NGDK
+            // 
+            this.NGDK.DataPropertyName = "NGDK";
+            this.NGDK.HeaderText = "Ngày Đăng Ký";
+            this.NGDK.Name = "NGDK";
+            this.NGDK.Width = 120;
+            // 
+            // GT
+            // 
+            this.GT.DataPropertyName = "GT";
+            this.GT.HeaderText = "Giới Tính";
+            this.GT.Name = "GT";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // MucDo
+            // 
+            this.MucDo.DataPropertyName = "MucDo";
+            this.MucDo.HeaderText = "Mức Độ";
+            this.MucDo.Name = "MucDo";
             // 
             // tbEmailKh
             // 
@@ -572,7 +672,7 @@ namespace SaleManages.GUI
             this.panel4.Controls.Add(this.rbMuc1);
             this.panel4.Controls.Add(this.rbMuc2);
             this.panel4.Controls.Add(this.rbMuc3);
-            this.panel4.Location = new System.Drawing.Point(577, 237);
+            this.panel4.Location = new System.Drawing.Point(555, 237);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(407, 41);
             this.panel4.TabIndex = 85;
@@ -635,7 +735,7 @@ namespace SaleManages.GUI
             this.panel3.Controls.Add(this.rbNamNV);
             this.panel3.Controls.Add(this.rbNuNV);
             this.panel3.Controls.Add(this.rbKhacNV);
-            this.panel3.Location = new System.Drawing.Point(577, 185);
+            this.panel3.Location = new System.Drawing.Point(555, 185);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(407, 35);
             this.panel3.TabIndex = 84;
@@ -695,12 +795,76 @@ namespace SaleManages.GUI
             // 
             this.dtgvNhanvien.BackgroundColor = System.Drawing.Color.White;
             this.dtgvNhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtgvNhanvien.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CodeNV,
+            this.NameNV,
+            this.SODT,
+            this.DCHINV,
+            this.NGSINHNV,
+            this.NGVL,
+            this.GTNV,
+            this.EmailNV,
+            this.MucDoNV});
             this.dtgvNhanvien.Location = new System.Drawing.Point(45, 383);
             this.dtgvNhanvien.Name = "dtgvNhanvien";
             this.dtgvNhanvien.RowTemplate.Height = 33;
             this.dtgvNhanvien.Size = new System.Drawing.Size(1050, 280);
             this.dtgvNhanvien.TabIndex = 83;
             this.dtgvNhanvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvNhanvien_CellContentClick);
+            // 
+            // CodeNV
+            // 
+            this.CodeNV.DataPropertyName = "MANV";
+            this.CodeNV.HeaderText = "Mã Nhân Viên";
+            this.CodeNV.Name = "CodeNV";
+            // 
+            // NameNV
+            // 
+            this.NameNV.DataPropertyName = "HOTEN";
+            this.NameNV.HeaderText = "Tên Nhân Viên";
+            this.NameNV.Name = "NameNV";
+            // 
+            // SODT
+            // 
+            this.SODT.DataPropertyName = "SODT";
+            this.SODT.HeaderText = "Số Điện Thoại";
+            this.SODT.Name = "SODT";
+            // 
+            // DCHINV
+            // 
+            this.DCHINV.DataPropertyName = "DCHI";
+            this.DCHINV.HeaderText = "Địa Chỉ";
+            this.DCHINV.Name = "DCHINV";
+            // 
+            // NGSINHNV
+            // 
+            this.NGSINHNV.DataPropertyName = "NGSINH";
+            this.NGSINHNV.HeaderText = "Ngày Sinh";
+            this.NGSINHNV.Name = "NGSINHNV";
+            // 
+            // NGVL
+            // 
+            this.NGVL.DataPropertyName = "NGVL";
+            this.NGVL.HeaderText = "Ngày Vào Làm";
+            this.NGVL.Name = "NGVL";
+            // 
+            // GTNV
+            // 
+            this.GTNV.DataPropertyName = "GT";
+            this.GTNV.HeaderText = "Giới Tính";
+            this.GTNV.Name = "GTNV";
+            // 
+            // EmailNV
+            // 
+            this.EmailNV.DataPropertyName = "Email";
+            this.EmailNV.HeaderText = "Email";
+            this.EmailNV.Name = "EmailNV";
+            // 
+            // MucDoNV
+            // 
+            this.MucDoNV.DataPropertyName = "MucDo";
+            this.MucDoNV.HeaderText = "Mức Độ";
+            this.MucDoNV.Name = "MucDoNV";
             // 
             // dateBegin
             // 
@@ -885,6 +1049,15 @@ namespace SaleManages.GUI
             // dtgvSanpham
             // 
             this.dtgvSanpham.BackgroundColor = System.Drawing.Color.White;
+            this.dtgvSanpham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MASP,
+            this.TENSP,
+            this.DVT,
+            this.NSX,
+            this.HSD,
+            this.NCC,
+            this.GIA,
+            this.CTKM});
             this.dtgvSanpham.Location = new System.Drawing.Point(45, 324);
             this.dtgvSanpham.Name = "dtgvSanpham";
             this.dtgvSanpham.RowTemplate.Height = 33;
@@ -1110,6 +1283,12 @@ namespace SaleManages.GUI
             // 
             this.dtgvHoadon.BackgroundColor = System.Drawing.Color.White;
             this.dtgvHoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvHoadon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SOHD,
+            this.MAKH,
+            this.MANV,
+            this.NGHD,
+            this.TRIGIA});
             this.dtgvHoadon.Location = new System.Drawing.Point(45, 330);
             this.dtgvHoadon.Name = "dtgvHoadon";
             this.dtgvHoadon.RowTemplate.Height = 33;
@@ -1381,28 +1560,28 @@ namespace SaleManages.GUI
             // thôngTinToolStripMenuItem
             // 
             this.thôngTinToolStripMenuItem.Name = "thôngTinToolStripMenuItem";
-            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thôngTinToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.thôngTinToolStripMenuItem.Text = "Thông tin";
             this.thôngTinToolStripMenuItem.Click += new System.EventHandler(this.thôngTinToolStripMenuItem_Click);
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // phêDuyệtToolStripMenuItem
             // 
             this.phêDuyệtToolStripMenuItem.Name = "phêDuyệtToolStripMenuItem";
-            this.phêDuyệtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phêDuyệtToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.phêDuyệtToolStripMenuItem.Text = "Phê duyệt";
             this.phêDuyệtToolStripMenuItem.Click += new System.EventHandler(this.phêDuyệtToolStripMenuItem_Click);
             // 
             // đăngXuấtToolStripMenuItem
             // 
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuấtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuấtToolStripMenuItem_Click);
             // 
@@ -1560,6 +1739,94 @@ namespace SaleManages.GUI
             // epCodeNv_HD
             // 
             this.epCodeNv_HD.ContainerControl = this;
+            // 
+            // MASP
+            // 
+            this.MASP.DataPropertyName = "MASP";
+            this.MASP.HeaderText = "Mã Sản Phẩm";
+            this.MASP.Name = "MASP";
+            this.MASP.Width = 120;
+            // 
+            // TENSP
+            // 
+            this.TENSP.DataPropertyName = "TENSP";
+            this.TENSP.HeaderText = "Tên Sản Phẩm";
+            this.TENSP.Name = "TENSP";
+            this.TENSP.Width = 150;
+            // 
+            // DVT
+            // 
+            this.DVT.DataPropertyName = "DVT";
+            this.DVT.HeaderText = "Đơn Vị Tính";
+            this.DVT.Name = "DVT";
+            // 
+            // NSX
+            // 
+            this.NSX.DataPropertyName = "NSX";
+            this.NSX.HeaderText = "Ngày Sản Xuất";
+            this.NSX.Name = "NSX";
+            this.NSX.Width = 150;
+            // 
+            // HSD
+            // 
+            this.HSD.DataPropertyName = "HSD";
+            this.HSD.HeaderText = "Hạn Sử Dụng";
+            this.HSD.Name = "HSD";
+            this.HSD.Width = 150;
+            // 
+            // NCC
+            // 
+            this.NCC.DataPropertyName = "NCC";
+            this.NCC.HeaderText = "Nhà Cung Cấp";
+            this.NCC.Name = "NCC";
+            this.NCC.Width = 150;
+            // 
+            // GIA
+            // 
+            this.GIA.DataPropertyName = "GIA";
+            this.GIA.HeaderText = "Giá";
+            this.GIA.Name = "GIA";
+            // 
+            // CTKM
+            // 
+            this.CTKM.DataPropertyName = "CTKM";
+            this.CTKM.HeaderText = "CTKM";
+            this.CTKM.Name = "CTKM";
+            // 
+            // SOHD
+            // 
+            this.SOHD.DataPropertyName = "SOHD";
+            this.SOHD.HeaderText = "Số Hoá Đơn";
+            this.SOHD.Name = "SOHD";
+            this.SOHD.Width = 150;
+            // 
+            // MAKH
+            // 
+            this.MAKH.DataPropertyName = "MAKH";
+            this.MAKH.HeaderText = "Mã Khách Hàng";
+            this.MAKH.Name = "MAKH";
+            this.MAKH.Width = 150;
+            // 
+            // MANV
+            // 
+            this.MANV.DataPropertyName = "MANV";
+            this.MANV.HeaderText = "Mã Nhân Viên";
+            this.MANV.Name = "MANV";
+            this.MANV.Width = 150;
+            // 
+            // NGHD
+            // 
+            this.NGHD.DataPropertyName = "NGHD";
+            this.NGHD.HeaderText = "Ngày Lập Hoá Đơn";
+            this.NGHD.Name = "NGHD";
+            this.NGHD.Width = 300;
+            // 
+            // TRIGIA
+            // 
+            this.TRIGIA.DataPropertyName = "TRIGIA";
+            this.TRIGIA.HeaderText = "Trị Giá Hoá Đơn";
+            this.TRIGIA.Name = "TRIGIA";
+            this.TRIGIA.Width = 300;
             // 
             // _frmSalesManage
             // 
@@ -1756,6 +2023,37 @@ namespace SaleManages.GUI
         private ErrorProvider epCodeKh_HD;
         private ErrorProvider epCodeNv_HD;
         private ToolStripMenuItem phêDuyệtToolStripMenuItem;
+        private DataGridViewTextBoxColumn CodeKH;
+        private DataGridViewTextBoxColumn NameKH;
+        private DataGridViewTextBoxColumn Address;
+        private DataGridViewTextBoxColumn Phone;
+        private DataGridViewTextBoxColumn NGSinh;
+        private DataGridViewTextBoxColumn NGDK;
+        private DataGridViewTextBoxColumn GT;
+        private DataGridViewTextBoxColumn Email;
+        private DataGridViewTextBoxColumn MucDo;
+        private DataGridViewTextBoxColumn CodeNV;
+        private DataGridViewTextBoxColumn NameNV;
+        private DataGridViewTextBoxColumn SODT;
+        private DataGridViewTextBoxColumn DCHINV;
+        private DataGridViewTextBoxColumn NGSINHNV;
+        private DataGridViewTextBoxColumn NGVL;
+        private DataGridViewTextBoxColumn GTNV;
+        private DataGridViewTextBoxColumn EmailNV;
+        private DataGridViewTextBoxColumn MucDoNV;
+        private DataGridViewTextBoxColumn MASP;
+        private DataGridViewTextBoxColumn TENSP;
+        private DataGridViewTextBoxColumn DVT;
+        private DataGridViewTextBoxColumn NSX;
+        private DataGridViewTextBoxColumn HSD;
+        private DataGridViewTextBoxColumn NCC;
+        private DataGridViewTextBoxColumn GIA;
+        private DataGridViewTextBoxColumn CTKM;
+        private DataGridViewTextBoxColumn SOHD;
+        private DataGridViewTextBoxColumn MAKH;
+        private DataGridViewTextBoxColumn MANV;
+        private DataGridViewTextBoxColumn NGHD;
+        private DataGridViewTextBoxColumn TRIGIA;
 
         public TextBox TbNameKh { get => tbNameKh; set => tbNameKh = value; }
         public TextBox TbNameKh1 { get => tbNameKh; set => tbNameKh = value; }

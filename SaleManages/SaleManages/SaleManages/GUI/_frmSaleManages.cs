@@ -12,6 +12,7 @@ using SaleManages.GUI;
 using SaleManages.DTO;
 using System.Resources;
 using System.Globalization;
+using System.Threading;
 
 namespace SaleManages.GUI
 {
@@ -181,6 +182,7 @@ namespace SaleManages.GUI
 
                 dtgvKhachhang.DataSource = ObjCustomerDAO.Instance.LoadCustomerData();
                 ObjCustomerDAO.Instance.Bindings();
+                
             }
             else if (check == 1)
             {

@@ -14,19 +14,19 @@ namespace SaleManages.GUI
 {
     public partial class _frmDetail : Form
     {
+        int Check = 0;
         public _frmDetail()
         {
             InitializeComponent();
             DataTable data = ObjBillDAO.Instance.LoadBillDetail();
             if (data.Rows.Count > 0)
             {
-                dtgvDetail.DataSource = data;
+                Check = 1;
+                dtgvDetail.DataSource = data;  
             }
             else
             {
-
-                MessageBox.Show("CTHD trống", "Thông báo", MessageBoxButtons.OK);
-
+                Check = 0;
             }
 
         }
@@ -36,22 +36,20 @@ namespace SaleManages.GUI
             DataTable data = new DataTable();
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmListBill"];
             string SoHD = ((_frmListBill)f).tbSoHD_ViewBill.Text;
-            
-            if (SoHD != "")
-            {
-                string LoadQuery = "SELECT SOHD AS N'Số Hoá Đơn' , MASP AS N'Mã Sản Phẩm' ,SL AS N'Số Lượng' " +
+            string LoadQuery = "SELECT * " +
                     "FROM CTHD " +
                     "WHERE SOHD = '" + SoHD + "' ";
-                data = DataProvider.Instance.ExecuteQuery(LoadQuery);
-                dtgvDetail.DataSource = data;
-            }
+            data = DataProvider.Instance.ExecuteQuery(LoadQuery);
+            dtgvDetail.DataSource = data;
+            Check = 1;
         }
         private void _frmDetail_Load(object sender, EventArgs e)
         {
-
-            Thread.Sleep(100);
-            ObjBillDAO.Instance.BindingsBillDetail();
-
+            if (Check == 1)
+            {
+                ObjBillDAO.Instance.BindingsBillDetail();
+            }
+            else MessageBox.Show("CTHD trống", "Thông báo", MessageBoxButtons.OK);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -69,9 +67,6 @@ namespace SaleManages.GUI
             ObjBillDAO.Instance.Delete_BillDetail();
         }
 
-        private void btnViewBill_Click(object sender, EventArgs e)
-        {
-           
-        }
+        
     }
 }
