@@ -67,6 +67,10 @@ namespace SaleManages.GUI
             ObjBillDAO.Instance.Delete_BillDetail();
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Print p = new Print();
+            p.Show();
+        }
     }
 }
