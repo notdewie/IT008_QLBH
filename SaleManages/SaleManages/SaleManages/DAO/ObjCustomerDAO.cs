@@ -173,7 +173,7 @@ namespace SaleManages.DAO
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmFindCustomerData"];
             string nameCustomer = ((_frmFindCustomerData)f).tbFindemData.Text;
             string FindQuery = "SELECT * FROM KHACHHANG " +
-                   "WHERE HOTEN = '"+nameCustomer+"' ";
+                   "WHERE HOTEN LIKE '"+nameCustomer+"' ";
             DataTable data = DataProvider.Instance.ExecuteQuery(FindQuery);
             return data;
         }

@@ -200,6 +200,31 @@ namespace SaleManages.DAO
                 return false;
             else return true;
         }
+        void UpdateTriGia(string SoHD)
+        {
+            double TriGia = 0;
+            string Query = "SELECT CT.SL,SP.GIA " +
+                "FROM SANPHAM AS SP " +
+                "JOIN CTHD AS CT " +
+                "ON SP.MASP = CT.MASP " +
+                "WHERE SOHD = '"+SoHD+"' ";
+            DataTable dataTable = DataProvider.Instance.ExecuteQuery(Query);
+            List<DataRow> list = new List<DataRow>();
+            for(int i = 0; i<dataTable.Rows.Count;i++)
+            {
+                DataRow dr = dataTable.Rows[i];
+                list.Add(dr);
+            }
+            for(int i =0;i<list.Count;i++)
+            {
+                 TriGia += Convert.ToDouble(list[i].ItemArray[0].ToString()) * Convert.ToDouble(list[i].ItemArray[1].ToString());
+            }
+            string UpdateQuery = "UPDATE HOADON " +
+                "SET TRIGIA = '"+TriGia.ToString()+"' " +
+                "WHERE SOHD = '"+SoHD+"' ";
+            DataProvider.Instance.ExecuteNonQuery(UpdateQuery);
+                
+        }
         public void Add_BillDetail()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmDetail"];
@@ -218,6 +243,7 @@ namespace SaleManages.DAO
                             "VALUES ('" + SoHD + "', '" + MaSP + "','" + SL + "' ) ";
                         int rs = DataProvider.Instance.ExecuteNonQuery(AddQuery);
                         if (rs > 0) MessageBox.Show("CTHD đã được thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                        UpdateTriGia(SoHD);
                     }
                     else MessageBox.Show("Số lượng phải là số", "Thông báo", MessageBoxButtons.OK);
                 }
@@ -238,6 +264,7 @@ namespace SaleManages.DAO
             if (result > 0)
             {
                 MessageBox.Show("CTHD đã bị xoá,bấm Xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                UpdateTriGia(SoHD);
             }
         }
         public bool CheckMaSP(string MaSP)
@@ -262,7 +289,8 @@ namespace SaleManages.DAO
                     "SET MASP ='" + MaSP + "', SL = '"+SL+"' " +
                     "WHERE SOHD = '"+SoHD+"' ";
                     int rs = DataProvider.Instance.ExecuteNonQuery(UpdateQuery);
-                    if (rs > 0) MessageBox.Show("CTHD đã được thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                    if (rs > 0) MessageBox.Show("CTHD đã được sửa thành công", "Thông báo", MessageBoxButtons.OK);
+                    UpdateTriGia(SoHD);
                 }
                 else MessageBox.Show("Số lượng phải là số", "Thông báo", MessageBoxButtons.OK);
             }
