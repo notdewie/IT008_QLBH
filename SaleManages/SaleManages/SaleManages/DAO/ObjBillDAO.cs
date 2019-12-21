@@ -206,30 +206,38 @@ namespace SaleManages.DAO
             string SoHD = ((_frmDetail)f).tbSoHD.Text;
             string MaSP = ((_frmDetail)f).tbMaSP_detail.Text;
             string SL = ((_frmDetail)f).tbSoLuong_detail.Text;
-
-            if (CheckMaSP(MaSP))
+            string checkMa = "SELECT * FROM CTHD WHERE MASP = '"+MaSP+"' AND SOHD = '"+SoHD+"' ";
+            DataTable data = DataProvider.Instance.ExecuteQuery(checkMa);
+            if (data.Rows.Count == 0)
             {
-                if (IsNumber(SL))
+                if (CheckMaSP(MaSP))
                 {
-                    string AddQuery = "INSERT INTO CTHD (SOHD,MASP,SL) " +
-                        "VALUES ('" + SoHD + "', '" + MaSP + "','" + SL + "' ) ";
-                    int rs = DataProvider.Instance.ExecuteNonQuery(AddQuery);
-                    if (rs > 0) MessageBox.Show("CTHD đã được thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                    if (IsNumber(SL))
+                    {
+                        string AddQuery = "INSERT INTO CTHD (SOHD,MASP,SL) " +
+                            "VALUES ('" + SoHD + "', '" + MaSP + "','" + SL + "' ) ";
+                        int rs = DataProvider.Instance.ExecuteNonQuery(AddQuery);
+                        if (rs > 0) MessageBox.Show("CTHD đã được thêm thành công", "Thông báo", MessageBoxButtons.OK);
+                    }
+                    else MessageBox.Show("Số lượng phải là số", "Thông báo", MessageBoxButtons.OK);
                 }
-                else MessageBox.Show("Số lượng phải là số", "Thông báo", MessageBoxButtons.OK);
+                else MessageBox.Show("Sai mã sản phẩm", "Thông báo", MessageBoxButtons.OK);
             }
-            else MessageBox.Show("Sai mã sản phẩm", "Thông báo", MessageBoxButtons.OK);
+            else MessageBox.Show("Mã sản phẩm này đã tồn tại , mời cập nhật lại", "Thông báo", MessageBoxButtons.OK);
         }
         public void Delete_BillDetail()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmDetail"];
             string SoHD = ((_frmDetail)f).tbSoHD.Text;
-            string DeleteQuery = "DELETE FROM CTHD WHERE SOHD = '" + SoHD + "' " +
-                "WHERE SOHD = '"+SoHD+"' ";
+            string MaSP = ((_frmDetail)f).tbMaSP_detail.Text;
+            string SL = ((_frmDetail)f).tbSoLuong_detail.Text;
+            string DeleteQuery = "DELETE FROM CTHD " +
+                "WHERE SOHD = '"+SoHD+"' " +
+                "AND MASP = '"+MaSP+"' ";
             int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery);
             if (result > 0)
             {
-                MessageBox.Show("Hoá Đơn đã bị xoá,bấm Xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("CTHD đã bị xoá,bấm Xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
             }
         }
         public bool CheckMaSP(string MaSP)
