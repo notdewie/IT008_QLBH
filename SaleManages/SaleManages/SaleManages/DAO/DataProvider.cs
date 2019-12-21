@@ -31,6 +31,7 @@ namespace SaleManages.DAO
                 
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 adapter.Fill(data);
+                
                 return data;
             }
         }

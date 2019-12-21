@@ -152,6 +152,7 @@ namespace SaleManages.DAO
             System.Windows.Forms.Form f1 = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
             string SoHD = ((_frmSalesManage)f1).tbCodeHD.Text;
             
+            
             if (SoHD.Length > 0)
             {
                 

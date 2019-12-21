@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SaleManages.DTO;
 using SaleManages.Resources;
 
 namespace SaleManages.GUI
@@ -35,6 +36,20 @@ namespace SaleManages.GUI
                 documentViewer1.DocumentSource = bill_en;
                 bill_en.CreateDocument();
             }
+        }
+        public void PrintBill(ObjBill objBill,List<ObjBillDetail> objBillDetail)
+        {
+            Bill_vi report = new Bill_vi();
+            foreach (DevExpress.XtraReports.Parameters.Parameter p in report.Parameters)
+                p.Visible = false;
+            report.InitData(objBill.SOHD,objBill.NGHD,objBill.TenKH,objBill.DchiKH,objBill.MANV,objBill.TenNV,objBill.TRIGIA,objBillDetail);
+            documentViewer1.DocumentSource = report;
+            report.CreateDocument();
+            
+        }
+        private void Print_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

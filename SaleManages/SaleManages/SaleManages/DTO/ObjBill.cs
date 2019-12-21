@@ -8,11 +8,14 @@ namespace SaleManages.DTO
 {
     public class ObjBill
     {
-        string SOHD { get; set; }
-        string NGHD { get; set; }
-        string MAKH { get; set; }
-        string MANV { get; set; }
-        string TRIGIA { get; set;}
+        public string SOHD { get; set; }
+        public DateTime NGHD { get; set; }
+        public string MAKH { get; set; }
+        public string TenKH { get; set; }
+        public string DchiKH { get; set; }
+        public string MANV { get; set; }
+        public string TenNV { get; set; }
+        public string TRIGIA { get; set; }
         public ObjBill() { }
     }
 }
