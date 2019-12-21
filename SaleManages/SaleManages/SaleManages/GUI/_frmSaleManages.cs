@@ -674,5 +674,11 @@ namespace SaleManages.GUI
             }
             else MessageBox.Show("Bạn không phải Admin , không thể phê duyệt !", "Thông báo", MessageBoxButtons.OK);
         }
+
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _frmRevenue f = new _frmRevenue();
+            f.Show();
+        }
     }
 }

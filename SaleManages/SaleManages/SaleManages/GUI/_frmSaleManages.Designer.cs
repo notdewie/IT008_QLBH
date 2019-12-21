@@ -104,6 +104,14 @@ namespace SaleManages.GUI
             this.lbNameNh = new System.Windows.Forms.Label();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.dtgvSanpham = new System.Windows.Forms.DataGridView();
+            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TENSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CTKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbCTKM = new System.Windows.Forms.TextBox();
             this.tbDonvi = new System.Windows.Forms.TextBox();
             this.tbPrice = new System.Windows.Forms.TextBox();
@@ -123,6 +131,11 @@ namespace SaleManages.GUI
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dtgvHoadon = new System.Windows.Forms.DataGridView();
+            this.SOHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MAKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NGHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TRIGIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tbTriGia = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tbCodeNV_HD = new System.Windows.Forms.TextBox();
@@ -176,19 +189,7 @@ namespace SaleManages.GUI
             this.epSHD = new System.Windows.Forms.ErrorProvider(this.components);
             this.epCodeKh_HD = new System.Windows.Forms.ErrorProvider(this.components);
             this.epCodeNv_HD = new System.Windows.Forms.ErrorProvider(this.components);
-            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CTKM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MAKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MANV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NGHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TRIGIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -1064,6 +1065,59 @@ namespace SaleManages.GUI
             this.dtgvSanpham.Size = new System.Drawing.Size(1050, 280);
             this.dtgvSanpham.TabIndex = 46;
             // 
+            // MASP
+            // 
+            this.MASP.DataPropertyName = "MASP";
+            this.MASP.HeaderText = "Mã Sản Phẩm";
+            this.MASP.Name = "MASP";
+            this.MASP.Width = 120;
+            // 
+            // TENSP
+            // 
+            this.TENSP.DataPropertyName = "TENSP";
+            this.TENSP.HeaderText = "Tên Sản Phẩm";
+            this.TENSP.Name = "TENSP";
+            this.TENSP.Width = 150;
+            // 
+            // DVT
+            // 
+            this.DVT.DataPropertyName = "DVT";
+            this.DVT.HeaderText = "Đơn Vị Tính";
+            this.DVT.Name = "DVT";
+            // 
+            // NSX
+            // 
+            this.NSX.DataPropertyName = "NSX";
+            this.NSX.HeaderText = "Ngày Sản Xuất";
+            this.NSX.Name = "NSX";
+            this.NSX.Width = 150;
+            // 
+            // HSD
+            // 
+            this.HSD.DataPropertyName = "HSD";
+            this.HSD.HeaderText = "Hạn Sử Dụng";
+            this.HSD.Name = "HSD";
+            this.HSD.Width = 150;
+            // 
+            // NCC
+            // 
+            this.NCC.DataPropertyName = "NCC";
+            this.NCC.HeaderText = "Nhà Cung Cấp";
+            this.NCC.Name = "NCC";
+            this.NCC.Width = 150;
+            // 
+            // GIA
+            // 
+            this.GIA.DataPropertyName = "GIA";
+            this.GIA.HeaderText = "Giá";
+            this.GIA.Name = "GIA";
+            // 
+            // CTKM
+            // 
+            this.CTKM.DataPropertyName = "CTKM";
+            this.CTKM.HeaderText = "CTKM";
+            this.CTKM.Name = "CTKM";
+            // 
             // tbCTKM
             // 
             this.tbCTKM.Location = new System.Drawing.Point(675, 245);
@@ -1295,6 +1349,41 @@ namespace SaleManages.GUI
             this.dtgvHoadon.Size = new System.Drawing.Size(1050, 280);
             this.dtgvHoadon.TabIndex = 60;
             // 
+            // SOHD
+            // 
+            this.SOHD.DataPropertyName = "SOHD";
+            this.SOHD.HeaderText = "Số Hoá Đơn";
+            this.SOHD.Name = "SOHD";
+            this.SOHD.Width = 150;
+            // 
+            // MAKH
+            // 
+            this.MAKH.DataPropertyName = "MAKH";
+            this.MAKH.HeaderText = "Mã Khách Hàng";
+            this.MAKH.Name = "MAKH";
+            this.MAKH.Width = 150;
+            // 
+            // MANV
+            // 
+            this.MANV.DataPropertyName = "MANV";
+            this.MANV.HeaderText = "Mã Nhân Viên";
+            this.MANV.Name = "MANV";
+            this.MANV.Width = 150;
+            // 
+            // NGHD
+            // 
+            this.NGHD.DataPropertyName = "NGHD";
+            this.NGHD.HeaderText = "Ngày Lập Hoá Đơn";
+            this.NGHD.Name = "NGHD";
+            this.NGHD.Width = 300;
+            // 
+            // TRIGIA
+            // 
+            this.TRIGIA.DataPropertyName = "TRIGIA";
+            this.TRIGIA.HeaderText = "Trị Giá Hoá Đơn";
+            this.TRIGIA.Name = "TRIGIA";
+            this.TRIGIA.Width = 300;
+            // 
             // tbTriGia
             // 
             this.tbTriGia.Location = new System.Drawing.Point(658, 120);
@@ -1525,7 +1614,8 @@ namespace SaleManages.GUI
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.xuấtHóaĐơnToolStripMenuItem});
+            this.xuấtHóaĐơnToolStripMenuItem,
+            this.doanhThuToolStripMenuItem});
             this.backToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
             this.backToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
@@ -1536,7 +1626,7 @@ namespace SaleManages.GUI
             this.xuấtHóaĐơnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inToolStripMenuItem});
             this.xuấtHóaĐơnToolStripMenuItem.Name = "xuấtHóaĐơnToolStripMenuItem";
-            this.xuấtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.xuấtHóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.xuấtHóaĐơnToolStripMenuItem.Text = "Hóa Đơn";
             // 
             // inToolStripMenuItem
@@ -1740,93 +1830,12 @@ namespace SaleManages.GUI
             // 
             this.epCodeNv_HD.ContainerControl = this;
             // 
-            // MASP
+            // doanhThuToolStripMenuItem
             // 
-            this.MASP.DataPropertyName = "MASP";
-            this.MASP.HeaderText = "Mã Sản Phẩm";
-            this.MASP.Name = "MASP";
-            this.MASP.Width = 120;
-            // 
-            // TENSP
-            // 
-            this.TENSP.DataPropertyName = "TENSP";
-            this.TENSP.HeaderText = "Tên Sản Phẩm";
-            this.TENSP.Name = "TENSP";
-            this.TENSP.Width = 150;
-            // 
-            // DVT
-            // 
-            this.DVT.DataPropertyName = "DVT";
-            this.DVT.HeaderText = "Đơn Vị Tính";
-            this.DVT.Name = "DVT";
-            // 
-            // NSX
-            // 
-            this.NSX.DataPropertyName = "NSX";
-            this.NSX.HeaderText = "Ngày Sản Xuất";
-            this.NSX.Name = "NSX";
-            this.NSX.Width = 150;
-            // 
-            // HSD
-            // 
-            this.HSD.DataPropertyName = "HSD";
-            this.HSD.HeaderText = "Hạn Sử Dụng";
-            this.HSD.Name = "HSD";
-            this.HSD.Width = 150;
-            // 
-            // NCC
-            // 
-            this.NCC.DataPropertyName = "NCC";
-            this.NCC.HeaderText = "Nhà Cung Cấp";
-            this.NCC.Name = "NCC";
-            this.NCC.Width = 150;
-            // 
-            // GIA
-            // 
-            this.GIA.DataPropertyName = "GIA";
-            this.GIA.HeaderText = "Giá";
-            this.GIA.Name = "GIA";
-            // 
-            // CTKM
-            // 
-            this.CTKM.DataPropertyName = "CTKM";
-            this.CTKM.HeaderText = "CTKM";
-            this.CTKM.Name = "CTKM";
-            // 
-            // SOHD
-            // 
-            this.SOHD.DataPropertyName = "SOHD";
-            this.SOHD.HeaderText = "Số Hoá Đơn";
-            this.SOHD.Name = "SOHD";
-            this.SOHD.Width = 150;
-            // 
-            // MAKH
-            // 
-            this.MAKH.DataPropertyName = "MAKH";
-            this.MAKH.HeaderText = "Mã Khách Hàng";
-            this.MAKH.Name = "MAKH";
-            this.MAKH.Width = 150;
-            // 
-            // MANV
-            // 
-            this.MANV.DataPropertyName = "MANV";
-            this.MANV.HeaderText = "Mã Nhân Viên";
-            this.MANV.Name = "MANV";
-            this.MANV.Width = 150;
-            // 
-            // NGHD
-            // 
-            this.NGHD.DataPropertyName = "NGHD";
-            this.NGHD.HeaderText = "Ngày Lập Hoá Đơn";
-            this.NGHD.Name = "NGHD";
-            this.NGHD.Width = 300;
-            // 
-            // TRIGIA
-            // 
-            this.TRIGIA.DataPropertyName = "TRIGIA";
-            this.TRIGIA.HeaderText = "Trị Giá Hoá Đơn";
-            this.TRIGIA.Name = "TRIGIA";
-            this.TRIGIA.Width = 300;
+            this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doanhThuToolStripMenuItem.Text = "Biểu Đồ Doanh Thu";
+            this.doanhThuToolStripMenuItem.Click += new System.EventHandler(this.doanhThuToolStripMenuItem_Click);
             // 
             // _frmSalesManage
             // 
@@ -2054,6 +2063,7 @@ namespace SaleManages.GUI
         private DataGridViewTextBoxColumn MANV;
         private DataGridViewTextBoxColumn NGHD;
         private DataGridViewTextBoxColumn TRIGIA;
+        private ToolStripMenuItem doanhThuToolStripMenuItem;
 
         public TextBox TbNameKh { get => tbNameKh; set => tbNameKh = value; }
         public TextBox TbNameKh1 { get => tbNameKh; set => tbNameKh = value; }
