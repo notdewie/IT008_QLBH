@@ -56,14 +56,14 @@
             this.btnFindnillData.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFindnillData.ForeColor = System.Drawing.Color.Black;
             this.btnFindnillData.Image = ((System.Drawing.Image)(resources.GetObject("btnFindnillData.Image")));
-            this.btnFindnillData.ImagePosition = 20;
+            this.btnFindnillData.ImagePosition = 15;
             this.btnFindnillData.ImageZoom = 50;
-            this.btnFindnillData.LabelPosition = 25;
+            this.btnFindnillData.LabelPosition = 0;
             this.btnFindnillData.LabelText = "";
-            this.btnFindnillData.Location = new System.Drawing.Point(362, 52);
+            this.btnFindnillData.Location = new System.Drawing.Point(362, 49);
             this.btnFindnillData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnFindnillData.Name = "btnFindnillData";
-            this.btnFindnillData.Size = new System.Drawing.Size(50, 52);
+            this.btnFindnillData.Size = new System.Drawing.Size(50, 55);
             this.btnFindnillData.TabIndex = 37;
             this.btnFindnillData.Click += new System.EventHandler(this.btnFindnillData_Click);
             // 
@@ -91,6 +91,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 159);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "_frmFindBillData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm hoá đơn";

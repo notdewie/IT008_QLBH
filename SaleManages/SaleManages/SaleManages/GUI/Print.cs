@@ -18,6 +18,10 @@ namespace SaleManages.GUI
         {
             InitializeComponent();
             PrintInvoice();
+            int height = Screen.PrimaryScreen.Bounds.Height;
+            int width = Screen.PrimaryScreen.Bounds.Width;
+            this.Height = height;
+            this.Width = width;
         }
         string checklang;
         private void PrintInvoice()

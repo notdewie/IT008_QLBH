@@ -99,7 +99,9 @@ namespace SaleManages.GUI
             ObjBillDAO.Instance.Delete_BillDetail();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             string Query = "SELECT HD.SOHD,NV.HOTEN,NV.MANV,KH.HOTEN,KH.DCHI,HD.NGHD,CT.SL,CT.MASP,SP.GIA,SP.TENSP " +
                 "FROM HOADON AS HD " +
@@ -111,7 +113,7 @@ namespace SaleManages.GUI
                 "ON KH.MAKH = HD.MAKH " +
                 "JOIN SANPHAM AS SP " +
                 "ON SP.MASP = CT.MASP " +
-                "WHERE HD.SOHD = '"+tbSoHD.Text+"' ";
+                "WHERE HD.SOHD = '" + tbSoHD.Text + "' ";
             DataTable data = DataProvider.Instance.ExecuteQuery(Query);
             DataRow dataRow = data.Rows[0];
             ObjBill objBill = new ObjBill();
@@ -125,9 +127,9 @@ namespace SaleManages.GUI
             int len = data.Rows.Count;
             double trigia = 0;
             List<ObjBillDetail> list = new List<ObjBillDetail>();
-            for(int i = 0; i<len;i++)
+            for (int i = 0; i < len; i++)
             {
-                DataRow dr  = data.Rows[i];
+                DataRow dr = data.Rows[i];
                 ObjBillDetail obj = new ObjBillDetail();
                 obj.SL = dr.ItemArray[6].ToString();
                 obj.MaSP = dr.ItemArray[7].ToString();
@@ -135,7 +137,7 @@ namespace SaleManages.GUI
                 obj.TenSP = dr.ItemArray[9].ToString();
                 obj.Tong = (Convert.ToDouble(obj.SL) * Convert.ToDouble(obj.GIA)).ToString();
                 trigia += Convert.ToDouble(obj.Tong);
-               
+
                 list.Add(obj);
             }
             objBill.TRIGIA = trigia.ToString();

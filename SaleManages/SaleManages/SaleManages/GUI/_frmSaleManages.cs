@@ -424,11 +424,7 @@ namespace SaleManages.GUI
             }
         }
 
-        private void bunifuFlatButton1_Click(object sender, EventArgs e)
-        {
-            _frmDetail frmDetail = new _frmDetail();
-            frmDetail.Show();
-        }
+        
 
         private void btnViewBill_Click(object sender, EventArgs e)
         {
@@ -436,11 +432,7 @@ namespace SaleManages.GUI
             f.Show();
         }
 
-        private void bunifuFlatButton1_Click_1(object sender, EventArgs e)
-        {
-            _frmDetail frmDetail = new _frmDetail();
-            frmDetail.Show();
-        }
+        
 
         private void tbNameNv_Validating(object sender, CancelEventArgs e)
         {
@@ -679,6 +671,12 @@ namespace SaleManages.GUI
         {
             _frmRevenue f = new _frmRevenue();
             f.Show();
+        }
+
+        private void bunifuFlatButton1_Click_2(object sender, EventArgs e)
+        {
+            _frmDetail frmDetail = new _frmDetail();
+            frmDetail.Show();
         }
     }
 }

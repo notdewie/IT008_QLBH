@@ -43,7 +43,7 @@
             this.btnEra = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnFix = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnAdd = new Bunifu.Framework.UI.BunifuTileButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button1 = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDetail)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +57,7 @@
             this.label1.Location = new System.Drawing.Point(110, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(507, 72);
+            this.label1.Size = new System.Drawing.Size(254, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "CHI TIẾT HÓA ĐƠN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -67,7 +67,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(46, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 37);
+            this.label2.Size = new System.Drawing.Size(86, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Số Hóa Đơn:";
             // 
@@ -76,7 +76,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(46, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 37);
+            this.label3.Size = new System.Drawing.Size(97, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mã Sản Phẩm:";
             // 
@@ -85,7 +85,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(46, 249);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(136, 37);
+            this.label4.Size = new System.Drawing.Size(70, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Số Lượng:";
             // 
@@ -94,21 +94,21 @@
             this.tbSoHD.Location = new System.Drawing.Point(146, 120);
             this.tbSoHD.Name = "tbSoHD";
             this.tbSoHD.ReadOnly = true;
-            this.tbSoHD.Size = new System.Drawing.Size(282, 43);
+            this.tbSoHD.Size = new System.Drawing.Size(282, 25);
             this.tbSoHD.TabIndex = 4;
             // 
             // tbMaSP_detail
             // 
             this.tbMaSP_detail.Location = new System.Drawing.Point(146, 182);
             this.tbMaSP_detail.Name = "tbMaSP_detail";
-            this.tbMaSP_detail.Size = new System.Drawing.Size(282, 43);
+            this.tbMaSP_detail.Size = new System.Drawing.Size(282, 25);
             this.tbMaSP_detail.TabIndex = 5;
             // 
             // tbSoLuong_detail
             // 
             this.tbSoLuong_detail.Location = new System.Drawing.Point(146, 249);
             this.tbSoLuong_detail.Name = "tbSoLuong_detail";
-            this.tbSoLuong_detail.Size = new System.Drawing.Size(282, 43);
+            this.tbSoLuong_detail.Size = new System.Drawing.Size(282, 25);
             this.tbSoLuong_detail.TabIndex = 6;
             // 
             // dtgvDetail
@@ -157,7 +157,7 @@
             this.btnEra.ImageZoom = 35;
             this.btnEra.LabelPosition = 25;
             this.btnEra.LabelText = "Xóa";
-            this.btnEra.Location = new System.Drawing.Point(318, 528);
+            this.btnEra.Location = new System.Drawing.Point(247, 528);
             this.btnEra.Margin = new System.Windows.Forms.Padding(6);
             this.btnEra.Name = "btnEra";
             this.btnEra.Size = new System.Drawing.Size(80, 80);
@@ -177,7 +177,7 @@
             this.btnFix.ImageZoom = 35;
             this.btnFix.LabelPosition = 25;
             this.btnFix.LabelText = "Sửa";
-            this.btnFix.Location = new System.Drawing.Point(199, 528);
+            this.btnFix.Location = new System.Drawing.Point(146, 528);
             this.btnFix.Margin = new System.Windows.Forms.Padding(6);
             this.btnFix.Name = "btnFix";
             this.btnFix.Size = new System.Drawing.Size(80, 80);
@@ -197,7 +197,7 @@
             this.btnAdd.ImageZoom = 35;
             this.btnAdd.LabelPosition = 25;
             this.btnAdd.LabelText = "Thêm";
-            this.btnAdd.Location = new System.Drawing.Point(76, 528);
+            this.btnAdd.Location = new System.Drawing.Point(50, 528);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(80, 80);
@@ -206,17 +206,27 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(408, 559);
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.color = System.Drawing.Color.White;
+            this.button1.colorActive = System.Drawing.Color.LightSkyBlue;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImagePosition = 12;
+            this.button1.ImageZoom = 35;
+            this.button1.LabelPosition = 25;
+            this.button1.LabelText = "In";
+            this.button1.Location = new System.Drawing.Point(352, 528);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 49);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "In";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Size = new System.Drawing.Size(80, 80);
+            this.button1.TabIndex = 38;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // _frmDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(474, 629);
@@ -233,10 +243,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "_frmDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "_frmDetail";
+            this.Text = "Chi Tiết Hoá Đơn";
             this.Load += new System.EventHandler(this._frmDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDetail)).EndInit();
             this.ResumeLayout(false);
@@ -260,6 +272,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SOHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn MASP;
         private System.Windows.Forms.DataGridViewTextBoxColumn SL;
-        private System.Windows.Forms.Button button1;
+        private Bunifu.Framework.UI.BunifuTileButton button1;
     }
 }

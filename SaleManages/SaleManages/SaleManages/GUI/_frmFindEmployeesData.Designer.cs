@@ -56,20 +56,21 @@
             this.btnFindemData.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFindemData.ForeColor = System.Drawing.Color.Black;
             this.btnFindemData.Image = ((System.Drawing.Image)(resources.GetObject("btnFindemData.Image")));
-            this.btnFindemData.ImagePosition = 20;
+            this.btnFindemData.ImagePosition = 12;
             this.btnFindemData.ImageZoom = 50;
-            this.btnFindemData.LabelPosition = 25;
+            this.btnFindemData.LabelPosition = 0;
             this.btnFindemData.LabelText = "";
-            this.btnFindemData.Location = new System.Drawing.Point(362, 52);
+            this.btnFindemData.Location = new System.Drawing.Point(361, 54);
+            this.btnFindemData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnFindemData.Name = "btnFindemData";
-            this.btnFindemData.Size = new System.Drawing.Size(50, 52);
+            this.btnFindemData.Size = new System.Drawing.Size(50, 49);
             this.btnFindemData.TabIndex = 36;
             this.btnFindemData.Click += new System.EventHandler(this.btnFindemData_Click_1);
             // 
             // tbFindemData
             // 
             this.tbFindemData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFindemData.Location = new System.Drawing.Point(120, 66);
+            this.tbFindemData.Location = new System.Drawing.Point(125, 66);
             this.tbFindemData.Name = "tbFindemData";
             this.tbFindemData.Size = new System.Drawing.Size(219, 25);
             this.tbFindemData.TabIndex = 1;
@@ -91,6 +92,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(485, 159);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "_frmFindEmployeesData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm nhân viên";

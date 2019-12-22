@@ -259,7 +259,8 @@ namespace SaleManages.DAO
             string SL = ((_frmDetail)f).tbSoLuong_detail.Text;
             string DeleteQuery = "DELETE FROM CTHD " +
                 "WHERE SOHD = '"+SoHD+"' " +
-                "AND MASP = '"+MaSP+"' ";
+                "AND MASP = '"+MaSP+"' " +
+                "AND SL = '"+SL+"' ";
             int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery);
             if (result > 0)
             {

@@ -44,6 +44,8 @@
             this.lbTitle = new System.Windows.Forms.Label();
             this.epUser = new System.Windows.Forms.ErrorProvider(this.components);
             this.epPass = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.bunifuTileButton1 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epUser)).BeginInit();
@@ -54,6 +56,8 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuTileButton1);
+            this.bunifuGradientPanel1.Controls.Add(this.label1);
             this.bunifuGradientPanel1.Controls.Add(this.btnEn);
             this.bunifuGradientPanel1.Controls.Add(this.btnVi);
             this.bunifuGradientPanel1.Controls.Add(this.lbReg);
@@ -70,9 +74,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.LightSteelBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Purple;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(487, 630);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(340, 500);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // btnEn
@@ -88,10 +93,10 @@
             this.btnEn.ImageZoom = 80;
             this.btnEn.LabelPosition = 0;
             this.btnEn.LabelText = "";
-            this.btnEn.Location = new System.Drawing.Point(349, 4);
-            this.btnEn.Margin = new System.Windows.Forms.Padding(8);
+            this.btnEn.Location = new System.Drawing.Point(301, 3);
+            this.btnEn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnEn.Name = "btnEn";
-            this.btnEn.Size = new System.Drawing.Size(47, 44);
+            this.btnEn.Size = new System.Drawing.Size(35, 36);
             this.btnEn.TabIndex = 11;
             this.btnEn.Click += new System.EventHandler(this.btnEn_Click);
             // 
@@ -108,10 +113,10 @@
             this.btnVi.ImageZoom = 100;
             this.btnVi.LabelPosition = 0;
             this.btnVi.LabelText = "";
-            this.btnVi.Location = new System.Drawing.Point(301, 0);
-            this.btnVi.Margin = new System.Windows.Forms.Padding(8);
+            this.btnVi.Location = new System.Drawing.Point(266, 0);
+            this.btnVi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnVi.Name = "btnVi";
-            this.btnVi.Size = new System.Drawing.Size(47, 44);
+            this.btnVi.Size = new System.Drawing.Size(35, 36);
             this.btnVi.TabIndex = 10;
             this.btnVi.Click += new System.EventHandler(this.btnVi_Click);
             // 
@@ -121,12 +126,13 @@
             this.lbReg.BackColor = System.Drawing.Color.Transparent;
             this.lbReg.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbReg.LinkColor = System.Drawing.Color.White;
-            this.lbReg.Location = new System.Drawing.Point(296, 419);
+            this.lbReg.Location = new System.Drawing.Point(53, 414);
+            this.lbReg.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbReg.Name = "lbReg";
-            this.lbReg.Size = new System.Drawing.Size(72, 23);
+            this.lbReg.Size = new System.Drawing.Size(225, 19);
             this.lbReg.TabIndex = 9;
             this.lbReg.TabStop = true;
-            this.lbReg.Text = "Đăng ký";
+            this.lbReg.Text = "Nút này được tạo ra để đăng ký...!!!";
             this.lbReg.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbReg_LinkClicked);
             // 
             // btnExit
@@ -142,10 +148,10 @@
             this.btnExit.ImageZoom = 60;
             this.btnExit.LabelPosition = 0;
             this.btnExit.LabelText = "";
-            this.btnExit.Location = new System.Drawing.Point(65, 353);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(8);
+            this.btnExit.Location = new System.Drawing.Point(57, 364);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(80, 47);
+            this.btnExit.Size = new System.Drawing.Size(50, 30);
             this.btnExit.TabIndex = 8;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -154,7 +160,8 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(173, 442);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(126, 398);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(0, 0);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +181,7 @@
             this.btnLogin.ButtonText = "Đăng Nhập";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLogin.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLogin.Iconimage")));
             this.btnLogin.Iconimage_right = null;
@@ -185,19 +192,19 @@
             this.btnLogin.IconRightVisible = true;
             this.btnLogin.IconRightZoom = 0D;
             this.btnLogin.IconVisible = true;
-            this.btnLogin.IconZoom = 50D;
+            this.btnLogin.IconZoom = 120D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(225, 353);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLogin.Location = new System.Drawing.Point(141, 364);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLogin.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.Red;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(187, 44);
+            this.btnLogin.Size = new System.Drawing.Size(136, 34);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Đăng Nhập";
-            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.Textcolor = System.Drawing.Color.White;
             this.btnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -209,9 +216,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbPass.Location = new System.Drawing.Point(79, 294);
+            this.tbPass.Location = new System.Drawing.Point(56, 325);
+            this.tbPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbPass.Name = "tbPass";
-            this.tbPass.Size = new System.Drawing.Size(325, 23);
+            this.tbPass.Size = new System.Drawing.Size(219, 18);
             this.tbPass.TabIndex = 3;
             this.tbPass.UseSystemPasswordChar = true;
             this.tbPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPass_KeyPress);
@@ -226,9 +234,10 @@
             this.lbPass.BackColor = System.Drawing.Color.Transparent;
             this.lbPass.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPass.ForeColor = System.Drawing.Color.White;
-            this.lbPass.Location = new System.Drawing.Point(75, 268);
+            this.lbPass.Location = new System.Drawing.Point(53, 304);
+            this.lbPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(80, 23);
+            this.lbPass.Size = new System.Drawing.Size(66, 19);
             this.lbPass.TabIndex = 3;
             this.lbPass.Text = "Mật khẩu:";
             // 
@@ -239,9 +248,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(79, 219);
+            this.tbUsername.Location = new System.Drawing.Point(56, 278);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(325, 23);
+            this.tbUsername.Size = new System.Drawing.Size(219, 18);
             this.tbUsername.TabIndex = 2;
             this.tbUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbUsername_KeyPress);
             this.tbUsername.Validating += new System.ComponentModel.CancelEventHandler(this.tbUsername_Validating);
@@ -255,9 +265,10 @@
             this.lbUsername.BackColor = System.Drawing.Color.Transparent;
             this.lbUsername.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsername.ForeColor = System.Drawing.Color.White;
-            this.lbUsername.Location = new System.Drawing.Point(75, 193);
+            this.lbUsername.Location = new System.Drawing.Point(53, 257);
+            this.lbUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(121, 23);
+            this.lbUsername.Size = new System.Drawing.Size(98, 19);
             this.lbUsername.TabIndex = 1;
             this.lbUsername.Text = "Tên đăng nhập:";
             // 
@@ -268,11 +279,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbTitle.AutoSize = true;
             this.lbTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTitle.ForeColor = System.Drawing.Color.White;
-            this.lbTitle.Location = new System.Drawing.Point(95, 123);
+            this.lbTitle.Location = new System.Drawing.Point(67, 190);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(190, 46);
+            this.lbTitle.Size = new System.Drawing.Size(195, 46);
             this.lbTitle.TabIndex = 0;
             this.lbTitle.Text = "Đăng Nhập";
             // 
@@ -284,13 +296,49 @@
             // 
             this.epPass.ContainerControl = this;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(11, 478);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 19);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Phiên bản 1.0";
+            // 
+            // bunifuTileButton1
+            // 
+            this.bunifuTileButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.color = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.colorActive = System.Drawing.Color.Transparent;
+            this.bunifuTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTileButton1.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.bunifuTileButton1.ForeColor = System.Drawing.Color.White;
+            this.bunifuTileButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuTileButton1.Image")));
+            this.bunifuTileButton1.ImagePosition = 0;
+            this.bunifuTileButton1.ImageZoom = 100;
+            this.bunifuTileButton1.LabelPosition = 0;
+            this.bunifuTileButton1.LabelText = "";
+            this.bunifuTileButton1.Location = new System.Drawing.Point(94, 44);
+            this.bunifuTileButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.bunifuTileButton1.Name = "bunifuTileButton1";
+            this.bunifuTileButton1.Size = new System.Drawing.Size(140, 140);
+            this.bunifuTileButton1.TabIndex = 13;
+            // 
             // _frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 630);
+            this.ClientSize = new System.Drawing.Size(340, 500);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "_frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_frmLogin";
@@ -320,5 +368,7 @@
         private System.Windows.Forms.ErrorProvider epUser;
         private System.Windows.Forms.ErrorProvider epPass;
         public System.Windows.Forms.Label lbTitle;
+        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton1;
+        private System.Windows.Forms.Label label1;
     }
 }

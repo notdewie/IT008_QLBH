@@ -73,14 +73,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 50D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(277, 292);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(300, 303);
             this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.Red;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(190, 79);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(140, 63);
             this.bunifuFlatButton1.TabIndex = 62;
             this.bunifuFlatButton1.Text = "Xem Thêm";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -93,7 +93,7 @@
             this.tbSoHD_ViewBill.Location = new System.Drawing.Point(124, 322);
             this.tbSoHD_ViewBill.Name = "tbSoHD_ViewBill";
             this.tbSoHD_ViewBill.ReadOnly = true;
-            this.tbSoHD_ViewBill.Size = new System.Drawing.Size(141, 25);
+            this.tbSoHD_ViewBill.Size = new System.Drawing.Size(164, 25);
             this.tbSoHD_ViewBill.TabIndex = 64;
             // 
             // label2
@@ -116,7 +116,9 @@
             this.Controls.Add(this.bunifuFlatButton1);
             this.Controls.Add(this.dtgvViewBill);
             this.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "_frmListBill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách hoá đơn";

@@ -49,7 +49,7 @@
             // tbFindproData
             // 
             this.tbFindproData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFindproData.Location = new System.Drawing.Point(120, 68);
+            this.tbFindproData.Location = new System.Drawing.Point(129, 65);
             this.tbFindproData.Name = "tbFindproData";
             this.tbFindproData.Size = new System.Drawing.Size(219, 25);
             this.tbFindproData.TabIndex = 1;
@@ -74,13 +74,14 @@
             this.btnFindproData.Font = new System.Drawing.Font("Segoe UI Light", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFindproData.ForeColor = System.Drawing.Color.Black;
             this.btnFindproData.Image = ((System.Drawing.Image)(resources.GetObject("btnFindproData.Image")));
-            this.btnFindproData.ImagePosition = 20;
+            this.btnFindproData.ImagePosition = 15;
             this.btnFindproData.ImageZoom = 50;
-            this.btnFindproData.LabelPosition = 25;
+            this.btnFindproData.LabelPosition = 0;
             this.btnFindproData.LabelText = "";
-            this.btnFindproData.Location = new System.Drawing.Point(362, 52);
+            this.btnFindproData.Location = new System.Drawing.Point(353, 51);
+            this.btnFindproData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnFindproData.Name = "btnFindproData";
-            this.btnFindproData.Size = new System.Drawing.Size(50, 52);
+            this.btnFindproData.Size = new System.Drawing.Size(50, 56);
             this.btnFindproData.TabIndex = 35;
             this.btnFindproData.Click += new System.EventHandler(this.btnFindproData_Click_1);
             // 
