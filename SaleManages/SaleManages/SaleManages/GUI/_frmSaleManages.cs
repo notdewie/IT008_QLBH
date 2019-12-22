@@ -86,6 +86,45 @@ namespace SaleManages.GUI
             đăngXuấtToolStripMenuItem.Text = rm.GetString("btnLogout", culture);
             thôngTinToolStripMenuItem.Text = rm.GetString("btnInfo", culture);
             đổiMậtKhẩuToolStripMenuItem.Text = rm.GetString("idoimatkhau", culture);
+            doanhThuToolStripMenuItem.Text = rm.GetString("ibieudo", culture);
+            phêDuyệtToolStripMenuItem.Text = rm.GetString("ipheduyet", culture);
+            metroTabPage4.Text = rm.GetString("hoadon", culture);
+            label3.Text = rm.GetString("sohd", culture);
+            label4.Text = rm.GetString("ngayhd", culture);
+            label5.Text = rm.GetString("makh", culture);
+            label6.Text = rm.GetString("manv", culture);
+            label9.Text = rm.GetString("giatri", culture);
+            bunifuFlatButton1.Text = rm.GetString("xemthem", culture);
+            dtgvHoadon.Columns[0].HeaderText = rm.GetString("dtgvsohd", culture);
+            dtgvHoadon.Columns[1].HeaderText = rm.GetString("dtgvmakh", culture);
+            dtgvHoadon.Columns[2].HeaderText = rm.GetString("dtgvmanv", culture);
+            dtgvHoadon.Columns[3].HeaderText = rm.GetString("dtgvngayhd", culture);
+            dtgvHoadon.Columns[4].HeaderText = rm.GetString("dtgvgiahd", culture);
+            dtgvKhachhang.Columns[0].HeaderText = rm.GetString("dtgvmakh", culture);
+            dtgvKhachhang.Columns[1].HeaderText = rm.GetString("dtgvhoten", culture);
+            dtgvKhachhang.Columns[2].HeaderText = rm.GetString("dtgvdiachi", culture);
+            dtgvKhachhang.Columns[3].HeaderText = rm.GetString("dtgvsdt", culture);
+            dtgvKhachhang.Columns[4].HeaderText = rm.GetString("dtgvngaysinh", culture);
+            dtgvKhachhang.Columns[5].HeaderText = rm.GetString("dtgvngaydk", culture);
+            dtgvKhachhang.Columns[6].HeaderText = rm.GetString("dtgvgioitinh", culture);
+            dtgvKhachhang.Columns[8].HeaderText = rm.GetString("dtgvmucdo", culture);
+            dtgvNhanvien.Columns[0].HeaderText = rm.GetString("dtgvmanv", culture);
+            dtgvNhanvien.Columns[1].HeaderText = rm.GetString("dtgvhoten", culture);
+            dtgvNhanvien.Columns[3].HeaderText = rm.GetString("dtgvdiachi", culture);
+            dtgvNhanvien.Columns[2].HeaderText = rm.GetString("dtgvsdt", culture);
+            dtgvNhanvien.Columns[4].HeaderText = rm.GetString("dtgvngaysinh", culture);
+            dtgvNhanvien.Columns[5].HeaderText = rm.GetString("dtgvngayvl", culture);
+            dtgvNhanvien.Columns[6].HeaderText = rm.GetString("dtgvgioitinh", culture);
+            dtgvNhanvien.Columns[8].HeaderText = rm.GetString("dtgvmucdo", culture);
+            dtgvSanpham.Columns[0].HeaderText = rm.GetString("dtgvmasp", culture);
+            dtgvSanpham.Columns[1].HeaderText = rm.GetString("dtgvtensp", culture);
+            dtgvSanpham.Columns[2].HeaderText = rm.GetString("dtgvdonvi", culture);
+            dtgvSanpham.Columns[3].HeaderText = rm.GetString("dtgvnsx", culture);
+            dtgvSanpham.Columns[4].HeaderText = rm.GetString("dtgvhsd", culture);
+            dtgvSanpham.Columns[5].HeaderText = rm.GetString("dtgvncc", culture);
+            dtgvSanpham.Columns[6].HeaderText = rm.GetString("dtgvgia", culture);
+            dtgvSanpham.Columns[7].HeaderText = rm.GetString("dtgvctkm", culture);
+            this.Text = rm.GetString("formSale", culture);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -292,7 +331,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNameSp.Text))
             {
                 e.Cancel = true;
-                epTenSanPham.SetError(tbNameSp, "Vui lòng điền tên sản phẩm!");
+                if (checklang == "Đăng Nhập")
+                    epTenSanPham.SetError(tbNameSp, "Vui lòng điền tên sản phẩm!");
+                else
+                    epTenSanPham.SetError(tbNameSp, "Please enter the product name!");
                 e.Cancel = false;
             }
             else
@@ -307,7 +349,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeSp.Text))
             {
                 e.Cancel = true;
-                epMaSanPham.SetError(tbCodeSp, "Vui lòng điền mã sản phẩm!");
+                if (checklang == "Đăng Nhập")
+                    epMaSanPham.SetError(tbCodeSp, "Vui lòng điền mã sản phẩm!");
+                else
+                    epMaSanPham.SetError(tbCodeSp, "Please enter the product code!");
                 e.Cancel = false;
             }
             else
@@ -322,7 +367,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbDateSp.Text))
             {
                 e.Cancel = true;
-                epNSX.SetError(tbDateSp, "NSX phải nhỏ hơn HSD!");
+                if (checklang == "Đăng Nhập")
+                    epNSX.SetError(tbDateSp, "NSX phải nhỏ hơn HSD!");
+                else
+                    epNSX.SetError(tbDateSp, "NSX must be smaller than EXP!");
                 e.Cancel = false;
             }
             else
@@ -337,7 +385,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNcc.Text))
             {
                 e.Cancel = true;
-                epNCC.SetError(tbNcc, "Vui lòng điền tên NCC!");
+                if (checklang == "Đăng Nhập")
+                    epNCC.SetError(tbNcc, "Vui lòng điền tên NCC!");
+                else
+                    epNCC.SetError(tbNcc, "Please enter name!");
                 e.Cancel = false;
             }
             else
@@ -352,7 +403,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPrice.Text))
             {
                 e.Cancel = true;
-                epPrice.SetError(tbPrice, "Vui lòng điền giá thành!");
+                if (checklang == "Đăng Nhập")
+                    epPrice.SetError(tbPrice, "Vui lòng điền giá thành!");
+                else
+                    epPrice.SetError(tbPrice, "Please enter the price!");
                 e.Cancel = false;
             }
             else
@@ -367,7 +421,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbDonvi.Text))
             {
                 e.Cancel = true;
-                epDonVi.SetError(tbDonvi, "Vui lòng điền đơn vị!");
+                if (checklang == "Đăng Nhập")
+                    epDonVi.SetError(tbDonvi, "Vui lòng điền đơn vị!");
+                else
+                    epDonVi.SetError(tbDonvi, "Please enter unit!");
                 e.Cancel = false;
             }
             else
@@ -439,7 +496,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNameNv.Text))
             {
                 e.Cancel = true;
-                epNVName.SetError(tbNameNv, "Vui lòng điền họ tên nhân viên!");
+                if (checklang == "Đăng Nhập")
+                    epNVName.SetError(tbNameNv, "Vui lòng điền họ tên nhân viên!");
+                else
+                    epNVName.SetError(tbNameNv, "Please enter employee's full name!");
                 e.Cancel = false;
             }
             else
@@ -454,7 +514,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeNv.Text))
             {
                 e.Cancel = true;
-                epNVCode.SetError(tbCodeNv, "Vui lòng điền mã số nhân viên!");
+                if (checklang == "Đăng Nhập")
+                    epNVCode.SetError(tbCodeNv, "Vui lòng điền mã số nhân viên!");
+                else
+                    epNVCode.SetError(tbCodeNv, "Please enter the employee code!");
                 e.Cancel = false;
             }
             else
@@ -469,7 +532,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(dateNv.Text))
             {
                 e.Cancel = true;
-                epNVBirth.SetError(dateNv, "Ngày sinh phải trước ngày vào làm!");
+                if (checklang == "Đăng Nhập")
+                    epNVBirth.SetError(dateNv, "Ngày sinh phải trước ngày vào làm!");
+                else
+                    epNVBirth.SetError(dateNv, "Date of birth must be before the day to work!");
                 e.Cancel = false;
             }
             else
@@ -484,7 +550,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbAddNv.Text))
             {
                 e.Cancel = true;
-                epNVDiaChi.SetError(tbAddNv, "Vui lòng điền địa chỉ nhân viên!");
+                if (checklang == "Đăng Nhập")
+                    epNVDiaChi.SetError(tbAddNv, "Vui lòng điền địa chỉ nhân viên!");
+                else
+                    epNVDiaChi.SetError(tbAddNv, "Please enter staff address!");
                 e.Cancel = false;
             }
             else
@@ -499,7 +568,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbEmailNv.Text))
             {
                 e.Cancel = true;
-                epNVEmail.SetError(tbEmailNv, "Vui lòng điền email nhân viên!");
+                if (checklang == "Đăng Nhập")
+                    epNVEmail.SetError(tbEmailNv, "Vui lòng điền email nhân viên!");
+                else
+                    epNVEmail.SetError(tbEmailNv, "Please enter staff email!");
                 e.Cancel = false;
             }
             else
@@ -514,7 +586,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPhoneNv.Text))
             {
                 e.Cancel = true;
-                epNVSDT.SetError(tbPhoneNv, "Vui lòng điền sđt nhân viên!");
+                if (checklang == "Đăng Nhập")
+                    epNVSDT.SetError(tbPhoneNv, "Vui lòng điền sđt nhân viên!");
+                else
+                    epNVSDT.SetError(tbPhoneNv, "Please enter the employee number!");
                 e.Cancel = false;
             }
             else
@@ -529,7 +604,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNameKh.Text))
             {
                 e.Cancel = true;
-                epKHName.SetError(tbNameKh, "Vui lòng điền họ tên khách hàng!");
+                if (checklang == "Đăng Nhập")
+                    epKHName.SetError(tbNameKh, "Vui lòng điền họ tên khách hàng!");
+                else
+                    epKHName.SetError(tbNameKh, "Please enter customer name!");
                 e.Cancel = false;
             }
             else
@@ -544,7 +622,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeKh.Text))
             {
                 e.Cancel = true;
-                epKHCode.SetError(tbCodeKh, "Vui lòng điền mã số khách hàng!");
+                if (checklang == "Đăng Nhập")
+                    epKHCode.SetError(tbCodeKh, "Vui lòng điền mã số khách hàng!");
+                else
+                    epKHCode.SetError(tbCodeKh, "Please enter customer code!");
                 e.Cancel = false;
             }
             else
@@ -559,7 +640,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbAddKh.Text))
             {
                 e.Cancel = true;
-                epKHAdd.SetError(tbAddKh, "Vui lòng điền địa chỉ khách hàng!");
+                if (checklang == "Đăng Nhập")
+                    epKHAdd.SetError(tbAddKh, "Vui lòng điền địa chỉ khách hàng!");
+                else
+                    epKHAdd.SetError(tbAddKh, "Please enter customer address!");
                 e.Cancel = false;
             }
             else
@@ -574,7 +658,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbEmailKh.Text))
             {
                 e.Cancel = true;
-                epKHEmail.SetError(tbEmailKh, "Vui lòng điền email khách hàng!");
+                if (checklang == "Đăng Nhập")
+                    epKHEmail.SetError(tbEmailKh, "Vui lòng điền email khách hàng!");
+                else
+                    epKHEmail.SetError(tbEmailKh, "Please enter customer email!");
                 e.Cancel = false;
             }
             else
@@ -590,7 +677,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPhone.Text))
             {
                 e.Cancel = true;
-                epKHSdt.SetError(tbPhone, "Vui lòng điền sđt khách hàng!");
+                if (checklang == "Đăng Nhập")
+                    epKHSdt.SetError(tbPhone, "Vui lòng điền sđt khách hàng!");
+                else
+                    epKHSdt.SetError(tbPhone, "Please enter the customer's phone number!");
                 e.Cancel = false;
             }
             else
@@ -605,7 +695,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeHD.Text))
             {
                 e.Cancel = true;
-                epSHD.SetError(tbCodeHD, "Vui lòng điền số hóa đơn!");
+                if (checklang == "Đăng Nhập")
+                    epSHD.SetError(tbCodeHD, "Vui lòng điền số hóa đơn!");
+                else
+                    epSHD.SetError(tbCodeHD, "Please enter invoice number!");
                 e.Cancel = false;
             }
             else
@@ -620,7 +713,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeKH_HD.Text))
             {
                 e.Cancel = true;
-                epCodeKh_HD.SetError(tbCodeKH_HD, "Vui lòng điền mã khách hàng!");
+                if (checklang == "Đăng Nhập")
+                    epCodeKh_HD.SetError(tbCodeKH_HD, "Vui lòng điền mã khách hàng!");
+                else
+                    epCodeKh_HD.SetError(tbCodeKH_HD, "Please enter customer code!");
                 e.Cancel = false;
             }
             else
@@ -635,7 +731,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCodeNV_HD.Text))
             {
                 e.Cancel = true;
-                epCodeNv_HD.SetError(tbCodeNV_HD, "Vui lòng điền mã nhân viên!");
+                if (checklang == "Đăng Nhập")
+                    epCodeNv_HD.SetError(tbCodeNV_HD, "Vui lòng điền mã nhân viên!");
+                else
+                    epCodeNv_HD.SetError(tbCodeNV_HD, "Please enter the staff code!");
                 e.Cancel = false;
             }
             else
@@ -664,7 +763,13 @@ namespace SaleManages.GUI
                 _frmAdmin f1 = new _frmAdmin();
                 f1.Show();
             }
-            else MessageBox.Show("Bạn không phải Admin , không thể phê duyệt !", "Thông báo", MessageBoxButtons.OK);
+            else
+            {
+                if (checklang == "Đăng Nhập")
+                    MessageBox.Show("Bạn không phải Admin , không thể phê duyệt !", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("You are not Admin, cannot approve!", "Notification", MessageBoxButtons.OK);
+            }
         }
 
         private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)

@@ -35,6 +35,7 @@ namespace SaleManages.GUI
             lbPass.Text = rm.GetString("login_matkhau", culture);
             btnLogin.Text = rm.GetString("login_btnLogin", culture);
             lbReg.Text = rm.GetString("login_btnReg", culture);
+            label1.Text = rm.GetString("login_lbVer", culture);
         }
 
         //Drag Move

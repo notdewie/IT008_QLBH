@@ -8,13 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SaleManages.DAO;
+using System.Resources;
+using System.Globalization;
+
 namespace SaleManages.GUI
 {
     public partial class _frmListBill : Form
     {
+        string checklang;
+        CultureInfo culture;
         public _frmListBill()
         {
             InitializeComponent();
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
+            checklang = ((_frmSalesManage)f).lbNameKh.Text;
+            culture = CultureInfo.CurrentCulture;
+            if (checklang == "Họ Tên:") SetLanguage("vi-VN");
+            else SetLanguage("en-US");
+        }
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("SaleManages.Resources.MyResource", typeof(_frmSalesManage).Assembly);
+            label2.Text = rm.GetString("sohd", culture);
+            bunifuFlatButton1.Text = rm.GetString("xemthem", culture);
+            this.Text = rm.GetString("formList", culture);
         }
 
         private void _frmListBill_Load(object sender, EventArgs e)
@@ -34,7 +53,10 @@ namespace SaleManages.GUI
             }
             else
             {
-                MessageBox.Show("Danh sách hoá đơn trống", "Thông báo", MessageBoxButtons.OK);
+                if (checklang == "Họ Tên:")
+                    MessageBox.Show("Danh sách hoá đơn trống", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("The invoice list is empty", "Notification", MessageBoxButtons.OK);
             }
         }
 

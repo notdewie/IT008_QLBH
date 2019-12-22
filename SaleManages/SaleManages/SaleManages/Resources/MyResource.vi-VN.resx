@@ -117,11 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="albTitle" xml:space="preserve">
+    <value>Danh sách tài khoản chưa phê duyệt :</value>
+  </data>
+  <data name="btnaccept" xml:space="preserve">
+    <value>Duyệt</value>
+  </data>
   <data name="btnInfo" xml:space="preserve">
     <value>Thông Tin</value>
   </data>
   <data name="btnLogout" xml:space="preserve">
     <value>Đăng Xuất</value>
+  </data>
+  <data name="capnhat" xml:space="preserve">
+    <value>Cập Nhật</value>
   </data>
   <data name="change_matkhaucu" xml:space="preserve">
     <value>Mật khẩu cũ:</value>
@@ -131,6 +140,9 @@
   </data>
   <data name="change_xacnhan" xml:space="preserve">
     <value>Xác nhận mật khẩu:</value>
+  </data>
+  <data name="cthd" xml:space="preserve">
+    <value>CHI TIẾT HOÁ ĐƠN</value>
   </data>
   <data name="ctkm" xml:space="preserve">
     <value>CTKM:</value>
@@ -153,8 +165,104 @@
   <data name="donvi" xml:space="preserve">
     <value>Đơn Vị:</value>
   </data>
+  <data name="dtgvctkm" xml:space="preserve">
+    <value>CTKM</value>
+  </data>
+  <data name="dtgvdiachi" xml:space="preserve">
+    <value>Địa Chỉ</value>
+  </data>
+  <data name="dtgvdonvi" xml:space="preserve">
+    <value>Đơn Vị Tính</value>
+  </data>
+  <data name="dtgvgia" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="dtgvgiahd" xml:space="preserve">
+    <value>Trị Giá Hoá Đơn</value>
+  </data>
+  <data name="dtgvgioitinh" xml:space="preserve">
+    <value>Giới Tính</value>
+  </data>
+  <data name="dtgvhoten" xml:space="preserve">
+    <value>Họ Tên</value>
+  </data>
+  <data name="dtgvhsd" xml:space="preserve">
+    <value>Hạn Sử Dụng</value>
+  </data>
+  <data name="dtgvmakh" xml:space="preserve">
+    <value>Mã Khách Hàng</value>
+  </data>
+  <data name="dtgvmanv" xml:space="preserve">
+    <value>Mã Nhân Viên</value>
+  </data>
+  <data name="dtgvmasp" xml:space="preserve">
+    <value>Mã Sản Phẩm</value>
+  </data>
+  <data name="dtgvmucdo" xml:space="preserve">
+    <value>Mức Độ</value>
+  </data>
+  <data name="dtgvncc" xml:space="preserve">
+    <value>Nhà Cung Cấp</value>
+  </data>
+  <data name="dtgvngaydk" xml:space="preserve">
+    <value>Ngày Đăng Ký</value>
+  </data>
+  <data name="dtgvngayhd" xml:space="preserve">
+    <value>Ngày Lập Hoá Đơn</value>
+  </data>
+  <data name="dtgvngaysinh" xml:space="preserve">
+    <value>Ngày Sinh</value>
+  </data>
+  <data name="dtgvngayvl" xml:space="preserve">
+    <value>Ngày Vào Làm</value>
+  </data>
+  <data name="dtgvnsx" xml:space="preserve">
+    <value>Ngày Sản Xuất</value>
+  </data>
+  <data name="dtgvsdt" xml:space="preserve">
+    <value>Số Điện Thoại</value>
+  </data>
+  <data name="dtgvsl" xml:space="preserve">
+    <value>Số Lượng</value>
+  </data>
+  <data name="dtgvsohd" xml:space="preserve">
+    <value>Số Hoá Đơn</value>
+  </data>
+  <data name="dtgvtensp" xml:space="preserve">
+    <value>Tên Sản Phẩm</value>
+  </data>
+  <data name="formAdmin" xml:space="preserve">
+    <value>Phê Duyệt Tài Khoản</value>
+  </data>
+  <data name="formcthd" xml:space="preserve">
+    <value>Chi Tiết Hoá Đơn</value>
+  </data>
+  <data name="formList" xml:space="preserve">
+    <value>Danh Sách Hoá Đơn</value>
+  </data>
+  <data name="formSale" xml:space="preserve">
+    <value>Quản Lý Bán Hàng</value>
+  </data>
+  <data name="formTerm" xml:space="preserve">
+    <value>Điều Khoản</value>
+  </data>
+  <data name="formTimHD" xml:space="preserve">
+    <value>Tìm Kiếm Hoá Đơn</value>
+  </data>
+  <data name="formTimKH" xml:space="preserve">
+    <value>Tìm Kiếm Khách Hàng</value>
+  </data>
+  <data name="formTimNV" xml:space="preserve">
+    <value>Tìm Kiếm Nhân Viên</value>
+  </data>
+  <data name="formTimSP" xml:space="preserve">
+    <value>Tìm Kiếm Sản Phẩm</value>
+  </data>
   <data name="giathanh" xml:space="preserve">
     <value>Giá Thành:</value>
+  </data>
+  <data name="giatri" xml:space="preserve">
+    <value>Giá trị:</value>
   </data>
   <data name="gioitinh" xml:space="preserve">
     <value>Giới Tính:</value>
@@ -170,6 +278,9 @@
   </data>
   <data name="hsd" xml:space="preserve">
     <value>HSD:</value>
+  </data>
+  <data name="ibieudo" xml:space="preserve">
+    <value>Biểu Đồ Doanh Thu</value>
   </data>
   <data name="idoimatkhau" xml:space="preserve">
     <value>Đổi mật khẩu</value>
@@ -201,6 +312,9 @@
   <data name="info_xacnhan" xml:space="preserve">
     <value>Xác Nhận</value>
   </data>
+  <data name="ipheduyet" xml:space="preserve">
+    <value>Phê duyệt</value>
+  </data>
   <data name="khac" xml:space="preserve">
     <value>Khác</value>
   </data>
@@ -211,16 +325,25 @@
     <value>Đăng Nhập</value>
   </data>
   <data name="login_btnReg" xml:space="preserve">
-    <value>Đăng Ký</value>
+    <value>Nút này được tạo ra để đăng ký...!!!</value>
   </data>
   <data name="login_dangnhap" xml:space="preserve">
     <value>Đăng Nhập</value>
+  </data>
+  <data name="login_lbVer" xml:space="preserve">
+    <value>Phiên bản 1.0</value>
   </data>
   <data name="login_matkhau" xml:space="preserve">
     <value>Mật khẩu:</value>
   </data>
   <data name="login_tendangnhap" xml:space="preserve">
     <value>Tên đăng nhập:</value>
+  </data>
+  <data name="makh" xml:space="preserve">
+    <value>Mã KH:</value>
+  </data>
+  <data name="manv" xml:space="preserve">
+    <value>Mã NV:</value>
   </data>
   <data name="maso" xml:space="preserve">
     <value>Mã Số:</value>
@@ -236,6 +359,9 @@
   </data>
   <data name="ncc" xml:space="preserve">
     <value>NCC:</value>
+  </data>
+  <data name="ngayhd" xml:space="preserve">
+    <value>Ngày Hoá Đơn:</value>
   </data>
   <data name="ngaysinh" xml:space="preserve">
     <value>Ngày Sinh:</value>
@@ -294,11 +420,23 @@
   <data name="sdt" xml:space="preserve">
     <value>SĐT:</value>
   </data>
+  <data name="sl" xml:space="preserve">
+    <value>Số Lượng:</value>
+  </data>
+  <data name="sohd" xml:space="preserve">
+    <value>Số Hóa Đơn:</value>
+  </data>
   <data name="sua" xml:space="preserve">
     <value>Sửa</value>
   </data>
   <data name="taikhoan" xml:space="preserve">
     <value>Tài Khoản</value>
+  </data>
+  <data name="tenKH" xml:space="preserve">
+    <value>Tên Khách Hàng:</value>
+  </data>
+  <data name="tenNV" xml:space="preserve">
+    <value>Tên Nhân Viên:</value>
   </data>
   <data name="tensp" xml:space="preserve">
     <value>Tên Sản Phẩm:</value>
@@ -326,6 +464,9 @@
   </data>
   <data name="xem" xml:space="preserve">
     <value>Xem</value>
+  </data>
+  <data name="xemthem" xml:space="preserve">
+    <value>Xem Thêm</value>
   </data>
   <data name="xoa" xml:space="preserve">
     <value>Xóa</value>

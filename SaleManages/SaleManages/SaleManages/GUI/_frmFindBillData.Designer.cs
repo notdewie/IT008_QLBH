@@ -43,8 +43,9 @@
             this.panel1.Controls.Add(this.tbFindbillData);
             this.panel1.Controls.Add(this.lbFindbillData);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(485, 155);
+            this.panel1.Size = new System.Drawing.Size(970, 298);
             this.panel1.TabIndex = 1;
             // 
             // btnFindnillData
@@ -60,38 +61,42 @@
             this.btnFindnillData.ImageZoom = 50;
             this.btnFindnillData.LabelPosition = 0;
             this.btnFindnillData.LabelText = "";
-            this.btnFindnillData.Location = new System.Drawing.Point(362, 49);
-            this.btnFindnillData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnFindnillData.Location = new System.Drawing.Point(724, 94);
+            this.btnFindnillData.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnFindnillData.Name = "btnFindnillData";
-            this.btnFindnillData.Size = new System.Drawing.Size(50, 55);
+            this.btnFindnillData.Size = new System.Drawing.Size(100, 106);
             this.btnFindnillData.TabIndex = 37;
             this.btnFindnillData.Click += new System.EventHandler(this.btnFindnillData_Click);
             // 
             // tbFindbillData
             // 
             this.tbFindbillData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFindbillData.Location = new System.Drawing.Point(135, 66);
+            this.tbFindbillData.Location = new System.Drawing.Point(270, 127);
+            this.tbFindbillData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbFindbillData.Name = "tbFindbillData";
-            this.tbFindbillData.Size = new System.Drawing.Size(212, 25);
+            this.tbFindbillData.Size = new System.Drawing.Size(420, 43);
             this.tbFindbillData.TabIndex = 1;
             // 
             // lbFindbillData
             // 
             this.lbFindbillData.AutoSize = true;
             this.lbFindbillData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFindbillData.Location = new System.Drawing.Point(27, 68);
+            this.lbFindbillData.Location = new System.Drawing.Point(54, 131);
+            this.lbFindbillData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbFindbillData.Name = "lbFindbillData";
-            this.lbFindbillData.Size = new System.Drawing.Size(82, 19);
+            this.lbFindbillData.Size = new System.Drawing.Size(159, 37);
             this.lbFindbillData.TabIndex = 0;
             this.lbFindbillData.Text = "Số hoá đơn:";
             // 
             // _frmFindBillData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(485, 159);
+            this.ClientSize = new System.Drawing.Size(970, 306);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "_frmFindBillData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

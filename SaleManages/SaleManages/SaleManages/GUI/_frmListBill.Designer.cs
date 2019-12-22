@@ -93,7 +93,7 @@
             this.tbSoHD_ViewBill.Location = new System.Drawing.Point(124, 322);
             this.tbSoHD_ViewBill.Name = "tbSoHD_ViewBill";
             this.tbSoHD_ViewBill.ReadOnly = true;
-            this.tbSoHD_ViewBill.Size = new System.Drawing.Size(164, 25);
+            this.tbSoHD_ViewBill.Size = new System.Drawing.Size(164, 43);
             this.tbSoHD_ViewBill.TabIndex = 64;
             // 
             // label2
@@ -101,13 +101,13 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(24, 325);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 19);
+            this.label2.Size = new System.Drawing.Size(166, 37);
             this.label2.TabIndex = 63;
             this.label2.Text = "Số Hóa Đơn:";
             // 
             // _frmListBill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(474, 379);
@@ -117,6 +117,7 @@
             this.Controls.Add(this.dtgvViewBill);
             this.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "_frmListBill";

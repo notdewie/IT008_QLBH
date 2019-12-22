@@ -50,7 +50,10 @@ namespace SaleManages.GUI
         private void metroDateTime1_MouseHover(object sender, EventArgs e)
         {
             ToolTip tooltip = new ToolTip();
-            tooltip.Show("Ngày sinh", dateBirth);
+            if (checklang == "Đăng Nhập")
+                tooltip.Show("Ngày sinh", dateBirth);
+            else
+                tooltip.Show("Date of birth", dateBirth);
         }
 
        
@@ -67,7 +70,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbUsername.Text))
             {
                 e.Cancel = true;
-                epUserName.SetError(tbUsername, "Vui lòng điền tên đăng nhập!");
+                if (checklang == "Đăng Nhập")
+                    epUserName.SetError(tbUsername, "Vui lòng điền tên đăng nhập!");
+                else
+                    epUserName.SetError(tbUsername, "Please enter your username!");
                 e.Cancel = false;
             }
             else
@@ -82,7 +88,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbName.Text))
             {
                 e.Cancel = true;
-                epFullName.SetError(tbName, "Vui lòng điền họ tên!");
+                if (checklang == "Đăng Nhập")
+                    epFullName.SetError(tbName, "Vui lòng điền họ tên!");
+                else
+                    epFullName.SetError(tbName, "Please enter your full name!");
                 e.Cancel = false;
             }
             else
@@ -97,7 +106,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbEmail.Text))
             {
                 e.Cancel = true;
-                epEMail.SetError(tbEmail, "Vui lòng điền email!");
+                if (checklang == "Đăng Nhập")
+                    epEMail.SetError(tbEmail, "Vui lòng điền email!");
+                else
+                    epEMail.SetError(tbEmail, "Please enter your email!");
                 e.Cancel = false;
             }
             else
@@ -112,7 +124,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbPass.Text))
             {
                 e.Cancel = true;
-                epPass.SetError(tbPass, "Vui lòng điền mật khẩu!");
+                if (checklang == "Đăng Nhập")
+                    epPass.SetError(tbPass, "Vui lòng điền mật khẩu!");
+                else
+                    epPass.SetError(tbPass, "Please enter the password!");
                 e.Cancel = false;
             }
             else
@@ -127,7 +142,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCheckPass.Text))
             {
                 e.Cancel = true;
-                epCheckPass.SetError(tbCheckPass, "Vui lòng điền lại mật khẩu!");
+                if (checklang == "Đăng Nhập")
+                    epCheckPass.SetError(tbCheckPass, "Vui lòng điền lại mật khẩu!");
+                else
+                    epCheckPass.SetError(tbCheckPass, "Please enter your password again!");
                 e.Cancel = false;
             }
             else
@@ -140,23 +158,48 @@ namespace SaleManages.GUI
         private void btnReg_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbUsername.Text))
-                MessageBox.Show("Vui lòng điền tên đăng nhập", "Thông báo", MessageBoxButtons.OK);
-            else 
+            {
+                if (checklang == "Đăng Nhập")
+                    MessageBox.Show("Vui lòng điền tên đăng nhập", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Please enter your username", "Notification", MessageBoxButtons.OK);
+            }
+            else
                 if (string.IsNullOrEmpty(tbName.Text))
+            {
+                if (checklang == "Đăng Nhập")
                     MessageBox.Show("Vui lòng điền họ và tên", "Thông báo", MessageBoxButtons.OK);
-                else 
+                else
+                    MessageBox.Show("Please enter your full name", "Notification", MessageBoxButtons.OK);
+            }
+            else
                     if (string.IsNullOrEmpty(tbEmail.Text))
-                        MessageBox.Show("Vui lòng điền email", "Thông báo", MessageBoxButtons.OK);
-                    else 
+            {
+                if (checklang == "Đăng Nhập")
+                    MessageBox.Show("Vui lòng điền email", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Please enter your email", "Notification", MessageBoxButtons.OK);
+            }
+            else
                         if (string.IsNullOrEmpty(tbPass.Text))
-                            MessageBox.Show("Vui lòng điền mật khẩu", "Thông báo", MessageBoxButtons.OK);
-                        else 
+            {
+                if (checklang == "Đăng Nhập")
+                    MessageBox.Show("Vui lòng điền mật khẩu", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Please enter the password", "Notification", MessageBoxButtons.OK);
+            }
+            else
                             if (string.IsNullOrEmpty(tbCheckPass.Text))
-                                MessageBox.Show("Vui lòng điền lại mật khẩu", "Thông báo", MessageBoxButtons.OK);
-                            else
-                            {
-                                AccountDAO.Instance.CreateAcc();
-                            }
+            {
+                if (checklang == "Đăng Nhập")
+                    MessageBox.Show("Vui lòng điền lại mật khẩu", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Please enter your password again", "Notification", MessageBoxButtons.OK);
+            }
+            else
+            {
+                AccountDAO.Instance.CreateAcc();
+            }
                         
                     
                 

@@ -42,9 +42,10 @@
             this.panel1.Controls.Add(this.btnFindemData);
             this.panel1.Controls.Add(this.tbFindemData);
             this.panel1.Controls.Add(this.lbFindemData);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(485, 155);
+            this.panel1.Size = new System.Drawing.Size(970, 298);
             this.panel1.TabIndex = 1;
             // 
             // btnFindemData
@@ -60,39 +61,43 @@
             this.btnFindemData.ImageZoom = 50;
             this.btnFindemData.LabelPosition = 0;
             this.btnFindemData.LabelText = "";
-            this.btnFindemData.Location = new System.Drawing.Point(361, 54);
-            this.btnFindemData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnFindemData.Location = new System.Drawing.Point(722, 104);
+            this.btnFindemData.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnFindemData.Name = "btnFindemData";
-            this.btnFindemData.Size = new System.Drawing.Size(50, 49);
+            this.btnFindemData.Size = new System.Drawing.Size(100, 94);
             this.btnFindemData.TabIndex = 36;
             this.btnFindemData.Click += new System.EventHandler(this.btnFindemData_Click_1);
             // 
             // tbFindemData
             // 
             this.tbFindemData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFindemData.Location = new System.Drawing.Point(125, 66);
+            this.tbFindemData.Location = new System.Drawing.Point(250, 127);
+            this.tbFindemData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbFindemData.Name = "tbFindemData";
-            this.tbFindemData.Size = new System.Drawing.Size(219, 25);
+            this.tbFindemData.Size = new System.Drawing.Size(434, 43);
             this.tbFindemData.TabIndex = 1;
             // 
             // lbFindemData
             // 
             this.lbFindemData.AutoSize = true;
             this.lbFindemData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFindemData.Location = new System.Drawing.Point(27, 68);
+            this.lbFindemData.Location = new System.Drawing.Point(54, 131);
+            this.lbFindemData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbFindemData.Name = "lbFindemData";
-            this.lbFindemData.Size = new System.Drawing.Size(97, 19);
+            this.lbFindemData.Size = new System.Drawing.Size(185, 37);
             this.lbFindemData.TabIndex = 0;
             this.lbFindemData.Text = "Tên nhân viên:";
             // 
             // _frmFindEmployeesData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(485, 159);
+            this.ClientSize = new System.Drawing.Size(970, 306);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "_frmFindEmployeesData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

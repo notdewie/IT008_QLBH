@@ -49,7 +49,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbOldPass.Text))
             {
                 e.Cancel = true;
-                epOldPass.SetError(tbOldPass, "Vui lòng nhập mật khẩu cũ!");
+                if (checklang == "Họ Tên:")
+                    epOldPass.SetError(tbOldPass, "Vui lòng nhập mật khẩu cũ!");
+                else
+                    epOldPass.SetError(tbOldPass, "Please enter the old password!");
                 e.Cancel = false;
             }
             else
@@ -64,7 +67,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbNewPass.Text))
             {
                 e.Cancel = true;
-                epNewPass.SetError(tbNewPass, "Vui lòng điền mật khẩu mới!");
+                if (checklang == "Họ Tên:")
+                    epNewPass.SetError(tbNewPass, "Vui lòng điền mật khẩu mới!");
+                else
+                    epNewPass.SetError(tbNewPass, "Please enter the new password!");
                 e.Cancel = false;
             }
             else
@@ -79,7 +85,10 @@ namespace SaleManages.GUI
             if (string.IsNullOrEmpty(tbCheckPass.Text))
             {
                 e.Cancel = true;
-                epReNewPass.SetError(tbCheckPass, "Vui lòng nhập lại mật khẩu!");
+                if (checklang == "Họ Tên:")
+                    epReNewPass.SetError(tbCheckPass, "Vui lòng nhập lại mật khẩu!");
+                else
+                    epReNewPass.SetError(tbCheckPass, "Please enter the password again!");
                 e.Cancel = false;
             }
             else
@@ -99,7 +108,10 @@ namespace SaleManages.GUI
                         int rs = AccountDAO.Instance.ChangePass();
                         if(rs >0)
                         {
-                            MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK);
+                            if (checklang == "Họ Tên:")
+                                MessageBox.Show("Đổi mật khẩu thành công", "Thông báo", MessageBoxButtons.OK);
+                            else
+                                MessageBox.Show("Change password successfully", "Notification", MessageBoxButtons.OK);
                             this.Close();
                             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
                             f.Close();

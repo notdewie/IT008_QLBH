@@ -9,29 +9,44 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SaleManages.DAO;
 using System.Timers;
+using System.Resources;
+using System.Globalization;
 
 namespace SaleManages.GUI
 {
     public partial class _frmUpdateInfo : Form
     {
+        string checklang;
+        CultureInfo culture;
         public _frmUpdateInfo()
         {
             InitializeComponent();
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
+            checklang = ((_frmSalesManage)f).lbNameKh.Text;
+            culture = CultureInfo.CurrentCulture;
+            if (checklang == "Họ Tên:") SetLanguage("vi-VN");
+            else SetLanguage("en-US");
             LoadForm();
             
+        }
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("SaleManages.Resources.MyResource", typeof(_frmSalesManage).Assembly);
+            lbTitle.Text = rm.GetString("info_lbTitle", culture);
+            lbName.Text = rm.GetString("info_ten", culture);
+            lbAddress.Text = rm.GetString("info_diachi", culture);
+            lbSex.Text = rm.GetString("info_gioitinh", culture);
+            lbBirth.Text = rm.GetString("info_ngaysinh", culture);
+            lbPhone.Text = rm.GetString("info_sdt", culture);
         }
 
         private void bunifuGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-        private void btnAccept_Click(object sender, EventArgs e)
-        {
-            AccountDAO.Instance.UpdateAcc();
-            AccountDAO.Instance.LoadInfoAcc();
-            this.Hide();
-        }
+        
         void LoadForm()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmInfoAcc"];
@@ -57,6 +72,13 @@ namespace SaleManages.GUI
            
                 
 
+        }
+
+        private void btnAccept_Click_1(object sender, EventArgs e)
+        {
+            AccountDAO.Instance.UpdateAcc();
+            AccountDAO.Instance.LoadInfoAcc();
+            this.Hide();
         }
     }
 }

@@ -40,6 +40,7 @@ namespace SaleManages.GUI
             lbChangePass.Text = rm.GetString("info_doimatkhau", culture);
             btnAccept.Text = rm.GetString("info_xacnhan", culture);
             lbSex.Text = rm.GetString("info_gioitinh", culture);
+            linkLabel1.Text = rm.GetString("capnhat", culture);
         }
 
         private void btnAccept_Click(object sender, EventArgs e)

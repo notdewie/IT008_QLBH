@@ -38,6 +38,7 @@ namespace SaleManages.GUI
                 ResourceManager("SaleManages.Resources.MyResource", typeof(_frmSalesManage).Assembly);
             lbUseTerm.Text = rm.GetString("reg_lbUseTerm", culture);
             button1.Text = rm.GetString("dong", culture);
+            this.Text = rm.GetString("formTerm", culture);
         }
 
         private void button1_Click(object sender, EventArgs e)

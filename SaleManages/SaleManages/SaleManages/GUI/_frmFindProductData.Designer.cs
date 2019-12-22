@@ -40,18 +40,20 @@
             // 
             this.lbFindproData.AutoSize = true;
             this.lbFindproData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFindproData.Location = new System.Drawing.Point(27, 68);
+            this.lbFindproData.Location = new System.Drawing.Point(54, 131);
+            this.lbFindproData.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbFindproData.Name = "lbFindproData";
-            this.lbFindproData.Size = new System.Drawing.Size(97, 19);
+            this.lbFindproData.Size = new System.Drawing.Size(185, 37);
             this.lbFindproData.TabIndex = 0;
             this.lbFindproData.Text = "Tên sản phẩm:";
             // 
             // tbFindproData
             // 
             this.tbFindproData.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbFindproData.Location = new System.Drawing.Point(129, 65);
+            this.tbFindproData.Location = new System.Drawing.Point(258, 125);
+            this.tbFindproData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tbFindproData.Name = "tbFindproData";
-            this.tbFindproData.Size = new System.Drawing.Size(219, 25);
+            this.tbFindproData.Size = new System.Drawing.Size(434, 43);
             this.tbFindproData.TabIndex = 1;
             // 
             // panel1
@@ -60,9 +62,10 @@
             this.panel1.Controls.Add(this.btnFindproData);
             this.panel1.Controls.Add(this.tbFindproData);
             this.panel1.Controls.Add(this.lbFindproData);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(485, 155);
+            this.panel1.Size = new System.Drawing.Size(970, 298);
             this.panel1.TabIndex = 1;
             // 
             // btnFindproData
@@ -78,20 +81,22 @@
             this.btnFindproData.ImageZoom = 50;
             this.btnFindproData.LabelPosition = 0;
             this.btnFindproData.LabelText = "";
-            this.btnFindproData.Location = new System.Drawing.Point(353, 51);
-            this.btnFindproData.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnFindproData.Location = new System.Drawing.Point(706, 98);
+            this.btnFindproData.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnFindproData.Name = "btnFindproData";
-            this.btnFindproData.Size = new System.Drawing.Size(50, 56);
+            this.btnFindproData.Size = new System.Drawing.Size(100, 108);
             this.btnFindproData.TabIndex = 35;
             this.btnFindproData.Click += new System.EventHandler(this.btnFindproData_Click_1);
             // 
             // _frmFindProductData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(485, 159);
+            this.ClientSize = new System.Drawing.Size(970, 306);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "_frmFindProductData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tìm kiếm sản phẩm";

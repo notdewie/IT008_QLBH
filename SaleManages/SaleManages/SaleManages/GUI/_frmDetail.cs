@@ -10,6 +10,9 @@ using SaleManages.DAO;
 using System.Windows.Forms;
 using System.Threading;
 using SaleManages.DTO;
+using System.Resources;
+using System.Globalization;
+
 namespace SaleManages.GUI
 {
     public partial class _frmDetail : Form
@@ -17,10 +20,16 @@ namespace SaleManages.GUI
         DataTable data = new DataTable();
         int Check = 0;
         bool listBill = false;
+        string checklang;
+        CultureInfo culture;
 
         public _frmDetail()
         {
-
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
+            checklang = ((_frmLogin)f).lbTitle.Text;
+            culture = CultureInfo.CurrentCulture;
+            if (checklang == "Đăng Nhập") SetLanguage("vi-VN");
+            else SetLanguage("en-US");
             InitializeComponent();
            data = ObjBillDAO.Instance.LoadBillDetail();
             if (data.Rows.Count > 0)
@@ -34,6 +43,26 @@ namespace SaleManages.GUI
             }
 
         }
+
+        private void SetLanguage(string cultureName)
+        {
+            culture = CultureInfo.CreateSpecificCulture(cultureName);
+            ResourceManager rm = new
+                ResourceManager("SaleManages.Resources.MyResource", typeof(_frmLogin).Assembly);
+            label1.Text = rm.GetString("cthd", culture);
+            label2.Text = rm.GetString("sohd", culture);
+            label3.Text = rm.GetString("masp", culture);
+            label4.Text = rm.GetString("sl", culture);
+            btnAdd.LabelText = rm.GetString("them", culture);
+            btnEra.LabelText = rm.GetString("xoa", culture);
+            btnFix.LabelText = rm.GetString("sua", culture);
+            button1.LabelText = rm.GetString("in", culture);
+            dtgvDetail.Columns[0].HeaderText = rm.GetString("dtgvsohd", culture);
+            dtgvDetail.Columns[1].HeaderText = rm.GetString("dtgvmasp", culture);
+            dtgvDetail.Columns[3].HeaderText = rm.GetString("dtgvsl", culture);
+            this.Text = rm.GetString("formcthd", culture);
+        }
+
         public _frmDetail(int a)
         {
             InitializeComponent();
@@ -80,7 +109,10 @@ namespace SaleManages.GUI
                 string SoHD = ((_frmSalesManage)f1).tbCodeHD.Text;
                 System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmDetail"];
                 ((_frmDetail)f).tbSoHD.Text = SoHD;
-                MessageBox.Show("CTHD trống", "Thông báo", MessageBoxButtons.OK);
+                if (checklang == "Đăng Nhập")
+                    MessageBox.Show("CTHD trống", "Thông báo", MessageBoxButtons.OK);
+                else
+                    MessageBox.Show("Invoice Details is blank", "Notification", MessageBoxButtons.OK);
             }
         }
 
