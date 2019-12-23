@@ -117,7 +117,7 @@ namespace SaleManages.DAO
             int result = DataProvider.Instance.ExecuteNonQuery(UpdateQuery);
             if (result > 0)
             {
-                MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Sản phẩm đã được sửa,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
             }
         }
         public DataTable FindProductData()
