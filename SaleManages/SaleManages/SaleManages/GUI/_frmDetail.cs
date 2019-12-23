@@ -37,20 +37,18 @@ namespace SaleManages.GUI
             {
                 Check = 0;
             }
-            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
-            checklang = ((_frmLogin)f).lbTitle.Text;
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
+            checklang = ((_frmSalesManage)f).lbNameKh.Text;
             culture = CultureInfo.CurrentCulture;
-            if (checklang == "Đăng Nhập")
-                SetLanguage("vi-VN");
-            else
-                SetLanguage("en-US");
+            if (checklang == "Họ Tên:") SetLanguage("vi-VN");
+            else SetLanguage("en-US");
         }
 
         private void SetLanguage(string cultureName)
         {
             culture = CultureInfo.CreateSpecificCulture(cultureName);
             ResourceManager rm = new
-                ResourceManager("SaleManages.Resources.MyResource", typeof(_frmLogin).Assembly);
+                ResourceManager("SaleManages.Resources.MyResource", typeof(_frmSalesManage).Assembly);
             label1.Text = rm.GetString("cthd", culture);
             label2.Text = rm.GetString("sohd", culture);
             label3.Text = rm.GetString("masp", culture);
