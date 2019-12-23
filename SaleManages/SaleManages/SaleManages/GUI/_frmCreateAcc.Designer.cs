@@ -38,6 +38,11 @@
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.dateBirth = new MetroFramework.Controls.MetroDateTime();
+            this.tbEmail = new SaleManages.DTO.PlaceHolderTextBox();
+            this.tbCheckPass = new SaleManages.DTO.PlaceHolderTextBox();
+            this.tbName = new SaleManages.DTO.PlaceHolderTextBox();
+            this.tbPass = new SaleManages.DTO.PlaceHolderTextBox();
+            this.tbUsername = new SaleManages.DTO.PlaceHolderTextBox();
             this.lbTitle = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.epUserName = new System.Windows.Forms.ErrorProvider(this.components);
@@ -45,11 +50,6 @@
             this.epEMail = new System.Windows.Forms.ErrorProvider(this.components);
             this.epPass = new System.Windows.Forms.ErrorProvider(this.components);
             this.epCheckPass = new System.Windows.Forms.ErrorProvider(this.components);
-            this.tbEmail = new SaleManages.DTO.PlaceHolderTextBox();
-            this.tbCheckPass = new SaleManages.DTO.PlaceHolderTextBox();
-            this.tbName = new SaleManages.DTO.PlaceHolderTextBox();
-            this.tbPass = new SaleManages.DTO.PlaceHolderTextBox();
-            this.tbUsername = new SaleManages.DTO.PlaceHolderTextBox();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epUserName)).BeginInit();
@@ -133,7 +133,7 @@
             this.lbUseTerm.Location = new System.Drawing.Point(1, 379);
             this.lbUseTerm.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUseTerm.Name = "lbUseTerm";
-            this.lbUseTerm.Size = new System.Drawing.Size(133, 19);
+            this.lbUseTerm.Size = new System.Drawing.Size(206, 30);
             this.lbUseTerm.TabIndex = 29;
             this.lbUseTerm.Text = "Điều khoản sử dụng";
             this.lbUseTerm.Click += new System.EventHandler(this.lbUseTerm_Click);
@@ -147,7 +147,7 @@
             this.lbAccept.Location = new System.Drawing.Point(1, 360);
             this.lbAccept.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbAccept.Name = "lbAccept";
-            this.lbAccept.Size = new System.Drawing.Size(266, 19);
+            this.lbAccept.Size = new System.Drawing.Size(414, 30);
             this.lbAccept.TabIndex = 28;
             this.lbAccept.Text = "Bằng việc nhấn nút đăng kí tôi đã đồng ý ";
             // 
@@ -158,7 +158,7 @@
             this.rbElse.ForeColor = System.Drawing.Color.White;
             this.rbElse.Location = new System.Drawing.Point(208, 290);
             this.rbElse.Name = "rbElse";
-            this.rbElse.Size = new System.Drawing.Size(65, 27);
+            this.rbElse.Size = new System.Drawing.Size(101, 41);
             this.rbElse.TabIndex = 9;
             this.rbElse.Text = "Khác";
             this.rbElse.UseVisualStyleBackColor = false;
@@ -170,7 +170,7 @@
             this.rbFemale.ForeColor = System.Drawing.Color.White;
             this.rbFemale.Location = new System.Drawing.Point(135, 290);
             this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(52, 27);
+            this.rbFemale.Size = new System.Drawing.Size(82, 41);
             this.rbFemale.TabIndex = 8;
             this.rbFemale.Text = "Nữ";
             this.rbFemale.UseVisualStyleBackColor = false;
@@ -182,7 +182,7 @@
             this.rbMale.ForeColor = System.Drawing.Color.White;
             this.rbMale.Location = new System.Drawing.Point(70, 290);
             this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(65, 27);
+            this.rbMale.Size = new System.Drawing.Size(102, 41);
             this.rbMale.TabIndex = 7;
             this.rbMale.Text = "Nam";
             this.rbMale.UseVisualStyleBackColor = false;
@@ -191,12 +191,82 @@
             // 
             this.dateBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateBirth.Location = new System.Drawing.Point(80, 240);
-            this.dateBirth.MinimumSize = new System.Drawing.Size(0, 30);
+            this.dateBirth.MinimumSize = new System.Drawing.Size(0, 29);
             this.dateBirth.Name = "dateBirth";
-            this.dateBirth.Size = new System.Drawing.Size(140, 30);
+            this.dateBirth.Size = new System.Drawing.Size(140, 43);
             this.dateBirth.TabIndex = 6;
             this.dateBirth.TabStop = false;
             this.dateBirth.MouseHover += new System.EventHandler(this.metroDateTime1_MouseHover);
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.CausesValidation = false;
+            this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
+            this.tbEmail.ForeColor = System.Drawing.Color.Gray;
+            this.tbEmail.Location = new System.Drawing.Point(80, 156);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PlaceHolderText = null;
+            this.tbEmail.Size = new System.Drawing.Size(140, 31);
+            this.tbEmail.TabIndex = 3;
+            this.tbEmail.TabStop = false;
+            this.tbEmail.Text = "Nhập email";
+            this.tbEmail.Validating += new System.ComponentModel.CancelEventHandler(this.tbEmail_Validating);
+            // 
+            // tbCheckPass
+            // 
+            this.tbCheckPass.CausesValidation = false;
+            this.tbCheckPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
+            this.tbCheckPass.ForeColor = System.Drawing.Color.Gray;
+            this.tbCheckPass.Location = new System.Drawing.Point(80, 212);
+            this.tbCheckPass.Name = "tbCheckPass";
+            this.tbCheckPass.PlaceHolderText = null;
+            this.tbCheckPass.Size = new System.Drawing.Size(140, 31);
+            this.tbCheckPass.TabIndex = 5;
+            this.tbCheckPass.TabStop = false;
+            this.tbCheckPass.Text = "Xác nhận mật khẩu";
+            this.tbCheckPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbCheckPass_Validating);
+            // 
+            // tbName
+            // 
+            this.tbName.CausesValidation = false;
+            this.tbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
+            this.tbName.ForeColor = System.Drawing.Color.Gray;
+            this.tbName.Location = new System.Drawing.Point(80, 128);
+            this.tbName.Name = "tbName";
+            this.tbName.PlaceHolderText = null;
+            this.tbName.Size = new System.Drawing.Size(140, 31);
+            this.tbName.TabIndex = 3;
+            this.tbName.TabStop = false;
+            this.tbName.Text = "Nhập họ tên";
+            this.tbName.Validating += new System.ComponentModel.CancelEventHandler(this.tbName_Validating);
+            // 
+            // tbPass
+            // 
+            this.tbPass.CausesValidation = false;
+            this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
+            this.tbPass.ForeColor = System.Drawing.Color.Gray;
+            this.tbPass.Location = new System.Drawing.Point(80, 184);
+            this.tbPass.Name = "tbPass";
+            this.tbPass.PlaceHolderText = null;
+            this.tbPass.Size = new System.Drawing.Size(140, 31);
+            this.tbPass.TabIndex = 4;
+            this.tbPass.TabStop = false;
+            this.tbPass.Text = "Nhập mật khẩu";
+            this.tbPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbPass_Validating);
+            // 
+            // tbUsername
+            // 
+            this.tbUsername.CausesValidation = false;
+            this.tbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
+            this.tbUsername.ForeColor = System.Drawing.Color.Gray;
+            this.tbUsername.Location = new System.Drawing.Point(80, 100);
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.PlaceHolderText = null;
+            this.tbUsername.Size = new System.Drawing.Size(140, 31);
+            this.tbUsername.TabIndex = 2;
+            this.tbUsername.TabStop = false;
+            this.tbUsername.Text = "Nhập tên đăng nhập";
+            this.tbUsername.Validating += new System.ComponentModel.CancelEventHandler(this.tbUsername_Validating);
             // 
             // lbTitle
             // 
@@ -210,7 +280,7 @@
             this.lbTitle.ForeColor = System.Drawing.Color.White;
             this.lbTitle.Location = new System.Drawing.Point(92, 33);
             this.lbTitle.Name = "lbTitle";
-            this.lbTitle.Size = new System.Drawing.Size(105, 32);
+            this.lbTitle.Size = new System.Drawing.Size(159, 51);
             this.lbTitle.TabIndex = 1;
             this.lbTitle.Text = "Đăng Ký";
             this.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -249,84 +319,15 @@
             // 
             this.epCheckPass.ContainerControl = this;
             // 
-            // tbEmail
-            // 
-            this.tbEmail.CausesValidation = false;
-            this.tbEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
-            this.tbEmail.ForeColor = System.Drawing.Color.Gray;
-            this.tbEmail.Location = new System.Drawing.Point(80, 156);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.PlaceHolderText = null;
-            this.tbEmail.Size = new System.Drawing.Size(140, 22);
-            this.tbEmail.TabIndex = 3;
-            this.tbEmail.TabStop = false;
-            this.tbEmail.Text = "Nhập email";
-            this.tbEmail.Validating += new System.ComponentModel.CancelEventHandler(this.tbEmail_Validating);
-            // 
-            // tbCheckPass
-            // 
-            this.tbCheckPass.CausesValidation = false;
-            this.tbCheckPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
-            this.tbCheckPass.ForeColor = System.Drawing.Color.Gray;
-            this.tbCheckPass.Location = new System.Drawing.Point(80, 212);
-            this.tbCheckPass.Name = "tbCheckPass";
-            this.tbCheckPass.PlaceHolderText = null;
-            this.tbCheckPass.Size = new System.Drawing.Size(140, 22);
-            this.tbCheckPass.TabIndex = 5;
-            this.tbCheckPass.TabStop = false;
-            this.tbCheckPass.Text = "Xác nhận mật khẩu";
-            this.tbCheckPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbCheckPass_Validating);
-            // 
-            // tbName
-            // 
-            this.tbName.CausesValidation = false;
-            this.tbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
-            this.tbName.ForeColor = System.Drawing.Color.Gray;
-            this.tbName.Location = new System.Drawing.Point(80, 128);
-            this.tbName.Name = "tbName";
-            this.tbName.PlaceHolderText = null;
-            this.tbName.Size = new System.Drawing.Size(140, 22);
-            this.tbName.TabIndex = 3;
-            this.tbName.TabStop = false;
-            this.tbName.Text = "Nhập họ tên";
-            this.tbName.Validating += new System.ComponentModel.CancelEventHandler(this.tbName_Validating);
-            // 
-            // tbPass
-            // 
-            this.tbPass.CausesValidation = false;
-            this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
-            this.tbPass.ForeColor = System.Drawing.Color.Gray;
-            this.tbPass.Location = new System.Drawing.Point(80, 184);
-            this.tbPass.Name = "tbPass";
-            this.tbPass.PlaceHolderText = null;
-            this.tbPass.Size = new System.Drawing.Size(140, 22);
-            this.tbPass.TabIndex = 4;
-            this.tbPass.TabStop = false;
-            this.tbPass.Text = "Nhập mật khẩu";
-            this.tbPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbPass_Validating);
-            // 
-            // tbUsername
-            // 
-            this.tbUsername.CausesValidation = false;
-            this.tbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Italic);
-            this.tbUsername.ForeColor = System.Drawing.Color.Gray;
-            this.tbUsername.Location = new System.Drawing.Point(80, 100);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.PlaceHolderText = null;
-            this.tbUsername.Size = new System.Drawing.Size(140, 22);
-            this.tbUsername.TabIndex = 2;
-            this.tbUsername.TabStop = false;
-            this.tbUsername.Text = "Nhập tên đăng nhập";
-            this.tbUsername.Validating += new System.ComponentModel.CancelEventHandler(this.tbUsername_Validating);
-            // 
             // _frmCreateAcc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 400);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Segoe UI Light", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.Name = "_frmCreateAcc";

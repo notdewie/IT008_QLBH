@@ -25,11 +25,7 @@ namespace SaleManages.GUI
 
         public _frmDetail()
         {
-            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
-            checklang = ((_frmLogin)f).lbTitle.Text;
-            culture = CultureInfo.CurrentCulture;
-            if (checklang == "Đăng Nhập") SetLanguage("vi-VN");
-            else SetLanguage("en-US");
+           
             InitializeComponent();
            data = ObjBillDAO.Instance.LoadBillDetail();
             if (data.Rows.Count > 0)
@@ -41,7 +37,13 @@ namespace SaleManages.GUI
             {
                 Check = 0;
             }
-
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmLogin"];
+            checklang = ((_frmLogin)f).lbTitle.Text;
+            culture = CultureInfo.CurrentCulture;
+            if (checklang == "Đăng Nhập")
+                SetLanguage("vi-VN");
+            else
+                SetLanguage("en-US");
         }
 
         private void SetLanguage(string cultureName)
@@ -59,7 +61,7 @@ namespace SaleManages.GUI
             button1.LabelText = rm.GetString("in", culture);
             dtgvDetail.Columns[0].HeaderText = rm.GetString("dtgvsohd", culture);
             dtgvDetail.Columns[1].HeaderText = rm.GetString("dtgvmasp", culture);
-            dtgvDetail.Columns[3].HeaderText = rm.GetString("dtgvsl", culture);
+            dtgvDetail.Columns[2].HeaderText = rm.GetString("dtgvsl", culture);
             this.Text = rm.GetString("formcthd", culture);
         }
 

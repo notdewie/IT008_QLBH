@@ -68,10 +68,10 @@
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.LightSteelBlue;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Purple;
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(300, 416);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(600, 800);
             this.bunifuGradientPanel1.TabIndex = 0;
             // 
             // bunifuImageButton1
@@ -79,10 +79,10 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(9, 10);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(18, 19);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(22, 24);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(44, 46);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 8;
             this.bunifuImageButton1.TabStop = false;
@@ -111,14 +111,14 @@
             this.btnAccept.IconVisible = true;
             this.btnAccept.IconZoom = 90D;
             this.btnAccept.IsTab = false;
-            this.btnAccept.Location = new System.Drawing.Point(67, 344);
-            this.btnAccept.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnAccept.Location = new System.Drawing.Point(134, 662);
+            this.btnAccept.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAccept.OnHovercolor = System.Drawing.Color.Transparent;
             this.btnAccept.OnHoverTextColor = System.Drawing.Color.Red;
             this.btnAccept.selected = false;
-            this.btnAccept.Size = new System.Drawing.Size(151, 48);
+            this.btnAccept.Size = new System.Drawing.Size(302, 92);
             this.btnAccept.TabIndex = 7;
             this.btnAccept.Text = "Xác Nhận";
             this.btnAccept.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -130,10 +130,10 @@
             // 
             this.tbCheckPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbCheckPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCheckPass.Location = new System.Drawing.Point(49, 301);
-            this.tbCheckPass.Margin = new System.Windows.Forms.Padding(2);
+            this.tbCheckPass.Location = new System.Drawing.Point(98, 579);
+            this.tbCheckPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbCheckPass.Name = "tbCheckPass";
-            this.tbCheckPass.Size = new System.Drawing.Size(188, 22);
+            this.tbCheckPass.Size = new System.Drawing.Size(376, 43);
             this.tbCheckPass.TabIndex = 6;
             this.tbCheckPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbCheckPass_Validating);
             // 
@@ -141,10 +141,10 @@
             // 
             this.tbNewPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbNewPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNewPass.Location = new System.Drawing.Point(49, 242);
-            this.tbNewPass.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNewPass.Location = new System.Drawing.Point(98, 465);
+            this.tbNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbNewPass.Name = "tbNewPass";
-            this.tbNewPass.Size = new System.Drawing.Size(188, 22);
+            this.tbNewPass.Size = new System.Drawing.Size(376, 43);
             this.tbNewPass.TabIndex = 5;
             this.tbNewPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbNewPass_Validating);
             // 
@@ -154,10 +154,10 @@
             this.lbCheckPass.BackColor = System.Drawing.Color.Transparent;
             this.lbCheckPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCheckPass.ForeColor = System.Drawing.Color.White;
-            this.lbCheckPass.Location = new System.Drawing.Point(45, 281);
-            this.lbCheckPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbCheckPass.Location = new System.Drawing.Point(90, 540);
+            this.lbCheckPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbCheckPass.Name = "lbCheckPass";
-            this.lbCheckPass.Size = new System.Drawing.Size(151, 20);
+            this.lbCheckPass.Size = new System.Drawing.Size(304, 37);
             this.lbCheckPass.TabIndex = 4;
             this.lbCheckPass.Text = "Xác nhận mật khẩu:";
             // 
@@ -167,10 +167,10 @@
             this.lbNewPass.BackColor = System.Drawing.Color.Transparent;
             this.lbNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNewPass.ForeColor = System.Drawing.Color.White;
-            this.lbNewPass.Location = new System.Drawing.Point(45, 222);
-            this.lbNewPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbNewPass.Location = new System.Drawing.Point(90, 427);
+            this.lbNewPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNewPass.Name = "lbNewPass";
-            this.lbNewPass.Size = new System.Drawing.Size(108, 20);
+            this.lbNewPass.Size = new System.Drawing.Size(219, 37);
             this.lbNewPass.TabIndex = 3;
             this.lbNewPass.Text = "Mật khẩu mới:";
             // 
@@ -178,10 +178,10 @@
             // 
             this.tbOldPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbOldPass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbOldPass.Location = new System.Drawing.Point(49, 184);
-            this.tbOldPass.Margin = new System.Windows.Forms.Padding(2);
+            this.tbOldPass.Location = new System.Drawing.Point(98, 354);
+            this.tbOldPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbOldPass.Name = "tbOldPass";
-            this.tbOldPass.Size = new System.Drawing.Size(188, 22);
+            this.tbOldPass.Size = new System.Drawing.Size(376, 43);
             this.tbOldPass.TabIndex = 2;
             this.tbOldPass.Validating += new System.ComponentModel.CancelEventHandler(this.tbOldPass_Validating);
             // 
@@ -191,10 +191,10 @@
             this.lbOldPass.BackColor = System.Drawing.Color.Transparent;
             this.lbOldPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbOldPass.ForeColor = System.Drawing.Color.White;
-            this.lbOldPass.Location = new System.Drawing.Point(45, 162);
-            this.lbOldPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbOldPass.Location = new System.Drawing.Point(90, 312);
+            this.lbOldPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbOldPass.Name = "lbOldPass";
-            this.lbOldPass.Size = new System.Drawing.Size(100, 20);
+            this.lbOldPass.Size = new System.Drawing.Size(201, 37);
             this.lbOldPass.TabIndex = 1;
             this.lbOldPass.Text = "Mật khẩu cũ:";
             // 
@@ -204,10 +204,10 @@
             this.btTitle.BackColor = System.Drawing.Color.Transparent;
             this.btTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTitle.ForeColor = System.Drawing.Color.White;
-            this.btTitle.Location = new System.Drawing.Point(53, 103);
-            this.btTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btTitle.Location = new System.Drawing.Point(106, 198);
+            this.btTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btTitle.Name = "btTitle";
-            this.btTitle.Size = new System.Drawing.Size(185, 37);
+            this.btTitle.Size = new System.Drawing.Size(367, 72);
             this.btTitle.TabIndex = 0;
             this.btTitle.Text = "Đổi Mật Khẩu";
             // 
@@ -225,12 +225,13 @@
             // 
             // _frmChangePass
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 416);
+            this.ClientSize = new System.Drawing.Size(600, 800);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "_frmChangePass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_frmChangePass";
