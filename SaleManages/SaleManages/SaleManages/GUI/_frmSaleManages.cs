@@ -244,7 +244,10 @@ namespace SaleManages.GUI
 
         private void dtgvKhachhang_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ObjCustomerDAO.Instance.Bindings();
+            if (dtgvKhachhang.Rows.Count > 1)
+            {
+                ObjCustomerDAO.Instance.Bindings();
+            }
         }
 
         private void btnEra_Click(object sender, EventArgs e)
@@ -298,7 +301,10 @@ namespace SaleManages.GUI
 
         private void dtgvNhanvien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ObjEmployeesDAO.Instance.Bindings();
+            if (dtgvNhanvien.Rows.Count > 1)
+            {
+                ObjEmployeesDAO.Instance.Bindings();
+            }
         }
 
         private void _frmSalesManage_Load(object sender, EventArgs e)

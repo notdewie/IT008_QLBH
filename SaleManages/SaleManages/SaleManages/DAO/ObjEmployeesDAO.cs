@@ -107,11 +107,17 @@ namespace SaleManages.DAO
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
             string tbmaso = ((_frmSalesManage)f).tbCodeNv.Text;
-            string DeleteQuery = "DELETE FROM NHANVIEN WHERE MANV = '" + tbmaso + "'";
-            int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery);
-            if (result > 0)
+            string CheckQuery = "SELECT * " +
+                "FROM HOADON WHERE MANV = '"+tbmaso+"' ";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(CheckQuery);
+            if (dt.Rows.Count == 0)
             {
-                MessageBox.Show("Nhân viên đã bị xoá,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                string DeleteQuery = "DELETE FROM NHANVIEN WHERE MANV = '" + tbmaso + "'";
+                int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery);
+                if (result > 0)
+                {
+                    MessageBox.Show("Nhân viên đã bị xoá,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                }
             }
             
         }

@@ -85,11 +85,17 @@ namespace SaleManages.DAO
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["_frmSalesManage"];
             string tbmaso = ((_frmSalesManage)f).tbCodeSp.Text;
-            string DeleteQuery = "DELETE FROM SANPHAM WHERE MASP = '" + tbmaso + "'";
-            int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery);
-            if (result > 0)
+            string CheckQuery = "SELECT * " +
+                "FROM CTHD WHERE MASP = '" + tbmaso + "' ";
+            DataTable dt = DataProvider.Instance.ExecuteQuery(CheckQuery);
+            if (dt.Rows.Count == 0)
             {
-                MessageBox.Show("Sản phẩm đã bị xoá,bấm Xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                string DeleteQuery = "DELETE FROM SANPHAM WHERE MASP = '" + tbmaso + "'";
+                int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery);
+                if (result > 0)
+                {
+                    MessageBox.Show("Sản phẩm đã bị xoá,bấm Xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                }
             }
         }
         public void Update()
