@@ -3,7 +3,7 @@ Phần mềm giúp người dùng quản lí công việc bán hàng một cách
 ---
 #DISPLAY:
 
-![](Image/LOGO.jpg)
+![](Image/LOGO.png)
 
 ---
 
@@ -19,7 +19,7 @@ Login bao gồm: Tên đăng nhập và mật khẩu
 
 #HOMEPAGE:
 
-![](Image/Homepage.png)
+![](Image/Homepage.jpg)
 
 Homepage là trang chính của phần mềm, chứa các chức năng chính bao gồm: Thêm, sửa, xóa, tìm, xem thông tin.
 
@@ -39,7 +39,7 @@ xử lý các yêu cầu nghiệp vụ, trước khi trả kết quả về Pres
 * Data Access Layer (DAL) : Lớp này có chức năng giao tiếp với hệ quản trị CSDL như
 thực hiện các công việc liên quan đến lưu trữ và truy vấn dữ liệu ( tìm kiếm, thêm, xóa, sửa,…).
 
-![](Image/3Layer.png)
+![](Image/3Layer.jpg)
 
 ---
 
@@ -54,7 +54,7 @@ gian.
 Intermediate Language) phù hợp với các đặc tả của Common Language Infrastructure (CLI), và
 được lưu trữ trong các tập tin thực thi( thường có đuôi .exe hay .dll).
 
-![](Image/C#.png)
+![](Image/C#.jpg)
 
 
 MySQL:
@@ -68,7 +68,7 @@ cho các hệ điều hành dòng Windows, Linux, Mac OS X, Unix, FreeBSD, NetBS
 NetWare, SGI Irix, Solaris, SunOS,.. MySQL là một trong những ví dụ rất cơ bản về Hệ Quản trị
 Cơ sở dữ liệu quan hệ sử dụng Ngôn ngữ truy vấn có cấu trúc (SQL).
 
-![](Image/MySQL.png)
+![](Image/MySQL.jpg)
 
 
 ---
