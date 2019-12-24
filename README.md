@@ -9,7 +9,7 @@ Phần mềm giúp người dùng quản lí công việc bán hàng một cách
 
 #LOGIN:
 
-![](Image/LOGIN.png)
+![](Image/LOGIN.jpg)
 
 Login bao gồm: Tên đăng nhập và mật khẩu
 * Người dùng nhập tên đăng nhập và mật khẩu để vô màn hình chính của chương trình.
