@@ -177,7 +177,7 @@ namespace SaleManages.GUI
                                     }
 
             }
-            else
+            else if(rs ==3)
             {
                 ValidateChildren(ValidationConstraints.Enabled);
 
@@ -193,24 +193,8 @@ namespace SaleManages.GUI
         }
         int CheckTabPage()
         {
-            int result = 0;
-            if (metroTabControl1.SelectedIndex == 0)
-            {
-                result = 0;
-            }
-            else if (metroTabControl1.SelectedIndex == 1)
-            {
-                result = 1;
-            }
-            else if (metroTabControl1.SelectedIndex == 2)
-            {
-                result = 2;
-            }
-            else if(metroTabControl1.SelectedIndex == 3)
-            {
-                result = 3;
-            }
-            return result;
+            
+            return metroTabControl1.SelectedIndex;
         }
 
         private void btnView_Click(object sender, EventArgs e)
@@ -265,7 +249,10 @@ namespace SaleManages.GUI
             {
                 ObjProductDAO.Instance.Delete();
             }
-            else ObjBillDAO.Instance.Delete();
+            else if (check == 3)
+            {
+                ObjBillDAO.Instance.Delete();
+            }
         }
 
         private void btnFix_Click(object sender, EventArgs e)
@@ -283,7 +270,7 @@ namespace SaleManages.GUI
             {
                 ObjProductDAO.Instance.Update();
             }
-            else
+            else if(check == 3)
             {
                 ObjBillDAO.Instance.Update();
             }

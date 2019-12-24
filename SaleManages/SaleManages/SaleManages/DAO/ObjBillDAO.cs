@@ -88,15 +88,13 @@ namespace SaleManages.DAO
             string MaKH = ((_frmSalesManage)f).tbCodeKH_HD.Text;
             string MaNV = ((_frmSalesManage)f).tbCodeNV_HD.Text;
             string TriGia = ((_frmSalesManage)f).tbTriGia.Text;
-
-
-            string UpdateQuery = "UPDATE SANPHAM " +
-                "SET SOHD = '" + SoHD + "', NGHD ='" + NGHD + "',MAKH = '" + MaKH + "',MANV = '" + MaNV + "',TRIGIA = '" + TriGia + "' " +
+            string UpdateQuery = "UPDATE HOADON " +
+                "SET NGHD ='" + NGHD + "',MAKH = '" + MaKH + "',MANV = '" + MaNV + "',TRIGIA = '" + TriGia + "' " +
                 "WHERE SOHD = '" + SoHD + "'";
             int result = DataProvider.Instance.ExecuteNonQuery(UpdateQuery);
             if (result > 0)
             {
-                MessageBox.Show("Hoá đơn đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Hoá đơn đã được sửa,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
             }
         }
 
@@ -109,7 +107,7 @@ namespace SaleManages.DAO
             DataTable dt = DataProvider.Instance.ExecuteQuery(CheckQuery);
             if (dt.Rows.Count == 0)
             {
-                string DeleteQuery = "DELETE FROM SANPHAM WHERE MASP = '" + SOHD + "'";
+                string DeleteQuery = "DELETE FROM HOADON WHERE SOHD = '" + SOHD + "'";
                 int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery);
                 if (result > 0)
                 {
