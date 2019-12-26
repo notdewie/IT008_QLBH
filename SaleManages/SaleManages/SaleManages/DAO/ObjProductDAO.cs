@@ -74,7 +74,7 @@ namespace SaleManages.DAO
                     int result = DataProvider.Instance.ExecuteNonQuery(AddQuery);
                     if (result > 0)
                     {
-                        MessageBox.Show("Khách hàng đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
+                        MessageBox.Show("Sản phẩm đã được thêm,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
                     }
                 }
                 else MessageBox.Show("Mã sản phẩm đã tồn tại", "Thông báo", MessageBoxButtons.OK);

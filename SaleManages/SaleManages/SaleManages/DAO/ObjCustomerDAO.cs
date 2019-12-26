@@ -58,7 +58,7 @@ namespace SaleManages.DAO
             string tbmaso = ((_frmSalesManage)f).tbCodeKh.Text;
             string tbdc = ((_frmSalesManage)f).tbAddKh.Text;
             string tbemail = ((_frmSalesManage)f).tbEmailKh.Text;
-            string tbsdt = ((_frmSalesManage)f).tbNameKh.Text;
+            string tbsdt = ((_frmSalesManage)f).tbPhone.Text;
             string tbbirth = ((_frmSalesManage)f).dateKh.Value.ToString();
             if(((_frmSalesManage)f).rbNam.Checked == true)
             {
