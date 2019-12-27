@@ -1,5 +1,8 @@
 # Quản lí bán hàng-app
 Phần mềm giúp người dùng quản lí công việc bán hàng một cách thuận lợi. 
+
+Video demo: https://drive.google.com/open?id=1A7jioeXJ5IFqdJTNIAcVEX1k6XLY3H9j
+
 ---
 #DISPLAY:
 
